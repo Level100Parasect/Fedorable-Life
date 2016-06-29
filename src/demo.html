@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" lang="eng">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>jQuery Spritely Example from AddyOsmani.com</title>
+	<meta name="viewport" content="width = 320" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="jquery.spritely-0.1.js"></script>
+	<style type="text/css">
+		body {
+			background: #fff;
+			margin:0 auto;
+		}
+		
+		#sky {
+		  position:absolute;
+		  width:100%;
+		  height: 416px;
+		  background: transparent url(images/sky.jpg) 0 0px repeat-x; 
+
+		  
+		}
+		
+		#city2 {
+			position: absolute;
+			width: 100%; 
+			height: 416px;
+			background: transparent url(images/city2.png) 0 130px repeat-x; 
+			
+		}
+		#city1 {
+			position: absolute;
+			width: 100%; 
+			height: 416px;
+			background: transparent url(images/city1.png) 0 130px repeat-x;
+			
+		}
+		
+		
+		#plane1 {
+			position: absolute;
+			width: 730px;
+			height: 167px;
+			background: transparent url(images/planesprite4.png) 0 50px no-repeat;
+		}
+		
+		#content {
+		 
+		   width: 100%;
+		   position:relative;
+		   clear:both;
+		}
+		
+		#leftcontent {
+		  width:70%;
+		}
+		
+		#rightcontent {
+		  width:30%;
+		  background-color:blue;
+		}
+		
+		
+		
+	</style>
+	<script type="text/javascript">
+		(function($) {
+			$(document).ready(function() {
+			
+				$('#city1').pan({fps: 30, speed: 1, dir: 'right'}); 
+				
+				$('#city2').pan({fps: 30, speed: 2, dir: 'right'}); 
+				
+				$('#sky').pan({fps: 30, speed: 0.5, dir: 'right'}); 
+				
+				var stage_left = (($('body').width() - 866) / 2);
+				var stage_top = 30;
+				
+				
+				$('#plane1').sprite({fps: 8, no_of_frames: 14})
+					.spRandom({
+						top: 40,
+						left: stage_left + 20,
+						right: 400,
+						bottom: 140,
+						speed: 3500,
+						pause: 1000
+					});
+				
+			
+			});
+		})(jQuery);
+	</script>
+</head> 
+<body>
+
+<div id="sky"></div>
+
+<div id="city1"></div>
+
+<div id="city2"></div>
+
+<div id="layer1"></div>
+
+<div id="plane1"></div>
+
+<br>
+<div id="content">
+    <div id="leftcontent">
+	<div id="rightcontent">
+</div>
+
+</body>
+</html>

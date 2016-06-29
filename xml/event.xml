@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	
+	<events>
+		<level1>
+			<event>
+				<title>Photoshoot</title>
+				<text>There was a meet up for all of the cosplays for one of your favorite video games. Primarily kept to yourself throughout the event, you enjoyed taking photos of the cosplayers.
+				</text>
+				<effect>ps1</effect>
+			</event>
+			<event>
+				<title>Figurine Give-away </title>
+				<text>At a figurine speciality booth, they were giving away merchandise! You waited in line patiently and was able to get a figurine to add to your bookshelf.
+				</text>
+				<effect>fg1</effect>
+			</event>
+			<event>
+				<title>Question and Answer Panel</title>
+				<text>There was a question and answer panel for the cast of one of your favorite TV shows. You sat in the audience as you get to know more about the actors you idolize.
+				</text>
+				<effect>qa1</effect>
+			</event>
+			<event>
+				<title>Maid Cafe</title>
+				<text>There was a cafe were all of the servers were dressed up as butlers and maids. You ordered a coffee and sat by yourself enjoying the atmosphere and the people watching.
+				</text>
+				<effect>mc1</effect>
+			</event>
+			<event>
+				<title>Anime Karaoke</title>
+				<text>You saw that there was a karaoke competition specifically for popular songs from Japan. You sat in the audience as you watched a handful of people sing their hearts out to anime theme songs and idol tracks.
+				</text>
+				<effect>ak1</effect>
+			</event>
+			<event>
+				<title>Saturday Night Rave</title>
+				<text>In the late night, there was a rave going on at one of the dance halls. Attending the rave, you stood in the corner as you enjoyed people watching and listening to the music.
+				</text>
+				<effect>rv1</effect>
+			</event>
+			<event>
+				<title>Celebrity Signing</title>
+				<text>At one of the booths, a popular actor from one of your favorite superhero movies was doing a celebrity signing. After waiting in line, you got a poster signed with the actor's name on it.
+				</text>
+				<effect>cs1</effect>
+			</event>
+			<event>
+				<title>Game Demo</title>
+				<text>A game company was at the convention letting people try out their multiplayer arena game that was set to release soon. You didn't play the game, but you watched as others did for a bit. It looked like a blast!
+				</text>
+				<effect>gd1</effect>
+			</event>
+			<event>
+				<title>Magic Show</title>
+				<text>There was a magic show event where the magician would recreate famous special moves from video games and anime. You sat in the audience in amazement as the magician went through his routine.
+				</text>
+				<effect>ms1</effect>
+			</event>
+			<event>
+				<title>Idol Concert</title>
+				<text>There was a music concert where a popular idol group from Japan was performing their hit songs. You watched the concert from the corner of the dance floor enjoying the show and the music.
+				</text>
+				<effect>ic1</effect>
+			</event>
+			<event>
+				<title>Dance Off</title>
+				<text>There was an epic dance battle where two teams would take turns out-dance each other to popular Japanese music. You sat in the audience in amazement watching some people break dance and bust moves that you thought wasn't humanly possible.
+				</text>
+				<effect>do1</effect>
+			</event>
+			<event>
+				<title>Human Chess Match</title>
+				<text>There was a human chess match going on where the person taking the place of the king would give commands to the other pieces. You watched from the sidelines coming up with your own strategies as the match went on.
+				</text>
+				<effect>hc1</effect>
+			</event>
+			<event>
+				<title>Game of Ninja</title>
+				<text>There was a massive fifty-person game of ninja taking place in an open area of the convention center. It looked interesting, but you didn't know what was going on. You did enjoy watching the game though.
+				</text>
+				<effect>gn1</effect>
+			</event>
+			<event>
+				<title>Quiz Show</title>
+				<text>There was a game show-like event where there were two teams of five going at it with their knowledge of anime trivia. You sat in the audience answering each question to yourself.
+				</text>
+				<effect>qs1</effect>
+			</event>
+			<event>
+				<title>Open Mic</title>
+				<text>There was an open mic event where people can sign up to perform on stage for 10 minutes at a time. You sat quietly in the audience enjoying the comedians, musicians, and magicians that performed on stage.
+				</text>
+				<effect>om1</effect>
+			</event>
+			<event>
+				<title>LARP Battle</title>
+				<text>There was a live-action role play battle event where people were given padded weapons to re-enact a famous war scene from an anime. You watched on the sidelines laughing as the participants fought each other with foam swords and acted out the scenes.
+				</text>
+				<effect>lb1</effect>
+			</event>
+			<event>
+				<title>TCG Competition</title>
+				<text>There was a trading card game tournament at one of the event halls with 64 tournament participants. You missed most of the tournament, but you did get to watch the top players duke it out in the grand finals.
+				</text>
+				<effect>tc1</effect>
+			</event>
+			<event>
+				<title>Painting Event</title>
+				<text>There was an event where a famous manga artist would provide hands-on painting lessons to the people participating. You participated in the event, but mainly kept to yourself throughout the lessons.
+				</text>
+				<effect>pe1</effect>
+			</event>
+			<event>
+				<title>Table Top Gaming</title>
+				<text>There was a room full of popular table top games where people can play and join games with others. You combed the room looking for a game that you'd like to play, but didn't really find anything.
+				</text>
+				<effect>tt1</effect>
+			</event>
+			<event>
+				<title>Dating Auction</title>
+				<text>There was an event where people would "buy" another person's time in an auction house setting. You laughed your bottom off seeing how much certain people would "sell" for.
+				</text>
+				<effect>da1</effect>
+			</event>
+			<event>
+				<title>Bar Meetup</title>
+				<text>There was a meet up at the hotel bar for alcohol enthusiasts. You made an appearance at the meet up, but primarily kept to yourself.
+				</text>
+				<effect>bm1</effect>
+			</event>
+			<event>
+				<title>Anime Theory Debates</title>
+				<text>There was an event where the host would provide two sides of a controversial topic in an anime and two teams would debate for their given side. You enjoyed the show as you watched the heated debate take place.
+				</text>
+				<effect>at1</effect>
+			</event>
+			<event>
+				<title>Loutube Interview</title>
+				<text>There were cameras set up for a popular Loutube channel where the host would interview random passer-bys. Curious as to what the channel was, you looked on as the host would interview random people.
+				</text>
+				<effect>li1</effect>
+			</event>
+			<event>
+				<title>Would you Survive in a Zombie Apocalypse?</title>
+				<text>There was an interactive game where participants simulate whether or not they would survive a zombie apocalypse. Taking part of the game, you unfortunately had a bad starting point and got zombified pretty early on.
+				</text>
+				<effect>za1</effect>
+			</event>
+			<event>
+				<title>Speed Dating</title>
+				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
+				</text>
+				<effect>sd1</effect>
+			</event>
+		</level1>
+		
+		
+
+		<level2>
+			<event>
+				<title>Photoshoot</title>
+				<text>There was a meet up for all of the cosplays for one of your favorite video games. You took some photos of the cosplayers and got to talk with some of the photographers showing each other the photos you took.
+				</text>
+				<effect>ps2</effect>
+			</event>
+			<event>
+				<title>Figurine Give-away </title>
+				<text>At a figurine speciality booth, they were giving away merchandise! You socialized with another person in line while the two of you waited for your free figurine.
+				</text>
+				<effect>fg2</effect>
+			</event>
+			<event>
+				<title>Question and Answer Panel</title>
+				<text>There was a question and answer panel for the cast of one of your favorite TV shows. You sat in the audience as you get to know more about the actors you idolize. You got to socialize with some of the people that you were sitting next to.
+				</text>
+				<effect>qa2</effect>
+			</event>
+			<event>
+				<title>Maid Cafe</title>
+				<text>There was a cafe were all of the servers were dressed up as butlers and maids. You ordered a coffee and spent a while talking to the waitress in a maid costume.
+				</text>
+				<effect>mc2</effect>
+			</event>
+			<event>
+				<title>Anime Karaoke</title>
+				<text>You saw that there was a karaoke competition specifically for popular songs from Japan. You sat in the audience as you watched a handful of people sing their hearts out. In between performances, you socialized with the people around you.
+				</text>
+				<effect>ak2</effect>
+			</event>
+			<event>
+				<title>Saturday Night Rave</title>
+				<text>In the late night, there was a rave going on at one of the dance halls. Attending the rave, you wandered the dance floor dancing every so often while enjoying the music and the people.
+				</text>
+				<effect>rv2</effect>
+			</event>
+			<event>
+				<title>Celebrity Signing</title>
+				<text>At one of the booths, a popular actor from one of your favorite superhero movies was doing a celebrity signing. After getting a poster signed by the actor, you asked the actor a question you had about the movies to which he replied.
+				</text>
+				<effect>cs2</effect>
+			</event>
+			<event>
+				<title>Game Demo</title>
+				<text>A game company was at the convention letting people try out their multiplayer arena game that was set to release soon. You got to play the game on your own when the stall was less populated.
+				</text>
+				<effect>gd2</effect>
+			</event>
+			<event>
+				<title>Magic Show</title>
+				<text>There was a magic show event where the magician would recreate famous special moves from video games and anime. You sat in the audience socializing with the people around you as the magician went through his routine.
+				</text>
+				<effect>ms2</effect>
+			</event>
+			<event>
+				<title>Idol Concert</title>
+				<text>There was a music concert where a popular idol group from Japan was performing their hit songs. You jumped and danced along to the music to yourself and had a great time.
+				</text>
+				<effect>ic2</effect>
+			</event>
+			<event>
+				<title>Dance Off</title>
+				<text>There was an epic dance battle where two teams would take turns out-dance each other to popular Japanese music. You sat in the audience and socialized with the people around you being amazed by the performances.
+				</text>
+				<effect>do2</effect>
+			</event>
+			<event>
+				<title>Human Chess Match</title>
+				<text>There was a human chess match going on where the person taking the place of the king would give commands to the other pieces. You signed up to participate and got drafted as a pawn. Unfortunately, you got captured pretty early on in the match.
+				</text>
+				<effect>hc2</effect>
+			</event>
+			<event>
+				<title>Game of Ninja</title>
+				<text>There was a massive fifty-person game of ninja taking place in an open area of the convention center. It looked interesting, so you asked somebody next to you how to play as the game was going on.
+				</text>
+				<effect>gn2</effect>
+			</event>
+			<event>
+				<title>Quiz Show</title>
+				<text>There was a game show-like event where there were two teams of five going at it with their knowledge of anime trivia. Sitting in the audience, you socialized with the person next to you as the two of you answered each question.
+				</text>
+				<effect>qs2</effect>
+			</event>
+			<event>
+				<title>Open Mic</title>
+				<text>There was an open mic event where people can sign up to perform on stage for 10 minutes at a time. You socialized with others in the audience as amateur comedians, musicians, and magicians performed their acts on stage.
+				</text>
+				<effect>om2</effect>
+			</event>
+			<event>
+				<title>LARP Battle</title>
+				<text>There was a live-action role play battle event where people were given padded weapons to re-enact a famous war scene from an anime. You participated in the war as a soldier with no name.
+				</text>
+				<effect>lb2</effect>
+			</event>
+			<event>
+				<title>TCG Competition</title>
+				<text>There was a trading card game tournament at one of the event halls with 64 tournament participants. You socialized with others about different strategies in the game as the participants battled their hearts out.
+				</text>
+				<effect>tc2</effect>
+			</event>
+			<event>
+				<title>Painting Event</title>
+				<text>There was an event where a famous manga artist would provide hands-on painting lessons to the people participating. While painting, you socialized with the person next to you and compared your paintings with each other.
+				</text>
+				<effect>pe2</effect>
+			</event>
+			<event>
+				<title>Table Top Gaming</title>
+				<text>There was a room full of popular table top games where people can play and join games with others. You found a complex board game to and played with 3 other people.
+				</text>
+				<effect>tt2</effect>
+			</event>
+			<event>
+				<title>Dating Auction</title>
+				<text>There was an event where people would "buy" another person's time in an auction house setting. You tried to auction for a lovely lady, however you weren't getting paid that week and you lost her to a high bid. You had fun taking part of the event at least.
+				</text>
+				<effect>da2</effect>
+			</event>
+			<event>
+				<title>Bar Meetup</title>
+				<text>There was a meet up at the hotel bar for alcohol enthusiasts. You primarily stayed at the bar, talking briefly with those who sat next to you.
+				</text>
+				<effect>bm2</effect>
+			</event>
+			<event>
+				<title>Anime Theory Debates</title>
+				<text>There was an event where the host would provide two sides of a controversial topic in an anime and two teams would debate for their given side. While the debates raged on, you socialized with somebody next to you with your own thoughts about the debate.
+				</text>
+				<effect>at2</effect>
+			</event>
+			<event>
+				<title>Loutube Interview</title>
+				<text>There were cameras set up for a popular Loutube channel where the host would interview random passer-bys. You socialized with somebody next to you trying to figure out what the channel was.
+				</text>
+				<effect>li2</effect>
+			</event>
+			<event>
+				<title>Would you Survive in a Zombie Apocalypse?</title>
+				<text>There was an interactive game where participants simulate whether or not they would survive a zombie apocalypse. Taking part of the game, you unfortunately had a bad starting point and got zombified early on. However you got to take down a few survivors.
+				</text>
+				<effect>za2</effect>
+			</event>
+			<event>
+				<title>Speed Dating</title>
+				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any phone numbers, but you did get to hang out with some of the girls when the event ended.
+				</text>
+				<effect>sd2</effect>
+			</event>
+		</level2>
+		
+		
+		
+		<level3>
+			<event>
+				<title>Photoshoot</title>
+				<text>There was a meet up for all of the cosplays for one of your favorite video games. After speaking with the cosplayers, you got them to do some funny poses for pictures.
+				</text>
+				<effect>ps3</effect>
+			</event>
+			<event>
+				<title>Figurine Give-away </title>
+				<text>At a figurine speciality booth, they were giving away merchandise! You socialized with the person running the booth and was able to get a higher quality figurine.
+				</text>
+				<effect>fg3</effect>
+			</event>
+			<event>
+				<title>Question and Answer Panel</title>
+				<text>There was a question and answer panel for the cast of one of your favorite TV shows. You sat in the audience as you get to know more about the actors you idolize. You talked with the person next to you with questions that you would ask them.
+				</text>
+				<effect>qa3</effect>
+			</event>
+			<event>
+				<title>Maid Cafe</title>
+				<text>There was a cafe were all of the servers were dressed up as butlers and maids. You ordered a coffee and conversed with a few of the customers during your stay at the cafe.
+				</text>
+				<effect>mc3</effect>
+			</event>
+			<event>
+				<title>Anime Karaoke</title>
+				<text>You saw that there was a karaoke competition specifically for popular songs from Japan. You partook in the event by singing the theme song from one of your favorite anime. The audience loved you!
+				</text>
+				<effect>ak3</effect>
+			</event>
+			<event>
+				<title>Saturday Night Rave</title>
+				<text>In the late night, there was a rave going on at one of the dance halls. You danced the night away until your legs got tired!
+				</text>
+				<effect>rv3</effect>
+			</event>
+			<event>
+				<title>Celebrity Signing</title>
+				<text>At one of the booths, a popular actor from one of your favorite superhero movies was doing a celebrity signing. After getting your poster signed, you were able to speak with the actor even making him laugh.
+				</text>
+				<effect>cs3</effect>
+			</event>
+			<event>
+				<title>Game Demo</title>
+				<text>A game company was at the convention letting people try out their multiplayer arena game that was set to release soon. You got to try out the new game with other people even taking some matches against them!
+				</text>
+				<effect>gd3</effect>
+			</event>
+			<event>
+				<title>Magic Show</title>
+				<text>There was a magic show event where the magician would recreate famous special moves from video games and anime. The magician needed a volunteer and the person you were sitting next to got called up. Once the act was over, the two of you bonded over the magic act.
+				</text>
+				<effect>ms3</effect>
+			</event>
+			<event>
+				<title>Idol Concert</title>
+				<text>There was a music concert where a popular idol group from Japan was performing their hit songs. You sang along to the music with everyone else and had a great time.
+				</text>
+				<effect>ic3</effect>
+			</event>
+			<event>
+				<title>Dance Off</title>
+				<text>There was an epic dance battle where two teams would take turns out-dance each other to popular Japanese music. You sat in the audience hyping up those around you for the performances.
+				</text>
+				<effect>do3</effect>
+			</event>
+			<event>
+				<title>Human Chess Match</title>
+				<text>There was a human chess match going on where the person taking the place of the king would give commands to the other pieces. You signed up to participate and got drafted as a knight. You took out a few pieces before your piece was captured in the mid-game.
+				</text>
+				<effect>hc3</effect>
+			</event>
+			<event>
+				<title>Game of Ninja</title>
+				<text>There was a massive fifty-person game of ninja taking place in an open area of the convention center. You participated in the game, but got eliminated pretty early on.
+				</text>
+				<effect>gn3</effect>
+			</event>
+			<event>
+				<title>Quiz Show</title>
+				<text>There was a game show-like event where there were two teams of five going at it with their knowledge of anime trivia. You took part in the event and was drafted to a random team. Your team got a few of the questions right but was ultimately defeated.
+				</text>
+				<effect>qs3</effect>
+			</event>
+			<event>
+				<title>Open Mic</title>
+				<text>There was an open mic event where people can sign up to perform on stage for 10 minutes at a time. You signed up to perform. While on stage, you performed a comedy bit to a lukewarm response.
+				</text>
+				<effect>om3</effect>
+			</event>
+			<event>
+				<title>LARP Battle</title>
+				<text>There was a live-action role play battle event where people were given padded weapons to re-enact a famous war scene from an anime. You participated in the war as a distinguished soldier in the anime, getting some wins.
+				</text>
+				<effect>lb3</effect>
+			</event>
+			<event>
+				<title>TCG Competition</title>
+				<text>There was a trading card game tournament at one of the event halls with 64 tournament participants. Since you brought your deck, you participated in the tournament. Unfortunately you got eliminated pretty early in the tournament.
+				</text>
+				<effect>tc3</effect>
+			</event>
+			<event>
+				<title>Painting Event</title>
+				<text>There was an event where a famous manga artist would provide hands-on painting lessons to the people participating. Your painting came out pretty well and the person next to you asked for tips.
+				</text>
+				<effect>pe3</effect>
+			</event>
+			<event>
+				<title>Table Top Gaming</title>
+				<text>There was a room full of popular table top games where people can play and join games with others. You played a popular board game with 7 other players.
+				</text>
+				<effect>tt3</effect>
+			</event>
+			<event>
+				<title>Dating Auction</title>
+				<text>There was an event where people would "buy" another person's time in an auction house setting. You participated in the event as an auction piece, but you didn't sell for too high. The actual date was kind of lukewarm as you two didn't really bond over anything.
+				</text>
+				<effect>da3</effect>
+			</event>
+			<event>
+				<title>Bar Meetup</title>
+				<text>There was a meet up at the hotel bar for alcohol enthusiasts. You sat with a group of people at a table, keeping mostly to the group for the entire meet up.
+				</text>
+				<effect>bm3</effect>
+			</event>
+			<event>
+				<title>Anime Theory Debates</title>
+				<text>There was an event where the host would provide two sides of a controversial topic in an anime and two teams would debate for their given side. You participated in the anime debate, but you didn't get much of a chance to shine or share your thoughts in the debate.
+				</text>
+				<effect>at3</effect>
+			</event>
+			<event>
+				<title>Loutube Interview</title>
+				<text>There were cameras set up for a popular Loutube channel where the host would interview random passer-bys. You were briefly interviewed by the host for a single word response.
+				</text>
+				<effect>li3</effect>
+			</event>
+			<event>
+				<title>Would you Survive in a Zombie Apocalypse?</title>
+				<text>There was an interactive game where participants simulate whether or not they would survive a zombie apocalypse. Through sticking around with a group of other survivors, you were able to survive to the end of the game.
+				</text>
+				<effect>za3</effect>
+			</event>
+			<event>
+				<title>Speed Dating</title>
+				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
+				</text>
+				<effect>sd3</effect>
+			</event>
+		</level3>
+		
+		
+		
+		<level4>
+			<event>
+				<title>Photoshoot</title>
+				<text>There was a meet up for all of the cosplays for one of your favorite video games. You took some photos of the cosplayers and got to talk with some of them asking for certain photos in specific poses. You were able to exchange contact information so you can meet up with them next time.
+				</text>
+				<effect>ps4</effect>
+			</event>
+			<event>
+				<title>Figurine Give-away </title>
+				<text>At a figurine speciality booth, they were giving away merchandise! You befriended the person running the booth and was able to get a higher quality figurine.
+				</text>
+				<effect>fg4</effect>
+			</event>
+			<event>
+				<title>Question and Answer Panel</title>
+				<text>There was a question and answer panel for the cast of one of your favorite TV shows. You were able to ask the actors directly your questions.
+				</text>
+				<effect>qa4</effect>
+			</event>
+			<event>
+				<title>Maid Cafe</title>
+				<text>There was a cafe were all of the servers were dressed up as butlers and maids. You ordered a coffee and was able to make new friends with the people there.
+				</text>
+				<effect>mc4</effect>
+			</event>
+			<event>
+				<title>Anime Karaoke</title>
+				<text>You saw that there was a karaoke competition specifically for popular songs from Japan. You convinced another to join you as the two of you sang a theme song from an anime. The audience loved you two!
+				</text>
+				<effect>ak4</effect>
+			</event>
+			<event>
+				<title>Saturday Night Rave</title>
+				<text>In the late night, there was a rave going on at one of the dance halls. You were dancing to yourself, but there was a group of friends dancing next to you. You turned around and started dancing with them.
+				</text>
+				<effect>rv4</effect>
+			</event>
+			<event>
+				<title>Celebrity Signing</title>
+				<text>At one of the booths, a popular actor from one of your favorite superhero movies was doing a celebrity signing. After getting your poster signed, you convinced the actor for a selfie.
+				</text>
+				<effect>cs4</effect>
+			</event>
+			<event>
+				<title>Game Demo</title>
+				<text>A game company was at the convention letting people try out their multiplayer arena game that was set to release soon. You were doing so well that people started to gather around to watch you play.
+				</text>
+				<effect>gd4</effect>
+			</event>
+			<event>
+				<title>Magic Show</title>
+				<text>There was a magic show event where the magician would recreate famous special moves from video games and anime. The magician needed a volunteer and you were lucky enough to get called up! For doing what the magician said, he gave you a souvenir.
+				</text>
+				<effect>ms4</effect>
+			</event>
+			<event>
+				<title>Idol Concert</title>
+				<text>There was a music concert where a popular idol group from Japan was performing their hit songs. One of the idols threw some free swag into the audience and you were able to catch it!
+				</text>
+				<effect>ic4</effect>
+			</event>
+			<event>
+				<title>Dance Off</title>
+				<text>There was an epic dance battle where two teams would take turns out-dance each other to popular Japanese music. You sat at the front in the audience and hyped up the dancer's performances as they were going on.
+				</text>
+				<effect>do4</effect>
+			</event>
+			<event>
+				<title>Human Chess Match</title>
+				<text>There was a human chess match going on where the person taking the place of the king would give commands to the other pieces. You signed up to participate and got drafted as a rook. You eliminated a few pieces and your piece was pivotal in the late game.
+				</text>
+				<effect>hc4</effect>
+			</event>
+			<event>
+				<title>Game of Ninja</title>
+				<text>There was a massive fifty-person game of ninja taking place in an open area of the convention center. You participated in the game, taking out a few people before you got eliminated.
+				</text>
+				<effect>gn4</effect>
+			</event>
+			<event>
+				<title>Quiz Show</title>
+				<text>There was a game show-like event where there were two teams of five going at it with their knowledge of anime trivia. You took part in the event and joined a team that needed an extra. You were able to get a few answers correct but ultimately lost the competition.
+				</text>
+				<effect>qs4</effect>
+			</event>
+			<event>
+				<title>Open Mic</title>
+				<text>There was an open mic event where people can sign up to perform on stage for 10 minutes at a time. You signed up to perform. While on stage, you performed a simple magic act. The audience enjoyed your performance.
+				</text>
+				<effect>om4</effect>
+			</event>
+			<event>
+				<title>LARP Battle</title>
+				<text>There was a live-action role play battle event where people were given padded weapons to re-enact a famous war scene from an anime. You participated in the war as one of the supporting characters in the anime, defeating some strong enemies.
+				</text>
+				<effect>lb4</effect>
+			</event>
+			<event>
+				<title>TCG Competition</title>
+				<text>There was a trading card game tournament at one of the event halls with 64 tournament participants. Since you brought your deck, you participated in the tournament. You were able to steal some wins until you were eliminated by a tougher opponent.
+				</text>
+				<effect>tc4</effect>
+			</event>
+			<event>
+				<title>Painting Event</title>
+				<text>There was an event where a famous manga artist would provide hands-on painting lessons to the people participating. Your painting turned out well enough that the famous manga artist stopped by and talked to you.
+				</text>
+				<effect>pe4</effect>
+			</event>
+			<event>
+				<title>Table Top Gaming</title>
+				<text>There was a room full of popular table top games where people can play and join games with others. You sat down by a game you wanted to play and had multiple people join you.
+				</text>
+				<effect>tt4</effect>
+			</event>
+			<event>
+				<title>Dating Auction</title>
+				<text>There was an event where people would "buy" another person's time in an auction house setting. You participated in the event as an auction piece, and was sold to a nice girl. The two of you spent time together at the auction and became friends.
+				</text>
+				<effect>da4</effect>
+			</event>
+			<event>
+				<title>Bar Meetup</title>
+				<text>There was a meet up at the hotel bar for alcohol enthusiasts. You wandered around the bar talking with different types of people and multiple groups.
+				</text>
+				<effect>bm4</effect>
+			</event>
+			<event>
+				<title>Anime Theory Debates</title>
+				<text>There was an event where the host would provide two sides of a controversial topic in an anime and two teams would debate for their given side. You participated in the anime debate and even held the spotlight for a bit.
+				</text>
+				<effect>at4</effect>
+			</event>
+			<event>
+				<title>Loutube Interview</title>
+				<text>There were cameras set up for a popular Loutube channel where the host would interview random passer-bys. You were briefly interviewed by the host, giving your thoughts about the events and the costumes you've seen at the convention.
+				</text>
+				<effect>li4</effect>
+			</event>
+			<event>
+				<title>Would you Survive in a Zombie Apocalypse?</title>
+				<text>There was an interactive game where participants simulate whether or not they would survive a zombie apocalypse.  You joined up with a group of survivors and was able to pull your weight to survive to the end of it.
+				</text>
+				<effect>za4</effect>
+			</event>
+			<event>
+				<title>Speed Dating</title>
+				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and got a few numbers from the whole thing.
+				</text>
+				<effect>sd4</effect>
+			</event>
+		</level4>
+		
+		
+		
+		<level5>
+			<event>
+				<title>Photoshoot</title>
+				<text>There was a meet up for all of the cosplays for one of your favorite video games. You organized the entire event and befriended all of the people in attendance.
+				</text>
+				<effect>ps5</effect>
+			</event>
+			<event>
+				<title>Figurine Give-away </title>
+				<text>At a figurine speciality booth, they were giving away merchandise! You befriended the person running the booth and was able to get an incredibly rare figurine.
+				</text>
+				<effect>fg5</effect>
+			</event>
+			<event>
+				<title>Question and Answer Panel</title>
+				<text>There was a question and answer panel for the cast of one of your favorite TV shows. You were able to ask the actors directly your questions and was even able to make them laugh.
+				</text>
+				<effect>qa5</effect>
+			</event>
+			<event>
+				<title>Maid Cafe</title>
+				<text>There was a cafe were all of the servers were dressed up as butlers and maids. You ordered a coffee and sat down by yourself. Over time, more and more people started to join your table until your group was the loudest group in the cafe.
+				</text>
+				<effect>mc5</effect>
+			</event>
+			<event>
+				<title>Anime Karaoke</title>
+				<text>You saw that there was a karaoke competition specifically for popular songs from Japan. You got a group to join you on stage as you all did a group rendition of an anime theme song. The audience went wild!
+				</text>
+				<effect>ak5</effect>
+			</event>
+			<event>
+				<title>Saturday Night Rave</title>
+				<text>In the late night, there was a rave going on at one of the dance halls. While at the rave, you started congo lines, dance-off rings, and in general had a blast with others.
+				</text>
+				<effect>rv5</effect>
+			</event>
+			<event>
+				<title>Celebrity Signing</title>
+				<text>At one of the booths, a popular actor from one of your favorite superhero movies was doing a celebrity signing. After having your poster signed, the actor opened up to you for a bit about what it's like being a superhero. The two of you bonded.
+				</text>
+				<effect>cs5</effect>
+			</event>
+			<event>
+				<title>Game Demo</title>
+				<text>A game company was at the convention letting people try out their multiplayer arena game that was set to release soon. You were playing so well, that a developer offered to invite you to a closed beta to help them test the game.
+				</text>
+				<effect>gd5</effect>
+			</event>
+			<event>
+				<title>Magic Show</title>
+				<text>There was a magic show event where the magician would recreate famous special moves from video games and anime. The magician needed a volunteer and you were called up! While on stage, you made the audience laugh entertaining them further.
+				</text>
+				<effect>ms5</effect>
+			</event>
+			<event>
+				<title>Idol Concert</title>
+				<text>There was a music concert where a popular idol group from Japan was performing their hit songs. One of the idols brought you on stage from the audience to sing with her. When you got back to the audience, everyone was saying how you killed it on stage. 
+				</text>
+				<effect>ic5</effect>
+			</event>
+			<event>
+				<title>Dance Off</title>
+				<text>There was an epic dance battle where two teams would take turns out-dance each other to popular Japanese music. You got pulled on stage by one of the dancers and acted as a hype man!
+				</text>
+				<effect>do5</effect>
+			</event>
+			<event>
+				<title>Human Chess Match</title>
+				<text>There was a human chess match going on where the person taking the place of the king would give commands to the other pieces. You signed up to participate and got drafted as the king. Through trials and tribulation, you were able to lead your team to victory!
+				</text>
+				<effect>hc5</effect>
+			</event>
+			<event>
+				<title>Game of Ninja</title>
+				<text>There was a massive fifty-person game of ninja taking place in an open area of the convention center. You participated in the game, taking out a few people before you ultimately won!
+				</text>
+				<effect>gn5</effect>
+			</event>
+			<event>
+				<title>Quiz Show</title>
+				<text>There was a game show-like event where there were two teams of five going at it with their knowledge of anime trivia. You took part in the event and joined a team of people you met at the convention. Your team was able to snatch the victory!
+				</text>
+				<effect>qs5</effect>
+			</event>
+			<event>
+				<title>Open Mic</title>
+				<text>There was an open mic event where people can sign up to perform on stage for 10 minutes at a time. You signed up to perform. While on stage, you performed a simple magic act with additional bits of comedy. The audience loved your performance!
+				</text>
+				<effect>om5</effect>
+			</event>
+			<event>
+				<title>LARP Battle</title>
+				<text>There was a live-action role play battle event where people were given padded weapons to re-enact a famous war scene from an anime. You participated in the war as the main character of the anime.
+				</text>
+				<effect>lb5</effect>
+			</event>
+			<event>
+				<title>TCG Competition</title>
+				<text>There was a trading card game tournament at one of the event halls with 64 tournament participants. Since you brought your deck, you participated in the tournament. You were able to steal the championships winning the entire tournament!
+				</text>
+				<effect>tc5</effect>
+			</event>
+			<event>
+				<title>Painting Event</title>
+				<text>There was an event where a famous manga artist would provide hands-on painting lessons to the people participating. Your painting turned out so well that the manga artist talked to you for a while.
+				</text>
+				<effect>pe5</effect>
+			</event>
+			<event>
+				<title>Table Top Gaming</title>
+				<text>There was a room full of popular table top games where people can play and join games with others. You sat down by a game you wanted to play and pretty much hosted the game for other people.
+				</text>
+				<effect>tt5</effect>
+			</event>
+			<event>
+				<title>Dating Auction</title>
+				<text>There was an event where people would "buy" another person's time in an auction house setting. You participated in the event as an auction piece, and had a few people get try to outbid each other for you. You enjoyed your time with your date.
+				</text>
+				<effect>da5</effect>
+			</event>
+			<event>
+				<title>Bar Meetup</title>
+				<text>There was a meet up at the hotel bar for alcohol enthusiasts. You wandered around the bar introducing yourself to everyone and making new friends over a few beers.
+				</text>
+				<effect>bm5</effect>
+			</event>
+			<event>
+				<title>Anime Theory Debates</title>
+				<text>There was an event where the host would provide two sides of a controversial topic in an anime and two teams would debate for their given side. You participated in the debates, leading the discussions and your team to the stronger debate.
+				</text>
+				<effect>at5</effect>
+			</event>
+			<event>
+				<title>Loutube Interview</title>
+				<text>There were cameras set up for a popular Loutube channel where the host would interview random passer-bys. You were interviewed by the host for a while. Your interview took up a good portion of the host's video.
+				</text>
+				<effect>li5</effect>
+			</event>
+			<event>
+				<title>Would you Survive in a Zombie Apocalypse?</title>
+				<text>There was an interactive game where participants simulate whether or not they would survive a zombie apocalypse. You formed a settlement with a bunch of other survivors and was able to lead your people to surviving to the end of the game.
+				</text>
+				<effect>za5</effect>
+			</event>
+			<event>
+				<title>Speed Dating</title>
+				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
+				</text>
+				<effect>sd5</effect>
+			</event>
+		</level5>
+	</events>
+	
+	<booth>
+		<event>
+			<text>You found a booth that made custom pins. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in erotic body pillows with video game girls on it. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in erotic body pillows with anime girls on it. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in erotic wall scrolls with video game girls on it. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in erotic wall scrolls with anime girls on it. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth with an artist that draws fan-art posters. You found a few posters that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth with an artist that focused on same-day commissions. You have some ideas of fan art you want them to draw...</text>
+		</event>
+		<event>
+			<text>You found a booth with a bunch of Japanese snacks. You picked up a few of your favorite treats...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in retro/rare video games. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in speciality cosplay clothing. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in vintage comic book issues. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth specializing in Japanese graphic novels. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth with erotic hand-drawn women towels. You found a few that you wanted to buy...</text>
+		</event>
+	</booth>
+</doc>

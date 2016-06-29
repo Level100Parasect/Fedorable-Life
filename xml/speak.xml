@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<good>
+		<event>
+			<text>A group of friends called you over and asked you to take a photo of their group. After taking the group photo, you then asked them to do a silly photo. They enjoyed all of the photos you took. They bought you a free drink as a thanks!
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>While playing darts, a group of friends challenged you to a game of darts. To make things more interesting, they gamble $10. At the end of it all, you clearly dominate the game. They call it a good game, paid you the money, and went on their merry way.
+			</text>
+			<effect>moneyUp</effect>
+		</event>
+		<event>
+			<text>While sitting at the bar, you noticed that a couple left the bar abruptly. A waitress carrying a plate of nachos asks you where they went to which you replied that they left the bar. Not knowing what to do with the food, she offers you the plate of nachos! Ain't saying no to free nachos!
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>While sitting at a table outside, a drunk girl sat with you. She is new in town and wanted to find some new places to hang out. You tell her you're not much for the party scene but she asks for your MyFace contact information. She said she'd contact you if she needs a one up :D
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>While walking through the bar you slipped on a piece of paper. When you got up off the ground, you looked back down at the piece of paper, and it turns out it was a $10 bill. You pocketed the money when nobody was looking.
+			</text>
+			<effect>moneyUp</effect>
+		</event>
+		<event>
+			<text>You noticed a girl wearing a shirt of your favorite anime! You make your way over and make small talk with her. She opened up to you, and you guys had a blast talking about anime. Before she left she gave you her MyFace information you casanova ;D
+			</text>
+			<effect>inLove</effect>
+		</event>
+		<event>
+			<text>You overheard a group of friends getting into a heated argument about a popular science fiction movie series. As a huge fan, you couldn't help but get yourself into the argument. You ended up winning the real life argument and you patted yourself on the back. 
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>An older bar patron noticed the sword strapped to your back. He asked you why you're carrying it with you which lead to a more personal conversation, and you guys talked for a long time. Before he left, he gave you some fatherly advice about love, life, and dreams and went on his merry way.
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>The TVs in the bar were for some strange reason on the kid's channel playing your favorite show "Ponies in High School". After watching it for a few minutes, the bartender changes it. You talked to her and convinced her to leave one TV on your show.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>While standing outside, the bouncer stood next to you. The bouncer was just bored and made small talk with you. He just complained how boring his job is and liked to make new friends whenever he got the chance. I guess that means he's a new friend!
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>There was a bachelorette party at a table near you and you bought the bride-to-be a drink. They ended up asking you for pictures and gave you a phallic party favor as a reward. They ended up leaving to a club, but you wished her luck and told her to have a nice night.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>There was a birthday party at a table near you and you bought a pitcher for the birthday celebrant. You got to meet new people and had a blast drinking celebrating with the celebrant.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>It is karaoke night and you chose to do a popular song from the 90's that everyone was excited to listen to. During the chorus, you got down on your knees and played air guitar during the solo. Once you got off the stage, people were cheering you on!
+			</text>
+			<effect>confident</effect>
+		</event>
+		<event>
+			<text>Sitting down at the bar, you noticed a bouncer on their night off. He got a pitcher for free, but he didn't want to drink it. He noticed you as a regular and offered to give you the entire pitcher!
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>You found a wallet on a bench outside so you gave it to the bartender saying somebody lost it. Later on, a young man approached you asking if you were the one who gave the bartender his wallet. He was incredibly thankful to you and bought you a drink.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>You noticed that it was a slow day at the bar. The bartender ended up talking to you whenever she wasn't serving a customer. You two talked about life, death, and everything in between. You even added her on MyFace! You said good night once the bar started to get more busy.
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>It was karaoke night and you saw a girl who was hesitant on going up on stage. You assured her it's a blast and offered to go up on stage to be her back up singer. After the song ended, the two of you bonded over drinks. At the end of the night, you added her on MyFace.
+			</text>
+			<effect>confident</effect>
+		</event>
+		<event>
+			<text>The bar was having a trivia night and you joined a team. You came up with the team name and lead your team to second place! It didn't matter much because you had fun with a bunch of new people and made a little bit of money out of it.
+			</text>
+			<effect>moneyUp</effect>
+		</event>
+		<event>
+			<text>You scheduled a date at the bar with a lovely lady on the dating app Cinder. A woman introduced herself to you and the two of you enjoyed getting to know each other over a few drinks.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a woman sat down next to you to order her drink. The two of you talked for a while until she went back to her group of friends, but it feels good being approachable! 
+			</text>
+			<effect>confident</effect>
+		</event>
+		<event>
+			<text>Working on your darts game, you noticed that the group using the board next to you were missing the board completely. You walked over and gave them some tips on how to aim and throw darts. They thanked you as their next throw actually stuck on the board.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>Standing by the pool tables, you saw a group not doing too well at pool by constantly scratching and not hitting anything. You gave them tips on how to properly hit the ball and they started to do better! They let you sit with them and offered some of their fries.
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a lady sat down next to you. She asked how you were doing, and you two had a pleasant conversation for a few minutes until her drink was finished.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>The bartender ended up mixing your order with another customer by giving you an energy drink on the side with your alcohol. When the bartender noticed, they let you keep the energy drink for free.
+			</text>
+			<effect>energyUp</effect>
+		</event>
+		<event>
+			<text>The bar had a special "All your can eat wings" for that day. Not one to miss out on such a sweet deal, you took advantage of it and ate wings until you could no longer feel your stomach.
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>Happy hour just ended but your bartender brought out an extra drink for you despite it being a few minutes after last call. She said that she got your back as she brought it out.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>Your eyes were drawn to the sports game on the screen and the blue team ended up getting a point. The patrons all started to cheer as that was the game winning point. A sports fan who was sitting next to you gave you an unopened beer assuming you were a fan of the blue team. Go blue team!
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>While walking to the other side of the bar, a girl stopped you thinking you were somebody else. Instead of being weird you introduced yourself to her and ended up talking for a few minutes. Hopefully now she won't mix you up next time you run into her!
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>While sitting at a table outside, a couple asked you to take a photograph for them. Being a photographer, the photos turned out well! The couple looked at your photos and seemed genuinely surprised at how good they turned out!
+			</text>
+			<effect>confident</effect>
+		</event>
+		<event>
+			<text>It was karaoke night and you ended up joining a group! Overall the performance was terrible but you guys had fun. Once the song was over, you hung out with the group for a bit, talking about life and drinking some beers together.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>Talking with the bouncer, he remembered that he found a fedora from the lost and found bin. Assuming that you were a fan of fedoras, he offered it to you saying that usually nobody goes to the lost and found. Not one to turn down free things, he went to the back and got it for you.
+			</text>
+			<effect>hatPlus</effect>
+		</event>
+		<event>
+			<text>Sitting at a table outside the bar, you heard a bark. Filled to the brim with excitement, you found out that somebody brought their dog to the bar. You socialized with the dog's owner as you got to pet the hell out of their dog!
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>At the distance you noticed an old lost-looking lady. She made her way over to you and asked for directions to a nearby mall. Being as informative as you could possibly be, by the end of it all she thanked you for your help and gave you a tip for helping her out.
+			</text>
+			<effect>moneyUp</effect>
+		</event>
+		<event>
+			<text>While minding your own business at the outside bar, somebody with a large pie of pizza in his hands offered you a slice. He was from the pizzeria from next door and was giving some away at the bar to promote his business. Free pizza is the best pizza!
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>Wanting to play fooseball, you stood by the machine and invited a stranger to join you. The two of you bonded as the fooseball competition heated up!
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>While playing darts, you somehow got your three darts on bulls-eye consecutively. The people around you who witnessed the skilful feat praised you for your talent.
+			</text>
+			<effect>confident</effect>
+		</event>
+		<event>
+			<text>You saw a large group at a table with a hookah set in the center. You made your way over and asked if you could have a puff or two. They allowed you to join in as you socialized with them.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>The TV over the bar went out. The bartender tried multiple things to fix the issue, but to no avail. You suggested an action the bartender could try to fix it. When the TV went back on, the bartender offered you a free drink, but you were just happy to help.
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a man sat down next to you to order his drink. He took note of your shirt and you two started talking about your personal favorite parts of the show.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>One of your favorite nostalgic songs started playing from the jukebox. You jammed out to it getting others to join in with you.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>A girl with a unique hair color enters the bar. You had to do a double take because she looked like a character from an anime. You spoke with her asking if she knew of the anime. Surprisingly she did and the two of you bonded over common interests. You asked to take a selfie with her.
+			</text>
+			<effect>photoUp</effect>
+		</event>
+		<event>
+			<text>You spotted a group of people in cosplay costumes at the bar. Being curious as to why they were costumed, you discover that there was a convention a few cities away. You asked to take a photo of the group in exchange for a pitcher of beer.
+			</text>
+			<effect>photoUp</effect>
+		</event>
+		<event>
+			<text>You noticed a group of people looking up at the ceiling. Looking up, you noticed that somebody accidentally got a dart stuck on the ceiling. Using your sword, you were able to dislodge the dart out of the ceiling and returned it to the person playing the game.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>Seeing a girl playing pool by herself, you noticed that she was a waitress on her day off. You joked saying it was weird seeing her in civilian clothes. You guys talked about her work and her personal life.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until you felt a hug from behind. The girl was shocked when you turned around: she thought you were somebody else. You said it was fine and how this happens to you a lot.
+			</text>
+			<effect>inLove</effect>
+		</event>
+		<event>
+			<text>Reading a comic book at the bar, a girl asked you what you were reading. Briefly describing the comic's story and main character, she seemed legitimately interested. You two talked about comic books for a while until she returned to her group of friends.
+			</text>
+			<effect>inLove</effect>
+		</event>
+		<event>
+			<text>Sitting outside, you noticed distressed-looking bar patron. Asking what was wrong, they mentioned that they misplaced their phone. You asked for the number and called them to help them find it. They offered you a drink, but you were just glad to help.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until an older woman sat down next to you. She bought you a drink in exchange for some conversation. She is going through some tough times and just wanted to talk to somebody. You two talked for a bit until she left for the night.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>You noticed somebody leaving the bar with their keys in hand. Wanting to avoid a potential disaster, you called for a taxi for them. They thanked you before they left in the taxi.
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>You saw a girl run passed you with tears in her eyes. Concerned, you go after her and ask if she's okay. She told you that just moved there and misses everything from her home town. When she started to feel better, she gave you a hug. You were just glad to help someone in need.
+			</text>
+			<effect>content</effect>
+		</event>
+	</good>
+	<bad>
+		<event>
+			<text>A group of friends asked you about the logo on your shirt. You get into a long winded explanation of the "Ponies in High School" show; everything from your favorite pony pairings to pony conspiracy theories. They interrupted you saying that they had to leave.
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>While playing a round of darts on your own, a group of friends challenged you to a dart-off. You clearly dominate the game and start rubbing your victory in their faces. Getting peeved off with your childish behavior, your challengers call you a bad name and walk off.
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>You decide to practice your pick up artist techniques. You walked up to a girl and blurted out the first neg you could think of: "That dress of yours is stupid, but it's also pretty okay too" and turned your body away from her. She groaned in disgusted and walks off.
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>You spot a fair maiden at the other side of the bar with your elven eyes. You make your way over and offer her a drink. When you ask her what she wants, she replies with 4 long islands. Once the drinks come out, she takes them to her group of friends and ignores you for the rest of the night.
+			</text>
+			<effect>moneyDown</effect>
+		</event>
+		<event>
+			<text>You see the girl of your dreams across the bar. She is wearing a shirt with your favorite anime on it. You made your way to her and tried to get her attention by blurting out random facts about the anime. After reciting your 5th fact, she told you to go away.
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>You decided to change the song on the jukebox to some classy 1920's swing music. You overheard somebody complain at the bar's selection of music. You felt bad for ruining somebody's enjoyment at a bar for 3 minutes.
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>You overheard a group of friends getting into a heated argument about a popular science fiction movie series. As a huge fan of the series, you couldn't help but get yourself into the argument you got a bit heated as the group of friends looked at you weirdly and asked you to leave.
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>A girl was sitting across from you a few tables down. You looked at her and when your eyes met, you looked away. You fantasized a perfect conversation starter, which ended up making you think about your marriage with her. However, after 30 minutes of having your hypothetical children, she left.
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>The TVs in the bar were erroneously on the kid's channel playing the show "Ponies in High School". After watching for a few minutes, the bartender changes the channel. You had a temper tantrum and started to cry and left the bar. After a few minutes, you felt foolish and walked back inside.
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>While standing outside, the bouncer stood next to you. You panicked and shouted at the bouncer "I DIDN'T DO ANYTHING" and ran to the bathroom to hide. You waited until the bouncer left until you snuck in feeling anxious for the rest of the night.
+			</text>
+			<effect>paranoid</effect>
+		</event>
+		<event>
+			<text>There was a bachelorette party at a table near you and you tried to work on your pick-up artist techniques. You stood in the center of the party not making eye contact with any of the women. They talked poorly of you behind your back as they moved to the other side of the bar.
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>There was a sports game on the TV and a bunch of dude-bro plebs were getting rowdy near you. Peeved off, you asked them to lower their low-IQ voices and they told you to piss off. You feel emasculated as you actually did piss off to the other side of the bar...
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>It's karaoke night and you chose to do a song from your favorite Japanese anime. Everyone boo'd you off of stage after the first few seconds of the song. Some people just don't understand Japanese culture...
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>You walked into a guy and he spilled his drink all over you. He apologized and said don't worry about getting him another drink, but you now have to deal with a massive stain on your body for the rest of the night.
+			</text>
+			<effect>discontent</effect>
+		</event>
+		<event>
+			<text>While walking across the bar, you accidentally walked into a guy spilling his drink. You had to buy him another drink as a replacement. Unfortunately he got a pricey beer...
+			</text>
+			<effect>moneyDown</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a dishevelled sailor sat down next to you. He asked you if you would be interested in hearing the story of how he lost his hand. Despite your best efforts, you couldn't get out of the conversation and he kept speaking for hours...
+			</text>
+			<effect>energyDown</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a woman sat down next to you to order her drink. Game on! You try to seduce her with your best opening line "I would marry you so hard!". However she looked at you with a disgusted face and walked off before she could get her drink.
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a woman sat down next to you. Game on, right? However after looking at her closer, she seems unkempt. With a raspy smoker's voice she said "Hey stud, you looking for a good time tonight?" You had to pay money just to get her to leave...
+			</text>
+			<effect>moneyDown</effect>
+		</event>
+		<event>
+			<text>You scheduled a date at the bar with a lovely lady on the dating app Cinder. Filled to the brim with excitement, you waited at the bar for your date to show up, but after an hour you got worried. You then started spamming her messages asking if she was coming, but she never did...
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>You ordered food with some cheese sauce on the side. But they forgot the cheese sauce and you were too embarrassed to bother the waitress. However when the check came in, you still had to pay for it.
+			</text>
+			<effect>moneyDown</effect>
+		</event>
+		<event>
+			<text>While people watching at the bar, you saw a man working his game on m'lady. You tried to seduce her earlier in the night, but you got shot down so you looked forward to seeing him fail. However, the girl let him sit down and they spent the rest of the night talking.
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>While people watching at the bar, you saw a man and a woman playing pool. You were trying to determine if they were dating, but they caught you staring. You tried to look natural, but you still felt awkward for staring.
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>It's karaoke night and you chose to do a metal song. The genre didn't matter because 10 seconds into the song, you got stage fright and went into the fetal position in the middle of stage. The DJ kept the song going on and you stayed in the fetal position for the entirety of the song.
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>Your sinuses started to act up so you ran to the bathroom to throw up. However, you somehow missed the toilet and got it inside the toilet paper dispenser. Not knowing what to do, you ran away from the whole ordeal and tried to play it cool.
+			</text>
+			<effect>paranoid</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a lovely lady sat down next to you. She asked how you were doing, but you were too shy to say words so you just grunted like a caveman. Weirded out, she took her drink and left.
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>You were playing your hand-held video game console at the bar, but then the battery died. Next time charge it before you leave the house...
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>While people watching at the bar, you saw a group of girls minding their own business. You think about approaching them, but decided that they weren't pretty enough for you anyway. Unfortunately, you accidentally said that out loud, and they all give you the dirtiest of looks.
+			</text>
+			<effect>paranoid</effect>
+		</event>
+		<event>
+			<text>Sitting alone at the bar, you just thought of a funny event that took place in the past and started laughing. However, you lost control of your butt and ended up farting too. You felt everyone's eyes upon you as you hid under your hat...
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>Playing darts by yourself, you noticed that the people next to you were terrible at the game. You decide to give them tips on their darting abilities. However, after 5 minutes of tutelage, you lost your cool and stormed off in a huff.
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>You bought flowers from the store next door to give it to m'lady. You leave briefly to buy the two of you drinks, but when you returned, you see your flowers abandoned and broken on the table. JUST LIKE YOUR HEART!!!! D:
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>You were minding your own business at the bar until a friendly looking woman sat down next to you to make some conversation. She talked about vacuums so you thought the moment was right and leaned in for a kiss. Evading your kiss, she said that she was a saleswoman and walked off in disgust.
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>Feeling pretty hungry, you decided to order some exquisite bar food. Upon completion of the food, you felt your stomach get hit with something as you had to run to the bathroom.
+			</text>
+			<effect>sick</effect>
+		</event>
+		<event>
+			<text>After closing off your tab, thinking that the bartender was cute, you left her a big tip and your number on the receipt. Thinking you sealed the deal, you were shocked and appalled when you never received a text from her for the rest of the night.
+			</text>
+			<effect>moneyDown</effect>
+		</event>
+		<event>
+			<text>Making your way to the bar, you spotted your favorite waitress walking to your direction. You throw your hand in the air for a high-five, but she didn't notice and walked passed you. You tried to not cry, but you failed spectacularly.
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Sitting outside, you overheard a woman state that she was cold. You walked over and ADAMANTLY insisted that she take your jacket to which she declined. When you got super into it, she ran inside with you following behind her. The bouncer got in the way and told you to leave her alone.
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>Minding your own business at the bar, an old man sat down next to you spouting politically incorrect statements about certain controversial topics expecting you to agree with him. It was a long and uncomfortable 20 minutes...
+			</text>
+			<effect>discontent</effect>
+		</event>
+		<event>
+			<text>You brought your pony toys with you to the bar to play with them and accidentally spilled beer on them. Especially on your favorite pony! She will forever be unclean...
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>Working on your pick-up techniques at the bar, you walked up to a woman and said "Hi". However, you maintained flawless eye contact. So much so that you were just straight up staring at her without saying anything. She left mentioning that she will never come back to this bar.
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>While playing darts, you somehow missed and broke your three darts consecutively. Feeling like a massive failure, you hid under your hat in shame.
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>Needing to drain the dragon, you made your way to the bathroom. However upon opening the door, you walked in on two young men partaking in some hard drugs. The needles kind.
+			</text>
+			<effect>discontent</effect>
+		</event>
+		<event>
+			<text>From the other end of the bar, you see one of your friends from behind. You decided to go for a surprise glomp! Once the glomp happened, it appears that the person you glomped is not the person you thought he was. Ready to die from embarrassment, you ran to the opposite side of the bar to hide.
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>Sitting at the bar, the person sitting to the left of you complains to their friends that it smells like body odor. It can't possibly be from you! You sprayed yourself with cologne and showered last week. Regardless, you are still worry that it might be you.
+			</text>
+			<effect>paranoid</effect>
+		</event>
+		<event>
+			<text>You got blinded by a flash of light aimed at your direction. Is someone taking a photo of you? Or worse: are you making an unflattering face in the background of someone else's photo? You're going to end up being a meme for sure!
+			</text>
+			<effect>paranoid</effect>
+		</event>
+		<event>
+			<text>You walked passed a group of people and noticed that they started laughing. Are they laughing at you? What did you do to deserve this judgement! You feel like everyone's eyes are on you.
+			</text>
+			<effect>paranoid</effect>
+		</event>
+		<event>
+			<text>Watching the sports game on the television, a drunk guy walked up to you and wanted to start some beef! Despite your fondness of meat, you pointed the other direction and ran away to the bathroom to hide out for a while.
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>Wanting to play fooseball, you stood by the machine and waited for somebody to join you. After a long period of waiting, you still stood there not playing the game...
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>After sneezing, somebody said "God bless you" as a response. Wanting to spark a nice intellectual debate, you replied with a "I'm atheist." The person just sighed and left. So much for your intellectual debate...
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>You saw a large group at a table with a hookah set in the center. You made your way over and demanded that they provide a puff or two like a real alpha male. However, they were extremely put off by your attitude and told you to go away.
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>Seeing a group of girls, wanting to demonstrate your higher value as a potential mating partner, you start talking about how the bouncer is a push-over and how you can beat him in a fight. However you noticed him walking by. Thinking he was going to kick your butt, you hid in the bathroom.
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>You see a muscle-bound "dude bro" preying on m'lady. Coming to save the day, you chime in with a "I don't think m'lady wants to talk to you." M'lady left you and the dude bro. Dude bro replies "Just because you can't get any doesn't mean you should be a cock block, loser."
+			</text>
+			<effect>emasculated</effect>
+		</event>
+	</bad>
+</doc>
