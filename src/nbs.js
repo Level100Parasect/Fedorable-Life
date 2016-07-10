@@ -128,7 +128,7 @@ function mainCharacter() {
                 node = nodeEv1 + level5[random].title + nodeEv2 + level5[random].text + "<br/><br/>" + eventEffect(level5[random].effect) + nodeEv3;
                 break;
         } /* END SWITCH */
-        grant.render();
+        this.render();
         genericDia(node);
     } /*END OF event */
 
@@ -443,7 +443,7 @@ function mainCharacter() {
     } /* END OF newGame */
 
     this.saveGame = function(){
-        var testObject = {
+        var mcObject = {
             energy: this.statEnergy,
 	        hunger: this.statHunger,
 	        excitement: this.statExcitement,
@@ -495,12 +495,12 @@ function mainCharacter() {
             sprite: this.sprite
         }; /* END OBJECT */
         //Puts the object into storage
-        localStorage.setItem('test', JSON.stringify(testObject));
+        localStorage.setItem('FedLifeSG', JSON.stringify(mcObject));
     } /* END OF saveGame */
 
     this.loadGame = function (optSel) {
         //Retrieves the object from storage
-        var retrievedObject = localStorage.getItem('test');
+        var retrievedObject = localStorage.getItem('FedLifeSG');
         if (retrievedObject === null) {
             alert("No saved data detected.");
         } else {
@@ -558,6 +558,8 @@ function mainCharacter() {
             //resets screen to bedroom
             this.goHome();
             this.render();
+
+            $("#mainDialog").dialog("close");
         } /* END IF */
     } /* END OF loadGame */
 }
@@ -705,6 +707,7 @@ $(window).on('load', function () {
     init();
     var currentArgNum = 0;
     var $md = $("#mainDialog");
+    var $ft = $("#footer");
     $("#footer").html(ftrAtHome);
     setTimeout(function () {
         $("#wrapper").css('visibility', 'visible');
@@ -752,7 +755,6 @@ $(window).on('load', function () {
             case "mmCont":
                 play("pp1");
                 grant.loadGame();
-                $md.dialog("close");
                 break;
             case "endGameBtn":
                 play("pp1");
@@ -963,7 +965,7 @@ $(window).on('load', function () {
         var collectables = figs + hats + weps;
         var statsHtmlTop = '<div id="overAll"><span>Stats</span><button class="exitShop" id="emd"></button><div id="tabs"><ul class="nav nav-tabs"><li><a href="#tab-1">Overall</a></li><li><a href="#tab-2">Whiteboard</a></li><li><a href="#tab-3">Bookshelf</a></li><li><a href="#tab-4">Display Wall</a></li><li><a href="#tab-5">Weapon Cache</a></li></ul><div id="tab-1" class="fixedSizedTab">';
 
-        var endFGNode = lockedNode;
+        var endFGNode = lnFG;
         var endEFNode = lockedNode;
         var endEMNode = lockedNode;
         var endIPNode = lockedNode;

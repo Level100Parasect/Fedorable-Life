@@ -387,6 +387,22 @@ img {
 	margin-right: 32px;
 }
 
+#location {
+	width: 100%; height: 100%; border: 4px solid black;
+}
+
+#content {
+	float: left; width: 80%; height: 85%; padding: 8px;
+}
+
+#sprite {
+	position: absolute; left: 50%; top: 20%; z-index: 5;
+}
+
+#sprite img {
+	width: 60%; height: 55%;
+}
+
 #hud {
 	font-family: visitor;
 	font-size: 2.5em;
@@ -1413,6 +1429,65 @@ img {
     background: url('/images/btns-spr.png') -875px -448px no-repeat;
 }
 
+#options {
+    display:  block;
+    left: 0px;
+    border: none;
+    height:  64px;
+    width: 64px;
+    background: url('/images/btns-spr.png') -939px -192px no-repeat;
+}
+
+#options:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -939px -256px no-repeat;
+}
+
+#options:active {
+    border: none;
+    background: url('/images/btns-spr.png') -939px -320px no-repeat;
+}
+
+/*--------------------------*/
+/*   Stat Screen Images     */
+/*--------------------------*/
+#uStar {
+    display:  block;
+    left: 0px;
+    border: none;
+    height:  14px;
+    width: 14px;
+    background: url('/images/btns-spr.png') -1003px 0px no-repeat;
+}
+
+#uStar:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -14px no-repeat;
+}
+
+#uStar:active {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -28px no-repeat;
+}
+
+#lStar {
+    display:  block;
+    left: 0px;
+    border: none;
+    height:  14px;
+    width: 14px;
+    background: url('/images/btns-spr.png') -1003px -42px no-repeat;
+}
+
+#lStar:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -56px no-repeat;
+}
+
+#lStar:active {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -70px no-repeat;
+}
 /*--------------------------*/
 /*   Generic Dialog Icon    */
 /*--------------------------*/

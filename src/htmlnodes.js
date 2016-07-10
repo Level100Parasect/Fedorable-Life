@@ -84,3 +84,6 @@ window.nodeStopEvent = "<div id='genericDialog'><p id='GDTitle'>Not Enough Energ
 window.nodeEv1 = "<div id='genericDialog'><p id='GDTitle'>";
 window.nodeEv2 = "</p><div><p id='gdText'>";
 window.nodeEv3 = "</p><img id='GDIcon' src='images/generic/ievent.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
+
+//locked ending nodes
+window.lnFG = '<td title="Acquire the highest amount of Euphoria by adding material items to your collection!">??? Ending:</td><td title="Acquire the highest amount of Euphoria by adding material items to your collection!"><button id="lStar"></button></td>';
