@@ -10,8 +10,8 @@ window.nodeGameEndGolden = '<div id="gameEnd"><img src="images/es/golden.png"></
 window.nodeGameEndNormal = '<div id="gameEnd"><img src="images/es/normal.png"></img><button id="egNorm" class="continueGameBtn"></button></div>';
 window.nodeGameEndWaifu = '<div id="gameEnd"><img src="images/es/waifu.png"></img><button id="egWaifu" class="continueGameBtn"></button></div>';
 
-window.nodeCreditScreen = '<div id="creditScreen"><img id="cLogo" src="/images/Logo.png"/><div><p>Game created by:</p><br/><img id="cDevLogo" src="/images/fabulous-asian-games.png"/><br/><p>Art/Programming/Design/Writing: Fabulous Asian Guy</p><br/><p>Music: reminisce by 4cat (Downloaded from Newgrounds)</p><br/><p>Sound Effects: Downloaded from freesound.org</p><br/><p>Thank you to all my friends and all the strangers on the internet who pushed me to make this game.</p><br/><br/><button class="backGameBtn" id="credCont"></button><br/><br/></div></div>';
-window.nodeStartScreen = '<div id="startScreen"><p>Version 0.01</p><img src="/images/Logo.png"/><div><button class="newGameBtn" id="mmNewGame"></button><button class="continueGameBtn" id="mmCont"></button><button class="creditsBtn" id="credits"></button></div></div>';
+window.nodeCreditScreen = '<div id="creditScreen"><img id="cLogo" src="/images/Logo.png"/><div><p>Game created by:</p><br/><img id="cDevLogo" src="/images/fabulous-asian-games.png"/><br/><p>Art/Programming/Design/Writing: Fabulous Asian Guy</p><br/><p>Music: reminisce by 4cat (Downloaded from Newgrounds)</p><br/><p>Sound Effects: Downloaded from freesound.org</p><br/><p>Thank you to all my friends and all the strangers on the internet who told me to make this game.</p><br/><br/><button class="backGameBtn" id="credCont"></button><br/><br/></div></div>';
+window.nodeStartScreen = '<div id="startScreen"><p>Version 0.012<a id="fbButton" href="https://www.facebook.com/FedorableLife/" target="_blank"></a><a id="twButton" href="https://twitter.com/NickBeardman" target="_blank"></a><a id="gpButton" href="https://plus.google.com/u/0/b/117720636938381447783/117720636938381447783/posts/p/pub" target="_blank"></a></p><img src="/images/Logo.png"/><div><button class="newGameBtn" id="mmNewGame"></button><button class="continueGameBtn" id="mmCont"></button><button class="creditsBtn" id="credits"></button></div></div>';
 
 window.nodeBlockScreen = '<div id="blockScreen"><img src="/images/Logo.png"/><br/><p>Fedorable Life is currently unavailable for this web browser. We apologize for the inconvenience, however we are planning on getting the game onto more browsers in a future update.</p></div>';
 
@@ -86,4 +86,28 @@ window.nodeEv2 = "</p><div><p id='gdText'>";
 window.nodeEv3 = "</p><img id='GDIcon' src='images/generic/ievent.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
 
 //locked ending nodes
-window.lnFG = '<td title="Acquire the highest amount of Euphoria by adding material items to your collection!">??? Ending:</td><td title="Acquire the highest amount of Euphoria by adding material items to your collection!"><button id="lStar"></button></td>';
+window.lnFG = '<td class="qTd hl" colspan="2" title="Acquire the highest amount of Euphoria by adding material items to your collection!">??? Ending:<button class="lStar"></button></td>';
+window.lnEF = '<td class="qTd hl" colspan="2" title="Remember to take a lot of photographs at conventions!">??? Ending:<button class="lStar"></button></td>';
+window.lnEM = '<td class="qTd hl" colspan="2" title="Purchase items that will improve your life.">??? Ending:<button class="lStar"></button></td>';
+window.lnIP = '<td class="qTd hl" colspan="2" title="Gym and the paleo diet is life.">??? Ending:<button class="lStar"></button></td>';
+window.lnWF = '<td class="qTd hl" colspan="2" title="And that kids is how I met your mother!">??? Ending:<button class="lStar"></button></td>';
+window.lnNM = '<td class="qTd hl" colspan="2" title="Improve your social skills at the bar.">??? Ending:<button class="lStar"></button></td>';
+window.lnGO = '<td class="qTd hl" colspan="2" title="Unlock all other endings.">??? Ending:<button class="lStar"></button></td>';
+
+//unlocked ending nodes
+window.unFG = '<td class="qTd hl" colspan="2">Fedora God Ending:<button id="vFGE" class="uStar"></button></td>';
+window.unEF = '<td class="qTd hl" colspan="2">E-Fame Ending:<button id="vEFE" class="uStar"></button></td>';
+window.unEM = '<td class="qTd hl" colspan="2">Employed Ending:<button id="vEME" class="uStar"></button></td>';
+window.unIP = '<td class="qTd hl" colspan="2">Iron Pill Ending:<button id="vIPE" class="uStar"></button></td>';
+window.unWF = '<td class="qTd hl" colspan="2">Waifu Ending:<button id="vWFE" class="uStar"></button></td>';
+window.unNM = '<td class="qTd hl" colspan="2">Normal Ending:<button id="vNME" class="uStar"></button></td>';
+window.unGO = '<td class="qTd hl" colspan="2">Golden Ending:<button id="vGOE" class="uStar"></button></td>';
+
+//end game second time
+window.unGameEndFG = '<div id="gameEnd"><img src="images/es/fedoraGod.png"></img><button id="ts" class="continueGameBtn"></button></div>';
+window.unGameEndIron = '<div id="gameEnd"><img src="images/es/iron.png"></img><button id="ts" class="continueGameBtn"></button></div>';
+window.unGameEndEmployed = '<div id="gameEnd"><img src="images/es/employed.png"></img><button id="ts" class="continueGameBtn"></button></div>';
+window.unGameEndEFame = '<div id="gameEnd"><img src="images/es/efame.png"></img><button id="ts" class="continueGameBtn"></button></div>';
+window.unGameEndGolden = '<div id="gameEnd"><img src="images/es/golden.png"></img><button id="ts" class="continueGameBtn"></button></div>';
+window.unGameEndNormal = '<div id="gameEnd"><img src="images/es/normal.png"></img><button id="ts" class="continueGameBtn"></button></div>';
+window.unGameEndWaifu = '<div id="gameEnd"><img src="images/es/waifu.png"></img><button id="ts" class="continueGameBtn"></button></div>';

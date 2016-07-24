@@ -155,12 +155,12 @@ function mainCharacter() {
     } /* END OF speak */
 
     this.booth = function () {
-        var nodeBooth = "<div id='genericDialog'><p id='GDTitle'>Booth Purchase</p><div><p id='gdText'>";
-        var random = (Math.floor(Math.random() * boothEvents.length));
-        var text = boothEvents[random].text;
-        var nodeEnd = "</p><img id='GDIcon' src='images/generic/ibooth.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
-        var itemCost = 0;
-        var pts = 0;
+        var nodeBooth = "<div id='genericDialog'><p id='GDTitle'>Booth Purchase</p><div><p id='gdText'>",
+            random = (Math.floor(Math.random() * boothEvents.length)),
+            text = boothEvents[random].text,
+            nodeEnd = "</p><img id='GDIcon' src='images/generic/ibooth.png'/></div><button class='continueGameBtn' id='emd'></button></div>",
+            itemCost = 0,
+            pts = 0;
 
         switch (this.statSocial) {
             case "Creepy":
@@ -562,6 +562,14 @@ function mainCharacter() {
             $("#mainDialog").dialog("close");
         } /* END IF */
     } /* END OF loadGame */
+
+    this.resetStatus = function() {
+        this.statStatus = 'Normal';
+        this.decayEnergy = 2;
+        this.decayHunger = 2;
+        this.decayExcitement = 2;
+        this.decaySOA = 2;
+    } /* END OF resetStatus */
 }
 function progress(percent, element) { 
 	var progressBarWidth = percent * element.width() / 100;
@@ -634,7 +642,7 @@ function statusEffect(){
     } /* END SWITCH */
     
     if(sTimer === 1) {
-        resetStatus();
+        grant.resetStatus();
     } /* END IF */
     sTimer--;
 } /* END OF statusEffect */
@@ -660,28 +668,23 @@ function checkBrowser(){
     } /* END IF */
 } /* END OF checkBrowser */
 
-function resetStatus(){
-    grant.statStatus = 'Normal';
-    grant.decayEnergy = 2;
-    grant.decayHunger = 2;
-    grant.decayExcitement = 2;
-    grant.decaySOA = 2;
-} /* END OF resetStatus */
-
 function init(){
     window.grant = new mainCharacter();
     window.timer, window.sTimer = 0;
     decay();
     grant.render();
 } /* END OF init */
+
 //Number randomizer method
 function randomizer(max){
     return Math.floor(Math.random() * max) + 1;
 } /* END OF randomizer */
+
 //Play sound method
-play = function(url) {
+function play(url) {
     new Audio("sound/"+ url + ".mp3").play();
 } /* END OF play */
+
 //Checks if inbetween method
 function between(x, min, max) {
   return x >= min && x < max;
@@ -815,6 +818,38 @@ $(window).on('load', function () {
                 play("pp1");
                 startScreen();
                 break;
+            case "vFGE":
+                play("pp1");
+                endGame(unGameEndFG);
+                break;
+            case "vEFE":
+                play("pp1");
+                endGame(unGameEndEFame);
+                break;
+            case "vEME":
+                play("pp1");
+                endGame(unGameEndEmployed);
+                break;
+            case "vIPE":
+                play("pp1");
+                endGame(unGameEndIron);
+                break;
+            case "vWFE":
+                play("pp1");
+                endGame(unGameEndWaifu);
+                break;
+            case "vNME":
+                play("pp1");
+                endGame(unGameEndNormal);
+                break;
+            case "vGOE":
+                play("pp1");
+                endGame(unGameEndGolden);
+                break;
+            case "ts":
+                play("pp1");
+                loadStats();
+                break;
         } /* END SWITCH */
     }); /* END ON CLICK MAIN DIALOG */
 
@@ -932,6 +967,10 @@ $(window).on('load', function () {
         $(this).toggleClass("highlight");
     });
 
+    $("#mainDialog").on("hover", ".hl", function () {
+        $(this).toggleClass("highlight");
+    });
+
     $("#exitArg").click(function () {
         play("pp1");
         grant.render();
@@ -943,11 +982,10 @@ $(window).on('load', function () {
     }; /* END changeStatus */
 
     function loadStats() {
-        var argWon = grant.argsWon;
-        var figs = grant.figsBought;
-        var hats = grant.fedsBought;
-        var weps = grant.wepsBought;
-        var lockedNode = '<td>??? Ending:</td><td><img src="images/misc/lockedStar.png"/></td>';
+        var argWon = grant.argsWon,
+            figs = grant.figsBought,
+            hats = grant.fedsBought,
+            weps = grant.wepsBought;
 
         //bookshelf logic
         if (figs > 25) {
@@ -965,49 +1003,49 @@ $(window).on('load', function () {
         var collectables = figs + hats + weps;
         var statsHtmlTop = '<div id="overAll"><span>Stats</span><button class="exitShop" id="emd"></button><div id="tabs"><ul class="nav nav-tabs"><li><a href="#tab-1">Overall</a></li><li><a href="#tab-2">Whiteboard</a></li><li><a href="#tab-3">Bookshelf</a></li><li><a href="#tab-4">Display Wall</a></li><li><a href="#tab-5">Weapon Cache</a></li></ul><div id="tab-1" class="fixedSizedTab">';
 
-        var endFGNode = lnFG;
-        var endEFNode = lockedNode;
-        var endEMNode = lockedNode;
-        var endIPNode = lockedNode;
-        var endWFNode = lockedNode;
-        var endNMNode = lockedNode;
-        var endGONode = lockedNode;
+        var endFGNode = lnFG,
+            endEFNode = lnEF,
+            endEMNode = lnEM,
+            endIPNode = lnIP,
+            endWFNode = lnWF,
+            endNMNode = lnNM,
+            endGONode = lnGO;
 
         if (grant.endFG) {
-            endFGNode = '<td>Fedora God Ending:</td><td><img src="images/misc/unlockedStar.png"/></td>';
+            endFGNode = unFG;
         } /* END IF */
 
         if (grant.endEFame) {
-            endEFNode = '<td>E-Fame Ending:</td><td><img src="images/misc/unlockedStar.png"/></td>';
+            endEFNode = unEF;
         } /* END IF */
 
         if (grant.endEmployed) {
-            endEMNode = '<td>Employed Ending:</td><td><img src="images/misc/unlockedStar.png"/></td>';
+            endEMNode = unEM;
         } /* END IF */
 
         if (grant.endIron) {
-            endIPNode = '<td>Iron Pill Ending:</td><td><img src="images/misc/unlockedStar.png"/></td>';
+            endIPNode = unIP;
         } /* END IF */
 
         if (grant.endWaifu) {
-            endWFNode = '<td>Waifu Ending:</td><td><img src="images/misc/unlockedStar.png"/></td>';
+            endWFNode = unWF;
         } /* END IF */
 
         if (grant.endNorm) {
-            endNMNode = '<td>Normal Ending:</td><td><img src="images/misc/unlockedStar.png"/></td>';
+            endNMNode = unNM;
         } /* END IF */
 
         if (grant.endGolden) {
-            endGONode = '<td>Golden Ending:</td><td><img src="images/misc/unlockedStar.png"/></td>';
+            endGONode = unGO;
         } /* END IF */
 
         //overall html generation
         var tab1 = '<div id="oaTable" class="tabInd"><table><tr><td>Overall Stats:</td></tr><tr><td>Collectables:</td><td>' + collectables + '/90</td><td>Times Excersized:</td><td>' + grant.timesExersized + '</td></tr><tr><td>Money Made:</td><td>$' + grant.moneyMade + '</td><td>Times Bar Hopped:</td><td>' + grant.barHopped + '</td></tr><tr><td>Money Spent:</td><td>$' + grant.moneySpent + '</td><td>Conventions Attended:</td><td>' + grant.convAttended + '</td></tr><tr><td>Times Worked:</td><td>' + grant.timesWorked + '</td>' + endFGNode + '</tr><tr><td>Times Gamed:</td><td>' + grant.timesGamed + '</td>' + endEFNode + '</tr><tr><td>Arguments Entered:</td><td>' + grant.argsEntered + '</td>' + endEMNode + '</tr><tr><td>Pictures Taken:</td><td>' + grant.picsTaken + '</td>' + endIPNode + '</tr><tr><td>Times Dieted:</td><td>' + grant.timesDieted + '</td>' + endWFNode + '</tr><tr><td>Times Socialized:</td><td>' + grant.timesSocialized + '</td>' + endNMNode + '</tr><tr><td>Social Level:</td><td>' + grant.socialSkills + '</td>' + endGONode + '</tr></table></div></div>';
 
         //argument rendering logic
-        var totalFives = Math.floor(argWon / 5);
-        var remainder = argWon % 5;
-        var argHtml = "";
+        var totalFives = Math.floor(argWon / 5),
+            remainder = argWon % 5,
+            argHtml = "";
 
         if (totalFives != 0) {
             for (i = 0; i < totalFives; i++) {
@@ -1024,14 +1062,12 @@ $(window).on('load', function () {
             argHtml += t4;
         } /* END IF */
 
-        var tab2 = '<div id="tab-2" class="fixedSizedTab"><div id="imgArg"><div><img id="argHdr" src="images/misc/sb.png"/></div><div id="argTal">' + argHtml + '</div></div></div>';
-        $("#argTal").html(argHtml);
+        var tab2 = '<div id="tab-2" class="fixedSizedTab"><div id="imgArg"><div><img id="argHdr" src="images/misc/sb.png"/></div><div id="argTal">' + argHtml + '</div></div></div>',
+            tab3 = '<div id="tab-3" class="fixedSizedTab"><img src="/images/shelf/sh' + figs + '.png"/></div>',
+            tab4 = '<div id="tab-4" class="fixedSizedTab"><img src="/images/rack/hr' + hats + '.png"/></div>',
+            tab5 = '<div id="tab-5" class="fixedSizedTab"><img src="/images/cache/wc' + weps + '.png"/></div></div></div>',
+            statsHtml = statsHtmlTop + tab1 + tab2 + tab3 + tab4 + tab5;
 
-        var tab3 = '<div id="tab-3" class="fixedSizedTab"><img src="/images/shelf/sh' + figs + '.png"/></div>';
-        var tab4 = '<div id="tab-4" class="fixedSizedTab"><img src="/images/rack/hr' + hats + '.png"/></div>';
-        var tab5 = '<div id="tab-5" class="fixedSizedTab"><img src="/images/cache/wc' + weps + '.png"/></div></div></div>';
-
-        var statsHtml = statsHtmlTop + tab1 + tab2 + tab3 + tab4 + tab5;
         statsDia(statsHtml);
     } /* END IF */
 });

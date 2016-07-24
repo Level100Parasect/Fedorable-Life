@@ -36,7 +36,7 @@ function startScreen() {
 };
 
 function endGame(node) {
-    $(dlog).dialog({ height: 380, width: 650, dialogClass: 'startScreen' }).html(node);
+    $(dlog).dialog({ height: 390, width: 650, dialogClass: 'startScreen' }).html(node);
     dlog.dialog("open");
 };
 

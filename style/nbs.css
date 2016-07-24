@@ -414,6 +414,10 @@ img {
     color: white !important;
 }
 
+#hud  > div:first-of-type {
+	text-decoration: underline;
+}
+
 #footer {
 	clear: left;
     display: block; 
@@ -506,13 +510,19 @@ img {
 	transform: translate(-50%, -50%);
 }
 
+#startScreen a {
+   margin-left: 0.2em;
+   margin-right: 0.2em;
+}
+
 #startScreen p, #blockScreen p {
-   font-family: visitor; 
+   font-family: visitor;
    font-size: 2em; 
    color: white;
-   z-index: 5; 
+   z-index: 5;
    top: 32px;
    right: 16px;
+   width: auto;
 }
 
 #blockScreen p{
@@ -841,6 +851,65 @@ img {
     background: url('/images/btns-spr.png') -459px -32px no-repeat;
 }
 
+#fbButton {
+    float: right;
+    display: block;
+    left: 0px;
+    border: none;
+    height:  32px;
+    width: 32px;
+    background: url('/images/btns-spr.png') -384px -192px no-repeat;
+}
+
+#fbButton:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -384px -224px no-repeat;
+}
+
+#fbButton:active {
+    border: none;
+    background: url('/images/btns-spr.png') -384px -256px no-repeat;
+}
+
+#twButton {
+    float: right;
+    display: block;
+    left: 0px;
+    border: none;
+    height:  32px;
+    width: 32px;
+    background: url('/images/btns-spr.png') -416px -192px no-repeat;
+}
+
+#twButton:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -416px -224px no-repeat;
+}
+
+#twButton:active {
+    border: none;
+    background: url('/images/btns-spr.png') -416px -256px no-repeat;
+}
+
+#gpButton {
+    float: right;
+    display: block;
+    left: 0px;
+    border: none;
+    height:  32px;
+    width: 32px;
+    background: url('/images/btns-spr.png') -448px -192px no-repeat;
+}
+
+#gpButton:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -448px -224px no-repeat;
+}
+
+#gpButton:active {
+    border: none;
+    background: url('/images/btns-spr.png') -448px -256px no-repeat;
+}
 
 /*--------------------------*/
 /*          Logos           */
@@ -1451,8 +1520,14 @@ img {
 /*--------------------------*/
 /*   Stat Screen Images     */
 /*--------------------------*/
-#uStar {
-    display:  block;
+.qTd {
+    width: 100%;
+}
+
+.uStar {
+    display: inline-block;
+    float: right; 
+    margin-right: 2.5em;
     left: 0px;
     border: none;
     height:  14px;
@@ -1460,18 +1535,20 @@ img {
     background: url('/images/btns-spr.png') -1003px 0px no-repeat;
 }
 
-#uStar:hover {
+.uStar:hover {
     border: none;
     background: url('/images/btns-spr.png') -1003px -14px no-repeat;
 }
 
-#uStar:active {
+.uStar:active {
     border: none;
     background: url('/images/btns-spr.png') -1003px -28px no-repeat;
 }
 
-#lStar {
-    display:  block;
+.lStar {
+    display: inline-block;
+    float: right; 
+    margin-right: 2.5em;
     left: 0px;
     border: none;
     height:  14px;
@@ -1479,12 +1556,12 @@ img {
     background: url('/images/btns-spr.png') -1003px -42px no-repeat;
 }
 
-#lStar:hover {
+.lStar:hover {
     border: none;
     background: url('/images/btns-spr.png') -1003px -56px no-repeat;
 }
 
-#lStar:active {
+.lStar:active {
     border: none;
     background: url('/images/btns-spr.png') -1003px -70px no-repeat;
 }
