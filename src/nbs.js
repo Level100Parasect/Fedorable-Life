@@ -109,7 +109,7 @@ function mainCharacter() {
 
     this.event = function() {
         var random = (Math.floor(Math.random() * level1.length));
-        //var random = 24;
+        //var random = 3;
         var node = "";
         switch(this.statSocial){
             case "Creepy":
@@ -133,12 +133,12 @@ function mainCharacter() {
     } /*END OF event */
 
     this.speak = function() {
-        var roll = randomizer(100);
-        var success = 100 - this.socialSkills;
-        var speakNode = "";
-        var speakEvent = (Math.floor(Math.random() * speakObjectGood.length));
-        var speakEff = "";
-        var effText = "";
+        var roll = randomizer(100),
+            success = 100 - this.socialSkills,
+            speakNode = "",
+            speakEvent = (Math.floor(Math.random() * speakObjectGood.length)),
+            speakEff = "",
+            effText = "";
         if (roll >= success) {
             speakEff = speakObjectGood[speakEvent].effect;
             effText = speakEffect(speakEff);
@@ -564,13 +564,18 @@ function mainCharacter() {
     } /* END OF loadGame */
 
     this.resetStatus = function() {
-        this.statStatus = 'Normal';
+        this.changeStatus('Normal');
         this.decayEnergy = 2;
         this.decayHunger = 2;
         this.decayExcitement = 2;
         this.decaySOA = 2;
     } /* END OF resetStatus */
-}
+
+    this.changeStatus = function(newStatus) {
+        this.statStatus = newStatus;
+        statusMap[newStatus].changeHtml();
+    } /* END OF changeStatus */
+} /* END OF resetStatus */
 function progress(percent, element) { 
 	var progressBarWidth = percent * element.width() / 100;
 
@@ -588,58 +593,8 @@ function checkStatus(){
 
 function statusEffect(){
     var status = grant.statStatus;
-    switch (status) {
-        case 'Tweaked':
-            grant.decayEnergy = -1;
-            break;
-        case 'Hungover':
-            grant.decayEnergy = 4;
-            break;
-        case 'Drunk':
-            grant.decayEnergy = 3;
-            break;
-        case 'In Love':
-            grant.decaySOA = -2;
-            break;
-        case 'Confident':
-            grant.decaySOA = -2;
-            grant.decayExcitement = 1;
-            break;
-        case 'Content':
-            grant.decayEnergy = 1;
-            grant.decayExcitement = 1;
-            grant.decaySOA = 1;
-            break;
-        case 'Heartbroken':
-            grant.decaySOA = 3;
-            break;
-        case 'Embarrassed':
-            grant.decayExcitement = 3;
-            break;
-        case 'Emasculated':
-            grant.decaySOA = 4;
-            grant.decayExcitement = 3;
-            break;
-        case 'Paranoid':
-            grant.decayEnergy = 3;
-            grant.decayExcitement = 3;
-            break;
-        case 'Discontent':
-            grant.decayEnergy = 3;
-            grant.decayExcitement = 3;
-            grant.decaySOA = 3;
-            break;
-        case 'Sick':
-            grant.decayEnergy = 3;
-            grant.decayHunger = 3;
-            break;
-        case 'Euphoric':
-            grant.decayEnergy = -4;
-            grant.decayHunger = -4;
-            grant.decayExcitement = -4;
-            grant.decaySOA = -4;
-            break;
-    } /* END SWITCH */
+    statusMap[status].effect();
+    statusMap[status].changeHtml();
     
     if(sTimer === 1) {
         grant.resetStatus();
@@ -673,7 +628,99 @@ function init(){
     window.timer, window.sTimer = 0;
     decay();
     grant.render();
+    objectLoader();
 } /* END OF init */
+
+function cost(moneyNeeded) {
+    var proceed = false;
+    if (moneyNeeded > grant.statMoney) {
+        grant.statAccomplishment -= 10;
+        grant.render();
+        $("#mainDialog").dialog("close");
+        setTimeout(function () {
+            genericDia(nodeNoMoney);
+        }, 500);
+    } else {
+        grant.statMoney -= moneyNeeded;
+        grant.moneySpent += moneyNeeded;
+        proceed = true;
+    }
+    return proceed;
+}
+
+function objectLoader(){
+    //item objects
+    function item(name, money, effect) {
+        this.name = name;
+        this.money = money;
+        this.effect = effect;
+        this.purchase = function () { if (cost(this.money)) { this.effect(); } else { play("pp1"); } };
+    }
+    window.itemMap = {};
+    window.itemArray = [];
+
+    itemArray[0] = new item("item1", 2, function () { grant.statHunger += 2; grant.statEuphoria += 1; play("cr1"); });
+    itemArray[1] = new item("item2", 5, function () { grant.statHunger += 8; play("cr1"); });
+    itemArray[2] = new item("item3", 8, function () { grant.statHunger += 15; play("cr1"); });
+    itemArray[3] = new item("item4", 2, function () { grant.statEnergy += 2; play("cr1"); });
+    itemArray[4] = new item("item5", 6, function () { grant.statEnergy += 10; if (randomizer(3) === 1) { grant.changeStatus('Tweaked'); } play("cr1"); });
+    itemArray[5] = new item("item6", 15, function () { grant.statEnergy += 15; grant.statEuphoria += 3; play("cr1"); });
+    itemArray[6] = new item("item7", 5, function () { grant.statExcitement += 3; grant.statAccomplishment += 3; play("cr1"); });
+    itemArray[7] = new item("item8", 15, function () { grant.statExcitement += 10; grant.statAccomplishment += 10; play("cr1"); });
+    itemArray[8] = new item("item9", 40, function () { grant.statExcitement += 25; grant.statAccomplishment += 25; grant.statEuphoria += 5; play("cr1"); });
+    itemArray[9] = new item("item10", 10, function () { grant.statEuphoria += 50; grant.fedsBought++; play("cr1"); });
+    itemArray[10] = new item("item11", 20, function () { grant.statEuphoria += 100; grant.figsBought++; play("cr1"); });
+    itemArray[11] = new item("item12", 45, function () { grant.statEuphoria += 250; grant.wepsBought++; play("cr1"); });
+    itemArray[12] = new item("item13", 250, function () { grant.secretEndingItem1 = true; play("cr1"); });
+    itemArray[13] = new item("item14", 500, function () { grant.secretEndingItem2 = true; play("cr1"); });
+    itemArray[14] = new item("item15", 1000, function () { grant.secretEndingItem3 = true; play("cr1"); });
+    itemArray[15] = new item("item16", 5, function () { grant.socialSkills++; play("cr1"); });
+    itemArray[16] = new item("item17", 15, function () { grant.timesDieted++; grant.statEnergy += 3; grant.statEuphoria += 5; play("cr1"); });
+    itemArray[17] = new item("item18", 20, function () { grant.resetStatus(); play("cr1"); });
+
+    for(i = 0; i < itemArray.length; i++) {
+        var itemObj = itemArray[i];
+        var mapKey = itemArray[i].name;
+        itemMap[mapKey] = itemObj;
+    }
+
+    //loads status effects
+    function status(name, style, timer, tooltip, effect) {
+        this.name = name;
+        this.style = style;
+        this.timer = timer;
+        this.tooltip = tooltip;
+        this.effect = effect;
+        this.changeHtml = function () { $("#status").prop('title', this.tooltip).css('color', this.style); }
+    }
+
+    window.statusMap = [];
+    window.statusArray = [];
+    var white = "white";
+    var green = "#2ECC71";
+    var red = "#E74C3C";
+    statusArray[0] = new status('Normal', white, null, "You are normal. Kinda...", function () { grant.resetStatus(); });
+    statusArray[1] = new status('Tweaked', green, 5, "Energy+", function () { grant.decayEnergy = -1; });
+    statusArray[2] = new status('Hungover', red, 10, "Energy--", function () { grant.decayEnergy = 4; });
+    statusArray[3] = new status('Drunk', red, 10, "Energy-", function () { grant.decayEnergy = 3; });
+    statusArray[4] = new status('In Love', green, 5, "Accomplishment++", function () { grant.decaySOA = -2; });
+    statusArray[5] = new status('Confident', green, 15, "Accomplishment++, Excitement+", function () { grant.decaySOA = -2; grant.decayExcitement = 1; });
+    statusArray[6] = new status('Content', green, 15, "Energy+, Accomplishment+, Excitement+", function () { grant.decayEnergy = 1; grant.decaySOA = 1; grant.decayExcitement = 1; });
+    statusArray[7] = new status('Heartbroken', red, 15, "Accomplishment-", function () { grant.decaySOA = 3; });
+    statusArray[8] = new status('Embarrassed', red, 5, "Excitement-", function () { grant.decayExcitement = 3; });
+    statusArray[9] = new status('Emasculated', red, 15, "Accomplishment--, Excitement-", function () { grant.decaySOA = 4; grant.decayExcitement = 3; });
+    statusArray[10] = new status('Paranoid', red, 10, "Energy-, Accomplishment-", function () { grant.decayEnergy = 3; grant.decayExcitement = 3; });
+    statusArray[11] = new status('Discontent', red, 15, "Energy-, Accomplishment-, Excitement-", function () { grant.decayEnergy = 3; grant.decaySOA = 3; grant.decayExcitement = 3; });
+    statusArray[12] = new status('Sick', red, 15, "Energy-, Hunger-", function () { grant.decayEnergy = 3; grant.decayHunger = 3; });
+    statusArray[13] = new status('Euphoric', green, 15, "All++", function () { grant.decayEnergy = -4; grant.decayHunger = -4; grant.decayExcitement = -4; grant.decaySOA = -4; });
+    statusArray[14] = new status('Dead Inside', red, 15, "All-", function () { grant.decayEnergy = 3; grant.decayHunger = 3; grant.decayExcitement = 3; grant.decaySOA = 3; });
+
+    for(i = 0; i < statusArray.length; i++) {
+        var statusObj = statusArray[i];
+        var mapKey = statusArray[i].name;
+        statusMap[mapKey] = statusObj;
+    }
+} /* END OF objectLoader */
 
 //Number randomizer method
 function randomizer(max){
@@ -967,7 +1014,15 @@ $(window).on('load', function () {
         $(this).toggleClass("highlight");
     });
 
-    $("#mainDialog").on("hover", ".hl", function () {
+    $md.on("click", "#shopList", function (event) {
+        var targetId = event.target.id;
+        if(targetId !== "emd"){
+            itemMap[targetId].purchase();
+            grant.render();
+        }
+    });
+
+    $md.on("hover", ".hl", function () {
         $(this).toggleClass("highlight");
     });
 
@@ -976,10 +1031,6 @@ $(window).on('load', function () {
         grant.render();
         $("#argument").dialog("close");
     });
-
-    function changeStatus(newStatus) {
-        grant.statStatus = newStatus;
-    }; /* END changeStatus */
 
     function loadStats() {
         var argWon = grant.argsWon,

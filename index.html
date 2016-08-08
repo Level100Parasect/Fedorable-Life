@@ -15,7 +15,6 @@
 		<link href="style/nbs.css"  rel="stylesheet" type="text/css"/>
 		
 		<script src="src/nbs.js" type="text/javascript"></script>
-		<script src="src/shop.js" type="text/javascript"></script>
 		<script src="src/dialog.js" type="text/javascript"></script>
         <script src="src/argument.js" type="text/javascript"></script>
         <script src="src/speak.js" type="text/javascript"></script>
@@ -25,36 +24,48 @@
 	<body>
 		<div id="wrapper">
 			<div id="hud">
-                <div>Needs:</div><br/>
-				Energy:</br>
-				<div class="vzuui-progresswrap">  
-					<div class="vzuui-progressBar" id="energy"><div></div></div>   
-				</div>
-				</br></br>
-				Hunger:</br>
-				<div class="vzuui-progresswrap">  
-					<div class="vzuui-progressBar" id="hunger"><div></div></div>   
-				</div>
-				</br></br>
-				"Excitement":</br>
-				<div class="vzuui-progresswrap">
-					<div class="vzuui-progressBar" id="excitement"><div></div></div>   
-				</div>
-				</br></br>
-				Sense of</br>
-				Accomplishment:</br>
-				<div class="vzuui-progresswrap">  
-					<div class="vzuui-progressBar" id="accomplishment"><div></div></div>   
-				</div>
-				</br></br>
-				Euphoria:</br>
-				<span id="euphoria"></span></br></br>
-                Social Skills:</br>
-				<span id="social"></span></br></br>
-                Status:</br>
-				<span id="status"></span></br></br>
-				Money:</br>
-				$<span id="money"></span></br>
+                <div>Needs:</div>
+                <div class="needs">
+				    <div>Energy:</div>
+				    <div class="vzuui-progresswrap">  
+					    <div class="vzuui-progressBar" id="energy"><div></div></div>   
+				    </div>
+                </div>
+                <div class="needs">
+				    <div>Hunger:</div>
+				    <div class="vzuui-progresswrap">
+					    <div class="vzuui-progressBar" id="hunger"><div></div></div>   
+				    </div>
+                </div>
+                <div class="needs">
+				    <div>"Excitement":</div>
+				    <div class="vzuui-progresswrap">
+					    <div class="vzuui-progressBar" id="excitement"><div></div></div>   
+				    </div>
+                </div>
+                <div class="needs">
+				    <div>Sense of</br>
+				    Accomplishment:</div>
+				    <div class="vzuui-progresswrap">  
+					    <div class="vzuui-progressBar" id="accomplishment"><div></div></div>   
+				    </div>
+                </div>
+                <div class="needs">
+				    <div>Euphoria:</div>
+				    <span id="euphoria"></span>
+                </div>
+                <div class="needs">
+                    <div>Social Skills:</div>
+				    <span id="social"></span>
+                </div>
+                <div class="needs">
+                    <div>Status:</div>
+				    <span id="status"></span>
+                </div>
+                <div class="needs">
+				    <div>Money:</div>
+				    $<span id="money"></span>
+                </div>
 			</div>
 			<div id="content">
                 <div id="sprite"><img src="images/nb/sprite-bedroom.png"></img></div>

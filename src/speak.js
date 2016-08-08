@@ -5,7 +5,7 @@ speakEffect = function (effect) {
     var text = '';
     switch (effect) {
         case 'excitementUp':
-            grant.statHunger += 10;
+            grant.statExcitement += 10;
             text = "<br/><br/>You have recovered 10 excitement";
             break;
         case 'hungerUp':
@@ -25,15 +25,15 @@ speakEffect = function (effect) {
             text = "<br/><br/>You have gained $10";
             break;
         case 'inLove':
-            grant.statStatus = 'In Love';
+            grant.changeStatus('In Love');
             text = "<br/><br/>You have fallen in love (++Accomplishment)";
             break;
         case 'content':
-            grant.statStatus = 'Content';
+            grant.changeStatus('Content');
             text = "<br/><br/>You are now content (+Energy, +Excitement, +Accomplishment)";
             break;
         case 'confident':
-            grant.statStatus = 'Confident';
+            grant.changeStatus('Confident');
             text = "<br/><br/>You are feeling confident (+Excitement, ++Accomplishment)";
             break;
         case 'hatPlus':
@@ -57,27 +57,27 @@ speakEffect = function (effect) {
             text = "<br/><br/>You have lost $10";
             break;
         case 'heartbroken':
-            grant.statStatus = 'Heartbroken';
+            grant.changeStatus('Heartbroken');
             text = "<br/><br/>Your heart has shattered (-Accomplishment)";
             break;
         case 'embarrassed':
-            grant.statStatus = 'Embarrassed';
+            grant.changeStatus('Embarrassed');
             text = "<br/><br/>You feel embarrassed (-Excitement)";
             break;
         case 'emasculated':
-            grant.statStatus = 'Emasculated';
+            grant.changeStatus('Emasculated');
             text = "<br/><br/>Your have gotten emasculated (-Excitement, --Accomplishment)";
             break;
         case 'paranoid':
-            grant.statStatus = 'Paranoid';
+            grant.changeStatus('Paranoid');
             text = "<br/><br/>You feel paranoid (-Energy, -Excitement)";
             break;
         case 'discontent':
-            grant.statStatus = 'Discontent';
+            grant.changeStatus('Discontent');
             text = "<br/><br/>You feel discontent (-Energy, -Excitement, -Accomplishment)";
             break;
         case 'sick':
-            grant.statStatus = 'Sick';
+            grant.changeStatus('Sick');
             text = "<br/><br/>You feel discontent (-Energy, -Hunger)";
             break;
         default:
