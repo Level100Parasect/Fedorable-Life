@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Fedorable Life</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="favicon.ico" />
-        <meta name="description" content="Fedorable Life">
-        <meta name="author" content="Louis Arcilla">
+        <meta name="description" content="Fedorable Life is the world's first and only text based life simulation game where players live the life of a fedora wielding neckbeard. Play the official game here">
+		<meta name="robots" content="NOODP">
+        <meta name="author" content="Fabulous Asian Guy">
+		<link rel="canonical" href="fedorable.life" />
+
+		<meta property="og:url" content="fedorable.life">
+		<meta property="og:image" content="http://fedorable.life/images/misc/fedorable-life-profilepic1.png">
+		<meta property="og:description" content="Fedorable Life is the world's first and only text based life simulation game where players live the life of a fedora wielding neckbeard.">
+		<meta property="og:title" content="Fedorable Life">
+		
+		<meta itemprop="name" content="fedorable.life">
+		<meta itemprop="description" content="Fedorable Life is the world's first and only text based life simulation game where players live the life of a fedora wielding neckbeard.">
+		<meta itemprop="image" content="http://fedorable.life/images/misc/fedorable-life-profilepic1.png">
+		
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="fedorable.life">
+		<meta name="twitter:title" content="Fedorable Life">
+		<meta name="twitter:description" content="Fedorable Life is the world's first and only text based life simulation game where players live the life of a fedora wielding neckbeard.">
+		<meta name="twitter:image" content="http://fedorable.life/images/misc/fedorable-life-profilepic1.png">
 
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" />
@@ -44,7 +61,7 @@
 				    </div>
                 </div>
                 <div class="needs">
-				    <div>Sense of</br>
+				    <div>Sense of<br>
 				    Accomplishment:</div>
 				    <div class="vzuui-progresswrap">  
 					    <div class="vzuui-progressBar" id="accomplishment"><div></div></div>   
@@ -68,44 +85,44 @@
                 </div>
 			</div>
 			<div id="content">
-                <div id="sprite"><img src="images/nb/sprite-bedroom.png"></img></div>
-				<img id="location" src="images/bg/BackgroundRoom.png"></img>
+                <div id="sprite"><img src="images/nb/sprite-bedroom.png" alt=""/></div>
+				<img id="location" src="images/bg/BackgroundRoom.png" alt=""/>
 			</div>
 			<div id="footer"></div>
 		</div>
+		
+		<div id="argument">
+			<div id="webHeader">
+				<div id="logo"></div>
+			</div>
+			<div class="dWrapper">
+				<div id="argTop">
+					<div id="argEvent"></div>
+					<hr/>
+					<div id="ansA">
+						<p class="argHdr">Response 1:</p>
+						<p id="r1"></p>
+					</div>
+					<hr class="splitter"/>
+					<div id="ansB">
+						<p  class="argHdr">Response 2:</p>
+						<p id="r2"></p>
+					</div>
+				</div>
+				<div id="argBottom">
+					<div id="argResponse"></div><br/>
+					<div id="argResponseScore"></div>
+					<button id="exitArg" class="continueGameBtn"></button>
+				</div>
+			</div>
+		</div>
+
+		<div id="mainDialog"></div>
+
+		<div>
+			<audio src="sound/test-music.mp3" autoplay="" loop="">
+				<p>Your browser does not support the audio element </p>
+			</audio>
+		</div>
 	</body>
 </html>
-
-<div id="argument">
-    <div id="webHeader">
-        <div id="logo"></div>
-    </div>
-    <div class="dWrapper">
-	    <div id="argTop">
-		    <div id="argEvent"></div>
-            <hr/>
-            <div id="ansA">
-                <p class="argHdr">Response 1:</p>
-		        <p id="r1"></p>
-            </div>
-            <hr class="splitter"/>
-            <div id="ansB">
-                <p  class="argHdr">Response 2:</p>
-		        <p id="r2"></p>
-            </div>
-	    </div>
-	    <div id="argBottom">
-            <div id="argResponse"></div><br/>
-            <div id="argResponseScore"></div>
-		    <button id="exitArg" class="continueGameBtn"></button>
-	    </div>
-    </div>
-</div>
-
-<div id="mainDialog"></div>
-
-<div>
-    <audio src="sound/test-music.mp3" autoplay="" loop="">
-	    <p>Your browser does not support the audio element </p>
-    </audio>
-</div>

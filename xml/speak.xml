@@ -251,6 +251,27 @@
 			</text>
 			<effect>content</effect>
 		</event>
+		<!--
+		<event>
+			<text>You ran into a group of coworkers at the bar and chatted with them for a while, mainly venting about work and making fun of people. They bought you a drink before they went on their way.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>You ran into a philosophy professor you had in college at the bar and chatted for a while.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>You ran into someone you knew from high school that you used to have a crush on. You bought her a drink as the two of you caught up for a while. When she had to leave, she added you on MyFace and asked you to keep in touch.
+			</text>
+			<effect>inLove</effect>
+		</event>
+		-->
 	</good>
 	<bad>
 		<event>

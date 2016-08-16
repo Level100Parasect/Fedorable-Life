@@ -654,29 +654,29 @@ function objectLoader(){
         this.name = name;
         this.money = money;
         this.effect = effect;
-        this.purchase = function () { if (cost(this.money)) { this.effect(); } else { play("pp1"); } };
+        this.purchase = function () { if (cost(this.money)) { this.effect(); play("cr1"); } else { play("pp1"); } };
     }
     window.itemMap = {};
     window.itemArray = [];
 
-    itemArray[0] = new item("item1", 2, function () { grant.statHunger += 2; grant.statEuphoria += 1; play("cr1"); });
-    itemArray[1] = new item("item2", 5, function () { grant.statHunger += 8; play("cr1"); });
-    itemArray[2] = new item("item3", 8, function () { grant.statHunger += 15; play("cr1"); });
-    itemArray[3] = new item("item4", 2, function () { grant.statEnergy += 2; play("cr1"); });
-    itemArray[4] = new item("item5", 6, function () { grant.statEnergy += 10; if (randomizer(3) === 1) { grant.changeStatus('Tweaked'); } play("cr1"); });
-    itemArray[5] = new item("item6", 15, function () { grant.statEnergy += 15; grant.statEuphoria += 3; play("cr1"); });
-    itemArray[6] = new item("item7", 5, function () { grant.statExcitement += 3; grant.statAccomplishment += 3; play("cr1"); });
-    itemArray[7] = new item("item8", 15, function () { grant.statExcitement += 10; grant.statAccomplishment += 10; play("cr1"); });
-    itemArray[8] = new item("item9", 40, function () { grant.statExcitement += 25; grant.statAccomplishment += 25; grant.statEuphoria += 5; play("cr1"); });
-    itemArray[9] = new item("item10", 10, function () { grant.statEuphoria += 50; grant.fedsBought++; play("cr1"); });
-    itemArray[10] = new item("item11", 20, function () { grant.statEuphoria += 100; grant.figsBought++; play("cr1"); });
-    itemArray[11] = new item("item12", 45, function () { grant.statEuphoria += 250; grant.wepsBought++; play("cr1"); });
-    itemArray[12] = new item("item13", 250, function () { grant.secretEndingItem1 = true; play("cr1"); });
-    itemArray[13] = new item("item14", 500, function () { grant.secretEndingItem2 = true; play("cr1"); });
-    itemArray[14] = new item("item15", 1000, function () { grant.secretEndingItem3 = true; play("cr1"); });
-    itemArray[15] = new item("item16", 5, function () { grant.socialSkills++; play("cr1"); });
-    itemArray[16] = new item("item17", 15, function () { grant.timesDieted++; grant.statEnergy += 3; grant.statEuphoria += 5; play("cr1"); });
-    itemArray[17] = new item("item18", 20, function () { grant.resetStatus(); play("cr1"); });
+    itemArray[0] = new item("item1", 2, function () { grant.statHunger += 2; grant.statEuphoria += 1; });
+    itemArray[1] = new item("item2", 5, function () { grant.statHunger += 8; });
+    itemArray[2] = new item("item3", 8, function () { grant.statHunger += 15; });
+    itemArray[3] = new item("item4", 2, function () { grant.statEnergy += 2; });
+    itemArray[4] = new item("item5", 6, function () { grant.statEnergy += 10; if (randomizer(3) === 1) { grant.changeStatus('Tweaked'); } });
+    itemArray[5] = new item("item6", 15, function () { grant.statEnergy += 15; grant.statEuphoria += 3; });
+    itemArray[6] = new item("item7", 5, function () { grant.statExcitement += 3; grant.statAccomplishment += 3; });
+    itemArray[7] = new item("item8", 15, function () { grant.statExcitement += 10; grant.statAccomplishment += 10; });
+    itemArray[8] = new item("item9", 40, function () { grant.statExcitement += 25; grant.statAccomplishment += 25; grant.statEuphoria += 5; });
+    itemArray[9] = new item("item10", 10, function () { grant.statEuphoria += 50; grant.fedsBought++; });
+    itemArray[10] = new item("item11", 20, function () { grant.statEuphoria += 100; grant.figsBought++; });
+    itemArray[11] = new item("item12", 45, function () { grant.statEuphoria += 250; grant.wepsBought++; });
+    itemArray[12] = new item("item13", 250, function () { grant.secretEndingItem1 = true; });
+    itemArray[13] = new item("item14", 500, function () { grant.secretEndingItem2 = true; });
+    itemArray[14] = new item("item15", 1000, function () { grant.secretEndingItem3 = true; });
+    itemArray[15] = new item("item16", 5, function () { grant.socialSkills++; });
+    itemArray[16] = new item("item17", 15, function () { grant.timesDieted++; grant.statEnergy += 3; grant.statEuphoria += 5; });
+    itemArray[17] = new item("item18", 20, function () { grant.resetStatus(); });
 
     for(i = 0; i < itemArray.length; i++) {
         var itemObj = itemArray[i];
@@ -1031,7 +1031,19 @@ $(window).on('load', function () {
         grant.render();
         $("#argument").dialog("close");
     });
-
+    /*
+    $(document).keypress(function(e) {
+        if((e.which === 13) || (e.which === 32) || (e.which === 39) || (e.which === 27)) {
+            var inMenu = $(".ui-dialog").is(":visible");
+            if(inMenu){
+                //this finds all of them, but the attr only grabs the first id. Need to error handle
+                var myVar = $("#mainDialog").find('.continueGameBtn, .exitEvnt, .exitShop');
+                var action = $(myVar).attr('id');
+                actionMap[action].effect();
+            }
+        }
+    });
+    */
     function loadStats() {
         var argWon = grant.argsWon,
             figs = grant.figsBought,
