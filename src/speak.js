@@ -78,11 +78,13 @@ speakEffect = function (effect) {
             break;
         case 'sick':
             grant.changeStatus('Sick');
-            text = "<br/><br/>You feel discontent (-Energy, -Hunger)";
+            text = "<br/><br/>You feel sick (-Energy, -Hunger)";
             break;
         default:
             break;
     }
+    grant.statEnergy -= 3;
+    grant.statHunger -= 3;
     grant.render();
     return text;
 };

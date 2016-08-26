@@ -46,7 +46,7 @@ speakArray[14] = new speak('embarrassed', "<br/><br/>You feel embarrassed (-Exci
 speakArray[15] = new speak('emasculated', "<br/><br/>Your have gotten emasculated (-Excitement, --Accomplishment)", function () { grant.changeStatus('Emasculated'); });
 speakArray[16] = new speak('paranoid', "<br/><br/>You feel paranoid (-Energy, -Excitement)", function () { grant.changeStatus('Paranoid'); });
 speakArray[17] = new speak('discontent', "<br/><br/>You feel discontent (-Energy, -Excitement, -Accomplishment)", function () { grant.changeStatus('Discontent'); });
-speakArray[17] = new speak('sick', "<br/><br/>You feel discontent (-Energy, -Hunger)", function () { grant.changeStatus('Sick'); });
+speakArray[17] = new speak('sick', "<br/><br/>You feel sick (-Energy, -Hunger)", function () { grant.changeStatus('Sick'); });
 
 function speak(name, text, effect) {
     this.name = name;

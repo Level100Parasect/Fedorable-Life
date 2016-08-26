@@ -109,7 +109,7 @@ function mainCharacter() {
 
     this.event = function() {
         var random = (Math.floor(Math.random() * level1.length));
-        //var random = 3;
+        //var random = 26;
         var node = "";
         switch(this.statSocial){
             case "Creepy":
@@ -128,11 +128,10 @@ function mainCharacter() {
                 node = nodeEv1 + level5[random].title + nodeEv2 + level5[random].text + "<br/><br/>" + eventEffect(level5[random].effect) + nodeEv3;
                 break;
         } /* END SWITCH */
-        this.render();
         genericDia(node);
     } /*END OF event */
 
-    this.speak = function() {
+    this.speak = function () {
         var roll = randomizer(100),
             success = 100 - this.socialSkills,
             speakNode = "",
@@ -326,21 +325,21 @@ function mainCharacter() {
                 } /* END IF */
                 break;
             case "bar":
-                if (randomizer(15) === 15) {
+                this.statEnergy -= 4;
+                this.statHunger -= 2;
+                if (randomizer(20) === 20) {
                     genericDia(nodePoolEvnt);
-                    this.statEnergy -= 2;
                     this.statAccomplishment += 10;
                     this.statExcitement += 10;
                     this.paid(50);
                 } else {
-                    this.statEnergy -= 2;
                     this.statAccomplishment += 5;
                     this.statExcitement += 5;
                 } /* END IF */
                 break;
             case "conv":
                 play("gm1");
-                if (randomizer(30) === 30) {
+                if (randomizer(40) === 40) {
                     genericDia(nodeGameConv);
                     this.paid(150);
                 } /* END IF */
@@ -348,6 +347,10 @@ function mainCharacter() {
                 this.render();
         } /* END IF */
     } /* END OF game */
+
+    this.changeNBSprite = function() {
+        $("#sprite img").attr("src", "images/nb/" + this.sprite + "-bedroom.png");
+    }
 
     //Resets all variables for being at home
     this.goHome = function(){
@@ -372,7 +375,7 @@ function mainCharacter() {
     //Resets all variables for being at convention
     this.goConv = function(){
         $("#location").attr("src", "images/bg/BackgroundConvention.png");
-        $("#sprite img").attr("src", "images/nb/" + this.sprite + "-convention1.png");
+        $("#sprite img").attr("src", "images/nb/" + this.sprite + "-convention.png");
         $("#footer").html(ftrAtConv);
         this.convAttended++;
         this.atConv = true;
@@ -575,7 +578,16 @@ function mainCharacter() {
         this.statStatus = newStatus;
         statusMap[newStatus].changeHtml();
     } /* END OF changeStatus */
-} /* END OF resetStatus */
+
+    this.openOptions = function () {
+        var optionsNode = '<div id="travelDia"><table class="optionsTable"><tr><td id="optionsTableHeader">Options</td></tr><tr><td>Mute Music</td><td><button id="muteMusic" class="mute"></button></td></tr><tr><td>Mute Sounds</td><td><button id="muteSound" class="mute"></button></td></tr><tr><td>Switch Neckbeard</td><td><select id="changeNB"><option value="sprite">Nick M. Beardman</option>';
+        if (this.statEuphoria >= 1000) {
+            optionsNode += '<option value="sprite2">Fred "Murdermaster" Wilhelm</option>';
+        }
+        optionsNode += '</select></td></tr></table><br><button class="backGameBtn" id="emd"></button></div>';
+        return optionsNode;
+    }
+} /* END OF mainCharacter */
 function progress(percent, element) { 
 	var progressBarWidth = percent * element.width() / 100;
 
@@ -625,7 +637,9 @@ function checkBrowser(){
 
 function init(){
     window.grant = new mainCharacter();
-    window.timer, window.sTimer = 0;
+    window.timer;
+    window.sTimer = 0;
+    window.sfx = true;
     decay();
     grant.render();
     objectLoader();
@@ -729,7 +743,9 @@ function randomizer(max){
 
 //Play sound method
 function play(url) {
-    new Audio("sound/"+ url + ".mp3").play();
+    if(sfx){
+        new Audio("sound/"+ url + ".mp3").play();
+    }
 } /* END OF play */
 
 //Checks if inbetween method
@@ -793,10 +809,6 @@ $(window).on('load', function () {
             case "ngScreen3":
                 play("pp1");
                 $md.html(nodeNGScreen4);
-                break;
-            case "ngScreen4":
-                play("pp1");
-                $md.html(nodeNGScreen5);
                 break;
             case "credCont":
                 play("pp1");
@@ -897,6 +909,19 @@ $(window).on('load', function () {
                 play("pp1");
                 loadStats();
                 break;
+            case "muteMusic":
+                var music = document.getElementById("music");
+                var button = $("#muteMusic");
+                music.muted = !music.muted;
+                play("pp1");
+                music.muted ? button.attr("class", "unmute") : button.attr("class", "mute");
+                break;
+            case "muteSound":
+                var button = $("#muteSound");
+                sfx = !sfx;
+                play("pp1");
+                sfx ? button.attr("class", "mute") : button.attr("class", "unmute");
+                break;
         } /* END SWITCH */
     }); /* END ON CLICK MAIN DIALOG */
 
@@ -915,6 +940,10 @@ $(window).on('load', function () {
             case "travel":
                 play("pp1");
                 travelDia(travel);
+                break;
+            case "options":
+                play("pp1");
+                travelDia(grant.openOptions());
                 break;
             case "game":
                 if (grant.atConv) {
@@ -1007,6 +1036,8 @@ $(window).on('load', function () {
             grant.statAccomplishment -= accPts;
         }
         loadResponse(currentArgNum, isCorrect);
+        grant.statEnergy -= 3;
+        grant.statHunger -= 3;
         $(this).removeClass("correct");
         $("#argTop").hide();
         $("#argBottom").show();
@@ -1016,7 +1047,7 @@ $(window).on('load', function () {
 
     $md.on("click", "#shopList", function (event) {
         var targetId = event.target.id;
-        if(targetId !== "emd"){
+        if (targetId !== "emd") {
             itemMap[targetId].purchase();
             grant.render();
         }
@@ -1026,6 +1057,11 @@ $(window).on('load', function () {
         $(this).toggleClass("highlight");
     });
 
+    $md.on("change", "#changeNB", function () {
+        grant.sprite = $('#changeNB').val();
+        grant.changeNBSprite();
+    });
+
     $("#exitArg").click(function () {
         play("pp1");
         grant.render();
@@ -1033,15 +1069,15 @@ $(window).on('load', function () {
     });
     /*
     $(document).keypress(function(e) {
-        if((e.which === 13) || (e.which === 32) || (e.which === 39) || (e.which === 27)) {
-            var inMenu = $(".ui-dialog").is(":visible");
-            if(inMenu){
-                //this finds all of them, but the attr only grabs the first id. Need to error handle
-                var myVar = $("#mainDialog").find('.continueGameBtn, .exitEvnt, .exitShop');
-                var action = $(myVar).attr('id');
-                actionMap[action].effect();
-            }
-        }
+    if((e.which === 13) || (e.which === 32) || (e.which === 39) || (e.which === 27)) {
+    var inMenu = $(".ui-dialog").is(":visible");
+    if(inMenu){
+    //this finds all of them, but the attr only grabs the first id. Need to error handle
+    var myVar = $("#mainDialog").find('.continueGameBtn, .exitEvnt, .exitShop');
+    var action = $(myVar).attr('id');
+    actionMap[action].effect();
+    }
+    }
     });
     */
     function loadStats() {

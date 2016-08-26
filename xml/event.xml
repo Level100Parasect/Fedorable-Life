@@ -148,6 +148,18 @@
 				<effect>za1</effect>
 			</event>
 			<event>
+				<title>Free Food</title>
+				<text>There was an announcement on the speakers saying that the food trucks are serving free food as a promotion for the day. Making your way to the back of the line, you waited patiently until you were able to order and enjoy your food.
+				</text>
+				<effect>ff1</effect>
+			</event>
+			<event>
+				<title>Anime Viewing Session</title>
+				<text>There was a viewing session for the first episode of a new anime that has yet to be released. Always a fan of new anime, you sat among the audience and enjoyed the exhilarating fight scenes and fan service.
+				</text>
+				<effect>avs1</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
 				</text>
@@ -301,6 +313,18 @@
 				<text>There was an interactive game where participants simulate whether or not they would survive a zombie apocalypse. Taking part of the game, you unfortunately had a bad starting point and got zombified early on. However you got to take down a few survivors.
 				</text>
 				<effect>za2</effect>
+			</event>
+			<event>
+				<title>Free Food</title>
+				<text>There was an announcement on the speakers saying that the food trucks are serving free food as a promotion for the day. Since the line was long, you conversed with the others in line to kill time.
+				</text>
+				<effect>ff2</effect>
+			</event>
+			<event>
+				<title>Anime Viewing Session</title>
+				<text>There was a viewing session for the first episode of a new anime that has yet to be released. After viewing the anime, you discussed your favorite scenes with the person sitting next to you.
+				</text>
+				<effect>avs2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -458,6 +482,18 @@
 				<effect>za3</effect>
 			</event>
 			<event>
+				<title>Free Food</title>
+				<text>There was an announcement on the speakers saying that the food trucks are serving free food as a promotion for the day. While waiting in line, you conversed with those around you as well as cosplayers who walked by.
+				</text>
+				<effect>ff3</effect>
+			</event>
+			<event>
+				<title>Anime Viewing Session</title>
+				<text>There was a viewing session for the first episode of a new anime that has yet to be released. After viewing the anime, you discussed your favorite scenes with the host of the event. The host ended up giving you some free swag!
+				</text>
+				<effect>avs3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -611,6 +647,18 @@
 				<text>There was an interactive game where participants simulate whether or not they would survive a zombie apocalypse.  You joined up with a group of survivors and was able to pull your weight to survive to the end of it.
 				</text>
 				<effect>za4</effect>
+			</event>
+			<event>
+				<title>Free Food</title>
+				<text>There was an announcement on the speakers saying that the food trucks are serving free food as a promotion for the day. While waiting in line, you conversed with a group of friends around you. After you all got your food, they invited you to come eat with them.
+				</text>
+				<effect>ff4</effect>
+			</event>
+			<event>
+				<title>Anime Viewing Session</title>
+				<text>There was a viewing session for the first episode of a new anime that has yet to be released. After viewing the anime, you discussed your favorite scenes with the host and the actors dressed up as the characters. The host gave you free swag as the actors let you take pictures!
+				</text>
+				<effect>avs4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -768,18 +816,25 @@
 				<effect>za5</effect>
 			</event>
 			<event>
+				<title>Free Food</title>
+				<text>There was an announcement on the speakers saying that the food trucks are serving free food as a promotion for the day. While waiting in line, you conversed with a group of friends. After you all finished your food, they invited you to their hotel for a party after the convention.
+				</text>
+				<effect>ff5</effect>
+			</event>
+			<event>
+				<title>Anime Viewing Session</title>
+				<text>There was a viewing session for the first episode of a new anime that has yet to be released. After viewing the anime, you discussed your favorite scenes with the host and the actors dressed up as the characters. The host gave you a picture from the anime signed by the main author!
+				</text>
+				<effect>avs5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
 				<effect>sd5</effect>
 			</event>
 		</level5>
-	</events>
-	
-	<!--
-		-anime watching session
-	-->
-	
+	</events>	
 	<booth>
 		<event>
 			<text>You found a booth that made custom pins. You found a few that you wanted to buy...</text>
@@ -800,13 +855,13 @@
 			<text>You found a booth with an artist that draws fan-art posters. You found a few posters that you wanted to buy...</text>
 		</event>
 		<event>
-			<text>You found a booth with an artist that focused on same-day commissions. You have some ideas of fan art you want them to draw...</text>
-		</event>
-		<event>
 			<text>You found a booth with a bunch of Japanese snacks. You picked up a few of your favorite treats...</text>
 		</event>
 		<event>
 			<text>You found a booth specializing in retro/rare video games. You found a few that you wanted to buy...</text>
+		</event>
+		<event>
+			<text>You found a booth selling mystery boxes. Your curiousity go the better of you...</text>
 		</event>
 		<event>
 			<text>You found a booth specializing in speciality cosplay clothing. You found a few that you wanted to buy...</text>

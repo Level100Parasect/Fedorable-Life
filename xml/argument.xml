@@ -142,20 +142,18 @@
 	</argument>
 	
 	<!--arg 51-->
-	<!--
 	<argument>
 		<text>While on the social networking site creddit, you were feeling edgy and fed up with being friendzoned all the time. As a result, you created a thread "Oh, sorry for being kind and considerate. I forgot that being attractive is all it takes to get into your pants. Sorry for treating you equally I guess." Mere moments after posting, commenters mention that attractiveness is not everything: "There's more to a human being than looks, man. Stop blaming your problems on your lack of it and do something." These comments probably come from 8's. What is a lowly 1/10 left to do but to argue on the internet:</text>
         <choiceA>Talk beyond looks - if you have no money, a nice car, and no place you are pretty much undatable</choiceA>
         <choiceB>Lie and say that you have a disease that makes it hard for you to be attractive and that you are offended</choiceB>
 		<answer>ansB</answer>
-		<responseCorrect>"Well I mean, just learn to feel comfortable in your own skin." ARGUMENT WIN</responseCorrect>
-		<responseWrong>The commenters then list off celebrities that struggle to find dates. ARGUMENT LOST</responseWrong>
+		<responseCorrect>"Well I mean, just learn to feel comfortable in your own skin. You can learn to accept yourself." SEE! They can't prove that they are right! ARGUMENT WIN</responseCorrect>
+		<responseWrong>"Confidence is key, man. There have been celebrities who have trouble getting dates because they lacked confidence. Obviously since you have none, it's no surprise you have trouble with women." These words cut deep. Oooooohhhhhhh... ARGUMENT LOST</responseWrong>
         <accomplish>25</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
         <logo>logoCreddit</logo>
 	</argument>
-	-->
 	
 	<!--Arg: MyFace-->
 	<!--arg 1-->
@@ -248,7 +246,7 @@
         <choiceA>"Please let me in!"</choiceA>
         <choiceB>"You are perfect the way you are"</choiceB>
 		<answer>ansB</answer>
-		<responseCorrect>M'lady acknowledged you! He replied to your comment with a sincere "Haha, thank you" Her comment could carry you through the years as you mark off for another fair maiden saved and an ARGUMENT WIN</responseCorrect>
+		<responseCorrect>M'lady acknowledged you! He replied to your comment with a sincere "Haha, thank you." Her comment could carry you through the years as you mark off for another fair maiden saved and an ARGUMENT WIN</responseCorrect>
 		<responseWrong>The girl never replied to you despite replying to other people on her status. It seems like this white knight just got another scar on his armor :( ARGUMENT LOST</responseWrong>
 		<accomplish>25</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
@@ -299,36 +297,32 @@
 	</argument>
 	
 	<!--arg 52-->
-	<!--
 	<argument>
 		<text>While on the social media site MyFace, you got your mom to take a picture of you on one knee holding your katana out with both hands. Feeling more chivalrous than usual, you posted the photo onto m'lady's wall with the caption "With this blade I vow to take arms to those who sully your honor." However, after you posted your art on her wall you got a message from her asking you to never contact her again. Looking at her profile again, it seems that she deleted your photo. But why!?! The world needs to know that you are m'lady's white knight!:</text>
         <choiceA>Repost the picture on her wall with the same caption. Maybe second time's the charm</choiceA>
         <choiceB>Ask what she didn't like about the photo and say that you can improve for her standards</choiceB>
 		<answer>ansB</answer>
-		<responseCorrect>"It's creepy. I don't know you." So pretty much all you need to do is introduce yourself? Let the seduction begin! ARGUMENT WIN</responseCorrect>
-		<responseWrong>The next time you viewed her profile, you noticed that there was an "Add Friend" button. She unfriended you from MyFace :( I mean it's totally her loss she doesn't want to be a part in your life, right? ARGUMENT LOST-FRAUD DETECTED</responseWrong>
+		<responseCorrect>"It's creepy. I don't even know who you are." So pretty much all you need to do is introduce yourself? Let the seduction begin! ARGUMENT WIN</responseCorrect>
+		<responseWrong>The next time you viewed her profile, you noticed that there was an "Add Friend" button. She unfriended you from MyFace :( I mean it's totally her loss she doesn't want to be a part in your life, right? ARGUMENT AND PRINCESS LOST</responseWrong>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
         <logo>logoMyface</logo>
 	</argument>
-	-->
 
 	<!--arg 53-->
-	<!--
 	<argument>
-		<text>While on the social media site MyFace, you were mindlessly browsing through your news feed until you saw a friend you used to be madly in love with in high school get married to a Neanderthal-ish pleb. So you messaged this girl's new husband; "Hey congrats on the marriage! You do realize it's not gonna work because you are not good enough for her." A moment passes by and he replies with "What the hell are you even talking about?" Quick! Let him know why he's a terrible fit for your high school crush while he's confused:</text>
+		<text>While on the social media site MyFace, you were mindlessly browsing through your news feed until you saw a friend you used to be madly in love with in high school get married to a Neanderthal-ish pleb. So you messaged this girl's new husband; "Hey congrats on the marriage! But you do realize it's not gonna work because you are not good enough for her." A moment passes by and he replies with "What the hell are you even talking about?" Quick! Let him know why he's a terrible fit for your high school crush while he's confused:</text>
         <choiceA>Ask if he even has a job. You do, and you can totally support her</choiceA>
         <choiceB>Say that nobody will ever love her and treat her right as you would</choiceB>
 		<answer>ansA</answer>
-		<responseCorrect>"The hell does that matter? I make enough to support the both of us." You then blocked the pleb. You know that he's just saving face and lying to feel better about himself. DELUSIONAL ARGUMENT WIN</responseCorrect>
-		<responseWrong>"So I asked about you. My wife said the last time you talked to her was in high school. Are you so unhappy with your own life that you can't stand to see other people be happy?" You then blocked the pleb. That'll show him! You are happy with your life; how can you not be with an ARGUMENT LOST oh wait...</responseWrong>
+		<responseCorrect>"The hell does that matter? I make enough to support the both of us." You then blocked the pleb before he can send you another message. You know that he's just saving face and lying to feel better about himself. DELUSIONAL ARGUMENT WIN</responseCorrect>
+		<responseWrong>"So I asked about you. My wife said the last time you talked to her was in high school. You didn't even talk to her much, you just asked her to sign your yearbook. Are you so unhappy with your own life that you can't stand to see other people be happy?" You then blocked the pleb. That'll show him! You are happy with your life; how can you not be with an ARGUMENT LOST oh wait...</responseWrong>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
         <logo>logoMyface</logo>
 	</argument>
-	-->
 
 	<!--Arg: OkNarcissus-->
 	<!--arg 1-->
@@ -585,20 +579,18 @@
 	</argument>
 
 	<!--arg 54-->
-	<!--
 	<argument>
 		<text>On the gaming website MGN, you saw a thread titled "Favorite Character Poll" for your favorite Japanese video game. You know for a fact that your waifu is the best character. Possibly of all time! However another poster beat you to the punch as he claims that his waifu, also yours, is superior. You don't think of yourself as a jealous person, but your waifu belongs only to you; "Change your waifu. I called dibs." The man with lesser intellect replied with "Why can't we both share? ;)" Sharing waifus? That is preposterous and lewd! You plot a reply to prove that m'waifu belongs only to you:</text>
 		<choiceA>Mention a super specific fact from some obscure scene from the anime spinoff about your waifu</choiceA>
         <choiceB>Say that sharing a waifu is gross and how it would be out of character for her</choiceB>
 		<answer>ansA</answer>
 		<responseCorrect>"Huh... I didn't even know that. I haven't had the chance to watch the anime yet." Since you know more about your waifu, her heart belongs to only you! ARGUMENT + 1</responseCorrect>
-		<responseWrong>"I mean our waifu has no problem being with two guys at once..." NO! YOUR WAIFU IS PURE AND INNOCENT AND AND it's an ARGUMENT LOST</responseWrong>
+		<responseWrong>"I mean our waifu has no problem being with two guys at once... It's part of her personality." NO! YOUR WAIFU IS PURE AND INNOCENT AND AND it's an ARGUMENT LOST</responseWrong>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
         <logo>logoMgn</logo>
 	</argument>
-	-->
 
 	<!--Arg: LouTube-->
 	<!--arg 7-->
@@ -770,22 +762,22 @@
 	</argument>
 
 	<!--arg 55-->
-	<!--
 	<argument>
 		<text>You were on the video-sharing website LouTube watching a newly released trailer for a highly anticipated movie. Despite how many likes and views the trailer has, it failed to peak your interest for some reason. You left your opinion on the video: "This movie is gonna blow. As an atheist, if you study any form of science, you would not stand for the logical fallacies of this movie such as I." Some commenter with no taste replied to your comment with "Logical fallacies? It's a science fiction movie, moron." Nobody insults your intelligence! Show this sheep that you know what you are talking about:</text>
 		<choiceA>Assure this Neanderthal that you have the superior IQ</choiceA>
         <choiceB>Call everyone hyped up for the movie a sheeple</choiceB>
 		<answer>ansA</answer>
-		<responseCorrect>"What are you even talking about? What does IQ have to do with enjoying a movie?" Is he daft!? IQ means everything to everything! ARGUMENT WIN!</responseCorrect>
+		<responseCorrect>"What are you even talking about? What does IQ have to do with enjoying a science fiction movie?" Is he daft!? IQ means everything to everything to everyone! ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"Care to explain why?" It was at that moment that you didn't have a good reason for not liking the trailer; you are just being a contrarian. ARGUMENT LOSE</responseWrong>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
         <logo>logoLoutube</logo>
 	</argument>
-	-->
 </doc>
 
 <!--
-	Creddit - Apologetic post about being the nice guy gets blown up http://i.imgur.com/rXKicku.jpg
+	MyFace - Posted an OC that gets shat on for Murdermaster the Porcupine
+	LouTube - 
+	LouTube - https://i.redditmedia.com/B2g6tXw0RtklbgLGAihWznyys6ZPXslqEoDFuy-m4tY.jpg?w=619&s=07e55cabbb51c1bee5672dc219a4f2b4 - make up tutorial
 -->

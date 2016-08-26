@@ -251,27 +251,31 @@
 			</text>
 			<effect>content</effect>
 		</event>
-		<!--
 		<event>
 			<text>You ran into a group of coworkers at the bar and chatted with them for a while, mainly venting about work and making fun of people. They bought you a drink before they went on their way.
 			</text>
 			<effect>excitementUp</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>You ran into a philosophy professor you had in college at the bar and chatted for a while.
+			<text>You ran into a philosophy professor you had in college at the bar and chatted for a while. He asked you how you were doing even offering to help you find a better job related to philosophy. Before he left, he asked you to keep in touch. You started feeling better about the whole job search.
 			</text>
-			<effect>excitementUp</effect>
+			<effect>confident</effect>
 		</event>
-		-->
-		<!--
 		<event>
 			<text>You ran into someone you knew from high school that you used to have a crush on. You bought her a drink as the two of you caught up for a while. When she had to leave, she added you on MyFace and asked you to keep in touch.
 			</text>
 			<effect>inLove</effect>
 		</event>
-		-->
+		<event>
+			<text>There was a live musician playing at the bar as you walked in. Liking the music she was playing, you gave the musician a decent tip. While she was taking a break, she sat next to you and talked for a little bit before she had to get back to performing.
+			</text>
+			<effect>inLove</effect>
+		</event>
+		<event>
+			<text>A professional celebrity look-a-like walked into the bar dressed up as one of your favorite childhood heroes. You had to double take to make sure it wasn't the real actor! Walking over, you were able to get a photo with them.
+			</text>
+			<effect>photoUp</effect>
+		</event>
 	</good>
 	<bad>
 		<event>
@@ -300,7 +304,7 @@
 			<effect>heartbroken</effect>
 		</event>
 		<event>
-			<text>You decided to change the song on the jukebox to some classy 1920's swing music. You overheard somebody complain at the bar's selection of music. You felt bad for ruining somebody's enjoyment at a bar for 3 minutes.
+			<text>You decided to change the song on the jukebox to some classy jazz music. You overheard somebody complain at the bar's selection of music. You felt bad for ruining somebody's enjoyment at a bar for 3 minutes.
 			</text>
 			<effect>embarrassed</effect>
 		</event>
@@ -523,6 +527,31 @@
 			<text>You see a muscle-bound "dude bro" preying on m'lady. Coming to save the day, you chime in with a "I don't think m'lady wants to talk to you." M'lady left you and the dude bro. Dude bro replies "Just because you can't get any doesn't mean you should be a cock block, loser."
 			</text>
 			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>You ran into a group of coworkers at the bar, so you invited yourself over. They were making fun of some weird fat guy who wears a fedora all the time. Once you showed up they started looking uncomfortable to the point that they suddenly had to leave. Wait a minute... they were making fun of you!
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>You ran into a philosophy professor you had in college at the bar. Feeling desperate for a job, you rushed over to him with tears in your eyes and snot running down your nose begging for a job. Startled and uncomfortable, your professor left leaving you broken on your knees.
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>You ran into someone you used to have a crush on from high school. You readjusted your fedora and decided to seduce her. "Damn, is your body an orphanage?" Before you finished, she walked off in disgust. You chased her shouting the second half of the line, but I don't think it's working.
+			</text>
+			<effect>heartbroken</effect>
+		</event>
+		<event>
+			<text>You saw a lovely blonde from behind sitting by herself at the bar. You thought "Game on!" and talked to her. However when she turned to look at you, she was actually 60 years old. She wouldn't let you leave :|
+			</text>
+			<effect>discontent</effect>
+		</event>
+		<event>
+			<text>You saw a cute girl wearing an anime shirt. Thinking that you had a lot in common, you really wanted to talk to her. However you never really had the nerve to talk to her until you watched her leave. Damn, that's disappointing.
+			</text>
+			<effect>discontent</effect>
 		</event>
 	</bad>
 </doc>

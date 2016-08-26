@@ -18,7 +18,7 @@ p {
   font-size: 1em;
   color: #333333; }
 
-button, input, select, textarea {
+button, input, textarea {
   font-family: Arial, Helvetica, "Myriad Pro", san-serif;
   font-size: 1em; }
 
@@ -91,8 +91,11 @@ hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
+select {
+    font-family: visitor !important;
+}
 /* Form Resets */
-button, input, optgroup, select, textarea {
+button, input, optgroup, textarea {
   /*color: inherit;*/
   font: inherit;
   margin: 0; }
@@ -602,6 +605,18 @@ img {
     margin-top: 8px;
 }
 
+#optionsTableHeader {
+    font-size: 1.5em;
+}
+
+.optionsTable {
+    font-family: visitor; font-size: 2em; color: black; width: 100%;
+}
+
+.optionsTable tr {
+    padding-top: 4px; padding-bottom: 4px;
+}
+
 #overAll span {
     font-family: visitor; font-size: 2.5em; color: #ecf0f1;
 }
@@ -719,7 +734,7 @@ img {
 }
 
 #GDTitle{
-     font-family: visitor; 
+     font-family: visitor;
      font-size: 2em; 
      color: white;
 }
@@ -1569,6 +1584,44 @@ img {
 .lStar:active {
     border: none;
     background: url('/images/btns-spr.png') -1003px -70px no-repeat;
+}
+.unmute {
+    display: inline-block;
+    float: right;
+    left: 0px;
+    border: none;
+    height:  14px;
+    width: 25px;
+    background: url('/images/btns-spr.png') -1003px -84px no-repeat;
+}
+
+.unmute:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -98px no-repeat;
+}
+
+.unmute:active {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -112px no-repeat;
+}
+.mute {
+    display: inline-block;
+    float: right;
+    left: 0px;
+    border: none;
+    height:  14px;
+    width: 25px;
+    background: url('/images/btns-spr.png') -1003px -126px no-repeat;
+}
+
+.mute:hover {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -140px no-repeat;
+}
+
+.mute:active {
+    border: none;
+    background: url('/images/btns-spr.png') -1003px -154px no-repeat;
 }
 /*--------------------------*/
 /*   Generic Dialog Icon    */

@@ -5,6 +5,7 @@ window.level4 = [];
 window.level5 = [];
 window.boothEvents = [];
 //ps, fg, qa, mc, ak, rv, cs, gd, ms, ic, do, hc, gn, qs, om, lb, tc, pe, tt, da, bm, at, li, za, sd
+//add ff, avs
 
 eventEffect = function (effect) {
     var text = '';
@@ -885,6 +886,78 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.render();
             text = '+30 Excitement<br/>+8 Accomplishment<br/>+3 Social Skill';
+            break;
+        case 'ff1':
+            grant.statHunger += 10;
+            grant.render();
+            text = '+10 Hunger';
+            break;
+        case 'ff2':
+            grant.statHunger += 15;
+            grant.timesSocialized += 1;
+            grant.socialSkills += 1;
+            grant.render();
+            text = '+15 Hunger<br/>+1 Social Skill';
+            break;
+        case 'ff3':
+            grant.statHunger += 20;
+            grant.statExcitement += 5;
+            grant.timesSocialized += 2;
+            grant.socialSkills += 2;
+            grant.render();
+            text = '+20 Hunger<br/>+5 Excitement<br/>+2 Social Skill';
+            break;
+        case 'ff4':
+            grant.statHunger += 25;
+            grant.statExcitement += 10;
+            grant.timesSocialized += 3;
+            grant.socialSkills += 3;
+            grant.render();
+            text = '+25 Hunger<br/>+10 Excitement<br/>+3 Social Skill';
+            break;
+        case 'ff5':
+            grant.statHunger += 30;
+            grant.statExcitement += 20;
+            grant.timesSocialized += 3;
+            grant.socialSkills += 3;
+            grant.render();
+            text = '+30 Hunger<br/>+20 Excitement<br/>+3 Social Skill';
+            break;
+        case 'avs1':
+            grant.statExcitement += 10;
+            grant.render();
+            text = '+10 Excitement';
+            break;
+        case 'avs2':
+            grant.statExcitement += 15;
+            grant.timesSocialized += 1;
+            grant.socialSkills += 1;
+            grant.render();
+            text = '+15 Excitement<br/>+1 Social Skill';
+            break;
+        case 'avs3':
+            grant.statExcitement += 20;
+            grant.timesSocialized += 3;
+            grant.socialSkills += 3;
+            grant.statEuphoria += 5;
+            grant.render();
+            text = '+20 Excitement<br/>+3 Social Skill<br/>+5 Euphoria';
+            break;
+        case 'avs4':
+            grant.statExcitement += 25;
+            grant.timesSocialized += 4;
+            grant.socialSkills += 4;
+            grant.statEuphoria += 10;
+            grant.render();
+            text = '+25 Excitement<br/>+4 Social Skill<br/>+10 Euphoria';
+            break;
+        case 'avs5':
+            grant.statExcitement += 30;
+            grant.timesSocialized += 5;
+            grant.socialSkills += 5;
+            grant.statEuphoria += 25;
+            grant.render();
+            text = '+30 Excitement<br/>+5 Social Skill<br/>+25 Euphoria';
             break;
         case 'sd1':
             grant.statExcitement += 5;
