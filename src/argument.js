@@ -1,35 +1,31 @@
 window.argumentObject = [];
 
 readyArgument = function () {
-    var argNum = (Math.floor(Math.random() * argumentObject.length));
-    var curClass = $("#logo").attr("class");
-    var argClass = $("#argument").attr("class");
-    var webClass = $("#webHeader").attr("class");
+    var argNum = (Math.floor(Math.random() * argumentObject.length)),
+        curClass = $("#logo").attr("class"),
+        argClass = $("#argument").attr("class"),
+        webClass = $("#webHeader").attr("class"),
+        arg = argumentObject[argNum];
 
-    $("#argEvent").text(argumentObject[argNum].text);
-    $("#argTop").find("#r1").text(argumentObject[argNum].choiceA);
-    $("#argTop").find("#r2").text(argumentObject[argNum].choiceB);
-    $("#argument").find("#" + argumentObject[argNum].answer).addClass("correct");
-    $("#logo").removeClass(curClass).addClass(argumentObject[argNum].logo);
-    $("#argument").removeClass(argClass).addClass(argumentObject[argNum].backgroundColor);
-    $("#webHeader").removeClass(webClass).addClass(argumentObject[argNum].headerColor);
+    $("#argEvent").text(arg.text);
+    $("#argTop").find("#r1").text(arg.choiceA);
+    $("#argTop").find("#r2").text(arg.choiceB);
+    $("#argument").find("#" + arg.answer).addClass("correct");
+    $("#logo").removeClass(curClass).addClass(arg.logo);
+    $("#argument").removeClass(argClass).addClass(arg.backgroundColor);
+    $("#webHeader").removeClass(webClass).addClass(arg.headerColor);
 
     return argNum;
 }
 
-loadResponse = function (argNum, isCorrect) {
+loadResponse = function (argNum, isCorrect, accPts) {
     if (isCorrect) {
         grant.argsWon += 1;
-        var text = argumentObject[argNum].responseCorrect;
-        var points = "YOU GAINED " + argumentObject[argNum].accomplish + " SENSE OF ACCOMPLISHMENT";
-        $("#argResponse").text(text);
-        $("#argResponseScore").text(points);
-    }
-    else {
-        var text = argumentObject[argNum].responseWrong;
-        var points = "YOU LOST " + argumentObject[argNum].accomplish + " SENSE OF ACCOMPLISHMENT";
-        $("#argResponse").text(text);
-        $("#argResponseScore").text(points);
+        $("#argResponse").text(argumentObject[argNum].responseCorrect);
+        $("#argResponseScore").text("YOU GAINED " + accPts + " SENSE OF ACCOMPLISHMENT");
+    } else {
+        $("#argResponse").text(argumentObject[argNum].responseWrong);
+        $("#argResponseScore").text("YOU LOST " + accPts + " SENSE OF ACCOMPLISHMENT");
     }
 }
 
@@ -47,6 +43,7 @@ $(document).ready(function () {
                 answer = $(this).find("answer").text();
                 responseCorrect = $(this).find("responseCorrect").text();
                 responseWrong = $(this).find("responseWrong").text();
+                hint = $(this).find("hint").text();
                 accomplish = $(this).find("accomplish").text();
                 backgroundColor = $(this).find("backgroundColor").text();
                 headerColor = $(this).find("headerColor").text();
@@ -59,6 +56,7 @@ $(document).ready(function () {
                     "answer": answer,
                     "responseCorrect": responseCorrect,
                     "responseWrong": responseWrong,
+                    "hint": hint,
                     "accomplish": accomplish,
                     "backgroundColor": backgroundColor,
                     "headerColor": headerColor,

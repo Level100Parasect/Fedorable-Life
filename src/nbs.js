@@ -62,7 +62,7 @@ function mainCharacter() {
 	        } /* END IF */
 	    
             //Iron Pill ending
-            if ((this.timesDieted >= 25) && (this.timesExersized >= 25) && (!this.endIron)){
+            if ((this.timesDieted >= 25) && (this.timesExersized >= 25) && (!this.endIron)) {
                 endGame(nodeGameEndIron);
                 this.endIron = true;
             } /* END IF */
@@ -109,7 +109,7 @@ function mainCharacter() {
 
     this.event = function() {
         var random = (Math.floor(Math.random() * level1.length));
-        //var random = 26;
+        //var random = 28;
         var node = "";
         switch(this.statSocial){
             case "Creepy":
@@ -136,27 +136,29 @@ function mainCharacter() {
             success = 100 - this.socialSkills,
             speakNode = "",
             speakEvent = (Math.floor(Math.random() * speakObjectGood.length)),
-            speakEff = "",
-            effText = "";
+            effect = "";
         if (roll >= success) {
-            speakEff = speakObjectGood[speakEvent].effect;
-            effText = speakEffect(speakEff);
-            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Okay</p><div><p id='gdText'>" + speakObjectGood[speakEvent].text + effText + "</p><img id='GDIcon' src='images/generic/ispeakg.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
+            effect = speakObjectGood[speakEvent].effect;
+            speakMap[effect].effect();
+            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Okay</p><div><p id='gdText'>" + speakObjectGood[speakEvent].text + "<br><br>" + speakMap[effect].text + "</p><img id='GDIcon' src='images/generic/ispeakg.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
             this.socialSkills += 2;
         } else {
-            speakEff = speakObjectBad[speakEvent].effect;
-            effText = speakEffect(speakEff);
-            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Terrible</p><div><p id='gdText'>" + speakObjectBad[speakEvent].text + effText + "</p><img id='GDIcon' src='images/generic/ispeakb.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
+            effect = speakObjectBad[speakEvent].effect;
+            speakMap[effect].effect();
+            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Terrible</p><div><p id='gdText'>" + speakObjectBad[speakEvent].text + "<br><br>" + speakMap[effect].text + "</p><img id='GDIcon' src='images/generic/ispeakb.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
             this.socialSkills++;
         } /* END IF */
         this.timesSocialized++;
+        this.statEnergy -= 3;
+        this.statHunger -= 3;
+        this.render();
         genericDia(speakNode);
     } /* END OF speak */
 
     this.booth = function () {
         var nodeBooth = "<div id='genericDialog'><p id='GDTitle'>Booth Purchase</p><div><p id='gdText'>",
             random = (Math.floor(Math.random() * boothEvents.length)),
-            text = boothEvents[random].text,
+            text = boothEvents[random].text + "<br><br>",
             nodeEnd = "</p><img id='GDIcon' src='images/generic/ibooth.png'/></div><button class='continueGameBtn' id='emd'></button></div>",
             itemCost = 0,
             pts = 0;
@@ -165,34 +167,34 @@ function mainCharacter() {
             case "Creepy":
                 itemCost = 30;
                 pts = 25;
-                text += "<br><br>You spent more than you thought you would here.";
+                text += "You spent more than you thought -";
                 break;
             case "Weird":
                 itemCost = 25;
                 pts = 50;
-                text += "<br><br>You spent a moderate amount here.";
+                text += "You spent a decent amount -";
                 break;
             case "Eh...":
                 itemCost = 20;
                 pts = 100;
-                text += "<br><br>You spent a typical amount here.";
+                text += "You spent a moderate amount -";
                 break;
             case "Exists":
                 itemCost = 15;
                 pts = 175;
-                text += "<br><br>You were able to get some deals here.";
+                text += "You managed to get some sweet deals -";
                 break;
             case "Normal":
                 itemCost = 10;
                 pts = 250;
-                text += "<br><br>You were able to haggle down the prices for more stuff here.";
+                text += "You haggled down the prices for more stuff -";
                 break;
         } /* END SWITCH */
 
         if (cost(itemCost)) {
             play("cr1");
             this.statEuphoria += pts;
-            nodeBooth = nodeBooth + text + nodeEnd;
+            nodeBooth = nodeBooth + text + " Spent $" + itemCost + " and got " + pts + " Euphoria!" + nodeEnd;
             genericDia(nodeBooth);
             this.render();
         } else {
@@ -354,7 +356,8 @@ function mainCharacter() {
 
     //Resets all variables for being at home
     this.goHome = function(){
-        $("#location").attr("src", "images/bg/BackgroundRoom.png");
+        var bgHome = this.secretEndingItem3 ? "images/bg/BackgroundApartment.png" : "images/bg/BackgroundRoom.png";
+        $("#location").attr("src", bgHome);
         $("#sprite img").attr("src", "images/nb/" + this.sprite + "-bedroom.png");
         $("#footer").html(ftrAtHome);
         this.atConv = false;
@@ -581,9 +584,21 @@ function mainCharacter() {
 
     this.openOptions = function () {
         var optionsNode = '<div id="travelDia"><table class="optionsTable"><tr><td id="optionsTableHeader">Options</td></tr><tr><td>Mute Music</td><td><button id="muteMusic" class="mute"></button></td></tr><tr><td>Mute Sounds</td><td><button id="muteSound" class="mute"></button></td></tr><tr><td>Switch Neckbeard</td><td><select id="changeNB"><option value="sprite">Nick M. Beardman</option>';
-        if (this.statEuphoria >= 1000) {
+        if (this.statEuphoria >= 1000)
             optionsNode += '<option value="sprite2">Fred "Murdermaster" Wilhelm</option>';
-        }
+
+        if (this.statEuphoria >= 2000)
+            optionsNode += '<option value="sprite3">Mr. Nice Guy</option>';
+
+        if (this.endEFame)
+            optionsNode += '<option value="sprite11">E-Fame Ending</option>';
+
+        if (this.endNorm)
+            optionsNode += '<option value="sprite14">Normal Ending</option>';
+
+        if (this.endGolden)
+            optionsNode += '<option value="sprite15">Golden Ending</option>';
+
         optionsNode += '</select></td></tr></table><br><button class="backGameBtn" id="emd"></button></div>';
         return optionsNode;
     }
@@ -630,7 +645,7 @@ function checkBrowser(){
     // Blink engine detection
     var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-    if(!isChrome){
+    if((!isChrome) && (!isFirefox)) {
         $("#mainDialog").html(nodeBlockScreen);
     } /* END IF */
 } /* END OF checkBrowser */
@@ -692,9 +707,10 @@ function objectLoader(){
     itemArray[16] = new item("item17", 15, function () { grant.timesDieted++; grant.statEnergy += 3; grant.statEuphoria += 5; });
     itemArray[17] = new item("item18", 20, function () { grant.resetStatus(); });
 
-    for(i = 0; i < itemArray.length; i++) {
-        var itemObj = itemArray[i];
-        var mapKey = itemArray[i].name;
+    var len = itemArray.length;
+    while (len--) {
+        var itemObj = itemArray[len];
+        var mapKey = itemArray[len].name;
         itemMap[mapKey] = itemObj;
     }
 
@@ -728,11 +744,53 @@ function objectLoader(){
     statusArray[12] = new status('Sick', red, 15, "Energy-, Hunger-", function () { grant.decayEnergy = 3; grant.decayHunger = 3; });
     statusArray[13] = new status('Euphoric', green, 15, "All++", function () { grant.decayEnergy = -4; grant.decayHunger = -4; grant.decayExcitement = -4; grant.decaySOA = -4; });
     statusArray[14] = new status('Dead Inside', red, 15, "All-", function () { grant.decayEnergy = 3; grant.decayHunger = 3; grant.decayExcitement = 3; grant.decaySOA = 3; });
+    statusArray[15] = new status('Motivated', green, 10, "Energy++, Accomplishment+", function () { grant.decayEnergy = -2; grant.decaySOA = 1; });
+    statusArray[16] = new status('Dishonored', red, 15, "Energy--, Accomplishment-", function () { grant.decayEnergy = 4; grant.decaySOA = 3; });
 
-    for(i = 0; i < statusArray.length; i++) {
-        var statusObj = statusArray[i];
-        var mapKey = statusArray[i].name;
+    var len = statusArray.length;
+    while (len--) {
+        var statusObj = statusArray[len];
+        var mapKey = statusArray[len].name;
         statusMap[mapKey] = statusObj;
+    }
+
+    //speak
+    window.speakMap = {};
+    window.speakArray = [];
+    speakArray[0] = new speak('excitementUp', "You have recovered 10 excitement", function () { grant.statExcitement += 10; });
+    speakArray[1] = new speak('hungerUp', "You have recovered 10 excitement", function () { grant.statHunger += 10; });
+    speakArray[2] = new speak('soaUp', "You have recovered 10 accomplishment", function () { grant.statAccomplishment += 10; });
+    speakArray[3] = new speak('energyUp', "You have recovered 10 energy", function () { grant.statEnergy += 10; });
+    speakArray[4] = new speak('moneyUp', "You have gained $10", function () { grant.paid(10); });
+    speakArray[5] = new speak('inLove', "You have fallen in love (++Accomplishment)", function () { grant.changeStatus('In Love'); });
+    speakArray[6] = new speak('content', "You are now content (+Energy, +Excitement, +Accomplishment)", function () { grant.changeStatus('Content'); });
+    speakArray[7] = new speak('confident', "You are feeling confident (+Excitement, ++Accomplishment)", function () { grant.changeStatus('Confident'); });
+    speakArray[8] = new speak('hatPlus', "You got a new fedora for your collection", function () { grant.fedsBought++; });
+    speakArray[9] = new speak('photoUp', "You took a new photo", function () { grant.picsTaken++; });
+    speakArray[10] = new speak('soaDown', "You have lost 10 sense of accomplishment", function () { grant.statAccomplishment -= 10; });
+    speakArray[11] = new speak('excitementDown', "You have lost 10 excitement", function () { grant.statExcitement -= 10; });
+    speakArray[12] = new speak('moneyDown', "You have lost $10", function () { if (!cost(10)) { grant.statMoney = 0; } });
+    speakArray[13] = new speak('heartbroken', "Your heart has shattered (-Accomplishment)", function () { grant.changeStatus('Heartbroken'); });
+    speakArray[14] = new speak('embarrassed', "You feel embarrassed (-Excitement)", function () { grant.changeStatus('Embarrassed'); });
+    speakArray[15] = new speak('emasculated', "Your have gotten emasculated (-Excitement, --Accomplishment)", function () { grant.changeStatus('Emasculated'); });
+    speakArray[16] = new speak('paranoid', "You feel paranoid (-Energy, -Excitement)", function () { grant.changeStatus('Paranoid'); });
+    speakArray[17] = new speak('discontent', "You feel discontent (-Energy, -Excitement, -Accomplishment)", function () { grant.changeStatus('Discontent'); });
+    speakArray[17] = new speak('sick', "You feel sick (-Energy, -Hunger)", function () { grant.changeStatus('Sick'); });
+    speakArray[18] = new speak('motivated', "You feel motivated (++Energy, +Accomplishment)", function () { grant.changeStatus('Motivated'); });
+    speakArray[19] = new speak('dishonored', "You feel dishonored (--Energy, -Accomplishment)", function () { grant.changeStatus('Dishonored'); });
+    speakArray[20] = new speak('deadInside', "You are dead inside (--Everything)", function () { grant.changeStatus('Dead Inside'); });
+
+    function speak(name, text, effect) {
+        this.name = name;
+        this.text = text;
+        this.effect = effect;
+    }
+
+    var len = speakArray.length;
+    while (len--) {
+        var speakObj = speakArray[len];
+        var mapKey = speakArray[len].name;
+        speakMap[mapKey] = speakObj;
     }
 } /* END OF objectLoader */
 
@@ -823,7 +881,7 @@ $(window).on('load', function () {
                 startScreen();
                 break;
             case "gym":
-                if (cost(10)) { grant.timesExersized++; grant.statEnergy -= 15; grant.statEuphoria += 5; play("tm1"); grant.render(); } /* END IF */
+                if (cost(10)) { grant.timesExersized++; grant.statEnergy -= 15; grant.statAccomplishment += 15; grant.statEuphoria += 5; play("tm1"); grant.render(); } /* END IF */
                 break;
             case "egFG":
                 play("pp1");
@@ -965,6 +1023,7 @@ $(window).on('load', function () {
                 $("#argument").find(".correct").removeClass("correct");
                 currentArgNum = readyArgument();
                 $("#argTop").show();
+                $("#hintText").hide();
                 $("#argBottom").hide();
                 $("#argument").dialog("open");
                 break;
@@ -1019,23 +1078,28 @@ $(window).on('load', function () {
         } /* END SWITCH */
     }); /* END ON CLICK FOOTER */
 
+    $("#hint").click(function () {
+        $("#hintText").text(argumentObject[currentArgNum].hint).show();
+    });
+
     $("#ansA, #ansB").click(function () {
         play("kb1");
         var isCorrect = false,
             accPts = parseInt(argumentObject[currentArgNum].accomplish),
-            accStat = parseInt(grant.statAccomplishment),
-            newAcc = accPts + accStat;
+            usedHint = $("#hintText").is(':visible');
         if ($(this).hasClass("correct")) {
-            grant.statAccomplishment = newAcc;
+            grant.statExcitement += 3;
+            accPts = usedHint ? accPts - 10 : accPts + accPts;
+            grant.statAccomplishment += accPts;
             isCorrect = true;
             if (this.endFG) {
                 this.statStatus = 'Euphoric';
             }
-        }
-        else {
+        } else {
             grant.statAccomplishment -= accPts;
+            grant.statExcitement -= 3;
         }
-        loadResponse(currentArgNum, isCorrect);
+        loadResponse(currentArgNum, isCorrect, accPts);
         grant.statEnergy -= 3;
         grant.statHunger -= 3;
         $(this).removeClass("correct");
@@ -1110,33 +1174,26 @@ $(window).on('load', function () {
             endNMNode = lnNM,
             endGONode = lnGO;
 
-        if (grant.endFG) {
+        if (grant.endFG)
             endFGNode = unFG;
-        } /* END IF */
 
-        if (grant.endEFame) {
+        if (grant.endEFame)
             endEFNode = unEF;
-        } /* END IF */
 
-        if (grant.endEmployed) {
+        if (grant.endEmployed)
             endEMNode = unEM;
-        } /* END IF */
 
-        if (grant.endIron) {
+        if (grant.endIron)
             endIPNode = unIP;
-        } /* END IF */
 
-        if (grant.endWaifu) {
+        if (grant.endWaifu)
             endWFNode = unWF;
-        } /* END IF */
 
-        if (grant.endNorm) {
+        if (grant.endNorm)
             endNMNode = unNM;
-        } /* END IF */
 
-        if (grant.endGolden) {
+        if (grant.endGolden)
             endGONode = unGO;
-        } /* END IF */
 
         //overall html generation
         var tab1 = '<div id="oaTable" class="tabInd"><table><tr><td>Overall Stats:</td></tr><tr><td>Collectables:</td><td>' + collectables + '/90</td><td>Times Excersized:</td><td>' + grant.timesExersized + '</td></tr><tr><td>Money Made:</td><td>$' + grant.moneyMade + '</td><td>Times Bar Hopped:</td><td>' + grant.barHopped + '</td></tr><tr><td>Money Spent:</td><td>$' + grant.moneySpent + '</td><td>Conventions Attended:</td><td>' + grant.convAttended + '</td></tr><tr><td>Times Worked:</td><td>' + grant.timesWorked + '</td>' + endFGNode + '</tr><tr><td>Times Gamed:</td><td>' + grant.timesGamed + '</td>' + endEFNode + '</tr><tr><td>Arguments Entered:</td><td>' + grant.argsEntered + '</td>' + endEMNode + '</tr><tr><td>Pictures Taken:</td><td>' + grant.picsTaken + '</td>' + endIPNode + '</tr><tr><td>Times Dieted:</td><td>' + grant.timesDieted + '</td>' + endWFNode + '</tr><tr><td>Times Socialized:</td><td>' + grant.timesSocialized + '</td>' + endNMNode + '</tr><tr><td>Social Level:</td><td>' + grant.socialSkills + '</td>' + endGONode + '</tr></table></div></div>';

@@ -160,6 +160,24 @@
 				<effect>avs1</effect>
 			</event>
 			<event>
+				<title>Ball Pit</title>
+				<text>There was a decently sized above-ground ball pit set up in an open area of the convention. Walking passed, you looked on as people seemed to be having a lot of fun.
+				</text>
+				<effect>bp1</effect>
+			</event>
+			<event>
+				<title>Mech Piloting</title>
+				<text>There was a small stage dedicated for people to prototype a small mech suit from Japan. You watched in amazement as people were trying to get it to walk in the pilot's seat.
+				</text>
+				<effect>mp1</effect>
+			</event>
+			<event>
+				<title>Anime Bingo</title>
+				<text>There was a game of anime bingo going on in one of the rooms in the convention center. You got to witness the game taking place to the end of the event.
+				</text>
+				<effect>ab1</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
 				</text>
@@ -325,6 +343,24 @@
 				<text>There was a viewing session for the first episode of a new anime that has yet to be released. After viewing the anime, you discussed your favorite scenes with the person sitting next to you.
 				</text>
 				<effect>avs2</effect>
+			</event>
+			<event>
+				<title>Ball Pit</title>
+				<text>There was a decently sized above-ground ball pit set up in an open area of the convention. A few balls rolled towards you as you were passed the pit. You stopped to throw the balls back into the pit as some one in the pit thanked you.
+				</text>
+				<effect>bp2</effect>
+			</event>
+			<event>
+				<title>Mech Piloting</title>
+				<text>There was a small stage dedicated for people to prototype a small mech suit from Japan. You asked a bystander if they got a chance to pilot it. They didn't, but the two of you got to talk about robotics while watching people try it out.
+				</text>
+				<effect>mp2</effect>
+			</event>
+			<event>
+				<title>Anime Bingo</title>
+				<text>There was a game of anime bingo going on in one of the rooms in the convention center. You joined in, but unfortunately you weren't close to winning. At least you had some fun!
+				</text>
+				<effect>ab2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -494,6 +530,24 @@
 				<effect>avs3</effect>
 			</event>
 			<event>
+				<title>Ball Pit</title>
+				<text>There was a decently sized above-ground ball pit set up in an open area of the convention. Curiosity got the better of you as you just jumped in! Feeling out of place, you left the ball pit shortly after.
+				</text>
+				<effect>bp3</effect>
+			</event>
+			<event>
+				<title>Mech Piloting</title>
+				<text>There was a small stage dedicated for people to prototype a small mech suit from Japan. You caught up with someone just getting out of the demo and asked them as many questions about it as you could think of.
+				</text>
+				<effect>mp3</effect>
+			</event>
+			<event>
+				<title>Anime Bingo</title>
+				<text>There was a game of anime bingo going on in one of the rooms in the convention center. You joined in, but unfortunately you didn't win. At least you socialized with the others playing the game!
+				</text>
+				<effect>ab3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -659,6 +713,24 @@
 				<text>There was a viewing session for the first episode of a new anime that has yet to be released. After viewing the anime, you discussed your favorite scenes with the host and the actors dressed up as the characters. The host gave you free swag as the actors let you take pictures!
 				</text>
 				<effect>avs4</effect>
+			</event>
+			<event>
+				<title>Ball Pit</title>
+				<text>There was a decently sized above-ground ball pit set up in an open area of the convention. Deciding to just go for it you jump in. You stayed in the ball pit for a while with a few others.
+				</text>
+				<effect>bp4</effect>
+			</event>
+			<event>
+				<title>Mech Piloting</title>
+				<text>There was a small stage dedicated for people to prototype a small mech suit from Japan. You were able to speak to the engineer, asking them every question you could think of.
+				</text>
+				<effect>mp4</effect>
+			</event>
+			<event>
+				<title>Anime Bingo</title>
+				<text>There was a game of anime bingo going on in one of the rooms in the convention center. You joined in and was pretty close to winning. At least you socialized with the others playing the game!
+				</text>
+				<effect>ab4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -828,13 +900,34 @@
 				<effect>avs5</effect>
 			</event>
 			<event>
+				<title>Ball Pit</title>
+				<text>There was a decently sized above-ground ball pit set up in an open area of the convention. You jumped in and started a ball pit fight with strangers. You made new friends as you stayed in the ball pit for a while.
+				</text>
+				<effect>bp5</effect>
+			</event>
+			<event>
+				<title>Mech Piloting</title>
+				<text>There was a small stage dedicated for people to prototype a small mech suit from Japan. You were able to pilot the mech suit making it walk. When you got out of the mech suit, you were bombarded with compliments on your natural piloting skills.
+				</text>
+				<effect>mp5</effect>
+			</event>
+			<event>
+				<title>Anime Bingo</title>
+				<text>There was a game of anime bingo going on in one of the rooms in the convention center. You joined in and was able to take home the grand prize! The other players congratulated you for your win.
+				</text>
+				<effect>ab5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
 				<effect>sd5</effect>
 			</event>
 		</level5>
-	</events>	
+	</events>
+	<!--
+		swimming event
+	-->
 	<booth>
 		<event>
 			<text>You found a booth that made custom pins. You found a few that you wanted to buy...</text>

@@ -9,6 +9,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The AFC acknowledges your superior game and comments that he aspires to be a man like you one day. He ended up buying a fedora and an untailored suit.</responseCorrect>
 		<responseWrong>The other men in the thread all call you pathetic and you can feel the AFC shake his head at you in disappointment through the internet.</responseWrong>
+		<hint>I wouldn't appreciate being called an unintelligent beta male myself</hint>
         <accomplish>20</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -23,6 +24,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>Your original post got downvoted into oblivion. It's almost as if it never even existed! ARGUMENT IGNORED</responseCorrect>
 		<responseWrong>Your insult backfires as they start calling you a virgin who can't get any. How the hell did they figure that out? Are they stalking your MyFace page?! HEART BROKEN :(</responseWrong>
+		<hint>You know what they say: you are what you make fun of. So don't</hint>
         <accomplish>25</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -37,6 +39,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>You may have only learned kenjutsu through online videos and am writing a fanfiction about ponies, but they fall for your bluff. They suggest that rather than whine about your dateless life, you should focus on your passions. I mean... at least nobody is yelling at you? LIFE LESSONS FOR THE WIN</responseCorrect>
 		<responseWrong>You linked to an outdated late 90's article written by a has-been pick up artist. It had sexy pop-ups, uses the Comic-sans font, and it hurt your argument more than it helped. Research more next time :| ARGUMENT LOST</responseWrong>
+		<hint>They don't know your life! They don't know what you've been through</hint>
         <accomplish>20</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -51,6 +54,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The commenter does mention that yes, a katana can strike much faster than a European blade. He mentioned that it's not gonna penetrate European armor, but at this point you don't care as it's a WIN OF AN ARGUMENT!</responseCorrect>
 		<responseWrong>The commenter linked you to a scientific experiment clip on LouTube of a European blade shattering a katana. When it was the katana's turn to strike the European blade, it actually cracked itself just like your heart did when you LOST THE ARGUMENT :(</responseWrong>
+		<hint>I dunno, the facts are there. What does the katana even have going for it?</hint>
         <accomplish>15</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -65,6 +69,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>"I am. I just have no interest in you." Did m'lady just confirm she likes nice guys?! Maybe one of these days, she will have interest in you! ARGUMENT STRETCHED TO A WIN</responseCorrect>
 		<responseWrong>"What the hell is wrong with you? Do you try that line on girls in person? Creep." I don't know what you were thinking please stop this. ARGUMENT LOST</responseWrong>
+		<hint>You? Hardworking?! Since when?!</hint>
         <accomplish>15</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -79,6 +84,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>Well I mean they don't know your new account and you avoided the original thread. Your quest to being an alpha male has begun with your new creddit account! You're feeling really good about yourself now! ARGUMENT AVOIDED</responseCorrect>
 		<responseWrong>"You are single because you are a bitter passive-aggressive beta male. I suggest speaking to a therapist because clearly you have some issues you need to sort through." You don't need to go to a therapist... alpha males don't believe in that! ARGUMENT LOST</responseWrong>
+		<hint>The truth can sometime hurt more than it can ever heal...</hint>
         <accomplish>25</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -93,6 +99,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>Nothing really happened after you deleted your post which may have been the best option. Nobody has ever seen your four-paneled comic again. AVOIDED BECOMING A MEME</responseCorrect>
 		<responseWrong>Somebody made a response comic to counter yours! She made a comic that shows her reacting to your comic then applying a dubious amount of make up on her face. You have become a poster boy for cringe pictures. ARGUMENT LOST</responseWrong>
+		<hint>Do you honestly think dank memes are worth fighting for?</hint>
         <accomplish>30</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -107,6 +114,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>Your verbal assailant does not reply after a while. Maybe you scared him away with your higher intelligence and clever usage of comedic memes! ARGUMENT WIN</responseCorrect>
 		<responseWrong>"You are literally having a hissy fit now!" They also mention that you are just as pushy and annoying as those pushy annoying religious people you think you're better than. ARGUMENT LOST</responseWrong>
+		<hint>You already think you're a bad-ass; keep the combo going!</hint>
         <accomplish>15</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -121,6 +129,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>Other like-minded individuals did comment talking about the origin of the name God. Not what you intended, but you completely de-railed the conversation. ARGUMENT WIN</responseCorrect>
 		<responseWrong>"The article is talking about polytheistic gods. It's supposed to be lower-cased..." What did I tell you about reading the article you are referencing before you post it? ARGUMENT LOST</responseWrong>
+		<hint>You haven't even taken a look at the article</hint>
         <accomplish>15</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -135,6 +144,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>"Yeah, I'm not reading that." Wow,what a bum! Due to the participant dropping out of the debate, you count this as an ARGUMENT WIN</responseCorrect>
 		<responseWrong>"Did you just copy and paste the first sentence from the online encyclopedia?" Next time, take your time with research. ARGUMENT LOST</responseWrong>
+		<hint>If he's such an adult, he must have a limited amount of free time!</hint>
         <accomplish>15</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
@@ -149,12 +159,28 @@
 		<answer>ansB</answer>
 		<responseCorrect>"Well I mean, just learn to feel comfortable in your own skin. You can learn to accept yourself." SEE! They can't prove that they are right! ARGUMENT WIN</responseCorrect>
 		<responseWrong>"Confidence is key, man. There have been celebrities who have trouble getting dates because they lacked confidence. Obviously since you have none, it's no surprise you have trouble with women." These words cut deep. Oooooohhhhhhh... ARGUMENT LOST</responseWrong>
-        <accomplish>25</accomplish>
+		<hint>On the internet, you can be anyone you want! Or have anything you want...</hint>
+        <accomplish>20</accomplish>
 		<backgroundColor>bkgCreddit</backgroundColor>
         <headerColor>hdrCreddit</headerColor>
         <logo>logoCreddit</logo>
 	</argument>
-	
+
+	<!--arg 60-->
+	<argument>
+		<text>While on the social networking site creddit, you felt the need to stretch the limits of your huge brain and created a thread titled "Do People With High IQ See Those With Average IQs as Stupid?" You began the debate with your IQ and a brief introduction. To your surprise, the debate you planned for never came as the commenters mocked your attempt to feel above others: "Why is it always the insecure ones that feel the need to make everything about IQ?" You're not always on about IQ! If this commenter had a higher IQ, he would have known that! Show this low IQ'd mouth breather that he is wrong:</text>
+        <choiceA>Defend yourself! You are not an insecure baby-man!</choiceA>
+        <choiceB>Post the results of an IQ test that you took from the internet</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>Your post started dying out, but your photo of the results got two upvotes which is pretty high in my opinion... At least someone believes you! ARGUMENT WIN</responseCorrect>
+		<responseWrong>"You used the word IQ nineteen times describing how yours is so high while saying that you didn't care about IQ." YOU'RE A BIG FAT PHONY! ARGUMENT LOST</responseWrong>
+		<hint>Would someone confident with themselves care what somebody on the internet says about insecurity?</hint>
+        <accomplish>15</accomplish>
+		<backgroundColor>bkgCreddit</backgroundColor>
+        <headerColor>hdrCreddit</headerColor>
+        <logo>logoCreddit</logo>
+	</argument>
+
 	<!--Arg: MyFace-->
 	<!--arg 1-->
     <argument>
@@ -164,6 +190,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>The girl ends up unfriending you from MyFace. Now your euphoric online presence won't bless her news feed. It's her fault she's dating a meatheaded bum. ARGUMENTWIN++</responseCorrect>
 		<responseWrong>Despite his jock-ish looks; he has a solid career in political science and generally has his life together. Your ego takes a huge blow to the nads :(</responseWrong>
+		<hint>You don't even know what this guy does in his free time!</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -178,6 +205,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>After writing multiple paragraphs on how everything is her fault, she replies "You're absolutely right. I not only gave you everything growing up, but I spoiled you." You're life may be hollow and you may be a spoiled-brat, but she still agreed with you! LIFE IN SHAMBLES BUT ARGUMENT WIN</responseCorrect>
 		<responseWrong>Your family members who liked your mom's post all started posting on your wall with posts like "I saw what your mom said, you should listen to her" and started lecturing you. Can't run away from family. They'll find you. ARGUMENT LOST</responseWrong>
+		<hint>Family always has a way of finding you...</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -192,6 +220,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>She replies to your message: "Sorry, I don't think I will ever see you in that way. But I still want to be friends with you." She did say that she doesn't THINK she will ever see you that way, so there may still be a chance! DELUSIONAL BUT ARGUMENT WIN I GUESS</responseCorrect>
 		<responseWrong>She replies to your message: "You haven't even met him! You do this every time I date somebody new; you freak out and tell me how stupid I am. Just stop talking to me; you're a toxic friend." ARGUMENT AND FRIENDSHIP LOST</responseWrong>
+		<hint>Don't start a war. Friendships can be lost that way</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -206,6 +235,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>They accept your apology and urge you to delete your status. You never did, but people stopped calling you a prick at least. ARGUMENT WIN I GUESS</responseCorrect>
 		<responseWrong>They comment saying that was not the issue they had with your status. Now everybody is calling you a racist too. You also became viral and had your status screen captured for other social media outlets :( ARGUMENT LOST</responseWrong>
+		<hint>Your black friends can't help you on the internet</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -220,6 +250,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>Your comment has been deleted by the girl's mother. You consider re-writing your comment, but you considered that she learned her lesson that God doesn't exist. ARGUMENT WIN++</responseCorrect>
 		<responseWrong>The mother replies with "We are all grateful for the surgeon, it was just a figure of speech." before your comment was bombarded with people calling you a moron. You just wanted to educate those less intelligent than you :( ARGUMENT LOST</responseWrong>
+		<hint>Nobody called for Captain Obvious</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -234,6 +265,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>She seems to have deleted her MyFace profile. Her default picture is now a default image. Not sure what to make of it, she probably is going through some tough times and will contact you once she gets online again. ARGUMENT... I don't even know :\</responseCorrect>
 		<responseWrong>The girl ends up writing a large essay covering such topics such as how much of a creep you are for stalking her, her rejecting you, and how if you have to tell her that you are a nice guy, you probably are not. "By the way, I just moved here and didn't have internet so I couldn't reply fast enough. Good thing you spammed me with messages because it shows what kind of person you are." :( ARGUMENT AND GIRL OF YOUR DREAMS LOST</responseWrong>
+		<hint>Use what your Pick-Up Artist training taught you!</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -248,7 +280,8 @@
 		<answer>ansB</answer>
 		<responseCorrect>M'lady acknowledged you! He replied to your comment with a sincere "Haha, thank you." Her comment could carry you through the years as you mark off for another fair maiden saved and an ARGUMENT WIN</responseCorrect>
 		<responseWrong>The girl never replied to you despite replying to other people on her status. It seems like this white knight just got another scar on his armor :( ARGUMENT LOST</responseWrong>
-		<accomplish>25</accomplish>
+		<hint>Neediness is a massive turn-off</hint>
+		<accomplish>20</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
         <logo>logoMyface</logo>
@@ -262,6 +295,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>He replied with "Yeah, I guess. Where did you buy it?" You have the upper hand here so you hold on to the information and don't reply to him. ARGUMENT WIN</responseCorrect>
 		<responseWrong>Your ex-friend sent you a text; "Dude, what the hell is wrong with you? You freak out every time we have a difference in opinion. Get over yourself" You received a new friend request from him and accepted because that's what you do. ARGUMENT LOST</responseWrong>
+		<hint>He's been your friend for a long time... he can take it</hint>
 		<accomplish>25</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -275,6 +309,7 @@
         <choiceB>"Calm down everyone! She's going through some hard times, and we should support her!"</choiceB>
 		<answer>ansB</answer>
 		<responseCorrect>The commenters start feeling pity for the actress because she was going through some stressful times before she ended up in prison. ARGUMENT WIN</responseCorrect>
+		<hint>Have you even read what this actress did?</hint>
 		<responseWrong>"She took drugs then murdered 12 people! Did you even read the article?" That's what you get for just skipping to the comments section... ARGUMENT LOST</responseWrong>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
@@ -290,6 +325,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>"I still find it pretty weird, but whatever you want to do man. I recommend that you don't post these so everyone can it because it is a taste not everyone can understand." ...so he agrees with you? ARGUMENT WIN</responseCorrect>
 		<responseWrong>"Wait, a bag of sand?" ...he immediately discovered that you do not know what you are talking about. A bag of sand, is that the best you could come up with? ARGUMENT LOST-FRAUD DETECTED</responseWrong>
+		<hint>There's a time and place for showing off. The internet is not one of them</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -304,6 +340,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>"It's creepy. I don't even know who you are." So pretty much all you need to do is introduce yourself? Let the seduction begin! ARGUMENT WIN</responseCorrect>
 		<responseWrong>The next time you viewed her profile, you noticed that there was an "Add Friend" button. She unfriended you from MyFace :( I mean it's totally her loss she doesn't want to be a part in your life, right? ARGUMENT AND PRINCESS LOST</responseWrong>
+		<hint>Persistence is key... but not the key to winning anyone over</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
@@ -318,7 +355,23 @@
 		<answer>ansA</answer>
 		<responseCorrect>"The hell does that matter? I make enough to support the both of us." You then blocked the pleb before he can send you another message. You know that he's just saving face and lying to feel better about himself. DELUSIONAL ARGUMENT WIN</responseCorrect>
 		<responseWrong>"So I asked about you. My wife said the last time you talked to her was in high school. You didn't even talk to her much, you just asked her to sign your yearbook. Are you so unhappy with your own life that you can't stand to see other people be happy?" You then blocked the pleb. That'll show him! You are happy with your life; how can you not be with an ARGUMENT LOST oh wait...</responseWrong>
+		<hint>When was the last time you even talked to her?</hint>
 		<accomplish>30</accomplish>
+        <backgroundColor>bkgMyFace</backgroundColor>
+        <headerColor>hdrMyFace</headerColor>
+        <logo>logoMyface</logo>
+	</argument>
+	
+	<!--arg 56-->
+	<argument>
+		<text>While on the social media site MyFace, you decided to let the world know of your intellectual superiority. You fabricated a story where you outwitted a typical chad starting off with "So I had an altercation with this so-called alpha male while minding my own business..." The story had many twists and turns, but it ended with you winning over the girl he was hitting on by speaking Latin. Despite how eloquently written your status was, people were quick to question your credibility: "I highly doubt any of this happened." That's no good! You worked hard making this fictional story sound real:</text>
+        <choiceA>Describe your imaginary verbal assailant and the imaginary girl in greater detail</choiceA>
+        <choiceB>Quickly translate an insult into Latin on www.translatestuff.com</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>Nobody replies because nobody really cares about your work of fiction. Your status dropped off into MyFace obscurity. Eh... good enough. ARGUMENT WIN AND CREDIBILITY GAINED</responseCorrect>
+		<responseWrong>"Did you just describe the two main characters from that Dragon Fight Z anime? Pathetic, man..." You couldn't come up with a more original description quick enough! You don't think well under pressure :( ARGUMENT AND CREDIBILITY LOST</responseWrong>
+		<hint>Prove that you are superior in the head!</hint>
+		<accomplish>20</accomplish>
         <backgroundColor>bkgMyFace</backgroundColor>
         <headerColor>hdrMyFace</headerColor>
         <logo>logoMyface</logo>
@@ -333,6 +386,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>The girl doesn't respond. In fact, you feel like she probably blocked you from ever contacting her again. It's her loss anyway; if she knew that you made $1K during the summer, maybe she would change her mind. You take this as an ARGUMENT WIN</responseCorrect>
 		<responseWrong>"How on Earth are you a human being? Your first message was asking if I would allow you to "make love to me"; how could I not be offended by that? I hope you don't talk to other girls on this website like this, you sexless weirdo". ARGUMENT LOSE</responseWrong>
+		<hint>How could you possibly not know what you did wrong?</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
@@ -347,6 +401,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The girl doesn't respond, but she did view your profile after you sent the message. She probably cried herself to sleep. Feels good to be such a heart breaker! It's her fault for being average looking anyway. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"Okay, good luck with that. You should have no problem getting one of those." the homely girl replies. You can feel the sarcasm ooze from the computer screen. You just got rejected by a homely girl! It's not like you care or anything (but really, you do care). ARGUMENT LOSE</responseWrong>
+		<hint>Sometimes you gotta go all in...</hint>
 		<accomplish>25</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
@@ -361,6 +416,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>Still no response. It appears that she has deactivated her dating profile. You assumed that she realized she made a mistake for not prioritizing you and stepped out of the dating pool. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"Don't call me a dumb broad! I just stepped out for a few hours. It's a good thing you messaged me though because it shows exactly what kind of child you are." Ouch! There's plenty of fish in the sea, man. RELATIONSHIP LOSE</responseWrong>
+		<hint>Was it even worth it in the end?</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
@@ -375,7 +431,8 @@
 		<answer>ansB</answer>
 		<responseCorrect>The girl doesn't respond. She also mentioned in her profile that she wouldn't respond to one word first messages. Well uh... you weren't too emotionally attached, so it wasn't so bad I guess. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>She did view your profile, but never replied to your message. You almost had her :( ARGUMENT LOSE</responseWrong>
-		<accomplish>10</accomplish>
+		<hint>If you have standards, so can other people</hint>
+		<accomplish>15</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
         <logo>logoOknarc</logo>
@@ -384,11 +441,12 @@
 	<!--arg 30-->
 	<argument>
 		<text>You were desperately clicking through the online dating website OkNarcissus and stumbled upon a profile of an attractive woman. Reading through m'lady's profile, she appears to value a man's intelligence and personality over muscle. So pretty much, you're her dream guy! However before you can work up the words to woo her, you spot a typo in her profile. "Please us proper grammar in your message and we can get along!" US!?!?!?! Such irony! Instead of being your usual suave self, something within you compels you to write "Don't you mean 'use'?" However after a few minutes of waiting, she still hasn't replied to you. You decided to fish for a message:</text>
-		<choiceA>Be a bad ass snarker: "You should reply to my message. You'll learn more about grammar if you do."</choiceA>
+		<choiceA>Be a bad-ass snarker: "You should reply to my message. You'll learn more about grammar if you do."</choiceA>
         <choiceB>Explain the joke: "Get it? Because you misspelled something in your profile! :P"</choiceB>
 		<answer>ansB</answer>
 		<responseCorrect>The girl doesn't respond. However, you looked at her profile and she fixed the spelling error. It seems like you passed on some knowledge and made the world a better place! ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"No thank you. You kind of creep me out." Ouch :( ARGUMENT LOSE</responseWrong>
+		<hint>Help the world with your superior intelligence!</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
@@ -403,6 +461,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The girl doesn't respond. However, you looked at her profile and she added a disclaimer: "Must love God." While you didn't sway her to the light side of atheism, you at least helped other men not waste their time. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"I could say that you would be more attractive if you were Christian." After that, she just kept on lecturing and lecturing... you called this a lost cause and gave up on trying to woo m'lady :( ARGUMENT LOSE</responseWrong>
+		<hint>You're one to talk about attractiveness...</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
@@ -417,12 +476,28 @@
 		<answer>ansB</answer>
 		<responseCorrect>"Never in a million years." So maybe you'll have a chance after the million years are up? ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"Keep on caressing, weirdo." M'lady's profile then seemed to have been deactivated. When you were done with caressing yourself, you felt sad about being called a weirdo. It worked in the books, dammit! ARGUMENT LOSE</responseWrong>
+		<hint>#yolo</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
         <logo>logoOknarc</logo>
 	</argument>
-	
+
+	<!--arg 59-->
+	<argument>
+		<text>You were sifted through the online dating website OkNarcissus and found the profile of a goddess that you Super Liked on the dating app Cinder. Thinking it's odd to see her on a dating site after a guy like you Super Liked her, you concocted a message: "I saw you on Cinder and I Super Liked you. Did you ever get to me? I'm wondering why we never matched." After a while of waiting she replied with "Sorry dude. I'm pretty picky and I swipe left a lot." You dropped to your knees and wept. Not being used to rejection because you never get rejected, you decide to show her that you're worth the right swipe:</text>
+		<choiceA>Talk yourself up: "You don't know what you're missing out on."</choiceA>
+        <choiceB>Talk her down: "You weren't that pretty anyway. HARUMPH!"</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>"Whatever." So she agrees with you. No argument from her side. You totally showed her I guess! ARGUMENT RECEIVED</responseCorrect>
+		<responseWrong>"After looking at your profile, it looks like I'm not missing out on much." I mean your profile did say you have no car, job, and apartment... She might just be correct. Also why would you keep that in your profile? ARGUMENT LOSE</responseWrong>
+		<hint>Confidence is good to have, but don't be delusional about yourself</hint>
+		<accomplish>30</accomplish>
+        <backgroundColor>bkgOkNarc</backgroundColor>
+        <headerColor>hdrOkNarc</headerColor>
+        <logo>logoOknarc</logo>
+	</argument>
+
 	<!--Arg: MGN-->
 	<!--arg 5-->
 	<argument>
@@ -432,6 +507,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>You mention the game's merit, and the commenter apologizes. It's okay though; a pleb like him would've never been able to understand the quality of Alive and Dead: Hardcore Beach Games Edition without your help. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>The commenter called you out! He said that he found you on MyFace and said that you are one of those anti-social perverts! He then proceeds to post links that lead to pictures of you, and it really hurts your feelings. Surprisingly, the website doesn't have any anti-bullying rules :( ARGUMENT LOSE</responseWrong>
+		<hint>MGN always finds out...</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -446,6 +522,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The commenters do mention that the reviewer is known to do that once in a while. They start to question if this review is legitimate or if the reviewer is trolling again. TURNING IT AROUND ARGUMENT WIN!</responseCorrect>
 		<responseWrong>The commenters mention that while the music and graphics are good, that doesn't make up for the nonexistant gameplay. I mean you did have some holes in your argument... ARGUMENT LOSE</responseWrong>
+		<hint>Games are more that what you can see and hear</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -460,6 +537,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The commenters pathetically try to defend their console saying that their killer app is coming out later in the year, but you know it will probably get another 7/10. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>They mention that Plebstation 4 is selling much more than the Bonebox. YOU GOT BONED AND ARGUMENT LOSE</responseWrong>
+		<hint>What does the past console generation have to do with anything?</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -474,6 +552,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The commenters say that while they agree with you that the PC is wonderful, it still was not an option in the thread. They insult your intelligence, but at least they agree with you! PEOPLE AGREE WITH YOU ARGUMENT WIN!</responseCorrect>
 		<responseWrong>The OP replied saying that he already has a gaming PC, they just want the console exclusives and the games that run better on console. So that's the reason he didn't list the PC :| ARGUMENT LOST</responseWrong>
+		<hint>Your mother bought your gaming PC for you!</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -488,7 +567,8 @@
 		<answer>ansA</answer>
 		<responseCorrect>The commenters state that there is no item in the plumber's arsenal that can counter the porcupine's super form. The poll tips in the favor of the porcupine. THE PORCUPINE AND THE ARGUMENT WIN!</responseCorrect>
 		<responseWrong>Other commenters mention that the plumber was able to throw a giant turtle into space. I don't know about you, but that's a pretty solid feat of strength. The poll tips in the favor of the portly plumber from down under. THE PORCUPINE AND THE ARGUMENT LOST</responseWrong>
-		<accomplish>10</accomplish>
+		<hint>What gives the porcupine the advantage?</hint>
+		<accomplish>15</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
         <logo>logoMgn</logo>
@@ -502,6 +582,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>The commenters agree with you that it is not fair that Americans get less costumes. They discuss that it would be a good idea to at least replace the removed costumes with something else. The one commenter doesn't reply after that. Probably feels like a loser. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"Wait a minute. This is a robot piloting simulator. You only see the characters in costume in the HUB world. Why are these sexy costumes a selling point for you?" Now everyone thinks you are a pervert! DIGNITY LOST</responseWrong>
+		<hint>Who would you be playing most in this type of game?</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -516,6 +597,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>"...society has nothing to do with how creepy and inappropriate your comment was" The pleb doesn't even know how to give a good comeback. I guess that's why you are the one with the college degree. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>M'lady replies to you! But it's not a good reply. "This is not the place to do that though. You should try out OkNarcissus. You'll find somebody there." You've been signed up for OkNarcissus for 5 years though and found nobody :( ARGUMENT LOST</responseWrong>
+		<hint>Back in the good old days, people would meet their significant others in the weirdest places!</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -525,11 +607,12 @@
 	<!--arg 33-->
 	<argument>
 		<text>On the gaming website MGN, you were browsing through the video game forums for an erotic Japanese visual novel. There was a poll for which girl was pursued romantically most in the game. To your horror, your waifu was only in second place: "You guys have terrible taste in women. My waifu should be in first place!" you commented as the thread spiralled into a heated debate. One commenter replies to you directly with a "Sorry, our tastes don't cover flat-chests and boring personalities like yours do." Your waifu does not have a boring personality! She loves gaming and is a shy kawaii-desu girl! She is completely different than the other girls in the game:</text>
-		<choiceA>"My play through had more sex scenes then yours did and had a happier relationship overall"</choiceA>
+		<choiceA>"My playthrough had more sex scenes then yours did and had a happier relationship overall"</choiceA>
         <choiceB>"Breasts and personality aren't everything you perverts!"</choiceB>
 		<answer>ansA</answer>
 		<responseCorrect>The commenters start comparing how many sex scenes each branching path had and your waifu had the most! Last you looked, your waifu closed the gap between first place and second place in the poll! ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"And that leaves your waifu with what again?" Damn, that was a good comeback. You can't think of another trait your waifu has! Last you looked, the gap between first and second place has gotten bigger in the poll. NO TROPHY FOR SECOND PLACE</responseWrong>
+		<hint>You are one lewd dude</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -544,6 +627,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>Commenters have pointed out that the game still does get updated and tweaked, so the tiers are volatile. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>One commenter asked you "Who are you? I've played a lot tournament players too." You answered with a random name to which nobody believes you. YOU ARE A FRAUD-ARGUMENT LOST</responseWrong>
+		<hint>Keep in mind you main one of the worst characters in the game</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -558,6 +642,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>Some like-minded commenters do agree with you that the gameplay is your standard slog, but the game does have some good narrative environments and well paced story-telling. Since you were able to get people to agree with you, it's an ARGUMENT INCREASE</responseCorrect>
 		<responseWrong>"So you don't like it because it's popular? It's gamers like you that are what's wrong with the gaming industry." Well... I mean... There's thousands of people like you around, right? ARGUMENT DECREASE</responseWrong>
+		<hint>You like what you like I guess</hint>
 		<accomplish>25</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -572,6 +657,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The other commenters start to mention the games that they think don't deserve to be on the list. After counting the games they mentioned, you counted enough for the honorable mentions to make it into the list. After the honorable mentions, your favorite game should be next... WON THE ARGUMENT</responseCorrect>
 		<responseWrong>"I haven't played that game recently, but I don't remember much of it. Must not have been that good of a game if I can't remember it..." NOT GOOD ENOUGH</responseWrong>
+		<hint>It's impossible to have a bias-free opinion</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -586,6 +672,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>"Huh... I didn't even know that. I haven't had the chance to watch the anime yet." Since you know more about your waifu, her heart belongs to only you! ARGUMENT + 1</responseCorrect>
 		<responseWrong>"I mean our waifu has no problem being with two guys at once... It's part of her personality." NO! YOUR WAIFU IS PURE AND INNOCENT AND AND it's an ARGUMENT LOST</responseWrong>
+		<hint>There's a difference between canon and head-canon</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgMGN</backgroundColor>
         <headerColor>hdrMGN</headerColor>
@@ -601,7 +688,8 @@
 		<answer>ansB</answer>
 		<responseCorrect>The troll replies saying that you are way too obsessive over some anime character that's probably going to be forgotten in a year. What others call obsessive, you call dedicated. Besides it's better to be dedicated to an anime girl than it is to be dedicated to drugs. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>He mentions that his favorite character was number 1 on the list. The worst part of it all is that her breasts are actually much bigger than your waifu's breasts :( ARGUMENT LOSE</responseWrong>
-		<accomplish>10</accomplish>
+		<hint>You just have to hope that his waifu is not on the list</hint>
+		<accomplish>15</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
         <logo>logoLoutube</logo>
@@ -615,7 +703,8 @@
 		<answer>ansA</answer>
 		<responseCorrect>Other viewers of the video do mention the number of shortcuts and items that they are missing. They all start to make fun of the Let's Player's skills rather than focusing on the flawed game. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>The commenters tell you to clean off you nostalgia goggles. When it's your turn to reply to it, nothing comes to your head. Maybe the game actually isn't as good as you remembered :| ARGUMENT LOSE</responseWrong>
-		<accomplish>10</accomplish>
+		<hint>It seems that the audience likes to point out flaws in flawed things...</hint>
+		<accomplish>15</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
         <logo>logoLoutube</logo>
@@ -629,6 +718,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>Other viewers of the video do mention that the creator's preferred ship is less likely than yours! Everybody is on your side and everyone loves you! ++ARGUMENT</responseCorrect>
 		<responseWrong>The creator has not replied to you. Other viewers of the video mention that the only one who's worked up about the offensiveness of this ship is you. --ARGUMENT</responseWrong>
+		<hint>The creator must've spent hours on this thing. Be cool</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -643,6 +733,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The commenters all start listing off bad games that should also be on the list. You pat your own shoulder as your work here is done. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>People agree with the narrator of the video: the game simply is not that great. They start asking where your sense of taste is and it really hurts your feelings :( ARGUMENT LOSE</responseWrong>
+		<hint>The creator of the video doesn't have all the time in the world to play video games</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -657,6 +748,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>You link to an article called "Why Nice Guys Finish Last" and people comment on how it's a satire article. You know for a fact that it's a legitimate source of information because you saw this link on your MyFace news feed. These guys don't know what they are talking about, further cementing your intellectual lead! ARGUMENT WIN!</responseCorrect>
 		<responseWrong>After you compared the difference between your intelligence, other commenters start to attack your child-like behavior and overall bitterness towards the world. ARGUMENT LOSE</responseWrong>
+		<hint>Words hurt - they sting like bullets. Hopefully they don't have a reflector</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -665,12 +757,13 @@
 	
 	<!--arg 25-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching a tribute video to a popular celebrity who recently died. You were about to leave your regards to one of your favorite celebrities, but one comment caught your eye: "What kind of cruel God would take him away from us?!" Your atheism got the better of you and you replied to the comment with "A God that doesn't exist" Tipping your fedora, you imagined yourself as a bad ass for leaving that comment. However people start calling you an insensitive prick for mocking the death of a celebrity:</text>
+		<text>You were on the video-sharing website LouTube watching a tribute video to a popular celebrity who recently died. You were about to leave your regards to one of your favorite celebrities, but one comment caught your eye: "What kind of cruel God would take him away from us?!" Your atheism got the better of you and you replied to the comment with "A God that doesn't exist" Tipping your fedora, you imagined yourself as a bad-ass for leaving that comment. However people start calling you an insensitive prick for mocking the death of a celebrity:</text>
 		<choiceA>Explain that your intentions were misinterpreted; you meant to leave your condolences to the celebrity</choiceA>
         <choiceB>Use science and logical thought to temper your argument that God does not exist</choiceB>
 		<answer>ansA</answer>
 		<responseCorrect>The commenters mention that it's hard to interpret your comment as anything else, but hey, at least they are not yelling at you! ARGUMENT WIN!</responseCorrect>
 		<responseWrong>They continue to call you a prick because they think this video is not a good forum for discussing beliefs. The fools don't know that it's always a good time to discuss atheism! ARGUMENT LOSE</responseWrong>
+		<hint>People are obviously distraught about this</hint>
 		<accomplish>15</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -685,6 +778,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>While your plan to win over the heart and body of the female cosplayer failed, but your comment has a total of two likes! Overall success! ARGUMENT WIN!</responseCorrect>
 		<responseWrong>The original commenter removed the entire conversation from the video. Nooooooo! M'lady will never love you now :( ARGUMENT LOSE</responseWrong>
+		<hint>You're 28. Act like it</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -699,6 +793,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>The commenter replied with a "Yeah, I guess that's correct, but it still weirds me out." The pleb agrees with you! ARGUMENT WIN!</responseCorrect>
 		<responseWrong>The commenter replied with a "The output is 2D, but there are no pixels involved with real women. Don't try to lump me in with you." Ouch! It was turned around back at you :( ARGUMENT LOSE</responseWrong>
+		<hint>Sometimes the best way to win an argument is to have a mutual understanding with one another</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -713,6 +808,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>The sad man replied with a pathetic "Whatever, loser. Have fun with your cartoon for children." It's a shame that his intellect wasn't up to snuff to enjoy the show. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>None of your fellow bronies answered the call to come and aid you. You stand alone in your shame. ARGUMENT LOSE</responseWrong>
+		<hint>It's like 9 in the morning - people are supposed to be working</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -727,6 +823,7 @@
 		<answer>ansA</answer>
 		<responseCorrect>"Not really... The anime is garbage because of those reasons you listed." Thinking long and hard about how to reply, you come up with a cool "Well that's like, your opinion, man." The commenter never replies back and you take this as an ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"Sure thing. After the first arc, the series devolved into a harem anime. All characterization goes out the window, endless filler episodes, bad animation ..." The commenter continues on and on listing off negative traits about the anime. Maybe the anime hasn't aged as well as you thought... ARGUMENT LOSE</responseWrong>
+		<hint>What do we even know about the commenter? Maybe they even have their own top 10 LouTube channel</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -741,6 +838,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>The commenters complain that the musician writes annoying music now and how she used to write music with more heart before she became popular. Since people agree with you, this is an ARGUMENT WIN!</responseCorrect>
 		<responseWrong>Another commenter replies saying that you probably clicked on the video because of the provocative thumb nail. You are quick to defend yourself, but the damage was already done. Everyone thinks you're a pervert now. DIGNITY LOSE</responseWrong>
+		<hint>As a human being with ears, you are allowed to critique music</hint>
 		<accomplish>20</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -755,6 +853,7 @@
 		<answer>ansB</answer>
 		<responseCorrect>"Lol no." M'lady may have provided a short response, but you made her lol. It's a step in the right direction so it's an ARGUMENT WIN!</responseCorrect>
 		<responseWrong>"Don't call my boyfriend a simpleton, freak." Ouch. You pulled out the "Higher IQ card" way too soon. REJECTED ON THE INTERNET ARGUMENT LOSE</responseWrong>
+		<hint>Nobody knows what goes on behind closed doors</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
@@ -768,8 +867,39 @@
         <choiceB>Call everyone hyped up for the movie a sheeple</choiceB>
 		<answer>ansA</answer>
 		<responseCorrect>"What are you even talking about? What does IQ have to do with enjoying a science fiction movie?" Is he daft!? IQ means everything to everything to everyone! ARGUMENT WIN!</responseCorrect>
-		<responseWrong>"Care to explain why?" It was at that moment that you didn't have a good reason for not liking the trailer; you are just being a contrarian. ARGUMENT LOSE</responseWrong>
+		<responseWrong>"Care to explain why?" It was at that moment that you didn't have a good reason for not liking the trailer; you are just being a contrarian and everyone you called a sheeple knows this now. ARGUMENT LOSE</responseWrong>
+		<hint>Focus-fire is a great strategy in FPS games... maybe it'll help here</hint>
 		<accomplish>15</accomplish>
+        <backgroundColor>bkgLouTube</backgroundColor>
+        <headerColor>hdrLouTube</headerColor>
+        <logo>logoLoutube</logo>
+	</argument>
+	
+	<!--arg 57-->
+	<argument>
+		<text>You were on the video-sharing website LouTube watching a make-up tutorial... for some reason. Feeling like natural beauty is the best kind of beauty, you left a comment for the creator of the video: "M'lady, please remove all that horrid paint from your face. You are beautiful as is! You need not cheapen your beauty." Thinking that maybe m'lady will reply to your comment with desire, you were honestly shocked when people started flaming you! "Do you tell people this in person? It's a really creepy thing to tell people." How can it be creepy? You're giving away free compliments:</text>
+		<choiceA>Pontificate about how people like your attackers are the reason society has so many body image issues</choiceA>
+        <choiceB>Say that you do approach women in real life on trains and malls and tell them they'd look better without make-up</choiceB>
+		<answer>ansA</answer>
+		<responseCorrect>Nobody replies to your five paragraph essay, but it does garner a handful of like. That must mean that people share your belief on beauty and the downfall of society! ARGUMENT WIN</responseCorrect>
+		<responseWrong>"That is beyond creepy. We wear make up for ourselves. Nobody wants to hear that from a stranger." And thus you got lectured by everyone on the internet because of how creepy you are. ARGUMENT LOSE</responseWrong>
+		<hint>There are some things about you that strangers on the internet don't need to know...</hint>
+		<accomplish>20</accomplish>
+        <backgroundColor>bkgLouTube</backgroundColor>
+        <headerColor>hdrLouTube</headerColor>
+        <logo>logoLoutube</logo>
+	</argument>
+
+	<!--arg 58-->
+	<argument>
+		<text>You were on the video-sharing website LouTube watching a music video where the lead singer was wearing a fedora. Enjoying the tunes, you noticed the comments about the singer: "I love his hat! He's so cute!" This hurts because when you wear a fedora in public people avoid you like the plague! You give the world a piece of your glorious mind: "How come when I wear a fedora nobody calls me cute?" One commented "If you look anything like how you act, you must be hideous. The fedora can't save you." Peeved off that this troll knocked on your livelihood, you start summoning words into the screen:</text>
+		<choiceA>Defend your head wear. "The fedora is part of who I am as a person. Without it, I am nothing!"</choiceA>
+        <choiceB>Turn it around. "Look anything like how you act? That comment doesn't even make sense. I'm not acting like anything!"</choiceB>
+		<answer>ansA</answer>
+		<responseCorrect>"Yeah, I'm not touching that one. Good luck in life, buddy." Not one to turn down free luck, you gladly take it! ARGUMENT WIN</responseCorrect>
+		<responseWrong>"So you don't exist. Good." Damn, you got wrecked! ARGUMENT AND SENSE OF PURPOSE IN LIFE LOSE</responseWrong>
+		<hint>Focus on the original topic. That's why you commented in the first place</hint>
+		<accomplish>20</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
         <logo>logoLoutube</logo>
@@ -778,6 +908,7 @@
 
 <!--
 	MyFace - Posted an OC that gets shat on for Murdermaster the Porcupine
-	LouTube - 
-	LouTube - https://i.redditmedia.com/B2g6tXw0RtklbgLGAihWznyys6ZPXslqEoDFuy-m4tY.jpg?w=619&s=07e55cabbb51c1bee5672dc219a4f2b4 - make up tutorial
+	MyFace - Share post about Ponies in High School and tagged friends in it. One doesn't like Ponies and your friendship is on thin ice.
+	Creddit - https://i.imgur.com/GReAr8W.jpg
+	LouTube - http://imgur.com/LgQD742
 -->

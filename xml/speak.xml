@@ -39,7 +39,7 @@
 		<event>
 			<text>An older bar patron noticed the sword strapped to your back. He asked you why you're carrying it with you which lead to a more personal conversation, and you guys talked for a long time. Before he left, he gave you some fatherly advice about love, life, and dreams and went on his merry way.
 			</text>
-			<effect>content</effect>
+			<effect>motivated</effect>
 		</event>
 		<event>
 			<text>The TVs in the bar were for some strange reason on the kid's channel playing your favorite show "Ponies in High School". After watching it for a few minutes, the bartender changes it. You talked to her and convinced her to leave one TV on your show.
@@ -259,7 +259,7 @@
 		<event>
 			<text>You ran into a philosophy professor you had in college at the bar and chatted for a while. He asked you how you were doing even offering to help you find a better job related to philosophy. Before he left, he asked you to keep in touch. You started feeling better about the whole job search.
 			</text>
-			<effect>confident</effect>
+			<effect>motivated</effect>
 		</event>
 		<event>
 			<text>You ran into someone you knew from high school that you used to have a crush on. You bought her a drink as the two of you caught up for a while. When she had to leave, she added you on MyFace and asked you to keep in touch.
@@ -275,6 +275,31 @@
 			<text>A professional celebrity look-a-like walked into the bar dressed up as one of your favorite childhood heroes. You had to double take to make sure it wasn't the real actor! Walking over, you were able to get a photo with them.
 			</text>
 			<effect>photoUp</effect>
+		</event>
+		<event>
+			<text>It was trivia night at the bar. Unfortunately you joined in too late, but you enjoyed answering the questions to yourself. Somebody playing by themselves jokingly asked for help, and you were able to get him some answers. He didn't win, but he did buy you a beer as thanks.
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>There was an announcement for bingo night at the bar. Since you were interested in fun things and secretly wanted the money prize, you signed up to play. Half an hour later, you were able to steal the win!
+			</text>
+			<effect>moneyUp</effect>
+		</event>
+		<event>
+			<text>Out of nowhere you heard the theme song to an anime burst out of your pocket. It was your mother calling you. After your conversation with her, a girl approached you asking about your ring tone. She seemed genuinely interested in anime as the two of you talked for a while.
+			</text>
+			<effect>inLove</effect>
+		</event>
+		<event>
+			<text>Sitting at the bar, you noticed that the person next to you had their glass close to the edge of the bar. They turned around and accidentally elbowed the glass. Being aware of the situation, you caught it without spilling a drop! You were thanked for a job well done.
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>Minding your own business at the bar, some drunk business man sat down next to you. He ended up ranting for a long time giving you life and business advice.
+			</text>
+			<effect>motivated</effect>
 		</event>
 	</good>
 	<bad>
@@ -321,7 +346,7 @@
 		<event>
 			<text>The TVs in the bar were erroneously on the kid's channel playing the show "Ponies in High School". After watching for a few minutes, the bartender changes the channel. You had a temper tantrum and started to cry and left the bar. After a few minutes, you felt foolish and walked back inside.
 			</text>
-			<effect>soaDown</effect>
+			<effect>dishonored</effect>
 		</event>
 		<event>
 			<text>While standing outside, the bouncer stood next to you. You panicked and shouted at the bouncer "I DIDN'T DO ANYTHING" and ran to the bathroom to hide. You waited until the bouncer left until you snuck in feeling anxious for the rest of the night.
@@ -414,7 +439,7 @@
 			<effect>paranoid</effect>
 		</event>
 		<event>
-			<text>Sitting alone at the bar, you just thought of a funny event that took place in the past and started laughing. However, you lost control of your butt and ended up farting too. You felt everyone's eyes upon you as you hid under your hat...
+			<text>Sitting alone at the bar, you just thought of a funny event that took place in the past and started laughing. However, you lost control of your butt and ended up farting. You felt everyone's eyes upon you as you hid under your hat...
 			</text>
 			<effect>embarrassed</effect>
 		</event>
@@ -552,6 +577,31 @@
 			<text>You saw a cute girl wearing an anime shirt. Thinking that you had a lot in common, you really wanted to talk to her. However you never really had the nerve to talk to her until you watched her leave. Damn, that's disappointing.
 			</text>
 			<effect>discontent</effect>
+		</event>
+		<event>
+			<text>After eating some food, you felt pretty gassy. Trying to be discreet, you released some gas in small intervals. However you felt your body take it one stage way too far. Hopefully nobody around you noticed that you soiled your pants...
+			</text>
+			<effect>deadInside</effect>
+		</event>
+		<event>
+			<text>You participated in bingo night and aimed for the money prize! You were doing well until a chad stole the win from under your nose. Not one to take losing well, you threw a temper tantrum and cried in the bathroom. You felt like a fool when you returned to your seat.
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>Minding your own business, a loud Anime opening theme song blasted through your pocket. It was your mom started calling, but you were too embarrassed to answer as you felt everyone's eyes on you. 
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>Some random drunk guy asked you to be his wingman as he pulled you to another table with two women sitting there. Not knowing what to do on the spot, you talked about your favorite cartoon Ponies in High School. The women instantly left as the drunk guy berated you for being a terrible wingman.
+			</text>
+			<effect>dishonored</effect>
+		</event>
+		<event>
+			<text>Minding your own business, you felt somebody pull your fedora off of your head. Despite it being a joke, your first instinct was to shout "REEEEEEEEEEEEEEE!" freaking out everyone in the bar to the point that it got quiet. You froze in the spotlight as your hat was awkwardly place on your head.
+			</text>
+			<effect>deadInside</effect>
 		</event>
 	</bad>
 </doc>

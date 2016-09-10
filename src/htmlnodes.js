@@ -11,10 +11,9 @@ window.nodeGameEndNormal = '<div id="gameEnd"><img src="images/es/normal.png"></
 window.nodeGameEndWaifu = '<div id="gameEnd"><img src="images/es/waifu.png"></img><button id="egWaifu" class="continueGameBtn"></button></div>';
 
 window.nodeCreditScreen = '<div id="creditScreen"><img id="cLogo" src="/images/Logo.png"/><div><p>Game created by:</p><br/><img id="cDevLogo" src="/images/fabulous-asian-games.png"/><br/><p>Art/Programming/Design/Writing: Fabulous Asian Guy</p><br/><p>Music: reminisce by 4cat (Downloaded from Newgrounds)</p><br/><p>Sound Effects: Downloaded from freesound.org</p><br/><p>Thank you to all my friends and all the strangers on the internet who told me to make this game.</p><br/><br/><button class="backGameBtn" id="credCont"></button><br/><br/></div></div>';
-window.nodeStartScreen = '<div id="startScreen"><p>Version 0.02<a id="fbButton" href="https://www.facebook.com/FedorableLife/" target="_blank"></a><a id="twButton" href="https://twitter.com/NickBeardman" target="_blank"></a><a id="gpButton" href="https://plus.google.com/u/0/b/117720636938381447783/117720636938381447783/posts/p/pub" target="_blank"></a></p><img src="/images/Logo.png"/><div><button class="newGameBtn" id="mmNewGame"></button><button class="continueGameBtn" id="mmCont"></button><button class="creditsBtn" id="credits"></button></div></div>';
+window.nodeStartScreen = '<div id="startScreen"><p>Version 0.025<a id="fbButton" href="https://www.facebook.com/FedorableLife/" target="_blank"></a><a id="twButton" href="https://twitter.com/NickBeardman" target="_blank"></a><a id="gpButton" href="https://plus.google.com/u/0/b/117720636938381447783/117720636938381447783/posts/p/pub" target="_blank"></a></p><img src="/images/Logo.png"/><div><button class="newGameBtn" id="mmNewGame"></button><button class="continueGameBtn" id="mmCont"></button><button class="creditsBtn" id="credits"></button></div></div>';
 
 window.nodeBlockScreen = '<div id="blockScreen"><img src="/images/Logo.png"/><br/><p>Fedorable Life is currently unavailable for this web browser. We apologize for the inconvenience, however we are planning on getting the game onto more browsers in a future update.</p></div>';
-//LOUTAG
 window.nodeNGScreen1 = "<div id='genericDialog'><p id='GDTitle'>Disclaimer</p><div><p id='gdText'>Thank you for choosing to play Fedorable Life! While playing, please keep in mind that this game pokes fun at the 'neckbeard' caricature. The dialog within the game is not meant to be taken too seriously and does not reflect the views of the developers.</p><img id='GDIcon' src='images/generic/icc.png'/></div><button class='continueGameBtn' id='ngScreen1'></button></div>";
 window.nodeNGScreen2 = "<div id='genericDialog'><p id='GDTitle'>Introduction</p><div><p id='gdText'>Welcome to the wonderful world of Fedorable Life! You are a portly 20-something Philosophy graduate currently living in your mother's attic. You work at a comic book store which is soul crushing, but you can come into work whenever you want to. Your daily routine consists of playing video games, starting flame wars, and existing.</p><img id='GDIcon' src='images/generic/iint.png'/></div><button class='continueGameBtn' id='ngScreen2'></button></div>";
 window.nodeNGScreen3 = "<div id='genericDialog'><p id='GDTitle'>Tips</p><div><p id='gdText'>-Your daily routine keeps your needs up<br/>-If any of your needs reaches 0, you die<br/>-Going to work provides you with money and if you work enough, you may get a promotion<br/>-Travelling is a great way to improve yourself<br/>-Balance your time between what you need to do, making money, and improving yourself</p><img id='GDIcon' src='images/generic/itut.png'/></div><button class='continueGameBtn' id='ngScreen3'></button></div>";
@@ -113,20 +112,14 @@ window.unGameEndWaifu = '<div id="gameEnd"><img src="images/es/waifu.png"></img>
 
 /*
 <select id="changeNB">
-  <option value="sprite" selected="selected">Nick M. Beardman</option>
-  <option value="sprite2">Fred "Murdermaster" Wilhelm</option>
-  <option value="sprite3">Mr. Nice Guy</option>
-  <option value="sprite4">Barry Foxkin</option>
+  <option value="sprite4">Dick Wolf</option>
   <option value="sprite5">John "Hideyoshi" Smith</option>
   <option value="sprite6">"Puzzles"</option>
   <option value="sprite7">Viscount Algernon</option>
   <option value="sprite8">An actual white knight</option>
   <option value="sprite9">Fedora God</option>
   <option value="sprite10">Adult-ing Ending</option>
-  <option value="sprite11">E-Fame Ending</option>
   <option value="sprite12">Iron Pill Ending</option>
   <option value="sprite13">Waifu Ending</option>
-  <option value="sprite14">Normal Ending</option>
-  <option value="sprite15">Golden Ending</option>
 </select>
 */

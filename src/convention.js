@@ -4,8 +4,7 @@ window.level3 = [];
 window.level4 = [];
 window.level5 = [];
 window.boothEvents = [];
-//ps, fg, qa, mc, ak, rv, cs, gd, ms, ic, do, hc, gn, qs, om, lb, tc, pe, tt, da, bm, at, li, za, sd
-//add ff, avs
+//ps, fg, qa, mc, ak, rv, cs, gd, ms, ic, do, hc, gn, qs, om, lb, tc, pe, tt, da, bm, at, li, za, ff, avs, bp, mp, ab, sd
 
 eventEffect = function (effect) {
     var text = '';
@@ -15,7 +14,7 @@ eventEffect = function (effect) {
             grant.statExcitement += 5;
             grant.picsTaken++;
             grant.render();
-            text = '+5 Excitement<br/>+1 Picture Taken';
+            text = '+5 Excitement<br>+1 Picture Taken';
             break;
         case 'ps2':
             grant.statExcitement += 10;
@@ -23,7 +22,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.picsTaken += 2;
             grant.render();
-            text = '+10 Excitement<br/>+1 Social Skill<br/>+2 Pictures Taken';
+            text = '+10 Excitement<br>+1 Social Skill<br>+2 Pictures Taken';
             break;
         case 'ps3':
             grant.statExcitement += 15;
@@ -31,7 +30,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.picsTaken += 3;
             grant.render();
-            text = '+15 Excitement<br/>+3 Social Skill<br/>+3 Pictures Taken';
+            text = '+15 Excitement<br>+3 Social Skill<br>+3 Pictures Taken';
             break;
         case 'ps4':
             grant.statExcitement += 20;
@@ -39,7 +38,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.picsTaken += 4;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+4 Pictures Taken';
+            text = '+20 Excitement<br>+3 Social Skill<br>+4 Pictures Taken';
             break;
         case 'ps5':
             grant.statExcitement += 25;
@@ -47,13 +46,13 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.picsTaken += 5;
             grant.render();
-            text = '+25 Excitement<br/>+3 Social Skill<br/>+1 Picture Taken';
+            text = '+25 Excitement<br>+3 Social Skill<br>+1 Picture Taken';
             break;
         case 'fg1':
             grant.statEuphoria += 5;
             grant.figsBought++;
             grant.render();
-            text = '+5 Euphoria<br/>+1 Figurine';
+            text = '+5 Euphoria<br>+1 Figurine';
             break;
         case 'fg2':
             grant.statEuphoria += 10;
@@ -61,7 +60,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.figsBought++;
             grant.render();
-            text = '+10 Euphoria<br/>+1 Social Skill<br/>+1 Figurine';
+            text = '+10 Euphoria<br>+1 Social Skill<br>+1 Figurine';
             break;
         case 'fg3':
             grant.statEuphoria += 25;
@@ -69,7 +68,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 2;
             grant.figsBought++;
             grant.render();
-            text = '+25 Euphoria<br/>+2 Social Skill<br/>+1 Figurine';
+            text = '+25 Euphoria<br>+2 Social Skill<br>+1 Figurine';
             break;
         case 'fg4':
             grant.statEuphoria += 50;
@@ -77,7 +76,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.figsBought += 2;
             grant.render();
-            text = '+50 Euphoria<br/>+3 Social Skill<br/>+2 Figurines';
+            text = '+50 Euphoria<br>+3 Social Skill<br>+2 Figurines';
             break;
         case 'fg5':
             grant.statEuphoria += 100;
@@ -85,13 +84,13 @@ eventEffect = function (effect) {
             grant.socialSkills += 5;
             grant.figsBought += 3;
             grant.render();
-            text = '+100 Euphoria<br/>+5 Social Skill<br/>+3 Figurines';
+            text = '+100 Euphoria<br>+5 Social Skill<br>+3 Figurines';
             break;
         case 'qa1':
             grant.statExcitement += 5;
             grant.statEuphoria += 5;
             grant.render();
-            text = '+5 Excitement<br/>+5 Euphoria';
+            text = '+5 Excitement<br>+5 Euphoria';
             break;
         case 'qa2':
             grant.statExcitement += 10;
@@ -99,7 +98,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+10 Euphoria<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+10 Euphoria<br>+1 Social Skill';
             break;
         case 'qa3':
             grant.statExcitement += 15;
@@ -107,7 +106,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+15 Excitement<br/>+25 Euphoria<br/>+3 Social Skill';
+            text = '+15 Excitement<br>+25 Euphoria<br>+3 Social Skill';
             break;
         case 'qa4':
             grant.statExcitement += 20;
@@ -116,7 +115,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+5 Accomplishment<br/>+50 Euphoria<br/>+3 Social Skill';
+            text = '+20 Excitement<br>+5 Accomplishment<br>+50 Euphoria<br>+3 Social Skill';
             break;
         case 'qa5':
             grant.statExcitement += 25;
@@ -125,13 +124,13 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+25 Excitement<br/>+10 Accomplishment<br/>+100 Euphoria<br/>+3 Social Skill';
+            text = '+25 Excitement<br>+10 Accomplishment<br>+100 Euphoria<br>+3 Social Skill';
             break;
         case 'mc1':
             grant.statExcitement += 5;
             grant.changeStatus('Tweaked');
             grant.render();
-            text = '+5 Excitement<br/>+Tweaked(+Energy)';
+            text = '+5 Excitement<br>+Tweaked(+Energy)';
             break;
         case 'mc2':
             grant.statExcitement += 10;
@@ -139,7 +138,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.changeStatus('Tweaked');
             grant.render();
-            text = '+10 Excitement<br/>+1 Social Skill<br/>+Tweaked(+Energy)';
+            text = '+10 Excitement<br>+1 Social Skill<br>+Tweaked(+Energy)';
             break;
         case 'mc3':
             grant.statExcitement += 15;
@@ -147,7 +146,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.changeStatus('Tweaked');
             grant.render();
-            text = '+15 Excitement<br/>+3 Social Skill<br/>+Tweaked(+Energy)';
+            text = '+15 Excitement<br>+3 Social Skill<br>+Tweaked(+Energy)';
             break;
         case 'mc4':
             grant.statExcitement += 20;
@@ -155,7 +154,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 4;
             grant.changeStatus('Tweaked');
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+Tweaked(+Energy)';
+            text = '+20 Excitement<br>+3 Social Skill<br>+Tweaked(+Energy)';
             break;
         case 'mc5':
             grant.statExcitement += 25;
@@ -163,7 +162,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 5;
             grant.changeStatus('Tweaked');
             grant.render();
-            text = '+25 Excitement<br/>+3 Social Skill<br/>+Tweaked(+Energy)';
+            text = '+25 Excitement<br>+3 Social Skill<br>+Tweaked(+Energy)';
             break;
         case 'ak1':
             grant.statExcitement += 10;
@@ -175,7 +174,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'ak3':
             grant.statExcitement += 20;
@@ -184,7 +183,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.changeStatus('Content');
             grant.render();
-            text = '+20 Excitement<br/>+5 Accomplishment<br/>+1 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+20 Excitement<br>+5 Accomplishment<br>+1 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'ak4':
             grant.statExcitement += 25;
@@ -193,7 +192,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.changeStatus('Content');
             grant.render();
-            text = '+25 Excitement<br/>+10 Accomplishment<br/>+1 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+25 Excitement<br>+10 Accomplishment<br>+1 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'ak5':
             grant.statExcitement += 30;
@@ -202,7 +201,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 2;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+30 Excitement<br/>+15 Accomplishment<br/>+2 Social Skill<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+30 Excitement<br>+15 Accomplishment<br>+2 Social Skill<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'rv1':
             grant.statExcitement += 10;
@@ -214,34 +213,34 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+20 Excitement<br/>+1 Social Skill';
+            text = '+20 Excitement<br>+1 Social Skill';
             break;
         case 'rv3':
             grant.statExcitement += 30;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+30 Excitement<br/>+3 Social Skill';
+            text = '+30 Excitement<br>+3 Social Skill';
             break;
         case 'rv4':
             grant.statExcitement += 40;
             grant.timesSocialized += 4;
             grant.socialSkills += 4;
             grant.render();
-            text = '+40 Excitement<br/>+4 Social Skill';
+            text = '+40 Excitement<br>+4 Social Skill';
             break;
         case 'rv5':
             grant.statExcitement += 50;
             grant.timesSocialized += 5;
             grant.socialSkills += 5;
             grant.render();
-            text = '+50 Excitement<br/>+5 Social Skill';
+            text = '+50 Excitement<br>+5 Social Skill';
             break;
         case 'cs1':
             grant.statExcitement += 5;
             grant.statEuphoria += 5;
             grant.render();
-            text = '+5 Excitement<br/>+5 Euphoria';
+            text = '+5 Excitement<br>+5 Euphoria';
             break;
         case 'cs2':
             grant.statExcitement += 10;
@@ -249,7 +248,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.statEuphoria += 10;
             grant.render();
-            text = '+10 Excitement<br/>+10 Euphoria<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+10 Euphoria<br>+1 Social Skill';
             break;
         case 'cs3':
             grant.statExcitement += 15;
@@ -258,7 +257,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.statEuphoria += 25;
             grant.render();
-            text = '+15 Excitement<br/>+5 Accomplishment<br/>+25 Euphoria<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+5 Accomplishment<br>+25 Euphoria<br>+1 Social Skill';
             break;
         case 'cs4':
             grant.statExcitement += 20;
@@ -267,7 +266,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.statEuphoria += 50;
             grant.render();
-            text = '+20 Excitement<br/>+10 Accomplishment<br/>+50 Euphoria<br/>+1 Social Skill';
+            text = '+20 Excitement<br>+10 Accomplishment<br>+50 Euphoria<br>+1 Social Skill';
             break;
         case 'cs5':
             grant.statExcitement += 25;
@@ -276,7 +275,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.statEuphoria += 100;
             grant.render();
-            text = '+25 Excitement<br/>+15 Accomplishment<br/>+100 Euphoria<br/>+1 Social Skill';
+            text = '+25 Excitement<br>+15 Accomplishment<br>+100 Euphoria<br>+1 Social Skill';
             break;
         case 'gd1':
             grant.statExcitement += 10;
@@ -288,28 +287,28 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'gd3':
             grant.statExcitement += 30;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill';
+            text = '+20 Excitement<br>+3 Social Skill';
             break;
         case 'gd4':
             grant.statExcitement += 40;
             grant.timesSocialized += 5;
             grant.socialSkills += 5;
             grant.render();
-            text = '+25 Excitement<br/>+5 Social Skill';
+            text = '+25 Excitement<br>+5 Social Skill';
             break;
         case 'gd5':
             grant.statExcitement += 50;
             grant.timesSocialized += 5;
             grant.socialSkills += 5;
             grant.render();
-            text = '+30 Excitement<br/>+5 Social Skill';
+            text = '+30 Excitement<br>+5 Social Skill';
             break;
         case 'ms1':
             grant.statExcitement += 10;
@@ -321,14 +320,14 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'ms3':
             grant.statExcitement += 20;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill';
+            text = '+20 Excitement<br>+3 Social Skill';
             break;
         case 'ms4':
             grant.statExcitement += 25;
@@ -337,7 +336,7 @@ eventEffect = function (effect) {
             grant.statEuphoria += 10;
             grant.changeStatus('Content');
             grant.render();
-            text = '+25 Excitement<br/>+3 Social Skill<br/>+10 Euphoria<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+25 Excitement<br>+3 Social Skill<br>+10 Euphoria<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'ms5':
             grant.statExcitement += 30;
@@ -346,13 +345,13 @@ eventEffect = function (effect) {
             grant.statEuphoria += 25;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+30 Excitement<br/>+3 Social Skill<br/>+25 Euphoria<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+30 Excitement<br>+3 Social Skill<br>+25 Euphoria<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'ic1':
             grant.statExcitement += 5;
             grant.statEuphoria += 5;
             grant.render();
-            text = '+5 Excitement<br/>+5 Euphoria';
+            text = '+5 Excitement<br>+5 Euphoria';
             break;
         case 'ic2':
             grant.statExcitement += 10;
@@ -360,7 +359,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.statEuphoria += 10;
             grant.render();
-            text = '+10 Excitement<br/>+1 Social Skill<br/>+10 Euphoria';
+            text = '+10 Excitement<br>+1 Social Skill<br>+10 Euphoria';
             break;
         case 'ic3':
             grant.statExcitement += 15;
@@ -368,7 +367,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.statEuphoria += 25;
             grant.render();
-            text = '+15 Excitement<br/>+3 Social Skill<br/>+25 Euphoria';
+            text = '+15 Excitement<br>+3 Social Skill<br>+25 Euphoria';
             break;
         case 'ic4':
             grant.statExcitement += 20;
@@ -376,7 +375,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.statEuphoria += 50;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+50 Euphoria';
+            text = '+20 Excitement<br>+3 Social Skill<br>+50 Euphoria';
             break;
         case 'ic5':
             grant.statExcitement += 25;
@@ -384,7 +383,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.statEuphoria += 100;
             grant.render();
-            text = '+25 Excitement<br/>+3 Social Skill<br/>+100 Euphoria';
+            text = '+25 Excitement<br>+3 Social Skill<br>+100 Euphoria';
             break;
         case 'do1':
             grant.statExcitement += 10;
@@ -396,14 +395,14 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'do3':
             grant.statExcitement += 20;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+20 Excitement<br>+3 Social Skill<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'do4':
             grant.statExcitement += 25;
@@ -412,7 +411,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+25 Excitement<br/>+5 Accomplishment<br/>+3 Social Skill<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+25 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'do5':
             grant.statExcitement += 30;
@@ -421,7 +420,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+30 Excitement<br/>+10 Accomplishment<br/>+3 Social Skill<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+30 Excitement<br>+10 Accomplishment<br>+3 Social Skill<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'hc1':
             grant.statExcitement += 10;
@@ -433,21 +432,21 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'hc3':
             grant.statExcitement += 20;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill';
+            text = '+20 Excitement<br>+3 Social Skill';
             break;
         case 'hc4':
             grant.statExcitement += 25;
             grant.timesSocialized += 5;
             grant.socialSkills += 5;
             grant.render();
-            text = '+25 Excitement<br/>+5 Social Skill';
+            text = '+25 Excitement<br>+5 Social Skill';
             break;
         case 'hc5':
             grant.statExcitement += 30;
@@ -455,7 +454,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 7;
             grant.changeStatus('Euphoric');
             grant.render();
-            text = '+30 Excitement<br/>+7 Social Skill<br/>+Euphoric(+Excitement, +Accomplishment)';
+            text = '+30 Excitement<br>+7 Social Skill<br>+Euphoric(+Excitement, +Accomplishment)';
             break;
         case 'gn1':
             grant.statExcitement += 10;
@@ -467,21 +466,21 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'gn3':
             grant.statExcitement += 20;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill';
+            text = '+20 Excitement<br>+3 Social Skill';
             break;
         case 'gn4':
             grant.statExcitement += 25;
             grant.timesSocialized += 5;
             grant.socialSkills += 5;
             grant.render();
-            text = '+25 Excitement<br/>+5 Social Skill';
+            text = '+25 Excitement<br>+5 Social Skill';
             break;
         case 'gn5':
             grant.statExcitement += 30;
@@ -489,7 +488,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 7;
             grant.changeStatus('Content');
             grant.render();
-            text = '+30 Excitement<br/>+7 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+30 Excitement<br>+7 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'qs1':
             grant.statExcitement += 10;
@@ -501,7 +500,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'qs3':
             grant.statExcitement += 20;
@@ -509,7 +508,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.changeStatus('Content');
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+20 Excitement<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'qs4':
             grant.statExcitement += 25;
@@ -518,7 +517,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.changeStatus('Content');
             grant.render();
-            text = '+25 Excitement<br/>+5 Accomplishment<br/>+3 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+25 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'qs5':
             grant.statExcitement += 30;
@@ -528,7 +527,7 @@ eventEffect = function (effect) {
             grant.statMoney += 50;
             grant.changeStatus('Content');
             grant.render();
-            text = '+30 Excitement<br/>+5 Accomplishment<br/>+3 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+30 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'om1':
             grant.statExcitement += 10;
@@ -540,7 +539,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'om3':
             grant.statExcitement += 20;
@@ -548,7 +547,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.changeStatus('Content');
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+20 Excitement<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'om4':
             grant.statExcitement += 25;
@@ -556,7 +555,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 5;
             grant.changeStatus('Content');
             grant.render();
-            text = '+25 Excitement<br/>+5 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+25 Excitement<br>+5 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'om5':
             grant.statExcitement += 30;
@@ -564,7 +563,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 7;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+30 Excitement<br/>+7 Social Skill<br/><br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+30 Excitement<br>+7 Social Skill<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'lb1':
             grant.statExcitement += 10;
@@ -576,28 +575,28 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'lb3':
             grant.statExcitement += 20;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill';
+            text = '+20 Excitement<br>+3 Social Skill';
             break;
         case 'lb4':
             grant.statExcitement += 25;
             grant.timesSocialized += 5;
             grant.socialSkills += 5;
             grant.render();
-            text = '+25 Excitement<br/>+5 Social Skill';
+            text = '+25 Excitement<br>+5 Social Skill';
             break;
         case 'lb5':
             grant.statExcitement += 30;
             grant.timesSocialized += 7;
             grant.socialSkills += 7;
             grant.render();
-            text = '+30 Excitement<br/>+7 Social Skill';
+            text = '+30 Excitement<br>+7 Social Skill';
             break;
         case 'tc1':
             grant.statExcitement += 5;
@@ -609,7 +608,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+1 Social Skill';
             break;
         case 'tc3':
             grant.statExcitement += 15;
@@ -617,7 +616,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 2;
             grant.socialSkills += 2;
             grant.render();
-            text = '+10 Excitement<br/>+5 Accomplishment<br/>+2 Social Skill';
+            text = '+10 Excitement<br>+5 Accomplishment<br>+2 Social Skill';
             break;
         case 'tc4':
             grant.statExcitement += 20;
@@ -625,7 +624,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+10 Excitement<br/>+10 Accomplishment<br/>+3 Social Skill';
+            text = '+10 Excitement<br>+10 Accomplishment<br>+3 Social Skill';
             break;
         case 'tc5':
             grant.statExcitement += 25;
@@ -634,13 +633,13 @@ eventEffect = function (effect) {
             grant.socialSkills += 4;
             grant.statMoney += 50;
             grant.render();
-            text = '+10 Excitement<br/>+15 Accomplishment<br/>+4 Social Skill<br/>+50 Money';
+            text = '+10 Excitement<br>+15 Accomplishment<br>+4 Social Skill<br>+50 Money';
             break;
         case 'pe1':
             grant.statExcitement += 5;
             grant.statAccomplishment += 2;
             grant.render();
-            text = '+5 Excitement<br/>+2 Accomplishment';
+            text = '+5 Excitement<br>+2 Accomplishment';
             break;
         case 'pe2':
             grant.statExcitement += 10;
@@ -648,7 +647,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+4 Accomplishment<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+4 Accomplishment<br>+1 Social Skill';
             break;
         case 'pe3':
             grant.statExcitement += 15;
@@ -656,7 +655,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+6 Accomplishment<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+6 Accomplishment<br>+1 Social Skill';
             break;
         case 'pe4':
             grant.statExcitement += 20;
@@ -664,7 +663,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+20 Excitement<br/>+8 Accomplishment<br/>+1 Social Skill';
+            text = '+20 Excitement<br>+8 Accomplishment<br>+1 Social Skill';
             break;
         case 'pe5':
             grant.statExcitement += 25;
@@ -672,7 +671,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+25 Excitement<br/>+10 Accomplishment<br/>+1 Social Skill';
+            text = '+25 Excitement<br>+10 Accomplishment<br>+1 Social Skill';
             break;
         case 'tt1':
             grant.statExcitement += 10;
@@ -684,28 +683,28 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+20 Excitement<br/>+1 Social Skill';
+            text = '+20 Excitement<br>+1 Social Skill';
             break;
         case 'tt3':
             grant.statExcitement += 30;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+30 Excitement<br/>+3 Social Skill';
+            text = '+30 Excitement<br>+3 Social Skill';
             break;
         case 'tt4':
             grant.statExcitement += 40;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+40 Excitement<br/>+3 Social Skill';
+            text = '+40 Excitement<br>+3 Social Skill';
             break;
         case 'tt5':
             grant.statExcitement += 50;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+50 Excitement<br/>+3 Social Skill';
+            text = '+50 Excitement<br>+3 Social Skill';
             break;
         case 'da1':
             grant.statExcitement += 10;
@@ -722,14 +721,14 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+20 Excitement<br/>+1 Social Skill';
+            text = '+20 Excitement<br>+1 Social Skill';
             break;
         case 'da4':
             grant.statExcitement += 25;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+25 Excitement<br/>+3 Social Skill';
+            text = '+25 Excitement<br>+3 Social Skill';
             break;
         case 'da5':
             grant.statExcitement += 30;
@@ -737,7 +736,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 5;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+30 Excitement<br/>+5 Social Skill<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+30 Excitement<br>+5 Social Skill<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'bm1':
             grant.statExcitement += 10;
@@ -749,21 +748,21 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'bm3':
             grant.statExcitement += 20;
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill';
+            text = '+20 Excitement<br>+3 Social Skill';
             break;
         case 'bm4':
             grant.statExcitement += 25;
             grant.timesSocialized += 5;
             grant.socialSkills += 5;
             grant.render();
-            text = '+25 Excitement<br/>+5 Social Skill';
+            text = '+25 Excitement<br>+5 Social Skill';
             break;
         case 'bm5':
             grant.statExcitement += 30;
@@ -771,7 +770,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 7;
             grant.changeStatus('Content');
             grant.render();
-            text = '+30 Excitement<br/>+7 Social Skill<br/>+Content(+Energy, +Excitement, +Accomplishment)';
+            text = '+30 Excitement<br>+7 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)';
             break;
         case 'at1':
             grant.statExcitement += 5;
@@ -783,7 +782,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+1 Social Skill';
             break;
         case 'at3':
             grant.statExcitement += 15;
@@ -791,7 +790,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 2;
             grant.argsEntered += 1;
             grant.render();
-            text = '+15 Excitement<br/>+2 Social Skill<br/>+1 Arguments Entered';
+            text = '+15 Excitement<br>+2 Social Skill<br>+1 Arguments Entered';
             break;
         case 'at4':
             grant.statExcitement += 20;
@@ -801,7 +800,7 @@ eventEffect = function (effect) {
             grant.argsWon += 1;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+1 Arguments Won<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+20 Excitement<br>+3 Social Skill<br>+1 Arguments Won<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'at5':
             grant.statExcitement += 25;
@@ -811,7 +810,7 @@ eventEffect = function (effect) {
             grant.argsWon += 1;
             grant.changeStatus('Confident');
             grant.render();
-            text = '+25 Excitement<br/>+4 Social Skill<br/>+1 Arguments Won<br/>+Confident(+Excitement, ++Accomplishment)';
+            text = '+25 Excitement<br>+4 Social Skill<br>+1 Arguments Won<br>+Confident(+Excitement, ++Accomplishment)';
             break;
         case 'li1':
             grant.statExcitement += 5;
@@ -823,7 +822,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+1 Social Skill';
             break;
         case 'li3':
             grant.statExcitement += 10;
@@ -832,7 +831,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+5 Accomplishment<br/>+5 Euphoria<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+5 Accomplishment<br>+5 Euphoria<br>+1 Social Skill';
             break;
         case 'li4':
             grant.statExcitement += 10;
@@ -841,7 +840,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+10 Accomplishment<br/>+25 Euphoria<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+10 Accomplishment<br>+25 Euphoria<br>+1 Social Skill';
             break;
         case 'li5':
             grant.statExcitement += 10;
@@ -850,7 +849,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+10 Excitement<br/>+15 Accomplishment<br/>+50 Euphoria<br/>+1 Social Skill';
+            text = '+10 Excitement<br>+15 Accomplishment<br>+50 Euphoria<br>+1 Social Skill';
             break;
         case 'za1':
             grant.statExcitement += 10;
@@ -861,7 +860,7 @@ eventEffect = function (effect) {
             grant.statExcitement += 15;
             grant.statAccomplishment += 2;
             grant.render();
-            text = '+15 Excitement<br/>+2 Accomplishment<br/>';
+            text = '+15 Excitement<br>+2 Accomplishment<br>';
             break;
         case 'za3':
             grant.statExcitement += 20;
@@ -869,7 +868,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+20 Excitement<br/>+4 Accomplishment<br/>+1 Social Skill';
+            text = '+20 Excitement<br>+4 Accomplishment<br>+1 Social Skill';
             break;
         case 'za4':
             grant.statExcitement += 25;
@@ -877,7 +876,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 2;
             grant.socialSkills += 2;
             grant.render();
-            text = '+25 Excitement<br/>+6 Accomplishment<br/>+2 Social Skill';
+            text = '+25 Excitement<br>+6 Accomplishment<br>+2 Social Skill';
             break;
         case 'za5':
             grant.statExcitement += 30;
@@ -885,7 +884,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+30 Excitement<br/>+8 Accomplishment<br/>+3 Social Skill';
+            text = '+30 Excitement<br>+8 Accomplishment<br>+3 Social Skill';
             break;
         case 'ff1':
             grant.statHunger += 10;
@@ -897,7 +896,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Hunger<br/>+1 Social Skill';
+            text = '+15 Hunger<br>+1 Social Skill';
             break;
         case 'ff3':
             grant.statHunger += 20;
@@ -905,7 +904,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 2;
             grant.socialSkills += 2;
             grant.render();
-            text = '+20 Hunger<br/>+5 Excitement<br/>+2 Social Skill';
+            text = '+20 Hunger<br>+5 Excitement<br>+2 Social Skill';
             break;
         case 'ff4':
             grant.statHunger += 25;
@@ -913,7 +912,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+25 Hunger<br/>+10 Excitement<br/>+3 Social Skill';
+            text = '+25 Hunger<br>+10 Excitement<br>+3 Social Skill';
             break;
         case 'ff5':
             grant.statHunger += 30;
@@ -921,7 +920,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+30 Hunger<br/>+20 Excitement<br/>+3 Social Skill';
+            text = '+30 Hunger<br>+20 Excitement<br>+3 Social Skill';
             break;
         case 'avs1':
             grant.statExcitement += 10;
@@ -933,7 +932,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+15 Excitement<br/>+1 Social Skill';
+            text = '+15 Excitement<br>+1 Social Skill';
             break;
         case 'avs3':
             grant.statExcitement += 20;
@@ -941,7 +940,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 3;
             grant.statEuphoria += 5;
             grant.render();
-            text = '+20 Excitement<br/>+3 Social Skill<br/>+5 Euphoria';
+            text = '+20 Excitement<br>+3 Social Skill<br>+5 Euphoria';
             break;
         case 'avs4':
             grant.statExcitement += 25;
@@ -949,7 +948,7 @@ eventEffect = function (effect) {
             grant.socialSkills += 4;
             grant.statEuphoria += 10;
             grant.render();
-            text = '+25 Excitement<br/>+4 Social Skill<br/>+10 Euphoria';
+            text = '+25 Excitement<br>+4 Social Skill<br>+10 Euphoria';
             break;
         case 'avs5':
             grant.statExcitement += 30;
@@ -957,7 +956,110 @@ eventEffect = function (effect) {
             grant.socialSkills += 5;
             grant.statEuphoria += 25;
             grant.render();
-            text = '+30 Excitement<br/>+5 Social Skill<br/>+25 Euphoria';
+            text = '+30 Excitement<br>+5 Social Skill<br>+25 Euphoria';
+            break;
+        case 'bp1':
+            grant.statExcitement += 10;
+            grant.render();
+            text = '+10 Excitement';
+            break;
+        case 'bp2':
+            grant.statExcitement += 20;
+            grant.render();
+            text = '+20 Excitement';
+            break;
+        case 'bp3':
+            grant.statExcitement += 30;
+            grant.timesSocialized += 1;
+            grant.socialSkills += 1;
+            grant.render();
+            text = '+30 Excitement<br>+1 Social Skill';
+            break;
+        case 'bp4':
+            grant.statExcitement += 40;
+            grant.timesSocialized += 2;
+            grant.socialSkills += 2;
+            grant.render();
+            text = '+40 Excitement<br>+2 Social Skill';
+            break;
+        case 'bp5':
+            grant.statExcitement += 50;
+            grant.timesSocialized += 3;
+            grant.socialSkills += 3;
+            grant.render();
+            text = '+50 Excitement<br>+3 Social Skill';
+            break;
+        case 'mp1':
+            grant.statExcitement += 5;
+            grant.render();
+            text = '+10 Excitement';
+            break;
+        case 'mp2':
+            grant.statExcitement += 10;
+            grant.timesSocialized += 1;
+            grant.socialSkills += 1;
+            grant.render();
+            text = '+10 Excitement<br>+1 Social Skill';
+            break;
+        case 'mp3':
+            grant.statExcitement += 15;
+            grant.statAccomplishment += 4;
+            grant.timesSocialized += 1;
+            grant.socialSkills += 1;
+            grant.statEuphoria += 5;
+            grant.render();
+            text = '+15 Excitement<br>+4 Accomplishment<br>+1 Social Skill<br>+5 Euphoria';
+            break;
+        case 'mp4':
+            grant.statExcitement += 20;
+            grant.statAccomplishment += 8;
+            grant.timesSocialized += 1;
+            grant.socialSkills += 1;
+            grant.statEuphoria += 10;
+            grant.render();
+            text = '+20 Excitement<br>+8 Accomplishment<br>+1 Social Skill<br>+10 Euphoria';
+            break;
+        case 'mp5':
+            grant.statExcitement += 25;
+            grant.statAccomplishment += 10;
+            grant.timesSocialized += 3;
+            grant.socialSkills += 3;
+            grant.statEuphoria += 25;
+            grant.render();
+            text = '+25 Excitement<br>+10 Accomplishment<br>+3 Social Skill<br>+25 Euphoria';
+            break;
+        case 'ab1':
+            grant.statExcitement += 10;
+            grant.render();
+            text = '+10 Excitement';
+            break;
+        case 'ab2':
+            grant.statExcitement += 15;
+            grant.render();
+            text = '+15 Excitement';
+            break;
+        case 'ab3':
+            grant.statExcitement += 20;
+            grant.timesSocialized += 1;
+            grant.socialSkills += 1;
+            grant.render();
+            text = '+20 Excitement<br>+1 Social Skill';
+            break;
+        case 'ab4':
+            grant.statExcitement += 25;
+            grant.timesSocialized += 3;
+            grant.socialSkills += 3;
+            grant.statMoney += 50;
+            grant.render();
+            text = '+25 Excitement<br>+3 Social Skill<br>+50 Money';
+            break;
+        case 'ab5':
+            grant.statExcitement += 30;
+            grant.timesSocialized += 5;
+            grant.socialSkills += 5;
+            grant.statMoney += 100;
+            grant.render();
+            text = '+30 Excitement<br>+5 Social Skill<br>+100 Money';
             break;
         case 'sd1':
             grant.statExcitement += 5;
@@ -965,7 +1067,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 1;
             grant.socialSkills += 1;
             grant.render();
-            text = '+5 Excitement<br/>+2 Accomplishment<br/>+1 Social Skill';
+            text = '+5 Excitement<br>+2 Accomplishment<br>+1 Social Skill';
             break;
         case 'sd2':
             grant.statExcitement += 10;
@@ -973,7 +1075,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 2;
             grant.socialSkills += 2;
             grant.render();
-            text = '+10 Excitement<br/>+4 Accomplishment<br/>+2 Social Skill';
+            text = '+10 Excitement<br>+4 Accomplishment<br>+2 Social Skill';
             break;
         case 'sd3':
             grant.statExcitement += 15;
@@ -981,7 +1083,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 3;
             grant.socialSkills += 3;
             grant.render();
-            text = '+15 Excitement<br/>+6 Accomplishment<br/>+3 Social Skill';
+            text = '+15 Excitement<br>+6 Accomplishment<br>+3 Social Skill';
             break;
         case 'sd4':
             grant.statExcitement += 20;
@@ -989,7 +1091,7 @@ eventEffect = function (effect) {
             grant.timesSocialized += 4;
             grant.socialSkills += 4;
             grant.render();
-            text = '+20 Excitement<br/>+8 Accomplishment<br/>+4 Social Skill';
+            text = '+20 Excitement<br>+8 Accomplishment<br>+4 Social Skill';
             break;
         case 'sd5':
             grant.secretEvent = true;
