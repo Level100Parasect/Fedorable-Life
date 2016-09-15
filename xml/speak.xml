@@ -249,7 +249,7 @@
 		<event>
 			<text>You saw a girl run passed you with tears in her eyes. Concerned, you go after her and ask if she's okay. She told you that just moved there and misses everything from her home town. When she started to feel better, she gave you a hug. You were just glad to help someone in need.
 			</text>
-			<effect>content</effect>
+			<effect>soaUp</effect>
 		</event>
 		<event>
 			<text>You ran into a group of coworkers at the bar and chatted with them for a while, mainly venting about work and making fun of people. They bought you a drink before they went on their way.
@@ -301,6 +301,41 @@
 			</text>
 			<effect>motivated</effect>
 		</event>
+		<!--
+		<event>
+			<text>Sitting by the bar, the person next to you ordered some delicious smelling food. Curiosity got the best of you as you asked what they ordered. However it was a good bargain as they let you have a small portion to try out! They even gave you a tiny plate for the portion!
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>Wanting to test out the new jukebox app on your phone, you get free credit to change the
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>Boxing match invigorates you!
+			</text>
+			<effect>energyUp</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>Energy drink sample girls giving free samples at the bar
+			</text>
+			<effect>energyUp</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>There was a local rock band performing at the bar tonight. They were throwing away free merch.
+			</text>
+			<effect>hatPlus</effect>
+		</event>
+		-->
 	</good>
 	<bad>
 		<event>
@@ -603,5 +638,40 @@
 			</text>
 			<effect>deadInside</effect>
 		</event>
+		<!--
+		<event>
+			<text>As your food came out from the kitchen and in front of your face, a random bar goer asked you what you ordered. Intimidated by this beast's insatiable hunger you shield your food and ran away with it. Unfortunately you tripped and dropped everything you ever looked forward to on the ground.
+			</text>
+			<effect>hungerDown</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>Ready to stuff your face in with food, a group of bar patrons asked you what you ordered. After you answered, they ordered something else. If your food isn't good enough for strangers at the bar, why should it be good enough for you?
+			</text>
+			<effect>hungerDown</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>Just as you were about to shove your fresh-outta-the-oven food into your mouth, you were approached by a drunk rambling business man. He incoherently spoke with you for what seemed like ages. When he finally left, you turned back around to your food. To your horror, it was cold and lifeless on the plate of the bar.
+			</text>
+			<effect>hungerDown</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>Sitting by the bar, a small child asked you for donations for their softball team's field trip.
+			</text>
+			<effect>moneyDown</effect>
+		</event>
+		-->
+		<!--
+		<event>
+			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "BLACKBIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are worse than genocide.
+			</text>
+			<effect>deadInside</effect>
+		</event>
+		-->
 	</bad>
 </doc>

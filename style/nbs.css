@@ -716,12 +716,8 @@ img {
     font-family: visitor; font-size: 24px; color: black; float: left; width: 75%; text-align: justify;
 }
 
-#GDIcon {
-    display: block; width: 25%; float: right; padding-left: 16px;
-}
-
 #genericDialog button {
-    float: right; margin-top: 8px; margin-bottom: 8px;
+    float: right; margin: 8px 0 8px 0;
 }
 
 .travelDia{
@@ -1656,41 +1652,6 @@ img {
     border: none;
     background: url('/images/btns-spr.png') -1003px -154px no-repeat;
 }
-/*--------------------------*/
-/*   Generic Dialog Icon    */
-/*--------------------------*/
-.GDIconIntro {
-    display:  block;
-    left: 0px;
-    border: none;
-    height:  256px;
-    width: 256px;
-    background: url('/images/btns-spr.png') 0px -92px no-repeat;
-}
-.GDIconCC {
-    display:  block;
-    left: 0px;
-    border: none;
-    height:  256px;
-    width: 256px;
-    background: url('/images/btns-spr.png') -256px -92px no-repeat;
-}
-.GDIconLM {
-    display:  block;
-    left: 0px;
-    border: none;
-    height:  256px;
-    width: 256px;
-    background: url('/images/btns-spr.png') 0px -352px no-repeat;
-}
-.GDIconPromotion {
-    display:  block;
-    left: 0px;
-    border: none;
-    height:  256px;
-    width: 256px;
-    background: url('/images/btns-spr.png') -256px -352px no-repeat;
-}
 
 .hdrCreddit {
     background-color: #cee3f8;
@@ -1776,31 +1737,73 @@ ul li a {
 	background:transparent url(/images/misc/statBar.png) right -17px no-repeat;
 }
 
-.flash {
-  -moz-animation: flash 1s ease-out;
-  -moz-animation-iteration-count: 1;
-
-  -webkit-animation: flash 1s ease-out;
-  -webkit-animation-iteration-count: 1;
-
-  -ms-animation: flash 1s ease-out;
-  -ms-animation-iteration-count: 1;
+.gdi {
+    float: right;
+    border: none;
+    height: 128px;
+    width: 128px;
 }
 
-@-webkit-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #fbf8b2; }
-    100% { background-color: transparent; }
+.int {
+    background: url('/images/btns-spr.png') -388px -516px no-repeat;
 }
 
-@-moz-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #fbf8b2; }
-    100% { background-color: transparent; }
+.nee {
+    background: url('/images/btns-spr.png') -516px -516px no-repeat;
 }
 
-@-ms-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #fbf8b2; }
-    100% { background-color: transparent; }
+.gm {
+    background: url('/images/btns-spr.png') -644px -516px no-repeat;
+}
+
+.conov {
+    background: url('/images/btns-spr.png') -772px -516px no-repeat;
+}
+
+.phot {
+    background: url('/images/btns-spr.png') -900px -516px no-repeat;
+}
+
+.booth {
+    background: url('/images/btns-spr.png') -516px -644px no-repeat;
+}
+
+.event {
+    background: url('/images/btns-spr.png') -644px -644px no-repeat;
+}
+
+.gcomp {
+    background: url('/images/btns-spr.png') -772px -644px no-repeat;
+}
+
+.ko {
+    background: url('/images/btns-spr.png') -900px -644px no-repeat;
+}
+
+.speakb {
+    background: url('/images/btns-spr.png') -516px -772px no-repeat;
+}
+
+.speakg {
+    background: url('/images/btns-spr.png') -644px -772px no-repeat;
+}
+
+.pl {
+    background: url('/images/btns-spr.png') -772px -772px no-repeat;
+}
+
+.tut {
+    background: url('/images/btns-spr.png') -900px -772px no-repeat;
+}
+
+.cc {
+    background: url('/images/btns-spr.png') -644px -900px no-repeat;
+}
+
+.lm {
+    background: url('/images/btns-spr.png') -772px -900px no-repeat;
+}
+
+.prom {
+    background: url('/images/btns-spr.png') -900px -900px no-repeat;
 }

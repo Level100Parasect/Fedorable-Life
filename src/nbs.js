@@ -108,9 +108,8 @@ function mainCharacter() {
     } /* END OF checkSocial */
 
     this.event = function() {
-        var random = (Math.floor(Math.random() * level1.length));
-        //var random = 28;
-        var node = "";
+        var random = (Math.floor(Math.random() * level1.length)),
+			node = "";
         switch(this.statSocial){
             case "Creepy":
                 node = nodeEv1 + level1[random].title + nodeEv2 + level1[random].text + "<br/><br/>" + eventEffect(level1[random].effect) + nodeEv3;
@@ -140,12 +139,12 @@ function mainCharacter() {
         if (roll >= success) {
             effect = speakObjectGood[speakEvent].effect;
             speakMap[effect].effect();
-            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Okay</p><div><p id='gdText'>" + speakObjectGood[speakEvent].text + "<br><br>" + speakMap[effect].text + "</p><img id='GDIcon' src='images/generic/ispeakg.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
+            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Okay</p><div><p id='gdText'>" + speakObjectGood[speakEvent].text + "<br><br>" + speakMap[effect].text + "</p><div class='gdi speakg'></div></div><button class='continueGameBtn' id='emd'></button></div>";
             this.socialSkills += 2;
         } else {
             effect = speakObjectBad[speakEvent].effect;
             speakMap[effect].effect();
-            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Terrible</p><div><p id='gdText'>" + speakObjectBad[speakEvent].text + "<br><br>" + speakMap[effect].text + "</p><img id='GDIcon' src='images/generic/ispeakb.png'/></div><button class='continueGameBtn' id='emd'></button></div>";
+            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Terrible</p><div><p id='gdText'>" + speakObjectBad[speakEvent].text + "<br><br>" + speakMap[effect].text + "</p><div class='gdi speakb'></div></div><button class='continueGameBtn' id='emd'></button></div>";
             this.socialSkills++;
         } /* END IF */
         this.timesSocialized++;
@@ -159,7 +158,7 @@ function mainCharacter() {
         var nodeBooth = "<div id='genericDialog'><p id='GDTitle'>Booth Purchase</p><div><p id='gdText'>",
             random = (Math.floor(Math.random() * boothEvents.length)),
             text = boothEvents[random].text + "<br><br>",
-            nodeEnd = "</p><img id='GDIcon' src='images/generic/ibooth.png'/></div><button class='continueGameBtn' id='emd'></button></div>",
+            nodeEnd = "</p><div class='gdi booth'></div></div><button class='continueGameBtn' id='emd'></button></div>",
             itemCost = 0,
             pts = 0;
 
@@ -200,7 +199,6 @@ function mainCharacter() {
         } else {
             play("pp1");
         } /* END IF */
-
     }   /* END OF booth */
 
     this.sleep = function () {
@@ -225,17 +223,17 @@ function mainCharacter() {
 	        this.statExcitement += 7;
 	        this.drinksRound++;
 	    }; /* END IF */
-	    this.render();
 
 	    if (this.drinksRound === 5) {
-	        this.statStatus = 'Drunk';
+	        this.changeStatus('Drunk');
 	    } /* END IF */
 
 	    if (this.drinksRound === 10) {
 	        this.goHome();
-	        this.statStatus = 'Hungover';
+	        this.changeStatus('Hungover');
 	        genericDia(nodeKickedBar);
 	    } /* END IF */
+	    this.render();
 	} /* END OF drink */
 
 	this.work = function () {
@@ -282,7 +280,7 @@ function mainCharacter() {
         this.statExcitement += 5;
         this.statAccomplishment += 7;
         if (this.endEFame){
-            this.wage = 30;
+            this.hWage = 30;
         } else {
             if ((this.picsTaken >= 60) && (this.hWage === 15)) {
                 this.hWage = 25;
@@ -317,7 +315,7 @@ function mainCharacter() {
             case "home":
                 play("gm1");
                 if (this.endFG) {
-                    this.statStatus = 'Euphoric';
+					this.changeStatus('Euphoric');
                 } /* END IF */
                 if (randomizer(10) === 10) {
                     var money = randomizer(20);
@@ -563,6 +561,8 @@ function mainCharacter() {
 
             //resets screen to bedroom
             this.goHome();
+            //if player loads with non-normal status
+            statusMap[this.statStatus].changeHtml();
             this.render();
 
             $("#mainDialog").dialog("close");
@@ -578,8 +578,15 @@ function mainCharacter() {
     } /* END OF resetStatus */
 
     this.changeStatus = function(newStatus) {
-        this.statStatus = newStatus;
-        statusMap[newStatus].changeHtml();
+		if(statusMap[newStatus].priority > statusMap[this.statStatus].priority) {
+            this.decayEnergy = 2;
+            this.decayHunger = 2;
+            this.decayExcitement = 2;
+            this.decaySOA = 2;
+
+            this.statStatus = newStatus;
+            statusMap[newStatus].changeHtml();
+        } /* END IF */
     } /* END OF changeStatus */
 
     this.openOptions = function () {
@@ -652,7 +659,6 @@ function checkBrowser(){
 
 function init(){
     window.grant = new mainCharacter();
-    window.timer;
     window.sTimer = 0;
     window.sfx = true;
     decay();
@@ -660,9 +666,9 @@ function init(){
     objectLoader();
 } /* END OF init */
 
-function cost(moneyNeeded) {
+function cost(money) {
     var proceed = false;
-    if (moneyNeeded > grant.statMoney) {
+    if (money > grant.statMoney) {
         grant.statAccomplishment -= 10;
         grant.render();
         $("#mainDialog").dialog("close");
@@ -670,12 +676,12 @@ function cost(moneyNeeded) {
             genericDia(nodeNoMoney);
         }, 500);
     } else {
-        grant.statMoney -= moneyNeeded;
-        grant.moneySpent += moneyNeeded;
+        grant.statMoney -= money;
+        grant.moneySpent += money;
         proceed = true;
-    }
+    } /* END IF */
     return proceed;
-}
+} /* END OF cost */
 
 function objectLoader(){
     //item objects
@@ -688,23 +694,23 @@ function objectLoader(){
     window.itemMap = {};
     window.itemArray = [];
 
-    itemArray[0] = new item("item1", 2, function () { grant.statHunger += 2; grant.statEuphoria += 1; });
-    itemArray[1] = new item("item2", 5, function () { grant.statHunger += 8; });
+    itemArray[0] = new item("item1", 2, function () { grant.statHunger += 3; grant.statEuphoria += 5; });
+    itemArray[1] = new item("item2", 5, function () { grant.statHunger += 10; });
     itemArray[2] = new item("item3", 8, function () { grant.statHunger += 15; });
-    itemArray[3] = new item("item4", 2, function () { grant.statEnergy += 2; });
+    itemArray[3] = new item("item4", 2, function () { grant.statEnergy += 3; });
     itemArray[4] = new item("item5", 6, function () { grant.statEnergy += 10; if (randomizer(3) === 1) { grant.changeStatus('Tweaked'); } });
     itemArray[5] = new item("item6", 15, function () { grant.statEnergy += 15; grant.statEuphoria += 3; });
     itemArray[6] = new item("item7", 5, function () { grant.statExcitement += 3; grant.statAccomplishment += 3; });
     itemArray[7] = new item("item8", 15, function () { grant.statExcitement += 10; grant.statAccomplishment += 10; });
-    itemArray[8] = new item("item9", 40, function () { grant.statExcitement += 25; grant.statAccomplishment += 25; grant.statEuphoria += 5; });
+    itemArray[8] = new item("item9", 40, function () { grant.statExcitement += 25; grant.statAccomplishment += 25; grant.statEuphoria += 10; });
     itemArray[9] = new item("item10", 10, function () { grant.statEuphoria += 50; grant.fedsBought++; });
     itemArray[10] = new item("item11", 20, function () { grant.statEuphoria += 100; grant.figsBought++; });
     itemArray[11] = new item("item12", 45, function () { grant.statEuphoria += 250; grant.wepsBought++; });
     itemArray[12] = new item("item13", 250, function () { grant.secretEndingItem1 = true; });
     itemArray[13] = new item("item14", 500, function () { grant.secretEndingItem2 = true; });
-    itemArray[14] = new item("item15", 1000, function () { grant.secretEndingItem3 = true; });
+    itemArray[14] = new item("item15", 1000, function () { grant.secretEndingItem3 = true; grant.goHome(); });
     itemArray[15] = new item("item16", 5, function () { grant.socialSkills++; });
-    itemArray[16] = new item("item17", 15, function () { grant.timesDieted++; grant.statEnergy += 3; grant.statEuphoria += 5; });
+    itemArray[16] = new item("item17", 15, function () { grant.timesDieted++; grant.statEnergy += 5; grant.statAccomplishment += 5; grant.statEuphoria += 10; });
     itemArray[17] = new item("item18", 20, function () { grant.resetStatus(); });
 
     var len = itemArray.length;
@@ -715,10 +721,11 @@ function objectLoader(){
     }
 
     //loads status effects
-    function status(name, style, timer, tooltip, effect) {
+    function status(name, style, timer, priority, tooltip, effect) {
         this.name = name;
         this.style = style;
         this.timer = timer;
+		this.priority = priority;
         this.tooltip = tooltip;
         this.effect = effect;
         this.changeHtml = function () { $("#status").prop('title', this.tooltip).css('color', this.style); }
@@ -726,26 +733,26 @@ function objectLoader(){
 
     window.statusMap = [];
     window.statusArray = [];
-    var white = "white";
-    var green = "#2ECC71";
-    var red = "#E74C3C";
-    statusArray[0] = new status('Normal', white, null, "You are normal. Kinda...", function () { grant.resetStatus(); });
-    statusArray[1] = new status('Tweaked', green, 5, "Energy+", function () { grant.decayEnergy = -1; });
-    statusArray[2] = new status('Hungover', red, 10, "Energy--", function () { grant.decayEnergy = 4; });
-    statusArray[3] = new status('Drunk', red, 10, "Energy-", function () { grant.decayEnergy = 3; });
-    statusArray[4] = new status('In Love', green, 5, "Accomplishment++", function () { grant.decaySOA = -2; });
-    statusArray[5] = new status('Confident', green, 15, "Accomplishment++, Excitement+", function () { grant.decaySOA = -2; grant.decayExcitement = 1; });
-    statusArray[6] = new status('Content', green, 15, "Energy+, Accomplishment+, Excitement+", function () { grant.decayEnergy = 1; grant.decaySOA = 1; grant.decayExcitement = 1; });
-    statusArray[7] = new status('Heartbroken', red, 15, "Accomplishment-", function () { grant.decaySOA = 3; });
-    statusArray[8] = new status('Embarrassed', red, 5, "Excitement-", function () { grant.decayExcitement = 3; });
-    statusArray[9] = new status('Emasculated', red, 15, "Accomplishment--, Excitement-", function () { grant.decaySOA = 4; grant.decayExcitement = 3; });
-    statusArray[10] = new status('Paranoid', red, 10, "Energy-, Accomplishment-", function () { grant.decayEnergy = 3; grant.decayExcitement = 3; });
-    statusArray[11] = new status('Discontent', red, 15, "Energy-, Accomplishment-, Excitement-", function () { grant.decayEnergy = 3; grant.decaySOA = 3; grant.decayExcitement = 3; });
-    statusArray[12] = new status('Sick', red, 15, "Energy-, Hunger-", function () { grant.decayEnergy = 3; grant.decayHunger = 3; });
-    statusArray[13] = new status('Euphoric', green, 15, "All++", function () { grant.decayEnergy = -4; grant.decayHunger = -4; grant.decayExcitement = -4; grant.decaySOA = -4; });
-    statusArray[14] = new status('Dead Inside', red, 15, "All-", function () { grant.decayEnergy = 3; grant.decayHunger = 3; grant.decayExcitement = 3; grant.decaySOA = 3; });
-    statusArray[15] = new status('Motivated', green, 10, "Energy++, Accomplishment+", function () { grant.decayEnergy = -2; grant.decaySOA = 1; });
-    statusArray[16] = new status('Dishonored', red, 15, "Energy--, Accomplishment-", function () { grant.decayEnergy = 4; grant.decaySOA = 3; });
+    var white = "white",
+		green = "#2ECC71",
+		red = "#E74C3C";
+    statusArray[0] = new status('Normal', white, null, 100, "You are normal. Kinda...", function () { grant.resetStatus(); });
+    statusArray[1] = new status('Tweaked', green, 5, 95, "Energy+", function () { grant.decayEnergy = -1; });
+    statusArray[2] = new status('Hungover', red, 10, 99, "Energy--", function () { grant.decayEnergy = 4; });
+    statusArray[3] = new status('Drunk', red, 10, 98, "Energy-", function () { grant.decayEnergy = 3; });
+    statusArray[4] = new status('In Love', green, 5, 9, "Accomplishment++", function () { grant.decaySOA = -2; });
+    statusArray[5] = new status('Confident', green, 5, 50, "Accomplishment++, Excitement+", function () { grant.decaySOA = -2; grant.decayExcitement = 1; });
+    statusArray[6] = new status('Content', green, 15, 1, "Energy+, Accomplishment+, Excitement+", function () { grant.decayEnergy = 1; grant.decaySOA = 1; grant.decayExcitement = 1; });
+    statusArray[7] = new status('Heartbroken', red, 15, 11, "Accomplishment-", function () { grant.decaySOA = 3; });
+    statusArray[8] = new status('Embarrassed', red, 5, 10, "Excitement-", function () { grant.decayExcitement = 3; });
+    statusArray[9] = new status('Emasculated', red, 15, 12, "Accomplishment--, Excitement-", function () { grant.decaySOA = 4; grant.decayExcitement = 3; });
+    statusArray[10] = new status('Paranoid', red, 10, 5, "Energy-, Accomplishment-", function () { grant.decayEnergy = 3; grant.decayExcitement = 3; });
+    statusArray[11] = new status('Discontent', red, 15, 4, "Energy-, Accomplishment-, Excitement-", function () { grant.decayEnergy = 3; grant.decaySOA = 3; grant.decayExcitement = 3; });
+    statusArray[12] = new status('Sick', red, 15, 3, "Energy-, Hunger-", function () { grant.decayEnergy = 3; grant.decayHunger = 3; });
+    statusArray[13] = new status('Euphoric', green, 15, 97, "All++", function () { grant.decayEnergy = -4; grant.decayHunger = -4; grant.decayExcitement = -4; grant.decaySOA = -4; });
+    statusArray[14] = new status('Dead Inside', red, 15, 96, "All--", function () { grant.decayEnergy = 3; grant.decayHunger = 3; grant.decayExcitement = 3; grant.decaySOA = 3; });
+    statusArray[15] = new status('Motivated', green, 10, 7, "Energy++, Accomplishment+", function () { grant.decayEnergy = -2; grant.decaySOA = 1; });
+    statusArray[16] = new status('Dishonored', red, 15, 6, "Energy--, Accomplishment-", function () { grant.decayEnergy = 4; grant.decaySOA = 3; });
 
     var len = statusArray.length;
     while (len--) {
@@ -784,14 +791,14 @@ function objectLoader(){
         this.name = name;
         this.text = text;
         this.effect = effect;
-    }
+    } /* END OBJECT SPEAK */
 
     var len = speakArray.length;
     while (len--) {
         var speakObj = speakArray[len];
         var mapKey = speakArray[len].name;
         speakMap[mapKey] = speakObj;
-    }
+    } /* END WHILE */
 } /* END OF objectLoader */
 
 //Number randomizer method
@@ -801,9 +808,8 @@ function randomizer(max){
 
 //Play sound method
 function play(url) {
-    if(sfx){
+    if(sfx)
         new Audio("sound/"+ url + ".mp3").play();
-    }
 } /* END OF play */
 
 //Checks if inbetween method
@@ -823,7 +829,7 @@ function decay(){
 
 	    grant.render();
     } /* END IF */
-    timer = setTimeout(decay, grant.decTime);
+    setTimeout(decay, grant.decTime);
 } /* END OF decay */
 
 $(window).on('load', function () {
@@ -1093,12 +1099,12 @@ $(window).on('load', function () {
             grant.statAccomplishment += accPts;
             isCorrect = true;
             if (this.endFG) {
-                this.statStatus = 'Euphoric';
-            }
+				this.changeStatus('Euphoric');
+            } /* END IF */
         } else {
             grant.statAccomplishment -= accPts;
             grant.statExcitement -= 3;
-        }
+        } /* END IF */
         loadResponse(currentArgNum, isCorrect, accPts);
         grant.statEnergy -= 3;
         grant.statHunger -= 3;
@@ -1150,18 +1156,13 @@ $(window).on('load', function () {
             hats = grant.fedsBought,
             weps = grant.wepsBought;
 
-        //bookshelf logic
-        if (figs > 25) {
+        //capping off unlockable logic
+        if (figs > 25)
             figs = 25;
-        } /* END IF */
-        //rack logic
-        if (hats > 50) {
+        if (hats > 50)
             hats = 50;
-        } /* END IF */
-        //cache logic
-        if (weps > 15) {
+        if (weps > 15)
             weps = 15;
-        } /* END IF */
 
         var collectables = figs + hats + weps;
         var statsHtmlTop = '<div id="overAll"><span>Stats</span><button class="exitShop" id="emd"></button><div id="tabs"><ul class="nav nav-tabs"><li><a href="#tab-1">Overall</a></li><li><a href="#tab-2">Whiteboard</a></li><li><a href="#tab-3">Bookshelf</a></li><li><a href="#tab-4">Display Wall</a></li><li><a href="#tab-5">Weapon Cache</a></li></ul><div id="tab-1" class="fixedSizedTab">';
