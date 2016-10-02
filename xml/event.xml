@@ -178,6 +178,18 @@
 				<effect>ab1</effect>
 			</event>
 			<event>
+				<title>Swimming Pool Event</title>
+				<text>There was a large pool party going on in the hotel by the convention. You sat down on a beach chair enjoying the music and the good weather.
+				</text>
+				<effect>sp1</effect>
+			</event>
+			<event>
+				<title>Artist Alley Give-away</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora!
+				</text>
+				<effect>aag1</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
 				</text>
@@ -361,6 +373,18 @@
 				<text>There was a game of anime bingo going on in one of the rooms in the convention center. You joined in, but unfortunately you weren't close to winning. At least you had some fun!
 				</text>
 				<effect>ab2</effect>
+			</event>
+			<event>
+				<title>Swimming Pool Event</title>
+				<text>There was a large pool party going on in the hotel by the convention. You sat down on a beach chair enjoying the music and even had a conversation with another person at the party.
+				</text>
+				<effect>sp2</effect>
+			</event>
+			<event>
+				<title>Artist Alley Give-away</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora and a few other trinkets!
+				</text>
+				<effect>aag2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -548,6 +572,18 @@
 				<effect>ab3</effect>
 			</event>
 			<event>
+				<title>Swimming Pool Event</title>
+				<text>There was a large pool party going on in the hotel by the convention. You sat down by the pool and enjoyed talking and getting into splash fights with the people in the pool.
+				</text>
+				<effect>sp3</effect>
+			</event>
+			<event>
+				<title>Artist Alley Give-away</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You were able to catch free swag and traded your merchandise with other people.
+				</text>
+				<effect>aag3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -731,6 +767,18 @@
 				<text>There was a game of anime bingo going on in one of the rooms in the convention center. You joined in and was pretty close to winning. At least you socialized with the others playing the game!
 				</text>
 				<effect>ab4</effect>
+			</event>
+			<event>
+				<title>Swimming Pool Event</title>
+				<text>There was a large pool party going on in the hotel by the convention. You felt hesitant before you got into the pool. You enjoyed swimming with the other people.
+				</text>
+				<effect>sp4</effect>
+			</event>
+			<event>
+				<title>Artist Alley Give-away</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. Standing in the crowd, you were able to catch one of the more expensive items at the convention. People congratulated you on your good luck!
+				</text>
+				<effect>aag4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -918,6 +966,18 @@
 				<effect>ab5</effect>
 			</event>
 			<event>
+				<title>Swimming Pool Event</title>
+				<text>There was a large pool party going on in the hotel by the convention. You decided to just go for it and jump in. You had a blast with the other swimmers - getting in to races, splash fights, and diving competitions.
+				</text>
+				<effect>sp5</effect>
+			</event>
+			<event>
+				<title>Artist Alley Give-away</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You were able to catch a lot of free swag. Since you had too much you carry, you gave some of your free swag to the people that didn't catch anything.
+				</text>
+				<effect>aag5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
@@ -926,7 +986,9 @@
 		</level5>
 	</events>
 	<!--
-		swimming event
+		Live Pod-Cast
+		Para para dance lessons
+		Improve show
 	-->
 	<booth>
 		<event>

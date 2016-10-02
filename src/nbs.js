@@ -107,28 +107,30 @@ function mainCharacter() {
         } /* END IF */
     } /* END OF checkSocial */
 
-    this.event = function() {
+    this.event = function () {
         var random = (Math.floor(Math.random() * level1.length)),
-			node = "";
-        switch(this.statSocial){
+            event;
+        switch (this.statSocial) {
             case "Creepy":
-                node = nodeEv1 + level1[random].title + nodeEv2 + level1[random].text + "<br/><br/>" + eventEffect(level1[random].effect) + nodeEv3;
+                event = level1[random];
                 break;
             case "Weird":
-                node = nodeEv1 + level2[random].title + nodeEv2 + level2[random].text + "<br/><br/>" + eventEffect(level2[random].effect) + nodeEv3;
+                event = level2[random];
                 break;
             case "Eh...":
-                node = nodeEv1 + level3[random].title + nodeEv2 + level3[random].text + "<br/><br/>" + eventEffect(level3[random].effect) + nodeEv3;
+                event = level3[random];
                 break;
             case "Exists":
-                node = nodeEv1 + level4[random].title + nodeEv2 + level4[random].text + "<br/><br/>" + eventEffect(level4[random].effect) + nodeEv3;
+                event = level4[random];
                 break;
             case "Normal":
-                node = nodeEv1 + level5[random].title + nodeEv2 + level5[random].text + "<br/><br/>" + eventEffect(level5[random].effect) + nodeEv3;
+                event = level5[random];
                 break;
         } /* END SWITCH */
+        conventionMap[event.effect].effect();
+        var node = nodeEv1 + event.title + nodeEv2 + event.text + "<br/><br/>" + conventionMap[event.effect].text + nodeEv3;
         genericDia(node);
-    } /*END OF event */
+    }  /*END OF event */
 
     this.speak = function () {
         var roll = randomizer(100),
@@ -348,8 +350,16 @@ function mainCharacter() {
         } /* END IF */
     } /* END OF game */
 
-    this.changeNBSprite = function() {
-        $("#sprite img").attr("src", "images/nb/" + this.sprite + "-bedroom.png");
+    this.changeNBSprite = function () {
+        var place;
+        if (this.atHome) {
+            place = "-bedroom.png"
+        } else if (this.atBar) {
+            place = "-bar.png"
+        } else {
+            place = "-convention.png"
+        }
+        $("#sprite img").attr("src", "images/nb/" + this.sprite + place);
     }
 
     //Resets all variables for being at home
@@ -441,7 +451,8 @@ function mainCharacter() {
 	    this.drinksRound = 0;
         this.secretEvent = false;
         this.sprite = "sprite";
-
+        //this.weight = 280.0;
+        //this.niceGuyPoints = 0;
         //resets screen to bedroom
         this.goHome();
     } /* END OF newGame */
@@ -497,6 +508,8 @@ function mainCharacter() {
 	        drinksRound: this.drinksRound,
             secretEvent: this.secretEvent,
             sprite: this.sprite
+            //weight: this.weight,
+            //niceGuyPoints: this.niceGuyPoints
         }; /* END OBJECT */
         //Puts the object into storage
         localStorage.setItem('FedLifeSG', JSON.stringify(mcObject));
@@ -558,6 +571,8 @@ function mainCharacter() {
 	        this.drinksRound = json.drinksRound;
             this.secretEvent = json.secretEvent;
             this.sprite = json.sprite;
+            //this.weight = json.weight;
+            //this.niceGuyPoints = json.niceGuyPoints;
 
             //resets screen to bedroom
             this.goHome();
@@ -597,8 +612,20 @@ function mainCharacter() {
         if (this.statEuphoria >= 2000)
             optionsNode += '<option value="sprite3">Mr. Nice Guy</option>';
 
+        if (this.statEuphoria >= 3000)
+            optionsNode += '<option value="sprite4">Dick Wolf</option>';
+
+        if (this.statEuphoria >= 8000)
+            optionsNode += '<option value="sprite8">An actual white knight</option>';
+
+        if (this.endFG)
+            optionsNode += '<option value="sprite9">Fedora God</option>';
+
         if (this.endEFame)
             optionsNode += '<option value="sprite11">E-Fame Ending</option>';
+
+        if (this.endWaifu)
+            optionsNode += '<option value="sprite13">Waifu Ending</option>';
 
         if (this.endNorm)
             optionsNode += '<option value="sprite14">Normal Ending</option>';
@@ -606,7 +633,7 @@ function mainCharacter() {
         if (this.endGolden)
             optionsNode += '<option value="sprite15">Golden Ending</option>';
 
-        optionsNode += '</select></td></tr></table><br><button class="backGameBtn" id="emd"></button></div>';
+        optionsNode += '</select></td></tr><tr><td colspan="2"><p id="resetSaveFile">Reset Save File</p></td></tr></table><br><button class="backGameBtn" id="emd"></button></div>';
         return optionsNode;
     }
 } /* END OF mainCharacter */
@@ -658,6 +685,8 @@ function checkBrowser(){
 } /* END OF checkBrowser */
 
 function init(){
+    var backgroundAudio=document.getElementById("music");
+    backgroundAudio.volume=0.5;
     window.grant = new mainCharacter();
     window.sTimer = 0;
     window.sfx = true;
@@ -764,28 +793,29 @@ function objectLoader(){
     //speak
     window.speakMap = {};
     window.speakArray = [];
-    speakArray[0] = new speak('excitementUp', "You have recovered 10 excitement", function () { grant.statExcitement += 10; });
-    speakArray[1] = new speak('hungerUp', "You have recovered 10 excitement", function () { grant.statHunger += 10; });
-    speakArray[2] = new speak('soaUp', "You have recovered 10 accomplishment", function () { grant.statAccomplishment += 10; });
-    speakArray[3] = new speak('energyUp', "You have recovered 10 energy", function () { grant.statEnergy += 10; });
-    speakArray[4] = new speak('moneyUp', "You have gained $10", function () { grant.paid(10); });
+    speakArray[0] = new speak('excitementUp', "You recovered 10 excitement", function () { grant.statExcitement += 10; });
+    speakArray[1] = new speak('hungerUp', "You recovered 10 hunger", function () { grant.statHunger += 10; });
+    speakArray[2] = new speak('soaUp', "You recovered 10 accomplishment", function () { grant.statAccomplishment += 10; });
+    speakArray[3] = new speak('energyUp', "You recovered 10 energy", function () { grant.statEnergy += 10; });
+    speakArray[4] = new speak('moneyUp', "You gained $10", function () { grant.paid(10); });
     speakArray[5] = new speak('inLove', "You have fallen in love (++Accomplishment)", function () { grant.changeStatus('In Love'); });
     speakArray[6] = new speak('content', "You are now content (+Energy, +Excitement, +Accomplishment)", function () { grant.changeStatus('Content'); });
     speakArray[7] = new speak('confident', "You are feeling confident (+Excitement, ++Accomplishment)", function () { grant.changeStatus('Confident'); });
     speakArray[8] = new speak('hatPlus', "You got a new fedora for your collection", function () { grant.fedsBought++; });
     speakArray[9] = new speak('photoUp', "You took a new photo", function () { grant.picsTaken++; });
-    speakArray[10] = new speak('soaDown', "You have lost 10 sense of accomplishment", function () { grant.statAccomplishment -= 10; });
-    speakArray[11] = new speak('excitementDown', "You have lost 10 excitement", function () { grant.statExcitement -= 10; });
-    speakArray[12] = new speak('moneyDown', "You have lost $10", function () { if (!cost(10)) { grant.statMoney = 0; } });
+    speakArray[10] = new speak('soaDown', "You lost 10 sense of accomplishment", function () { grant.statAccomplishment -= 10; });
+    speakArray[11] = new speak('excitementDown', "You lost 10 excitement", function () { grant.statExcitement -= 10; });
+    speakArray[12] = new speak('moneyDown', "You lost $10", function () { if (!cost(10)) { grant.statMoney = 0; } });
     speakArray[13] = new speak('heartbroken', "Your heart has shattered (-Accomplishment)", function () { grant.changeStatus('Heartbroken'); });
     speakArray[14] = new speak('embarrassed', "You feel embarrassed (-Excitement)", function () { grant.changeStatus('Embarrassed'); });
-    speakArray[15] = new speak('emasculated', "Your have gotten emasculated (-Excitement, --Accomplishment)", function () { grant.changeStatus('Emasculated'); });
+    speakArray[15] = new speak('emasculated', "You feel emasculated (-Excitement, --Accomplishment)", function () { grant.changeStatus('Emasculated'); });
     speakArray[16] = new speak('paranoid', "You feel paranoid (-Energy, -Excitement)", function () { grant.changeStatus('Paranoid'); });
     speakArray[17] = new speak('discontent', "You feel discontent (-Energy, -Excitement, -Accomplishment)", function () { grant.changeStatus('Discontent'); });
     speakArray[17] = new speak('sick', "You feel sick (-Energy, -Hunger)", function () { grant.changeStatus('Sick'); });
     speakArray[18] = new speak('motivated', "You feel motivated (++Energy, +Accomplishment)", function () { grant.changeStatus('Motivated'); });
     speakArray[19] = new speak('dishonored', "You feel dishonored (--Energy, -Accomplishment)", function () { grant.changeStatus('Dishonored'); });
     speakArray[20] = new speak('deadInside', "You are dead inside (--Everything)", function () { grant.changeStatus('Dead Inside'); });
+    speakArray[21] = new speak('hungerDown', "You lost 10 hunger", function () { grant.statHunger -= 10; });
 
     function speak(name, text, effect) {
         this.name = name;
@@ -798,6 +828,247 @@ function objectLoader(){
         var speakObj = speakArray[len];
         var mapKey = speakArray[len].name;
         speakMap[mapKey] = speakObj;
+    } /* END WHILE */
+
+    //convention
+    window.conventionMap = {};
+    window.conventionArray = [];
+
+    //photo shoot
+    conventionArray[0] = new convention('ps1', '+5 Excitement<br/>+1 Picture Taken', function () { grant.statExcitement += 5; grant.picsTaken++; grant.render(); });
+    conventionArray[1] = new convention('ps2', '+10 Excitement<br>+1 Social Skill<br>+2 Pictures Taken', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.picsTaken += 2; grant.render(); });
+    conventionArray[2] = new convention('ps3', '+15 Excitement<br>+3 Social Skill<br>+3 Pictures Taken', function () { grant.statExcitement += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.picsTaken += 3; grant.render(); });
+    conventionArray[3] = new convention('ps4', '+20 Excitement<br>+3 Social Skill<br>+4 Pictures Taken', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.picsTaken += 4; grant.render(); });
+    conventionArray[4] = new convention('ps5', '+25 Excitement<br>+3 Social Skill<br>+5 Pictures Taken', function () { grant.statExcitement += 25; grant.timesSocialized += 3; grant.socialSkills += 3; grant.picsTaken += 5; grant.render(); });
+
+    //figurine give away
+    conventionArray[5] = new convention('fg1', '+5 Euphoria<br>+1 Figurine', function () { grant.statEuphoria += 5; grant.figsBought++; grant.render(); });
+    conventionArray[6] = new convention('fg2', '+10 Euphoria<br>+1 Social Skill<br>+1 Figurine', function () { grant.statEuphoria += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.figsBought++; grant.render(); });
+    conventionArray[7] = new convention('fg3', '+25 Euphoria<br>+2 Social Skill<br>+1 Figurine', function () { grant.statEuphoria += 25; grant.timesSocialized += 2; grant.socialSkills += 2; grant.figsBought++; grant.render(); });
+    conventionArray[8] = new convention('fg4', '+50 Euphoria<br>+3 Social Skill<br>+2 Figurines', function () { grant.statEuphoria += 50; grant.timesSocialized += 3; grant.socialSkills += 3; grant.figsBought += 2; grant.render(); });
+    conventionArray[9] = new convention('fg5', '+100 Euphoria<br>+5 Social Skill<br>+3 Figurines', function () { grant.statEuphoria += 100; grant.timesSocialized += 5; grant.socialSkills += 5; grant.figsBought += 3; grant.render(); });
+
+    //qa panel
+    conventionArray[10] = new convention('qa1', '+5 Excitement<br>+5 Euphoria', function () { grant.statExcitement += 5; grant.statEuphoria += 5; grant.render(); });
+    conventionArray[11] = new convention('qa2', '+10 Excitement<br>+10 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.statEuphoria += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[12] = new convention('qa3', '+15 Excitement<br>+25 Euphoria<br>+3 Social Skill', function () { grant.statExcitement += 15; grant.statEuphoria += 25; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[13] = new convention('qa4', '+20 Excitement<br>+5 Accomplishment<br>+50 Euphoria<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 5; grant.statEuphoria += 50; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[14] = new convention('qa5', '+25 Excitement<br>+10 Accomplishment<br>+100 Euphoria<br>+3 Social Skill', function () { grant.statExcitement += 25; grant.statAccomplishment += 10; grant.statEuphoria += 100; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+
+    //maid cafe
+    conventionArray[15] = new convention('mc1', '+5 Excitement<br>+Tweaked(+Energy)', function () { grant.statExcitement += 5; grant.changeStatus('Tweaked'); grant.render(); });
+    conventionArray[16] = new convention('mc2', '+10 Excitement<br>+1 Social Skill<br>+Tweaked(+Energy)', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.changeStatus('Tweaked'); grant.render(); });
+    conventionArray[17] = new convention('mc3', '+15 Excitement<br>+3 Social Skill<br>+Tweaked(+Energy)', function () { grant.statExcitement += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.changeStatus('Tweaked'); grant.render(); });
+    conventionArray[18] = new convention('mc4', '+20 Excitement<br>+4 Social Skill<br>+Tweaked(+Energy)', function () { grant.statExcitement += 20; grant.timesSocialized += 4; grant.socialSkills += 4; grant.changeStatus('Tweaked'); grant.render(); });
+    conventionArray[19] = new convention('mc5', '+25 Excitement<br>+5 Social Skill<br>+Tweaked(+Energy)', function () { grant.statExcitement += 25; grant.timesSocialized += 5; grant.socialSkills += 5; grant.changeStatus('Tweaked'); grant.render(); });
+
+    //anime karaoke
+    conventionArray[20] = new convention('ak1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[21] = new convention('ak2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[22] = new convention('ak3', '+20 Excitement<br>+5 Accomplishment<br>+1 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 20; grant.statAccomplishment += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.changeStatus('Content'); grant.render(); });
+    conventionArray[23] = new convention('ak4', '+25 Excitement<br>+10 Accomplishment<br>+1 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 25; grant.statAccomplishment += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.changeStatus('Content'); grant.render(); });
+    conventionArray[24] = new convention('ak5', '+30 Excitement<br>+15 Accomplishment<br>+2 Social Skill<br>+Confident(+Excitement, ++Accomplishment)', function () { grant.statExcitement += 30; grant.statAccomplishment += 15; grant.timesSocialized += 2; grant.socialSkills += 2; grant.changeStatus('Confident'); grant.render(); });
+
+    //rave
+    conventionArray[25] = new convention('rv1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[26] = new convention('rv2', '+20 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 1; grant.socialSkills += 1; });
+    conventionArray[27] = new convention('rv3', '+30 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 30; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[28] = new convention('rv4', '+40 Excitement<br>+4 Social Skill', function () { grant.statExcitement += 40; grant.timesSocialized += 4; grant.socialSkills += 4; grant.render(); });
+    conventionArray[29] = new convention('rv5', '+50 Excitement<br>+5 Social Skill', function () { grant.statExcitement += 50; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+
+    //celebrity signing
+    conventionArray[30] = new convention('cs1', '+5 Excitement<br>+5 Euphoria', function () { grant.statExcitement += 5; grant.statEuphoria += 5; grant.render(); });
+    conventionArray[31] = new convention('cs2', '+10 Excitement<br>+10 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 10; grant.render(); });
+    conventionArray[32] = new convention('cs3', '+15 Excitement<br>+5 Accomplishment<br>+25 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.statAccomplishment += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 25; grant.render(); });
+    conventionArray[33] = new convention('cs4', '+20 Excitement<br>+10 Accomplishment<br>+50 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 50; grant.render(); });
+    conventionArray[34] = new convention('cs5', '+25 Excitement<br>+15 Accomplishment<br>+100 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 25; grant.statAccomplishment += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 100; grant.render(); });
+
+    //game demo
+    conventionArray[35] = new convention('gd1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[36] = new convention('gd2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[37] = new convention('gd3', '+20 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 30; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[38] = new convention('gd4', '+25 Excitement<br>+5 Social Skill', function () { grant.statExcitement += 40; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+    conventionArray[39] = new convention('gd5', '+30 Excitement<br>+5 Social Skill', function () { grant.statExcitement += 50; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+
+    //magic show
+    conventionArray[40] = new convention('ms1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[41] = new convention('ms2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[42] = new convention('ms3', '+20 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[43] = new convention('ms4', '+25 Excitement<br>+3 Social Skill<br>+10 Euphoria<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 25; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 10; grant.changeStatus('Content'); grant.render(); });
+    conventionArray[44] = new convention('ms5', '+30 Excitement<br>+3 Social Skill<br>+25 Euphoria<br>+Confident(+Excitement, ++Accomplishment)', function () { grant.statExcitement += 30; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 25; grant.changeStatus('Confident'); grant.render(); });
+
+    //idol concert
+    conventionArray[45] = new convention('ic1', '+5 Excitement<br>+5 Euphoria', function () { grant.statExcitement += 5; grant.statEuphoria += 5; grant.render(); });
+    conventionArray[46] = new convention('ic2', '+10 Excitement<br>+1 Social Skill<br>+10 Euphoria', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 10; grant.render(); });
+    conventionArray[47] = new convention('ic3', '+15 Excitement<br>+3 Social Skill<br>+25 Euphoria', function () { grant.statExcitement += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 25; grant.render(); });
+    conventionArray[48] = new convention('ic4', '+20 Excitement<br>+3 Social Skill<br>+50 Euphoria', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 50; grant.render(); });
+    conventionArray[49] = new convention('ic5', '+25 Excitement<br>+3 Social Skill<br>+100 Euphoria', function () { grant.statExcitement += 25; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 100; grant.render(); });
+
+    //dance off
+    conventionArray[50] = new convention('do1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[51] = new convention('do2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[52] = new convention('do3', '+20 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[53] = new convention('do4', '+25 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+Confident(+Excitement, ++Accomplishment)', function () { grant.statExcitement += 25; grant.statAccomplishment += 5; grant.timesSocialized += 3; grant.socialSkills += 3; grant.changeStatus('Confident'); grant.render(); });
+    conventionArray[54] = new convention('do5', '+30 Excitement<br>+10 Accomplishment<br>+3 Social Skill<br>+Confident(+Excitement, ++Accomplishment)', function () { grant.statExcitement += 30; grant.statAccomplishment += 10; grant.timesSocialized += 3; grant.socialSkills += 3; grant.changeStatus('Confident'); grant.render(); });
+
+    //human chess
+    conventionArray[55] = new convention('hc1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[56] = new convention('hc2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[57] = new convention('hc3', '+20 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[58] = new convention('hc4', '+25 Excitement<br>+5 Social Skill', function () { grant.statExcitement += 25; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+    conventionArray[59] = new convention('hc5', '+30 Excitement<br>+5 Social Skill<br>+Euphoric(+++All)', function () { grant.statExcitement += 30; grant.timesSocialized += 5; grant.socialSkills += 5; grant.changeStatus('Euphoric'); grant.render(); });
+
+    //game o ninja
+    conventionArray[60] = new convention('gn1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[61] = new convention('gn2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[62] = new convention('gn3', '+20 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[63] = new convention('gn4', '+25 Excitement<br>+5 Social Skill', function () { grant.statExcitement += 25; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+    conventionArray[64] = new convention('gn5', '+30 Excitement<br>+7 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 30; grant.timesSocialized += 7; grant.socialSkills += 7; grant.changeStatus('Content'); grant.render(); });
+
+    //quiz show
+    conventionArray[65] = new convention('qs1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[66] = new convention('qs2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[67] = new convention('qs3', '+20 Excitement<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.changeStatus('Content'); grant.render(); });
+    conventionArray[68] = new convention('qs4', '+25 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 25; grant.statAccomplishment += 5; grant.timesSocialized += 3; grant.socialSkills += 3; grant.changeStatus('Content'); grant.render(); });
+    conventionArray[69] = new convention('qs5', '+30 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 30; grant.statAccomplishment += 10; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statMoney += 50; grant.changeStatus('Content'); grant.render(); });
+
+    //open mic
+    conventionArray[70] = new convention('om1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[71] = new convention('om2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[72] = new convention('om3', '+20 Excitement<br>+3 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.changeStatus('Content'); grant.render(); });
+    conventionArray[73] = new convention('om4', '+25 Excitement<br>+5 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 25; grant.timesSocialized += 5; grant.socialSkills += 5; grant.changeStatus('Content');grant.render(); });
+    conventionArray[74] = new convention('om5', '+30 Excitement<br>+7 Social Skill<br>+Confident(+Excitement, ++Accomplishment)', function () { grant.statExcitement += 30; grant.timesSocialized += 7; grant.socialSkills += 7; grant.changeStatus('Confident'); grant.render(); });
+
+    //larp battle
+    conventionArray[75] = new convention('lb1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[76] = new convention('lb2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[77] = new convention('lb3', '+20 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[78] = new convention('lb4', '+25 Excitement<br>+5 Social Skill', function () { grant.statExcitement += 25; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+    conventionArray[79] = new convention('lb5', '+30 Excitement<br>+7 Social Skill', function () { grant.statExcitement += 30; grant.timesSocialized += 7; grant.socialSkills += 7; grant.render(); });
+
+    //tcg competition
+    conventionArray[80] = new convention('tc1', '+5 Excitement', function () { grant.statExcitement += 5; grant.render(); });
+    conventionArray[81] = new convention('tc2', '+10 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[82] = new convention('tc3', '+10 Excitement<br>+5 Accomplishment<br>+2 Social Skill', function () { grant.statExcitement += 15; grant.statAccomplishment += 5; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
+    conventionArray[83] = new convention('tc4', '+20 Excitement<br>+10 Accomplishment<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 10; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[84] = new convention('tc5', '+25 Excitement<br>+15 Accomplishment<br>+3 Social Skill<br>+50 Money', function () { grant.statExcitement += 25; grant.statAccomplishment += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statMoney += 50; grant.render(); });
+
+    //painting event
+    conventionArray[85] = new convention('pe1', '+5 Excitement<br>+5 Accomplishment', function () { grant.statExcitement += 5; grant.statAccomplishment += 5; grant.render(); });
+    conventionArray[86] = new convention('pe2', '+10 Excitement<br>+5 Accomplishment<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.statAccomplishment += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[87] = new convention('pe3', '+15 Excitement<br>+10 Accomplishment<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.statAccomplishment += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[88] = new convention('pe4', '+20 Excitement<br>+15 Accomplishment<br>+1 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[89] = new convention('pe5', '+25 Excitement<br>+20 Accomplishment<br>+1 Social Skill', function () { grant.statExcitement += 25; grant.statAccomplishment += 20; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+
+    //table top gaming
+    conventionArray[90] = new convention('tt1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[91] = new convention('tt2', '+20 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[92] = new convention('tt3', '+30 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 30; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[93] = new convention('tt4', '+40 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 40; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[94] = new convention('tt5', '+50 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 50; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+
+    //dating auction
+    conventionArray[95] = new convention('da1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[96] = new convention('da2', '+15 Excitement', function () { grant.statExcitement += 15; grant.render(); });
+    conventionArray[97] = new convention('da3', '+20 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[98] = new convention('da4', '+25 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 25; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[99] = new convention('da5', '+30 Excitement<br>+5 Social Skill<br>+Confident(+Excitement, ++Accomplishment)', function () { grant.statExcitement += 30; grant.timesSocialized += 5; grant.socialSkills += 5; grant.changeStatus('Confident'); grant.render(); });
+
+    //bar meet
+    conventionArray[100] = new convention('bm1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[101] = new convention('bm2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[102] = new convention('bm3', '+20 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[103] = new convention('bm4', '+25 Excitement<br>+5 Social Skill', function () { grant.statExcitement += 25; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+    conventionArray[104] = new convention('bm5', '+30 Excitement<br>+7 Social Skill<br>+Content(+Energy, +Excitement, +Accomplishment)', function () { grant.statExcitement += 30; grant.timesSocialized += 7; grant.socialSkills += 7; grant.changeStatus('Content'); grant.render(); });
+
+    //anime theories
+    conventionArray[105] = new convention('at1', '+5 Excitement', function () { grant.statExcitement += 5; grant.render(); });
+    conventionArray[106] = new convention('at2', '+10 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[107] = new convention('at3', '+15 Excitement<br>+2 Social Skill<br>+1 Arguments Entered', function () { grant.statExcitement += 15; grant.timesSocialized += 2; grant.socialSkills += 2; grant.argsEntered += 1; grant.render(); });
+    conventionArray[108] = new convention('at4', '+20 Excitement<br>+3 Social Skill<br>+1 Arguments Won<br>+Confident(+Excitement, ++Accomplishment)', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.argsEntered += 1; grant.argsWon += 1; grant.changeStatus('Confident'); grant.render(); });
+    conventionArray[109] = new convention('at5', '+25 Excitement<br>+4 Social Skill<br>+1 Arguments Won<br>+Confident(+Excitement, ++Accomplishment)', function () {  grant.statExcitement += 25; grant.timesSocialized += 4; grant.socialSkills += 4; grant.argsEntered += 1; grant.argsWon += 1; grant.changeStatus('Confident'); grant.render(); });
+
+    //loutube interview
+    conventionArray[110] = new convention('li1', '+5 Excitement', function () { grant.statExcitement += 5; grant.render(); });
+    conventionArray[111] = new convention('li2', '+10 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.socialSkills += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[112] = new convention('li3', '+10 Excitement<br>+5 Accomplishment<br>+5 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.statAccomplishment += 5; grant.statEuphoria += 5; grant.socialSkills += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[113] = new convention('li4', '+10 Excitement<br>+10 Accomplishment<br>+25 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.statAccomplishment += 10; grant.statEuphoria += 25; grant.socialSkills += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[114] = new convention('li5', '+10 Excitement<br>+15 Accomplishment<br>+50 Euphoria<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.statAccomplishment += 15; grant.statEuphoria += 50; grant.socialSkills += 1; grant.socialSkills += 1; grant.render(); });
+
+    //zombie apocalyse
+    conventionArray[115] = new convention('za1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[116] = new convention('za2', '+20 Excitement', function () { grant.statExcitement += 20; grant.render(); });
+    conventionArray[117] = new convention('za3', '+25 Excitement<br>+5 Accomplishment<br>+1 Social Skill', function () { grant.statExcitement += 25; grant.statAccomplishment += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[118] = new convention('za4', '+30 Excitement<br>+10 Accomplishment<br>+2 Social Skill', function () { grant.statExcitement += 30; grant.statAccomplishment += 10; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
+    conventionArray[119] = new convention('za5', '+35 Excitement<br>+15 Accomplishment<br>+3 Social Skill', function () { grant.statExcitement += 35; grant.statAccomplishment += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+
+    //free food
+    conventionArray[120] = new convention('ff1', '+10 Hunger', function () { grant.statHunger += 10; grant.render(); });
+    conventionArray[121] = new convention('ff2', '+15 Hunger<br>+1 Social Skill', function () { grant.statHunger += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[122] = new convention('ff3', '+20 Hunger<br>+5 Excitement<br>+2 Social Skill', function () { grant.statHunger += 20; grant.statExcitement += 5; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
+    conventionArray[123] = new convention('ff4', '+25 Hunger<br>+10 Excitement<br>+3 Social Skill', function () { grant.statHunger += 25; grant.statExcitement += 10; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[124] = new convention('ff5', '+30 Hunger<br>+20 Excitement<br>+3 Social Skill', function () { grant.statHunger += 30; grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+
+    //anime viewing session
+    conventionArray[125] = new convention('avs1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[126] = new convention('avs2', '+15 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[127] = new convention('avs3', '+20 Excitement<br>+3 Social Skill<br>+5 Euphoria', function () {  grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 5; grant.render(); });
+    conventionArray[128] = new convention('avs4', '+25 Excitement<br>+4 Social Skill<br>+10 Euphoria', function () { grant.statExcitement += 25; grant.timesSocialized += 4; grant.socialSkills += 4; grant.statEuphoria += 10; grant.render(); });
+    conventionArray[129] = new convention('avs5', '+30 Excitement<br>+5 Social Skill<br>+25 Euphoria', function () { grant.statExcitement += 30; grant.timesSocialized += 5; grant.socialSkills += 5; grant.statEuphoria += 25; grant.render(); });
+
+    //ball pit
+    conventionArray[130] = new convention('bp1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[131] = new convention('bp2', '+20 Excitement', function () { grant.statExcitement += 20; grant.render(); });
+    conventionArray[132] = new convention('bp3', '+30 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 30; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[133] = new convention('bp4', '+40 Excitement<br>+2 Social Skill', function () { grant.statExcitement += 40; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
+    conventionArray[134] = new convention('bp5', '+50 Excitement<br>+3 Social Skill', function () { grant.statExcitement += 50; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+
+    //mech piloting
+    conventionArray[135] = new convention('mp1', '+5 Excitement', function () { grant.statExcitement += 5; grant.render(); });
+    conventionArray[136] = new convention('mp2', '+10 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[137] = new convention('mp3', '+15 Excitement<br>+5 Accomplishment<br>+1 Social Skill<br>+5 Euphoria', function () { grant.statExcitement += 15; grant.statAccomplishment += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 5; grant.render(); });
+    conventionArray[138] = new convention('mp4', '+20 Excitement<br>+10 Accomplishment<br>+1 Social Skill<br>+10 Euphoria', function () { grant.statExcitement += 20; grant.statAccomplishment += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 10; grant.render(); });
+    conventionArray[139] = new convention('mp5', '+25 Excitement<br>+10 Accomplishment<br>+3 Social Skill<br>+25 Euphoria', function () { grant.statExcitement += 25; grant.statAccomplishment += 10; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 25; grant.render(); });
+
+    //anime bingo
+    conventionArray[140] = new convention('ab1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[141] = new convention('ab2', '+15 Excitement', function () { grant.statExcitement += 15; grant.render(); });
+    conventionArray[142] = new convention('ab3', '+20 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 20; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[143] = new convention('ab4', '+25 Excitement<br>+3 Social Skill<br>+50 Money', function () { grant.statExcitement += 25; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statMoney += 50; grant.render(); });
+    conventionArray[144] = new convention('ab5', '+30 Excitement<br>+5 Social Skill<br>+100 Money', function () { grant.statExcitement += 30; grant.timesSocialized += 5; grant.socialSkills += 5; grant.statMoney += 100; grant.render(); });
+
+    //swimming party
+    conventionArray[145] = new convention('sp1', '+10 Excitement', function () { grant.statExcitement += 10; grant.render(); });
+    conventionArray[146] = new convention('sp2', '+15 Excitement<br>+5 Accomplishment<br>+1 Social Skill', function () { grant.statExcitement += 15; grant.statAccomplishment += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[147] = new convention('sp3', '+20 Excitement<br>+5 Accomplishment<br>+2 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 5; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
+    conventionArray[148] = new convention('sp4', '+25 Excitement<br>+10 Accomplishment<br>+3 Social Skill', function () { grant.statExcitement += 25; grant.statAccomplishment += 10; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[149] = new convention('sp5', '+30 Excitement<br>+15 Accomplishment<br>+3 Social Skill', function () { grant.statExcitement += 30; grant.statAccomplishment += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+
+    //artist alley give
+    conventionArray[150] = new convention('aag1', '+5 Euphoria<br>+1 Fedora', function () { grant.statEuphoria += 5; grant.fedsBought++; grant.render(); });
+    conventionArray[151] = new convention('aag2', '+10 Euphoria<br>+1 Fedora', function () { grant.statEuphoria += 10; grant.fedsBought++; grant.render(); });
+    conventionArray[152] = new convention('aag3', '+5 Excitement<br>+1 Social Skill<br>+25 Euphoria<br>+2 Fedoras', function () { grant.statExcitement += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 25; grant.fedsBought += 2; grant.render(); });
+    conventionArray[153] = new convention('aag4', '+10 Excitement<br>+2 Social Skill<br>+50 Euphoria<br>+2 Fedoras', function () { grant.statExcitement += 10; grant.timesSocialized += 2; grant.socialSkills += 2; grant.statEuphoria += 50; grant.fedsBought += 2; grant.render(); });
+    conventionArray[154] = new convention('aag5', '+15 Excitement<br>+3 Social Skill<br>+100 Euphoria<br>+3 Fedoras', function () { grant.statExcitement += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 100; grant.fedsBought += 3; grant.render(); });
+
+    //speed date
+    conventionArray[155] = new convention('sd1', '+5 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[156] = new convention('sd2', '+10 Excitement<br>+5 Accomplishment<br>+2 Social Skill', function () { grant.statExcitement += 10; grant.statAccomplishment += 5; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
+    conventionArray[157] = new convention('sd3', '+15 Excitement<br>+5 Accomplishment<br>+3 Social Skill', function () { grant.statExcitement += 15; grant.statAccomplishment += 5; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[158] = new convention('sd4', '+20 Excitement<br>+10 Accomplishment<br>+4 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 10; grant.timesSocialized += 4; grant.socialSkills += 4; grant.render(); });
+    conventionArray[159] = new convention('sd5', 'The two of you spent most of your time together at the convention...', function () { grant.secretEvent = true; grant.statExcitement += 25; grant.statAccomplishment += 10; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+
+    function convention(name, text, effect) {
+        this.name = name;
+        this.text = text;
+        this.effect = effect;
+    } /* END OBJECT CONVENTION */
+
+    var len = conventionArray.length;
+    while (len--) {
+        var convObj = conventionArray[len];
+        var mapKey = conventionArray[len].name;
+        conventionMap[mapKey] = convObj;
     } /* END WHILE */
 } /* END OF objectLoader */
 
@@ -838,7 +1109,7 @@ $(window).on('load', function () {
     var currentArgNum = 0;
     var $md = $("#mainDialog");
     var $ft = $("#footer");
-    $("#footer").html(ftrAtHome);
+    $ft.html(ftrAtHome);
     setTimeout(function () {
         $("#wrapper").css('visibility', 'visible');
     }, 500);
@@ -986,10 +1257,47 @@ $(window).on('load', function () {
                 play("pp1");
                 sfx ? button.attr("class", "mute") : button.attr("class", "unmute");
                 break;
+            case "music1":
+                play("rs1");
+                var music = document.getElementById("music");
+                $(music).attr("src", "sound/music1.mp3");
+                break;
+            case "music2":
+                play("rs1");
+                var music = document.getElementById("music");
+                $(music).attr("src", "sound/music2.mp3");
+                break;
+            case "music3":
+                play("rs1");
+                var music = document.getElementById("music");
+                $(music).attr("src", "sound/music3.mp3");
+                break;
+            case "resetSaveFile":
+                play("pp1");
+                $md.dialog("close");
+                setTimeout(function () {
+                    exitDia(resetSF);
+                }, 400);
+                break;
+            case "resetSF":
+                play("pp1");
+                localStorage.removeItem("FedLifeSG");
+                $md.dialog("close");
+                setTimeout(function () {
+                    startScreen();
+                }, 500);
+                break;
+            case "toOptions":
+                play("pp1");
+                $md.dialog("close");
+                setTimeout(function () {
+                    travelDia(grant.openOptions());
+                }, 400);
+                break;
         } /* END SWITCH */
     }); /* END ON CLICK MAIN DIALOG */
 
-    $("#footer").on("click", function (e) {
+    $ft.on("click", function (e) {
         switch (e.target.id) {
             case "sleep":
                 grant.sleep();
@@ -1077,6 +1385,10 @@ $(window).on('load', function () {
                 play("pp1");
                 exitDia(goHome);
                 break;
+            case "jukebox":
+                play("pp1");
+                jukeboxDia(jukebox);
+                break;
             case "exit":
                 play("pp1");
                 exitDia(leaveGame);
@@ -1099,7 +1411,7 @@ $(window).on('load', function () {
             grant.statAccomplishment += accPts;
             isCorrect = true;
             if (this.endFG) {
-				this.changeStatus('Euphoric');
+                this.changeStatus('Euphoric');
             } /* END IF */
         } else {
             grant.statAccomplishment -= accPts;
@@ -1218,8 +1530,8 @@ $(window).on('load', function () {
         } else if (remainder == 4) {
             argHtml += t4;
         } /* END IF */
-
-        var tab2 = '<div id="tab-2" class="fixedSizedTab"><div id="imgArg"><div><img id="argHdr" src="images/misc/sb.png"/></div><div id="argTal">' + argHtml + '</div></div></div>',
+        //loutag
+        var tab2 = '<div id="tab-2" class="fixedSizedTab"><div id="imgArg"><div><div class="sb"></div></div><div id="argTal">' + argHtml + '</div></div></div>',
             tab3 = '<div id="tab-3" class="fixedSizedTab"><img src="/images/shelf/sh' + figs + '.png"/></div>',
             tab4 = '<div id="tab-4" class="fixedSizedTab"><img src="/images/rack/hr' + hats + '.png"/></div>',
             tab5 = '<div id="tab-5" class="fixedSizedTab"><img src="/images/cache/wc' + weps + '.png"/></div></div></div>',

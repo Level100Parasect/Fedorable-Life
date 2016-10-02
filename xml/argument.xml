@@ -485,7 +485,7 @@
 
 	<!--arg 59-->
 	<argument>
-		<text>You were sifted through the online dating website OkNarcissus and found the profile of a goddess that you Super Liked on the dating app Cinder. Thinking it's odd to see her on a dating site after a guy like you Super Liked her, you concocted a message: "I saw you on Cinder and I Super Liked you. Did you ever get to me? I'm wondering why we never matched." After a while of waiting she replied with "Sorry dude. I'm pretty picky and I swipe left a lot." You dropped to your knees and wept. Not being used to rejection because you never get rejected, you decide to show her that you're worth the right swipe:</text>
+		<text>Sifting through the online dating website OkNarcissus, you found the profile of a goddess that you Super Liked on the dating app Cinder. Thinking it's odd to see her on a dating site after a guy like you Super Liked her, you concocted a message: "I saw you on Cinder and I Super Liked you. Did you ever get to me? I'm wondering why we never matched." After a while of waiting she replied with "Sorry dude. I'm pretty picky and I swipe left a lot." You dropped to your knees and wept. Not being used to rejection because you never get rejected, you decide to show her that you're worth the right swipe:</text>
 		<choiceA>Talk yourself up: "You don't know what you're missing out on."</choiceA>
         <choiceB>Talk her down: "You weren't that pretty anyway. HARUMPH!"</choiceB>
 		<answer>ansB</answer>
@@ -493,6 +493,36 @@
 		<responseWrong>"After looking at your profile, it looks like I'm not missing out on much." I mean your profile did say you have no car, job, and apartment... She might just be correct. Also why would you keep that in your profile? ARGUMENT LOSE</responseWrong>
 		<hint>Confidence is good to have, but don't be delusional about yourself</hint>
 		<accomplish>30</accomplish>
+        <backgroundColor>bkgOkNarc</backgroundColor>
+        <headerColor>hdrOkNarc</headerColor>
+        <logo>logoOknarc</logo>
+	</argument>
+
+	<!--arg 62-->
+	<argument>
+		<text>Spending hour after hour on the dating website OkNarcissus, you skimmed through a profile of a woman that read "IMPORTANT: No time for games. I'm tired of getting played." Feeling like you can solve all of the problems going on in her life, you messaged her with "The only games I play are on the computer m'lady." Feeling like you nailed the first message, you were shocked when after 48 hours, she still hasn't replied. But you are on a mission for a reply: she wants an honest guy, and you are the answer to all of her problems:</text>
+		<choiceA>Be patient and keep waiting</choiceA>
+        <choiceB>Roast her for not replying to your message</choiceB>
+		<answer>ansA</answer>
+		<responseCorrect>You waited for a reply... and waited until it's been a few days and you kinda just forgot about her. ARGUMENT FORGOTTEN ABOUT</responseCorrect>
+		<responseWrong>After you roasted her, she replied with "What's wrong with you? I'm hardly on here, sorry for not being able to constantly message people. It's guys like you that make me want to deactivate my profile." But how..? YOU WERE THE ANSWER TO ALL HER PROBLEMS! YOU ARE A NICE GUY WHO ONLY WANTS TO BE HER EVERYTHING! ARGUMENT LOSE</responseWrong>
+		<hint>Good things come to those who wait</hint>
+		<accomplish>20</accomplish>
+        <backgroundColor>bkgOkNarc</backgroundColor>
+        <headerColor>hdrOkNarc</headerColor>
+        <logo>logoOknarc</logo>
+	</argument>
+
+	<!--arg 63-->
+	<argument>
+		<text>Losing your mind and confidence on the dating website OkNarcissus, you found the love of your life! Well I mean you don't know her at all, but she is Asian. So you decide to seduce her with your superior seduction skills: "Ohayo anata wa kanari no akachan!" Thinking that knowing her native tongue was the key to making her tongue native to yours, she replied with: "I'm Korean." Damn! A slight miscalculation! You should've read the bottom part of her profile saying she was from Korea... You need to make this right and win over the woman of your dreams:</text>
+		<choiceA>Apologize for being presumptuous. It won't happen again</choiceA>
+        <choiceB>Hastily translate a pick-up line from English to Korean</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>"Nice try." LE GASP! M'LADY ACTUALLY MESSAGED YOU BACK! Not wanting to seem desperate, you are going to wait two weeks before you message her back. ARGUMENT WON</responseCorrect>
+		<responseWrong>Nothing happens - no message back, no profile view, no new like... I guess you were right in that it won't happen again ;D ARGUMENT LOSE</responseWrong>
+		<hint>Apologies are for beta trash!</hint>
+		<accomplish>15</accomplish>
         <backgroundColor>bkgOkNarc</backgroundColor>
         <headerColor>hdrOkNarc</headerColor>
         <logo>logoOknarc</logo>
@@ -678,6 +708,36 @@
         <headerColor>hdrMGN</headerColor>
         <logo>logoMgn</logo>
 	</argument>
+	
+	<!--arg 61-->
+	<argument>
+		<text>On the gaming website MGN, you posted a picture of your poorly recolored OC you called "Murdermaster the Porcupine" with the caption of "Pretty neat, huh?" Taking pride in your hard work, you were shocked when people started to make fun of your creation. "Did you just poorly trace over the original character and made it edgier?" No! Murdermaster has a dark and troubled back story and the character design reflects the character's personality. You decide to defend your hard work from these vision-less plebs:</text>
+		<choiceA>Mention it was mainly the concept of the character that you were selling rather than the design</choiceA>
+        <choiceB>Hastily add the character's back story into the image to make your vision clearer</choiceB>
+		<answer>ansA</answer>
+		<responseCorrect>The thread turns into a topic of how the developer has no problems with adding characters like yours into each new iteration of the game such as Boomerang the Raccoon and Chocolate the Floating Dog. So who knows, maybe your character will be in a future game in spirit! ARGUMENT WON</responseCorrect>
+		<responseWrong>You kind of went too far with your description of Murdermaster's back story as you mentioned murder and violence. The game series is rated E for everyone. Somebody saved your image before it got modded and you are now a meme. BECAME A MEME AND ARGUMENT LOST</responseWrong>
+		<hint>There's no denying it - your design was pretty bad. Adding words won't fix it unless you fix the image first</hint>
+		<accomplish>20</accomplish>
+        <backgroundColor>bkgMGN</backgroundColor>
+        <headerColor>hdrMGN</headerColor>
+        <logo>logoMgn</logo>
+	</argument>
+
+	<!--arg 65-->
+	<argument>
+		<text>On the gaming website MGN, you saw a poll between two similar team based shooting games. One game has been out for almost 10 years, while the other has been recently released. Overall the thread appears to be a civil debate with the poll being relatively 50/50. Being a connoisseur of the classics, you had a bias for the older game. You decide to leave your opinion: "The new game is garbage - nothing can even come close to being better than the classics." Feeling like you covered your bases, a commenter asked you to back up your claims:</text>
+		<choiceA>Mention that the older game has been out for a longer time, the game has more content</choiceA>
+        <choiceB>Mention that the newer game is less balanced, making the game volatile while the developers try to patch it</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>"I do agree - there are some useless characters in the game and the devs seem to like nerfing the good characters to make things balanced." You then saw the poll shift in favor of the classic game. ARGUMENT WON</responseCorrect>
+		<responseWrong>"The game CURRENTLY has more content. The devs are constantly patching the game with new skins and new characters so this will no longer be an issue." You then saw the poll shift in favor of the newer game. Barnacles. ARGUMENT LOST</responseWrong>
+		<hint>Wouldn't it be a shame to master one character and the developers nerf the character to be useless?</hint>
+		<accomplish>15</accomplish>
+        <backgroundColor>bkgMGN</backgroundColor>
+        <headerColor>hdrMGN</headerColor>
+        <logo>logoMgn</logo>
+	</argument>
 
 	<!--Arg: LouTube-->
 	<!--arg 7-->
@@ -852,7 +912,7 @@
         <choiceB>"So... want to grab coffee some time?"</choiceB>
 		<answer>ansB</answer>
 		<responseCorrect>"Lol no." M'lady may have provided a short response, but you made her lol. It's a step in the right direction so it's an ARGUMENT WIN!</responseCorrect>
-		<responseWrong>"Don't call my boyfriend a simpleton, freak." Ouch. You pulled out the "Higher IQ card" way too soon. REJECTED ON THE INTERNET ARGUMENT LOSE</responseWrong>
+		<responseWrong>"Don't call my boyfriend a simpleton, freak." Ouch. M'lady didn't even notice that you have a higher than average IQ... REJECTED ON THE INTERNET AND ARGUMENT LOSE</responseWrong>
 		<hint>Nobody knows what goes on behind closed doors</hint>
 		<accomplish>30</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
@@ -881,10 +941,10 @@
 		<choiceA>Pontificate about how people like your attackers are the reason society has so many body image issues</choiceA>
         <choiceB>Say that you do approach women in real life on trains and malls and tell them they'd look better without make-up</choiceB>
 		<answer>ansA</answer>
-		<responseCorrect>Nobody replies to your five paragraph essay, but it does garner a handful of like. That must mean that people share your belief on beauty and the downfall of society! ARGUMENT WIN</responseCorrect>
+		<responseCorrect>Nobody replies to your five paragraph essay, but it does garner a handful of likes. That must mean that people share your belief on beauty and the downfall of society! ARGUMENT WIN</responseCorrect>
 		<responseWrong>"That is beyond creepy. We wear make up for ourselves. Nobody wants to hear that from a stranger." And thus you got lectured by everyone on the internet because of how creepy you are. ARGUMENT LOSE</responseWrong>
 		<hint>There are some things about you that strangers on the internet don't need to know...</hint>
-		<accomplish>20</accomplish>
+		<accomplish>25</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
         <logo>logoLoutube</logo>
@@ -892,14 +952,29 @@
 
 	<!--arg 58-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching a music video where the lead singer was wearing a fedora. Enjoying the tunes, you noticed the comments about the singer: "I love his hat! He's so cute!" This hurts because when you wear a fedora in public people avoid you like the plague! You give the world a piece of your glorious mind: "How come when I wear a fedora nobody calls me cute?" One commented "If you look anything like how you act, you must be hideous. The fedora can't save you." Peeved off that this troll knocked on your livelihood, you start summoning words into the screen:</text>
-		<choiceA>Defend your head wear. "The fedora is part of who I am as a person. Without it, I am nothing!"</choiceA>
-        <choiceB>Turn it around. "Look anything like how you act? That comment doesn't even make sense. I'm not acting like anything!"</choiceB>
+		<text>You were on the video-sharing website LouTube watching a music video where the lead singer was wearing a fedora. Enjoying the tunes, you noticed the comments about the singer: "I love his hat! He's so cute!" This hurts because when you wear a fedora in public people avoid you like the plague! You give the world a piece of your glorious mind: "How come when I wear a fedora nobody calls me cute?" One commented "Because you're not cute, fedora or not." Peeved off that this troll called you ugly, you start summoning words into the screen:</text>
+		<choiceA>Bring down the lead singer's attractiveness</choiceA>
+        <choiceB>Insist that you are a cute guy</choiceB>
 		<answer>ansA</answer>
-		<responseCorrect>"Yeah, I'm not touching that one. Good luck in life, buddy." Not one to turn down free luck, you gladly take it! ARGUMENT WIN</responseCorrect>
-		<responseWrong>"So you don't exist. Good." Damn, you got wrecked! ARGUMENT AND SENSE OF PURPOSE IN LIFE LOSE</responseWrong>
-		<hint>Focus on the original topic. That's why you commented in the first place</hint>
-		<accomplish>20</accomplish>
+		<responseCorrect>After mentioning that the lead singer was arrested and jailed a few months ago, you noticed that a lot of the discussions surrounding him are now about him being in jail. ARGUMENT WIN</responseCorrect>
+		<responseWrong>"Pics or it didn't happen." Feeling confident, you posted a picture of yourself, but everyone started laughing at you like it was middle school all over again. You removed the photo but the damage has already been done. ARGUMENT LOST AND FEELINGS HURT</responseWrong>
+		<hint>There's a difference between being confident and delusional. Don't be a delusional Debbie</hint>
+		<accomplish>25</accomplish>
+        <backgroundColor>bkgLouTube</backgroundColor>
+        <headerColor>hdrLouTube</headerColor>
+        <logo>logoLoutube</logo>
+	</argument>
+	
+	<!--arg 64-->
+	<argument>
+		<text>You were on the video-sharing website LouTube watching a podcast with an attractive male guest. A lot of the comments focused on the handsome guest which ticked you off because you aren't attractive and need attention. You bitterly commented "I laugh when I see attractive people because if we lived in Aztec culture, they'd be sacrificed to the gods for their beauty." After all, what you lack in attractiveness you make up for in guile! However someone said "That's a strange way of coping with not being attractive." First off, did they just assume your attractiveness? Second, the nerve of this guy! You won't stand for being called ugly:</text>
+		<choiceA>Do an image search for "attractive male" and say that you are him</choiceA>
+        <choiceB>Dare the commenter to post a picture of them self</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>"Sure thing." After they posted a link to their photo, it turns out the commenter was a lovely woman! Niiiiiiiiiiiiiiiiiiiiiiiiiiice... ARGUMENT WIN</responseCorrect>
+		<responseWrong>After searching for a handsome man to call yourself, you got jealous and bitter. You didn't even get a chance to post the photo because of how unfair the world is. ARGUMENT LOSE</responseWrong>
+		<hint>You'd probably get pissed if you saw an image of an attractive person. That's the type of person you are</hint>
+		<accomplish>30</accomplish>
         <backgroundColor>bkgLouTube</backgroundColor>
         <headerColor>hdrLouTube</headerColor>
         <logo>logoLoutube</logo>
@@ -907,7 +982,6 @@
 </doc>
 
 <!--
-	MyFace - Posted an OC that gets shat on for Murdermaster the Porcupine
 	MyFace - Share post about Ponies in High School and tagged friends in it. One doesn't like Ponies and your friendship is on thin ice.
 	Creddit - https://i.imgur.com/GReAr8W.jpg
 	LouTube - http://imgur.com/LgQD742

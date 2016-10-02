@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<events>
+		<workout>
+			<text>You stand on the treadmill...</text>
+			<event>
+				<choice>Set to a slow speed for a brisk walk</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You walked for 15 minutes</success>
+				<fail>You fell asleep and rolled off the treadmill</fail>
+			</event>
+			<event>
+				<choice>Set to a medium speed for a light jog</choice>
+				<energy>6</energy>
+				<weight>0.3</weight>
+				<accomplish>5</accomplish>
+				<additional>na</additional>
+				<chance>70</chance>
+				<success>You jogged for 15 minutes</success>
+				<fail>You tripped on your own feet and rolled off the treadmill</fail>
+			</event>
+		</workout>
+
+		<workout>
+			<text>You stand on the padded floor...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You sat on a bike machine...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You stand by the dumbell rack...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You lay down on the bench press machine...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something in your leg</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You stand by the rock wall...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You grab a tennis racquet...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You stand in front of the punching bags...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You stand behind a barbell on the floor...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You sit on a rowing machine...</text>
+			<event>
+				<choice>Stretch</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+		</workout>
+	</events>
+</doc>

@@ -60,6 +60,11 @@ function travelDia(node){
     dlog.dialog("open");
 }
 
+function jukeboxDia(node){
+    $(dlog).dialog({ height: 'auto', width: 640, dialogClass: 'jukeboxDia' }).html(node);
+    dlog.dialog("open");
+}
+
 function statsDia(node){
     $(dlog).dialog({ height: 520, width: 650, dialogClass: 'startScreen' }).html(node);
     dlog.dialog("open");
@@ -67,6 +72,6 @@ function statsDia(node){
 }
 
 function exitDia(node){
-    $(dlog).dialog({ height: 'auto', width: 650, dialogClass: 'leaveGameDialog' }).html(node);
+    $(dlog).dialog({ height: 'auto', width: 650, dialogClass: 'leaveDia' }).html(node);
     dlog.dialog("open");
 }
