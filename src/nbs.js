@@ -585,7 +585,8 @@ function mainCharacter() {
     } /* END OF loadGame */
 
     this.resetStatus = function() {
-        this.changeStatus('Normal');
+        this.statStatus = 'Normal';
+        statusMap['Normal'].changeHtml();
         this.decayEnergy = 2;
         this.decayHunger = 2;
         this.decayExcitement = 2;
@@ -594,11 +595,6 @@ function mainCharacter() {
 
     this.changeStatus = function(newStatus) {
 		if(statusMap[newStatus].priority > statusMap[this.statStatus].priority) {
-            this.decayEnergy = 2;
-            this.decayHunger = 2;
-            this.decayExcitement = 2;
-            this.decaySOA = 2;
-
             this.statStatus = newStatus;
             statusMap[newStatus].changeHtml();
         } /* END IF */
@@ -620,6 +616,9 @@ function mainCharacter() {
 
         if (this.endFG)
             optionsNode += '<option value="sprite9">Fedora God</option>';
+
+        if (this.endEmployed)
+            optionsNode += '<option value="sprite10">Adult-ing Ending</option>';
 
         if (this.endEFame)
             optionsNode += '<option value="sprite11">E-Fame Ending</option>';
@@ -765,8 +764,8 @@ function objectLoader(){
     var white = "white",
 		green = "#2ECC71",
 		red = "#E74C3C";
-    statusArray[0] = new status('Normal', white, null, 100, "You are normal. Kinda...", function () { grant.resetStatus(); });
-    statusArray[1] = new status('Tweaked', green, 5, 95, "Energy+", function () { grant.decayEnergy = -1; });
+    statusArray[0] = new status('Normal', white, null, 0, "You are normal. Kinda...", function () { grant.resetStatus(); });
+    statusArray[1] = new status('Tweaked', green, 5, 95, "Energy++", function () { grant.decayEnergy = -1; });
     statusArray[2] = new status('Hungover', red, 10, 99, "Energy--", function () { grant.decayEnergy = 4; });
     statusArray[3] = new status('Drunk', red, 10, 98, "Energy-", function () { grant.decayEnergy = 3; });
     statusArray[4] = new status('In Love', green, 5, 9, "Accomplishment++", function () { grant.decaySOA = -2; });
@@ -1351,6 +1350,7 @@ $(window).on('load', function () {
             case "event":
                 if (grant.statEnergy > 25) {
                     play("sp1");
+                    grant.statEnergy -= 25;
                     grant.event();
                 } else {
                     play("pp1");

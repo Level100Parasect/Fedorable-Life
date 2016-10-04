@@ -189,6 +189,30 @@
 				</text>
 				<effect>aag1</effect>
 			</event>
+			<!--
+			<event>
+				<title>Live Pod-Cast Show</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora!
+				</text>
+				<effect>lps1</effect>
+			</event>
+			-->
+			<!--
+			<event>
+				<title>Para-para Dance Lessons</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora!
+				</text>
+				<effect>pdl1</effect>
+			</event>
+			-->
+			<!--
+			<event>
+				<title>Improv Show</title>
+				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora!
+				</text>
+				<effect>is1</effect>
+			</event>
+			-->
 			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.

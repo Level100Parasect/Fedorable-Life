@@ -3,11 +3,11 @@
 	<!--Arg: Creddit-->
 	<!--arg 0-->
 	<argument>
-		<text>While on the pick up artist subreddit, you gave some random AFC advice on how to pick up women: if you want to attract a girl at a bar, you need to dress like a true gentlesir and stay in the corner ignoring everybody while trying to look mysterious. Your advice was so euphoric, that the other pick up artists started to call you out! They said that method of pick up is outdated, and nobody would go up and approach you if you ignored them. In order to regain your PUA cred, you can either:</text>
+		<text>While on the pick up artist subreddit, you gave some random AFC advice on how to pick up women: if you want to attract a girl at a bar, you need to dress like a true gentlesir and stay in the corner ignoring everybody while trying to look mysterious. Your advice was so euphoric, that the other pick up artists started to call you out! They said that method of pick up is outdated; "Nobody would approach you if you did that". In order to regain your PUA cred, you can either:</text>
         <choiceA>Post a fabricated story where you game on 2 Asian women and took both of them home in one night</choiceA>
         <choiceB>Call everyone unintelligent beta males and say that they will never understand how alpha you are</choiceB>
 		<answer>ansA</answer>
-		<responseCorrect>The AFC acknowledges your superior game and comments that he aspires to be a man like you one day. He ended up buying a fedora and an untailored suit.</responseCorrect>
+		<responseCorrect>The AFC acknowledges your superior game and comments that he aspires to be a man like you one day. He ended up buying a fedora and an untailored suit in your honor.</responseCorrect>
 		<responseWrong>The other men in the thread all call you pathetic and you can feel the AFC shake his head at you in disappointment through the internet.</responseWrong>
 		<hint>I wouldn't appreciate being called an unintelligent beta male myself</hint>
         <accomplish>20</accomplish>
@@ -18,7 +18,7 @@
 	
 	<!--arg 7-->
 	<argument>
-		<text>While perusing on the gonewild subcreddit, you saw an image of a lovely lady bent over her desk. She was naked as the day she was born, but you can tell this girl is special. Feeling the need to defend her honor from the horde of horny creeps leaving pervy comments, you write "These boys are quick to comment on your physical perfection. I'm not like them; your personality is the most breathtaking part of you." However, these pervs are downvoting your post! They are calling you a "chump knight" and say that you are missing the point of the subcreddit. As this fair maiden's white knight, you must lift up your shield:</text>
+		<text>While perusing on the gonewild subcreddit, you saw an image of a lovely lady bent over her desk naked as the day she was born. You can tell this girl is special. Feeling the need to defend her honor from the horde of horny creeps leaving pervy comments, you write "These boys are quick to comment on your physical perfection. I'm not like them; your personality is the most breathtaking part of you." However, these pervs are downvoting your post! They are calling you a "chump knight" and say that you are missing the point of the subcreddit. As this fair maiden's white knight, you must lift up your shield:</text>
         <choiceA>Call all of the horny creeps who frequent gonewild virgins who can't get any</choiceA>
         <choiceB>"M'lady deserves a real man who can admire her beauty! I tip my fedora to her."</choiceB>
 		<answer>ansB</answer>
@@ -33,7 +33,7 @@
 	
 	<!--arg 16-->
 	<argument>
-		<text>While obsessively partaking in the social networking website creddit, you search for the answers to one of life's biggest questions: why do nice guys finish last? And by search I mean you wrote a whiny essay where you complain about how nice guys finish last, douchebags always win, and how the women are missing out for not choosing to date you. After submitting your soliloquy, you read the replies and they disagree with you! The average response was along the lines of "Nice guys don't finish last, boring guys do" and "Quit being so predictable". Wiping away your nice guy tears, you type your response:</text>
+		<text>While obsessively partaking in the social networking website creddit, you search for the answers to one of life's biggest questions: why do nice guys finish last? And by search I mean you wrote a whiny essay where you complain about how nice guys finish last, douchebags always win, and how the women are missing out for not choosing to date you. After submitting your soliloquy, you read the replies and they disagree with you! The common response was "Nice guys don't finish last, boring guys do". Wiping away your nice guy tears, you type your response:</text>
         <choiceA>Lie about yourself; "I am not a boring guy! I know kenjutsu and I am writing a book!"</choiceA>
         <choiceB>"You guys are wrong. It's a scientific fact" and send them a link to an article that will augment your argument</choiceB>
 		<answer>ansA</answer>
@@ -48,7 +48,7 @@
 	
 	<!--arg 17-->
 	<argument>
-		<text>Browsing through the social networking site creddit, you stumbled upon the thread "European vs. Japanese Swords". You scoff at the morons who believe European swords stand a chance against the glorious Nippon blade, however it's actually a fairly even argument. A commenter posted a 4 paragraph essay explaining why European swords are stronger; the European design craft a more sturdy blade due to science and physics! Peeved that somebody on the internet brought great dishonor to your favorite weapon of warfare, you decide to educate this pleb on the art of Nippon sword fighting:</text>
+		<text>Browsing through the social networking site creddit, you stumbled upon the thread "European vs. Japanese Swords". You scoff at the morons who believe European swords stand a chance against the glorious Nippon blade, however it's actually a fairly even argument. One post was a 4 paragraph essay explaining why European swords are stronger; the European design craft a more sturdy blade due to science and physics! Peeved that somebody on the internet brought great dishonor to your favorite weapon of warfare, you decide to educate this pleb on the art of Nippon sword fighting:</text>
         <choiceA>"I am an expert with the katana and let me learn you a little bit of something about the lightning fast Iai style..."</choiceA>
         <choiceB>"Nippon steel is the strongest steel. The blacksmiths fold it 1000 times. Do you even know what tempering is, filthy Gaijin?"</choiceB>
 		<answer>ansA</answer>
@@ -78,7 +78,7 @@
 	
 	<!--arg 35-->
 	<argument>
-		<text>While on the social networking site creddit, you were feeling more entitled than usual and made a post: "I am sick of being a nice guy! I helped a girl pass a class in college and she didn't even go on a date with me! I'm going to be an alpha male because that's what girls are into!" Immediately your post was hit with negative feedback with people bashing your so-called skewed views; "Just because you helped a girl doesn't mean she owes you anything. The fact she didn't like you doesn't have anything to being an alpha male." Such an ignorant thing to say. Being an alpha male means everything:</text>
+		<text>While on the social networking site creddit, you were feeling more entitled than usual and made a post: "I am sick of being a nice guy! I helped a girl pass a class in college and she didn't even date me! I'm going to be an alpha male because that's what girls are into!" Immediately your post was hit with negative feedback with people bashing your so-called skewed views; "Just because you helped a girl doesn't mean she owes you anything. The fact she didn't like you doesn't have anything to being an alpha male." Such an ignorant thing to say. Being an alpha male means everything:</text>
         <choiceA>"I'll show you... I'll show all of you!" then create a new account with the word Alpha in the name</choiceA>
         <choiceB>"You guys don't know what you are talking about! Why am I single then?"</choiceB>
 		<answer>ansA</answer>
@@ -93,11 +93,11 @@
 	
 	<!--arg 39-->
 	<argument>
-		<text>While on the social networking site creddit, you uploaded a photo that you've been working hard on! You took four photos of yourself and created a four panel comic. In the comic, you added the text "Hai girls! Umm... did you know that when you wear make up nice guys think you're ugly?" You wanted to make a statement that natural beauty is the best beauty and a four-paneled comic was the best way to do so. Thinking that this was your key to fame, you were shocked when it was hit with negative criticism! "This must be a joke! Please tell me this guy's not for real." You didn't mean for it to be a joke so you decide to defend yourself:</text>
+		<text>While on the social networking site creddit, you uploaded a photo that you've worked hard on! You took four photos of yourself and created a four panel comic. In the comic, you added the text "Hai girls! Umm... did you know that when you wear make up nice guys think you're ugly?" You just wanted to make a statement that natural beauty is the best beauty! Thinking that this was your key to fame, you were shocked when it was hit with negative criticism! "This must be a joke! Please tell me this guy's not for real." You didn't mean for it to be a joke so you decide to defend yourself:</text>
         <choiceA>Flip flop. Say that this was all just a joke and then promptly delete the thread</choiceA>
         <choiceB>Stand your ground! Mention that this is a statement about society and their views of beauty</choiceB>
 		<answer>ansA</answer>
-		<responseCorrect>Nothing really happened after you deleted your post which may have been the best option. Nobody has ever seen your four-paneled comic again. AVOIDED BECOMING A MEME</responseCorrect>
+		<responseCorrect>Nothing really happened after you deleted your post which may have been the best option. Nobody has ever seen your four-panelled comic again. AVOIDED BECOMING A MEME</responseCorrect>
 		<responseWrong>Somebody made a response comic to counter yours! She made a comic that shows her reacting to your comic then applying a dubious amount of make up on her face. You have become a poster boy for cringe pictures. ARGUMENT LOST</responseWrong>
 		<hint>Do you honestly think dank memes are worth fighting for?</hint>
         <accomplish>30</accomplish>
@@ -199,7 +199,7 @@
 	
 	<!--arg 3-->
 	<argument>
-		<text>While you were scrolling through your news feed on the social media website MyFace, you saw that you got a notification! Filled to the brim with excitement, you see that it's just your mother commenting on your wall: "There's more to life than video games and the Internet. You are rotting your life away." The rest of your family agrees with her by liking her comment and replying to it. You suddenly became more introspective. You thought that you were doing fine in life; nice room, great sense of style, combat skills, etc. Have you been distracting yourself from the truth? You start to think of a way to reply to your own mother:</text>
+		<text>While you were scrolling through your news feed on the social media website MyFace, you saw that you got a notification! Filled to the brim with excitement, you see it's just your mother commenting on your wall: "There's more to life than video games and the Internet. You're wasting your life away." The rest of your family agrees with her by liking her comment and replying to it. You suddenly became more introspective. You thought that you were doing fine in life; nice room, great sense of style, combat skills, etc. Have you been distracting yourself from the truth? You start to think of a way to reply to your own mother:</text>
         <choiceA>Ignore the post and delete it from your wall. What's she going to do? Ground you? Psh, you're an adult!</choiceA>
         <choiceB>Blame your failures on your upbringing. You only never accomplished anything in life because of her!</choiceB>
 		<answer>ansB</answer>
@@ -229,7 +229,7 @@
 	
 	<!--arg 13-->
 	<argument>
-		<text>While on the social media site MyFace, everyone seems to be posting about a tragedy that struck in a city in Africa. You decide to let the world know that you care about the tragedy and make a status post about it. After thinking long and hard on how to formulate your words, you come up with "Is the culprit African? Because they are A-frican bitch! My heart goes out to the victims." However a few minutes after writing the status, people on your friends list started calling you an insensitive prick! You just wanted to spice up all the gloom with a joke! You try to come up with a response to all of the people that misinterpreted your status:</text>
+		<text>While on the social media site MyFace, everyone seems to be posting about a tragedy that struck in a city in Africa. You decide to let the world know that you care. After thinking long and hard on how to formulate the words for your post, you come up with "Is the culprit African? Because they are A-frican bitch! My heart goes out to the victims." However a few minutes after posting, people on your friends list started calling you an insensitive prick! You just wanted to spice up all the gloom with a joke! You try to come up with a response to all of the people that misinterpreted your status:</text>
         <choiceA>Apologise profusely. They misinterpreted your concern as insensitivity</choiceA>
         <choiceB>Say that you have a bunch of black friends</choiceB>
 		<answer>ansA</answer>
@@ -244,7 +244,7 @@
 	
 	<!--arg 14-->
 	<argument>
-		<text>While on the social media site MyFace, someone in your friends list made a status saying she made it out of surgery just fine. Usually you would ignore this type of post, but you saw that the most liked comment on her post was from her mother; "Thank God you're okay. I love you." It's time to school a concerned mother with facts about religion. You replied to the mother's comment saying "God doesn't exist. She made it because of the skill of the surgeon." Suddenly people started flaming you asking what the hell is wrong with you. The mother replies with "I was just being grateful that my daughter was okay." You start to reply to these attacks against your belief with:</text>
+		<text>While on the social media site MyFace, someone in your friends list made a status saying she made it out of surgery. Usually you would ignore this type of post, but you saw that the most liked comment on her post was from her mother; "Thank God you're okay. I love you." It's time to school a concerned mother with facts about religion. You replied to the mother's comment saying "God doesn't exist. She made it because of the skill of the surgeon." Suddenly people started flaming you asking what the hell is wrong with you. The mother replies with "I was just being grateful that my daughter was okay." You start to reply to these attacks against your belief with:</text>
         <choiceA>"I was just pointing your thanks towards the surgeons that deserve it"</choiceA>
         <choiceB>"Please provide scientific proof that there is a God out there and I will take back what I said"</choiceB>
 		<answer>ansB</answer>
@@ -500,11 +500,11 @@
 
 	<!--arg 62-->
 	<argument>
-		<text>Spending hour after hour on the dating website OkNarcissus, you skimmed through a profile of a woman that read "IMPORTANT: No time for games. I'm tired of getting played." Feeling like you can solve all of the problems going on in her life, you messaged her with "The only games I play are on the computer m'lady." Feeling like you nailed the first message, you were shocked when after 48 hours, she still hasn't replied. But you are on a mission for a reply: she wants an honest guy, and you are the answer to all of her problems:</text>
-		<choiceA>Be patient and keep waiting</choiceA>
-        <choiceB>Roast her for not replying to your message</choiceB>
+		<text>Spending hour after hour on the dating website OkNarcissus, you skimmed m'lady's profile that read "I have no time for games. I'm tired of getting played." Feeling like you can solve all the problems going on in her life, you messaged her: "The only games I play are on the computer m'lady." Feeling like you nailed the first message, you were shocked when she didn't reply instantly. But you are on a mission for a reply: she wants an honest guy, and you are the answer to all of her problems:</text>
+		<choiceA>Be patient and keep waiting...</choiceA>
+        <choiceB>Roast her: "No reply? No wonder you keep on getting played!"</choiceB>
 		<answer>ansA</answer>
-		<responseCorrect>You waited for a reply... and waited until it's been a few days and you kinda just forgot about her. ARGUMENT FORGOTTEN ABOUT</responseCorrect>
+		<responseCorrect>You waited for a reply... and waited... until it's been a few days and you kinda just forgot about her. ARGUMENT FORGOTTEN ABOUT</responseCorrect>
 		<responseWrong>After you roasted her, she replied with "What's wrong with you? I'm hardly on here, sorry for not being able to constantly message people. It's guys like you that make me want to deactivate my profile." But how..? YOU WERE THE ANSWER TO ALL HER PROBLEMS! YOU ARE A NICE GUY WHO ONLY WANTS TO BE HER EVERYTHING! ARGUMENT LOSE</responseWrong>
 		<hint>Good things come to those who wait</hint>
 		<accomplish>20</accomplish>
@@ -591,7 +591,7 @@
 	
 	<!--arg 27-->
 	<argument>
-		<text>On the gaming website MGN, there was a "Who would win in a fight?" thread between two famous video game characters: the portly plumber from down under and the world's fastest porcupine. Being an aficionado of these discussions, you open up the thread to see a fairly even poll. Personally you think that the plumber has no chance. I mean he's a plumber! What does he even do? And the porcupine can run around at the speed of sound! The commenters in the discussion listing off feats from the games and how they give an advantage in the fight. However you have an ace in your sleeve that will tip the poll in your favor:</text>
+		<text>On the gaming website MGN, there was a "Who would win in a fight?" thread between two famous video game characters: the portly plumber from down under versus the world's fastest porcupine. Being an aficionado of these debates, you open up the thread to see a fairly even poll. Personally you think that the plumber has no chance. I mean he's a plumber! What does he even do? The commenters in the discussion listing off feats from the games and how they give an advantage in the fight. However you have an ace in your sleeve that will tip the poll in your favor:</text>
 		<choiceA>Mention that the world's fastest porcupine has a super form that makes him invincible</choiceA>
         <choiceB>Mention that the plumber has no super human feats that would give him an advantage</choiceB>
 		<answer>ansA</answer>
@@ -606,7 +606,7 @@
 	
 	<!--arg 28-->
 	<argument>
-		<text>On the gaming website MGN, there was an article about a robot piloting JRPG game from Japan getting heavily censored upon its localization to North America. Logically this makes sense because the main heroine was under 18 and had multiple risqué costumes that they are getting completely removed from the game. You don't really know why, but this really irks you! Probably because these costumes turn you on. One commenter mentioned that this censorship is a good thing because it's creepy to fantasize about digitally youthful women. How can anybody be against sexy costumes!? Is he even human? You decide to put this pleb in his place by informing him why his beliefs are wrong:</text>
+		<text>On the gaming website MGN, there was an article about a robot piloting JRPG game from Japan getting censored upon its localization to North America. Logically this makes sense because the main heroine is under 18 and has multiple risqué costumes that are getting removed. You don't really know why, but this irks you! Probably because these costumes turn you on. One commented that this censorship is a good thing because it's creepy to fantasize about digitally youthful women. How can anybody be against sexy costumes!? Is he even human? You decide to put this pleb in his place by informing him why his beliefs are wrong:</text>
 		<choiceA>Mention that the risque costumes are a selling point of the game. If they remove them, it's less money for the company</choiceA>
         <choiceB>Mention that this removes content from the game, meaning US gamers get less content than Japanese gamers</choiceB>
 		<answer>ansB</answer>
@@ -922,7 +922,7 @@
 
 	<!--arg 55-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching a newly released trailer for a highly anticipated movie. Despite how many likes and views the trailer has, it failed to peak your interest for some reason. You left your opinion on the video: "This movie is gonna blow. As an atheist, if you study any form of science, you would not stand for the logical fallacies of this movie such as I." Some commenter with no taste replied to your comment with "Logical fallacies? It's a science fiction movie, moron." Nobody insults your intelligence! Show this sheep that you know what you are talking about:</text>
+		<text>You were on the video-sharing website LouTube watching a newly released trailer for a highly anticipated movie. Despite how many likes and views the trailer has, it failed to peak your interest for some reason. You left your opinion on the video: "This movie is gonna blow. As an atheist, if you study any form of science, you would not stand for the logical fallacies of this movie such as I." Some commenter with no taste replied to your comment; "Logical fallacies? It's a science fiction movie, moron." ACK! Nobody insults your intelligence! Show this sheep that you know what you are talking about:</text>
 		<choiceA>Assure this Neanderthal that you have the superior IQ</choiceA>
         <choiceB>Call everyone hyped up for the movie a sheeple</choiceB>
 		<answer>ansA</answer>
@@ -967,11 +967,11 @@
 	
 	<!--arg 64-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching a podcast with an attractive male guest. A lot of the comments focused on the handsome guest which ticked you off because you aren't attractive and need attention. You bitterly commented "I laugh when I see attractive people because if we lived in Aztec culture, they'd be sacrificed to the gods for their beauty." After all, what you lack in attractiveness you make up for in guile! However someone said "That's a strange way of coping with not being attractive." First off, did they just assume your attractiveness? Second, the nerve of this guy! You won't stand for being called ugly:</text>
+		<text>You were on the video-sharing website LouTube watching a podcast with an attractive male guest. The comments focused on the handsome guest which ticked you off because you aren't attractive and need attention. You bitterly commented "I laugh when I see attractive people. If we lived in Aztec culture, they'd be sacrificed to the gods for their beauty." After all, what you lack in attractiveness you make up for in guile! Someone replied "That's a strange way of coping with not being attractive." Did they assume your attractiveness? The nerve of this guy! You won't stand for being called ugly:</text>
 		<choiceA>Do an image search for "attractive male" and say that you are him</choiceA>
         <choiceB>Dare the commenter to post a picture of them self</choiceB>
 		<answer>ansB</answer>
-		<responseCorrect>"Sure thing." After they posted a link to their photo, it turns out the commenter was a lovely woman! Niiiiiiiiiiiiiiiiiiiiiiiiiiice... ARGUMENT WIN</responseCorrect>
+		<responseCorrect>"Sure thing." After they posted a link to their photo, it turns out the commenter was a lovely woman! Niiiiiiiiiiiiiiiiiiiiiiiice... ARGUMENT WIN</responseCorrect>
 		<responseWrong>After searching for a handsome man to call yourself, you got jealous and bitter. You didn't even get a chance to post the photo because of how unfair the world is. ARGUMENT LOSE</responseWrong>
 		<hint>You'd probably get pissed if you saw an image of an attractive person. That's the type of person you are</hint>
 		<accomplish>30</accomplish>
@@ -983,6 +983,8 @@
 
 <!--
 	MyFace - Share post about Ponies in High School and tagged friends in it. One doesn't like Ponies and your friendship is on thin ice.
+	MyFace - Mom asks you to clean the living room
 	Creddit - https://i.imgur.com/GReAr8W.jpg
+	Creddit - It's tough being a guy...
 	LouTube - http://imgur.com/LgQD742
 -->
