@@ -17,32 +17,142 @@
 				<choice>Set to a medium speed for a light jog</choice>
 				<energy>6</energy>
 				<weight>0.3</weight>
-				<accomplish>5</accomplish>
+				<accomplish>3</accomplish>
 				<additional>na</additional>
 				<chance>70</chance>
 				<success>You jogged for 15 minutes</success>
 				<fail>You tripped on your own feet and rolled off the treadmill</fail>
+			</event>
+			<event>
+				<choice>Set to a fast speed for a hard run</choice>
+				<energy>12</energy>
+				<weight>1.0</weight>
+				<accomplish>5</accomplish>
+				<additional>na</additional>
+				<chance>50</chance>
+				<success>You jogged at a fast pace for 15 minutes</success>
+				<fail>You tripped on your own feet and rolled off the treadmill</fail>
+			</event>
+			<event>
+				<choice>Select the suicide run program</choice>
+				<energy>20</energy>
+				<weight>2.0</weight>
+				<accomplish>10</accomplish>
+				<additional>na</additional>
+				<chance>25</chance>
+				<success>You successfully completed the program</success>
+				<fail>You tripped, rolled off the treadmill, and hit the wall behind you</fail>
+			</event>
+			<event>
+				<choice>Select the suicide run program</choice>
+				<energy>20</energy>
+				<weight>2.0</weight>
+				<accomplish>10</accomplish>
+				<additional>na</additional>
+				<chance>25</chance>
+				<success>You successfully completed the program</success>
+				<fail>You tripped, rolled off the treadmill, and hit the wall behind you</fail>
 			</event>
 		</workout>
 
 		<workout>
 			<text>You stand on the padded floor...</text>
 			<event>
-				<choice>Stretch</choice>
-				<energy>3</energy>
+				<choice>Do some light stretches</choice>
+				<energy>2</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
+				<additional>limberedUp</additional>
 				<chance>95</chance>
 				<success>You limbered up</success>
-				<fail>You pulled something</fail>
+				<fail>You pulled something in your leg. Ohhhh...</fail>
+			</event>
+			<event>
+				<choice>Practice martial arts</choice>
+				<energy>2</energy>
+				<weight>0.1</weight>
+				<accomplish>3</accomplish>
+				<additional>euphoriaUp</additional>
+				<chance>85</chance>
+				<success>You practised your punches and kicks and looked tough doing it!</success>
+				<fail>You accidentally punched a wall and got a boo boo :(</fail>
+			</event>
+			<event>
+				<choice>Perform plyometric exercises</choice>
+				<energy>2</energy>
+				<weight>0.1</weight>
+				<accomplish>3</accomplish>
+				<additional>euphoriaUp</additional>
+				<chance>85</chance>
+				<success>You practised your punches and kicks and looked tough doing it!</success>
+				<fail>You accidentally punched a wall and got a boo boo :(</fail>
+			</event>
+			<event>
+				<choice>Do some yoga</choice>
+				<energy>2</energy>
+				<weight>0.1</weight>
+				<accomplish>3</accomplish>
+				<additional>euphoriaUp</additional>
+				<chance>85</chance>
+				<success>You practised your punches and kicks and looked tough doing it!</success>
+				<fail>You accidentally punched a wall and got a boo boo :(</fail>
+			</event>
+			<event>
+				<choice>Dance like nobody's watching!</choice>
+				<energy>2</energy>
+				<weight>0.1</weight>
+				<accomplish>3</accomplish>
+				<additional>euphoriaUp</additional>
+				<chance>85</chance>
+				<success>You practised your punches and kicks and looked tough doing it!</success>
+				<fail>You accidentally punched a wall and got a boo boo :(</fail>
 			</event>
 		</workout>
 		
 		<workout>
 			<text>You sat on a bike machine...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Pedal at a low speed</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Pedal at a moderate speed</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Pedal at a fast speed</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Select the gradual speed program</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Select high velocity high resistance program</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -54,9 +164,19 @@
 		</workout>
 		
 		<workout>
-			<text>You stand by the dumbell rack...</text>
+			<text>You pick up a pair of dumbells...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Low weight high rep curls</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>High weight low rep curls</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -70,7 +190,7 @@
 		<workout>
 			<text>You lay down on the bench press machine...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Don't put any weights on the bar</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -84,7 +204,7 @@
 		<workout>
 			<text>You stand by the rock wall...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Climb the beginner course wall</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -98,7 +218,7 @@
 		<workout>
 			<text>You grab a tennis racquet...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Practice strokes against a wall</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -110,9 +230,19 @@
 		</workout>
 		
 		<workout>
-			<text>You stand in front of the punching bags...</text>
+			<text>You lay down on the padded floor...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Do a low amount of basic push-ups</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Do a some basic sit-ups</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>

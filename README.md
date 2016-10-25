@@ -7,7 +7,7 @@ Fedorable Life is a text-based life simulation game where players get to live th
 Players need to make sure they keep their neckbeard happy by playing enough video games and getting into enough internet arguments all while trying to make enough money and improving your life.
 
 ##Where can I play Fedorable Life?
-Fedorable Life is a web browser game made in HTML5. Currently it uses local storage for save data and as a result is currently only playable in Google Chrome. Multibrowser compatibility will be added in a future update.
+Fedorable Life is a web browser game made in HTML5. Currently it uses local storage for save data and as a result is currently only playable in Google Chrome and FireFox. Multibrowser compatibility will be added in a future update.
 
 Play the official game here: 
 https://fedorable.life

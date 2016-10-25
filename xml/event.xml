@@ -189,30 +189,24 @@
 				</text>
 				<effect>aag1</effect>
 			</event>
-			<!--
 			<event>
 				<title>Live Pod-Cast Show</title>
-				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora!
+				<text>Your favorite podcasting group was hosting a live podcast recording session at the convention. Not wanting to miss out on your favorite podcast, you sat in the session. Maybe your cough made it onto the recording!
 				</text>
 				<effect>lps1</effect>
 			</event>
-			-->
-			<!--
 			<event>
 				<title>Para-para Dance Lessons</title>
-				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora!
+				<text>A professional dance crew was giving a group dance lesson for the Japanese originated para-para dance. You quietly partook in the lesson, having a blast while learning all you can about para-para dancing!
 				</text>
 				<effect>pdl1</effect>
 			</event>
-			-->
-			<!--
 			<event>
 				<title>Improv Show</title>
-				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora!
+				<text>There was a group of comedians doing an improv show at the auditorium. You got to witness the comedians make joke after joke enjoying the acts they put up.
 				</text>
 				<effect>is1</effect>
 			</event>
-			-->
 			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
@@ -409,6 +403,24 @@
 				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. You stood in the crowd and was able to catch a fedora and a few other trinkets!
 				</text>
 				<effect>aag2</effect>
+			</event>
+			<event>
+				<title>Live Pod-Cast Show</title>
+				<text>Your favorite podcasting group was hosting a live podcast recording session at the convention. You participated as an audience member whenever they prompted the audience for a response. You really got to feel like a part of the podcast!
+				</text>
+				<effect>lps2</effect>
+			</event>
+			<event>
+				<title>Para-para Dance Lessons</title>
+				<text>A professional dance crew was giving a group dance lesson for the Japanese originated para-para dance. After partaking in the dance lessons, another person in the class complimented you about how quickly you picked it up.
+				</text>
+				<effect>pdl2</effect>
+			</event>
+			<event>
+				<title>Improv Show</title>
+				<text>There was a group of comedians doing an improv show at the auditorium. Participating in the event, you laughed at every joke and participated when the comedians asked for audience input.
+				</text>
+				<effect>is2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -608,6 +620,24 @@
 				<effect>aag3</effect>
 			</event>
 			<event>
+				<title>Live Pod-Cast Show</title>
+				<text>Your favorite podcasting group was hosting a live podcast recording session at the convention. Minding your own business, you noticed that the podcaster made mention of you specifically in their podcast... Senpaii noticed you!
+				</text>
+				<effect>lps3</effect>
+			</event>
+			<event>
+				<title>Para-para Dance Lessons</title>
+				<text>A professional dance crew was giving a group dance lesson for the Japanese originated para-para dance. After the dance lessons, other participants complimented your dancing skills.
+				</text>
+				<effect>pdl3</effect>
+			</event>
+			<event>
+				<title>Improv Show</title>
+				<text>There was a group of comedians doing an improv show at the auditorium. Participating in the event, you were put on the spot when the comedians asked you a few questions about yourself before they segway-ed into the next act.
+				</text>
+				<effect>is3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -803,6 +833,24 @@
 				<text>Walking through artist alley, you saw a crowd around one stall throwing away free merchandise. Standing in the crowd, you were able to catch one of the more expensive items at the convention. People congratulated you on your good luck!
 				</text>
 				<effect>aag4</effect>
+			</event>
+			<event>
+				<title>Live Pod-Cast Show</title>
+				<text>Your favorite podcasting group was hosting a live podcast recording session at the convention. At the end of the podcast, there was a Q&A session. You asked the podcasters a few questions that you've wanted to ask them.
+				</text>
+				<effect>lps4</effect>
+			</event>
+			<event>
+				<title>Para-para Dance Lessons</title>
+				<text>A professional dance crew was giving a group dance lesson for the Japanese originated para-para dance. After the dance lessons, other participants complimented your dancing skills as you all talked about what you just learned.
+				</text>
+				<effect>pdl4</effect>
+			</event>
+			<event>
+				<title>Improv Show</title>
+				<text>There was a group of comedians doing an improv show at the auditorium. Participating in the event, the comedians invited you on to the stage as you quietly became an accessory for their act. They thanked you for participating.
+				</text>
+				<effect>is4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -1002,6 +1050,24 @@
 				<effect>aag5</effect>
 			</event>
 			<event>
+				<title>Live Pod-Cast Show</title>
+				<text>Your favorite podcasting group was hosting a live podcast recording session at the convention. They asked for a participant to interview and you were randomly selected. Like a dream come true, you got to be on your favorite podcast!
+				</text>
+				<effect>lps5</effect>
+			</event>
+			<event>
+				<title>Para-para Dance Lessons</title>
+				<text>A professional dance crew was giving a group dance lesson for the Japanese originated para-para dance. The teachers took note of how quickly you picked para-para dancing and talked to you after the event, bonding over your mutual love of Japanese culture.
+				</text>
+				<effect>pdl5</effect>
+			</event>
+			<event>
+				<title>Improv Show</title>
+				<text>There was a group of comedians doing an improv show at the auditorium. Participating in the event, the comedians invited you on to the stage as you became a part of the act. You even made people laugh while on stage!
+				</text>
+				<effect>is5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
@@ -1010,9 +1076,7 @@
 		</level5>
 	</events>
 	<!--
-		Live Pod-Cast
-		Para para dance lessons
-		Improve show
+	vocaloid concert
 	-->
 	<booth>
 		<event>

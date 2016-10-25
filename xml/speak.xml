@@ -326,41 +326,31 @@
 			</text>
 			<effect>hatPlus</effect>
 		</event>
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>The bar was pretty empty so the bartenders played whatever they wanted on the televisions. One of the televisions was playing your favorite movie of all time!
 			</text>
-			<effect>deadInside</effect>
+			<effect>excitementUp</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>Standing outside of the bar, someone walking passed smelled the apple cinnamon flavor from your vape. The two of you talked about getting into vaping as you gave him suggestions.
 			</text>
-			<effect>deadInside</effect>
+			<effect>soaUp</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>Sitting at a table outside vaping by yourself, a group of vapers joined your table and made some friendly conversation with you. 
 			</text>
-			<effect>deadInside</effect>
+			<effect>content</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>The bar had a special on food: extra cheap pizza slices. Frugality is one of your best traits as you partook in cheap pizza night!
 			</text>
-			<effect>deadInside</effect>
+			<effect>hungerUp</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>Somebody noticed you vaping outside and gave you a new flavor. When you tried it out, you started to feel more awake! Just what flavor did they give you?
 			</text>
-			<effect>deadInside</effect>
+			<effect>energyUp</effect>
 		</event>
-		-->
 	</good>
 	<bad>
 		<event>
@@ -688,40 +678,30 @@
 			</text>
 			<effect>deadInside</effect>
 		</event>
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>While waiting on your drink, you overheard two people talking about politics. Feeling the need to assert your intellectual dominance, you joined the debate, insulting their beliefs. Being sick of your presence, they took their drinks and left, leaving you debate-less.
 			</text>
-			<effect>deadInside</effect>
+			<effect>soaDown</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>Feeling the urge to wake up the sheeple, you walked into a random group of people and spouted conspiracy theories about the government and recent events. However they told you to piss off. But your don't even need to use the bathroom...
 			</text>
-			<effect>deadInside</effect>
+			<effect>soaDown</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>Sitting by the bar, you pulled out your vape and took a puff. However the bartender told you that you weren't allowed to vape indoors. But... you need your vape to feel euphoric!
 			</text>
-			<effect>deadInside</effect>
+			<effect>excitementDown</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>Wanting to meet your future wife, you were peacocking mad hat. Despite how hard you peacocked, nobody gave you the attention you seeked.
 			</text>
-			<effect>deadInside</effect>
+			<effect>heartbroken</effect>
 		</event>
-		-->
-		<!--
 		<event>
-			<text>There was a local rock band performing at the bar tonight and during the more quiet parts of the song, you shouted "FREE THE BIRD!" thinking you were being hilarious and creative. You weren't. Seriously, you are literally the worst.
+			<text>While playing your portable gaming console at the bar, you made a lot of progress but died to a critical hit. Brushing yourself off, you reloaded your last save but to your horror, you lost two hours of progress.
 			</text>
-			<effect>deadInside</effect>
+			<effect>soaDown</effect>
 		</event>
-		-->
 	</bad>
 </doc>
