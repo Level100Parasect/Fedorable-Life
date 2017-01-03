@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<events>
+		<!--Quest 1 - Grocery Shopping-->
+		<quest>
+			<text>"Can you please go to the store and pick up some groceries? I left some money for you to use and the shopping list on the counter."</text>
+			<complete>Getting back home, you put the groceries away and let your mother know of your success. She told you to keep the leftover money.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will satisfy her needs. You pocket the money and head outside.</response>
+					<effect>groceryStart</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy climbing the ladder in a MOBA game go grocery shopping for her.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>You notice that with all this money, you have the option to take the bus. The nearest grocery isn't too far, but options are always good!</text>
+				<choice1>
+					<text>Walk to the store</text>
+					<response>Deciding to walk to the store, you burned a few calories.</response>
+					<effect>workOut</effect>
+				</choice1>
+				<choice2>
+					<text>Take the bus</text>
+					<response>Spending $10 for the fare, you sat in comfort on the bus to the store.</response>
+					<effect>transport</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After gathering everything on the shopping list, you realize you have some money left over. You see some magazines about games, PUAs, and anime in the magazine isle...</text>
+				<choice1>
+					<text>Buy all the things!</text>
+					<response>You place some of the most interesting magazines in your basket.</response>
+					<effect>buyMags</effect>
+				</choice1>
+				<choice2>
+					<text>Restrain yourself</text>
+					<response>Not caving in to your desires, you decide to walk away from the magazine isle.</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Making your way to the checkout line, you decide to make conversation with the cute cashier...</text>
+				<choice1>
+					<text>Compliment her jewelry</text>
+					<response>Taking note of the cashier's accessories, you complimented her style as the two of you talked about that while she was checking out your items.</response>
+					<effect>compliment</effect>
+				</choice1>
+				<choice2>
+					<text>Talk about the weather</text>
+					<response>"Crazy weather, huh?" The conversation died as silence fell upon the two of you. Nice try though!</response>
+					<effect>socialUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>On your way out, you notice someone asking for money outside of the store...</text>
+				<choice1>
+					<text>Ignore the pan handler</text>
+					<response>You looked at your phone trying to seem busy as you walked past the pan handler. You feel the judging stares of everyone around you, but at least you didn't spend your money.</response>
+					<effect>paranoid</effect>
+				</choice1>
+				<choice2>
+					<text>Donate some money</text>
+					<response>After donating $20, you stopped and talked with the beggar. They had a family to feed, and you're glad that you were able to help someone in need.</response>
+					<effect>donate</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 2 - Chores Around The House-->
+		<quest>
+			<text>"I couldn't do the daily household chores before I left for work today. Could you please finish them before I get back home?"</text>
+			<complete>Completing all of the household chores asked of your mother, you looked upon your hard work with pride! You texted her saying you have completed the chores.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will accomplish everything she requires of you.</response>
+					<effect>choresStart</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy level grinding in a 20 year old JRPG for an ultimate weapon.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Remembering that your mother's plants needed to be watered every morning, you fill up a spray bottle and start spraying away! You saw a lone bee fly out of the plant.</text>
+				<choice1>
+					<text>Swat at the bee</text>
+					<response>Pulling out a fly swatter, you were able to sack that sucker! Feeling proud of yourself, you feel like you have vanquished a foe! Like in your anime.</response>
+					<effect>swatAway</effect>
+				</choice1>
+				<choice2>
+					<text>Lead it outside</text>
+					<response>Taking the passive route, you lead the bee outside.</response>
+					<effect>leadOut</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Noticing that the sink was full of dishes, you figured that the kitchen sink was the next stop.</text>
+				<choice1>
+					<text>Load up the dishwasher and try to figure it out</text>
+					<response>You place the dishes into the machine and fiddle around with the control panel until it started to rumble. Great success!</response>
+					<effect>soaUp</effect>
+				</choice1>
+				<choice2>
+					<text>Wash the dishes manually</text>
+					<response>There's something relaxing about washing dishes. It may have taken longer, but you feel oddly content after emptying the sink from dirty dishes.</response>
+					<effect>excitementUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After finishing up with the dishes, you noticed that the garbage was overflowing. You brought the garbage outside and ran into the neighbor walking their dog.</text>
+				<choice1>
+					<text>Play with their dog</text>
+					<response>You knelt down and pet the dog. You then look up at the owner and start talking them questions about the dog. After a few minutes of talking, they continued on with their walk.</response>
+					<effect>petDog</effect>
+				</choice1>
+				<choice2>
+					<text>Talk about upcoming events</text>
+					<response>"So uh... there are some events going on in town, yeah?" Your neighbor was stunned at first but was a good sport making small talk with you.</response>
+					<effect>socialUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>While outside, you noticed that the lawn hasn't been trimmed in a while. You go to the shed and saw two different lawn-mowers. You remembered that the ridable lawn mower had trouble starting up.</text>
+				<choice1>
+					<text>Use the push-blade mower</text>
+					<response>You pull out the push-blade mower and decided to mow the lawn manually. It was exhausting, but you feel like you got a good workout from this.</response>
+					<effect>workOut</effect>
+				</choice1>
+				<choice2>
+					<text>Figure out how to work the ridable lawn mower</text>
+					<response>Spending a good 10 minutes trying to get the lawn mower running, you finally got a response from the engine! You had fun while mowing the lawn because it was like driving a car.</response>
+					<effect>ridable</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 3 - Returning Library Books-->
+		<quest>
+			<text>"Hey, I have some overdue library books that I haven't been able to return. Can you please return it to the library for me? I left $20 just in case the books are overdue."</text>
+			<complete>Making your way back home from the library, you texted your mother saying you have accomplished the task! She told you to pocket the money left over.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will make the library your new kingdom.</response>
+					<effect>libStart</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy proving your intellectual superiority on plebs on the internet.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Walking to the library with the books in hand, you bring them to the front desk. The librarian seems to be new and asks how long ago you borrowed these books.</text>
+				<choice1>
+					<text>Guess the check out date</text>
+					<response>Guessing the check out date, the librarian told you that there were late fees totalling up to $5.</response>
+					<effect>lateFees</effect>
+				</choice1>
+				<choice2>
+					<text>Say that you don't know the date</text>
+					<response>Being honest, you affirmed that you were doing this for your mother and had no idea. The new librarian gave you a pass and you got away with not paying any late fees. However, you felt like you got away with a crime...</response>
+					<effect>paranoid</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Deciding that while you were at the library, why not enjoy your time there? Walking further into the building, you passed a vending machine with some really tasty snacks.</text>
+				<choice1>
+					<text>Ignore the tasty treats</text>
+					<response>You ignored the vending machine and felt good about choosing the healthier option.</response>
+					<effect>soaUp</effect>
+				</choice1>
+				<choice2>
+					<text>Indulge yourself in snacks</text>
+					<response>You spent $5 on a bunch of vending machine snacks.</response>
+					<effect>buySnack</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now in the center of the library, you decide to take a book and read it on a comfortable chair. Which type of book do you feel like reading?</text>
+				<choice1>
+					<text>A book about self improvement</text>
+					<response>Feeling the need to improve your life, you grab a self improvement book that teaches readers how to become more social. Once you completed the book, you put the book back where you found it.</response>
+					<effect>socialUp</effect>
+				</choice1>
+				<choice2>
+					<text>Some vintage comic books</text>
+					<response>You decided to read up on some old school comics, reading the original origins of some of your favorite heroes. Once you finished a handful of stories, you put the comics back where you found them.</response>
+					<effect>vintageComics</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>You noticed that there was a board game room in the library. Noticing another person your age, you decide to talk to them and was challenged to a chess match! How do you play?</text>
+				<choice1>
+					<text>Play defensive</text>
+					<response>After a very close match, you were able to sneak a victory! Feeling good about yourself, your opponent congratulated you for your victory.</response>
+					<effect>chessWin</effect>
+				</choice1>
+				<choice2>
+					<text>Play offensive</text>
+					<response>After a very close match, you ended up losing. Speaking with your opponent after the game, they ended up giving you some tips for the next time you two play against each other.</response>
+					<effect>chessLose</effect>
+				</choice2>
+			</step>
+		</quest>
+	</events>
+</doc>
+<!--
+-going to the mall to pick up a gift
+-mailing a package to relatives
+-preparing food for your mother's book club
+-->

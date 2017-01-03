@@ -18,7 +18,7 @@
 	
 	<!--arg 7-->
 	<argument>
-		<text>While perusing on the gonewild subcreddit, you saw an image of a lovely lady bent over her desk naked as the day she was born. You can tell this girl's special. Feeling the need to defend her honor from the horde of horny creeps and pervy comments, you write "These boys are quick to comment on your physical perfection. I'm not like them; your personality is the most breathtaking part of you." However, your post is getting downvoted! They are calling you a "chump knight" and say that you are missing the point of the subcreddit. As this fair maiden's white knight, you must lift up your shield:</text>
+		<text>While perusing the gonewild subcreddit, you saw an image of a lovely lady bent over her desk naked as the day she was born. You can tell this girl's special. Feeling the need to defend her honor from the horde of horny creeps and pervy comments, you write "These boys are quick to comment on your physical perfection. I'm not like them; your personality is the most breathtaking part of you." However, your post is getting downvoted! They are calling you a "chump knight" and say that you are missing the point of the subcreddit. As this fair maiden's white knight, you must lift up your shield:</text>
         <choiceA>Call all of the horny creeps who frequent gonewild virgins who can't get any</choiceA>
         <choiceB>"M'lady deserves a real man who can admire her beauty! I tip my fedora to her."</choiceB>
 		<answer>ansB</answer>
@@ -195,6 +195,21 @@
         <headerColor>hdrCreddit</headerColor>
         <logo>logoCreddit</logo>
 	</argument>
+	
+	<!--arg 75-->
+	<argument>
+		<text>You stumbled upon a selfie of a lovely woman introducing herself to the site on the social networking site creddit. Being instantly smitten, you send her a personal message; "If I was your boyfriend I would treat you as a princess, m'lady". Thinking the line you dropped was gonna make her fall for you, you were shocked when she didn't reply with a message of reciprocation "I don't want to be treated like a princess". But... everything on TV and in movies told you that's what she wanted to hear! You must seduce this woman you don't even know:</text>
+        <choiceA>Insist that being treated like a princess is what she wants. Then write a poem for her</choiceA>
+        <choiceB>Insult everything she stands for because she is wrong</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>She never got around to replying back to you. If you didn't successfully seduce her, maybe you taught her a very valuable lesson! ARGUMENT WIN</responseCorrect>
+		<responseWrong>After writing 10 different haikus about m'lady, she replies with "I have a boyfriend". Bet you didn't see that coming. ARGUMENT LOST</responseWrong>
+		<hint>Don't tell her what you think she needs. That's a jerk move</hint>
+        <accomplish>25</accomplish>
+		<backgroundColor>bkgCreddit</backgroundColor>
+        <headerColor>hdrCreddit</headerColor>
+        <logo>logoCreddit</logo>
+	</argument>
 
 	<!--Arg: MyFace-->
 	<!--arg 1-->
@@ -259,7 +274,7 @@
 	
 	<!--arg 14-->
 	<argument>
-		<text>While on the social media site MyFace, someone in your friends list made a status saying she made it out of surgery. Usually you would ignore this type of post, but you saw that her mother has the most liked comment saying "Thank God you're okay. I love you." It's time to school a concerned mother with facts about religion. You replied to the mother's comment saying "God doesn't exist. She made it because of the skill of the surgeon." Suddenly people started roasting you! The mother replies with "I was just grateful that my daughter was okay." You start to reply to these attacks against your belief with:</text>
+		<text>Someone in your friends list made a status saying she made it out of surgery on the social media site MyFace. Usually you would ignore posts like these, but you saw her mother has the most liked comment; "Thank God you're okay. I love you." It's time to school a concerned mother with facts about religion. You replied to the mother's comment; "God doesn't exist. She made it because of the skill of the surgeon." Suddenly people started roasting you! The mother replies with "I was just grateful that my daughter was okay." You start to reply to these attacks against your belief with:</text>
         <choiceA>"I was just pointing your thanks towards the surgeons that deserve it"</choiceA>
         <choiceB>"Please provide scientific proof that there is a God out there and I will take back what I said"</choiceB>
 		<answer>ansB</answer>
@@ -274,7 +289,7 @@
 	
 	<!--arg 18-->
 	<argument>
-		<text>You found the MyFace profile of a woman you met in the real world. She was working at the mall and you asked her coworker for her full name. She's perfect; has colorful hair, is a girl, and didn't walk away while talking to you! You sent her a few introductory messages. However she seemed lukewarm to your woo-ing attempts; taking a long time to reply, one word answers, etc... You decide to go for broke; "Assuming you haven't blocked me or deleted your account, I take it that you weren't creeped out by me tracking you down. I think you are beautiful. I understand I'm not much, but I would worship you." After some waiting, she has not replied yet so you decide to give this last message your all:</text>
+		<text>You found the MyFace profile of a woman you met in the real world. She was working at the mall and you asked her coworker for her full name. She's perfect; has colorful hair, is a girl, and didn't walk away while talking to you! You sent her some introductory messages, but she seemed lukewarm to your attempts; taking a long time to reply, one word answers, etc... You decide to go for broke; "Assuming you haven't blocked me or deleted your account, I take it that you weren't creeped out by me tracking you down. I think you are beautiful. I understand I'm not much, but I would worship you." After some waiting, she has not replied yet so you decide to give this last message your all:</text>
         <choiceA>Neg her: "You're not very talkative. If I had to rate your charisma, I'd give you a 0/10!"</choiceA>
         <choiceB>Fish for a response: "Won't you talk to me? I am a nice guy and we have similar interests."</choiceB>
 		<answer>ansA</answer>
@@ -289,7 +304,7 @@
 	
 	<!--arg 21-->
 	<argument>
-		<text>Scrolling through your news feed on the social media site MyFace, a pretty girl posted a sad status. You didn't actually pay attention to the contents of the sad post, you just saw that there was a sad girl and as a white knight, you took it upon yourself to make this girl happy. You decide to bless her eyes with a sonnet of words: "M'lady, your smile is the most beautiful part of you. Please stop frowning." However the harlot didn't reply to your reply in a timely fashion. Meanwhile, she is replying to the replies after yours. Is she ignoring you? You demand to be acknowledged for your thoughtful words!:</text>
+		<text>Scrolling through your news feed on the social media site MyFace, a pretty girl posted a sad status. You didn't actually pay attention to the contents of the post, you just saw that there was a sad girl and as a white knight, you took it upon yourself to make this girl happy. You decide to bless her eyes with a sonnet of words: "M'lady, your smile is the most beautiful part of you. Please stop frowning." However the harlot didn't reply to your reply in a timely fashion. Meanwhile, she is replying to the replies after yours. Is she ignoring you? You demand to be acknowledged for your thoughtful words!:</text>
         <choiceA>"Please let me in!"</choiceA>
         <choiceB>"You are perfect the way you are"</choiceB>
 		<answer>ansB</answer>
@@ -422,6 +437,21 @@
         <logo>logoMyface</logo>
 	</argument>
 
+	<!--arg 73-->
+	<argument>
+		<text>Feeling proud of original art you drew of your favorite TV show Ponies in High School fused with your friends, you decide to post it to the social media website MyFace and tag your friends with their associated pony-fusion. Your hardwork only got one like from your mother, but you also received one comment; "Don't tag me in posts like these. I'm job hunting, and being tagged in pony photos don't help." You noticed that your friend took the liberty of untagging himself from the photo. This is the reason you don't have a job - you are a special snowflake and will not change yourself for the man, man:</text>
+        <choiceA>Retag your friend in the drawing and say that you are disappointed in him becoming a corporate sellout</choiceA>
+        <choiceB>Cut his pony fusion out of your drawing then unfriend that sucker! A one-two punch HAH!</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>Nothing really happened. You friend never reached out to you, and there were no discussions on your art. Huh... NO BIG DEAL - ARGUMENT WIN</responseCorrect>
+		<responseWrong>"I don't care what you think - you've been unemployed since you graduated college." His reply got twenty likes... ARGUMENT LOST</responseWrong>
+		<hint>Wanting a job shouldn't label someone as a sellout</hint>
+		<accomplish>25</accomplish>
+        <backgroundColor>bkgMyFace</backgroundColor>
+        <headerColor>hdrMyFace</headerColor>
+        <logo>logoMyface</logo>
+	</argument>
+
 	<!--Arg: OkNarcissus-->
 	<!--arg 1-->
 	<argument>
@@ -455,7 +485,7 @@
 	
 	<!--arg 11-->
 	<argument>
-		<text>You logged onto the online dating website OkNarcissus to speak to a woman you have been messaging on and off for 3 days. So it's quite serious. You decide it's time to move your relationship to the next level! You send her a message: "M'lady! May I inquire you for your number? I would love to send you photos of my daily ritual!" Your heart beat races while you wait patiently for her reply. However after many hours, she still hasn't rewarded you with a message. You even see that she is online, so you know she read it! Peeved off, you start to write a message to her letting her know how you feel:</text>
+		<text>You logged onto the online dating website OkNarcissus to speak to a woman you have been messaging on and off for 3 days. So it's quite serious. You decide it's time to move your relationship to the next level; "M'lady! May I inquire you for your number? I would love to send you photos of my daily ritual". Your heart beat races while you wait patiently for her reply. However after many hours, she still hasn't rewarded you with a message. You even see that she is online, so you know she read it! Peeved off, you start to write a message to her letting her know how you feel:</text>
 		<choiceA>"Way to throw away 3 days of getting to know each other, ya dumb broad!"</choiceA>
         <choiceB>"C'mon, baby I'm good for iiiiiiiiiiiiiiiiiiiiiiiiit!"</choiceB>
 		<answer>ansB</answer>
@@ -500,7 +530,7 @@
 	
 	<!--arg 34-->
 	<argument>
-		<text>You were desperately clicking through the online dating website OkNarcissus and stumbled upon the profile of an attractive fair-haired maiden. Reading through m'lady's profile, she seems to be flawless: is a girl, nerdy, colorful hair, no children... just like in your Japanese animes! However your elven eyes stumble onto m'lady's religious beliefs. Turns out that she is a devout Christian. You cannot fathom ever dating a woman who worships an imaginary cloud in the sky! Disgusted to the core, you made it your mission to win her over to the side of atheism:</text>
+		<text>Desperately clicking through the online dating website OkNarcissus, you stumbled upon the profile of an attractive fair-haired maiden. Reading through m'lady's profile, she seems to be flawless: is a girl, nerdy, colorful hair, no children... just like in your Japanese animes! However your elven eyes stumble onto m'lady's religious beliefs. Turns out that she is a devout Christian. You cannot fathom ever dating a woman who worships an imaginary cloud in the sky! Disgusted to the core, you made it your mission to win her over to the side of atheism:</text>
 		<choiceA>"You do realize that God isn't real, right?"</choiceA>
         <choiceB>"You would be more attractive if you weren't religious."</choiceB>
 		<answer>ansA</answer>
@@ -587,15 +617,45 @@
         <headerColor>hdrOkNarc</headerColor>
         <logo>logoOknarc</logo>
 	</argument>
+	
+	<!--arg 71-->
+	<argument>
+		<text>Searching for your future waifu on the dating website OkNarcissus, you stumble upon a maiden after adjusting your search parameters. Honestly she's young - not even reaching the 20 year mark, but as an older gentlesir, you can be her sugar daddy. You messaged her saying how you'd love to wake up naked next to her thinking it was a nice mixture of sexy and considerate. After a few moments, you got a message back from her; "Erm. You're over my age range. Did you not read my profile?" Of course you did skim over it! You're on thin ice - you need to succeed in seducing a younger woman:</text>
+		<choiceA>Reiterate to m'lady the benefits of dating an older man</choiceA>
+        <choiceB>Say that age is just a number - old enough to count, old enough to mount!</choiceB>
+		<answer>ansA</answer>
+		<responseCorrect>While m'lady never replied, she did end up looking at your profile. Maybe she regretted blowing you off and looked upon your profile picture in sadness. ARGUMENT WON</responseCorrect>
+		<responseWrong>You actually got a warning from the OkNarcissus team for sexual harassment. You know you messed up when the OkNarcissus team personally messages you! ON THIN ICE - ARGUMENT LOSE</responseWrong>
+		<hint>Just please do yourself a favor and don't be a creep</hint>
+		<accomplish>25</accomplish>
+        <backgroundColor>bkgOkNarc</backgroundColor>
+        <headerColor>hdrOkNarc</headerColor>
+        <logo>logoOknarc</logo>
+	</argument>
+	
+	<!--arg 72-->
+	<argument>
+		<text>Longing for a woman's touch on the dating website OkNarcissus, you were actually able to convince a lovely lady to meet up with you for pizza! You exchanged numbers and she asked you for a picture. However, after you sent one she stopped messaging. You decide to start spamming her inbox with messages such as the classic "What? Am I not muscley enough for you?" and "We had such a nice thing going until you messed it up!" But she still never replied. You better put your all in this last message or you can kiss your pizza date good bye:</text>
+		<choiceA>Ask about the pizza date</choiceA>
+        <choiceB>Try to destroy her self esteem as payback for destroying your self esteem</choiceB>
+		<answer>ansA</answer>
+		<responseCorrect>"I'll get back to you on that. So no need to message me." DATE ACHEIVED - ARGUMENT WON</responseCorrect>
+		<responseWrong>"I stopped messaging you because you were a catfish. You look nothing like in your photos. So not only do you lack confidence in what you look like, but you are a terrible human being!" Well I mean like... you're not the worst human being :( ARGUMENT LOST</responseWrong>
+		<hint>C'mon. Just don't be a jerk</hint>
+		<accomplish>20</accomplish>
+        <backgroundColor>bkgOkNarc</backgroundColor>
+        <headerColor>hdrOkNarc</headerColor>
+        <logo>logoOknarc</logo>
+	</argument>
 
 	<!--Arg: MGN-->
 	<!--arg 5-->
 	<argument>
-		<text>On the gaming website MGN, they posted an article about the game Alive and Dead: Hardcore Beach Games Edition. You looked over to your collector's edition on your bookshelf with a sense of pride and urgency! Scrolling through the comments of the article, one comment vexed you: "The only people who enjoy this game are perverts who can't get laid." This guy is misinformed; you enjoy these types of games AND you are totally sexually active. Yeah, your girlfriend visited from Canada over the summer and totally had relations with her. Insulted, you type up a response to this commenter:</text>
+		<text>On the gaming website MGN, they posted an article about the game Alive and Dead: Hardcore Beach Games. You looked over to your collector's edition on your bookshelf with a sense of pride and urgency! Scrolling through the comments of the article, one comment vexed you: "The only people who enjoy this game are perverts who can't get laid". This guy is misinformed; you enjoy these types of games AND you are totally sexually active. Yeah, your girlfriend visited from Canada over the summer and totally did things with her. Insulted, you type up a response to this commenter:</text>
 		<choiceA>Mention your numerous sexual exploits that are totally numerous. Give juicy details such as positions and the dirty talks</choiceA>
         <choiceB>Mention the gameplay mechanics and the game's longevity. At the game's core, there is more than just fan service</choiceB>
 		<answer>ansB</answer>
-		<responseCorrect>You mention the game's merit, and the commenter apologizes. It's okay though; a pleb like him would've never been able to understand the quality of Alive and Dead: Hardcore Beach Games Edition without your help. ARGUMENT WIN!</responseCorrect>
+		<responseCorrect>You mention the game's merit, and the commenter apologizes. It's okay though; a pleb like him would've never been able to understand the quality of Alive and Dead: Hardcore Beach Games without your help. ARGUMENT WIN!</responseCorrect>
 		<responseWrong>The commenter called you out! He said that he found you on MyFace and said that you are one of those anti-social perverts! He then proceeds to post links that lead to pictures of you, and it really hurts your feelings. Surprisingly, the website doesn't have any anti-bullying rules :( ARGUMENT LOSE</responseWrong>
 		<hint>MGN always finds out...</hint>
 		<accomplish>20</accomplish>
@@ -621,7 +681,7 @@
 	
 	<!--arg 20-->
 	<argument>
-		<text>On the gaming website MGN, you saw a review for a Plebstation 4 exclusive game that got a measly 7/10. Typically you're a PC gamer, but if you had to side with either of the consoles, you would choose the Bonebox. When you saw the review, it felt like your team won and that the console war was over! You rush to the comments section and without a thought wrote "R.I.P Plebstation 4. No match for the mighty Bonebox!" However the Plebstation fanboys won't take this sitting down; they all comment saying that the Plebstation 4 is winning the console war, but you are more educated than these plebs. You decide to educate these fanboys:</text>
+		<text>On the gaming website MGN, you saw a review for a Plebstation 4 exclusive game get a measly 7/10. Typically you're a PC gamer, but if you had to side with either of the consoles, you'd choose the Bonebox. When you saw the review, it felt like the console war was over! You rush to the comments section and without a thought wrote "R.I.P Plebstation 4. No match for the mighty Bonebox!" However the Plebstation fanboys won't take this sitting down; all commenting that the Plebstation 4 is winning the console war. Being of a higher intellect, you decide to educate these fanboys:</text>
 		<choiceA>Mention exclusives! The Plebstation 4 has a lot of mediocre exclusives; quantity is not equal to quality!</choiceA>
         <choiceB>Mention sales figures! The Plebstation 4 is nothing compared to the past consoles!</choiceB>
 		<answer>ansA</answer>
@@ -636,7 +696,7 @@
 	
 	<!--arg 24-->
 	<argument>
-		<text>On the gaming website MGN, there was a thread where OP was asking for opinions on which console to buy between the Bonebox and the Plebstation 4. Obviously the better of these two choices is the PC. You reply to the thread with "PC Master Race; console plebs gonna hate." This however put a target on your back from the other commenters as they all started to flame you saying "PC wasn't even an option" and asking you to learn how to read. You, an avid reader of pony fanfiction do know how to read and think that PC gaming is the best thing since underwear. You have two ways of replying to these dweebs:</text>
+		<text>On the gaming website MGN, there was a thread where the OP was asking for opinions on which console to buy between the Bonebox and the Plebstation 4. Obviously the better of these two choices is the PC. You reply to the thread with "PC Master Race; console plebs gon hate." This however put a target on your back from other commenters as they all flamed you saying "PC wasn't even an option" and asking you to learn how to read. You, an avid reader of pony fanfiction do know how to read and think that PC gaming is the best thing since underwear. You have two ways of replying to these dweebs:</text>
 		<choiceA>Mention that the PC has a wider library, a mod support, and can upscale while the consoles can't</choiceA>
         <choiceB>Post a meme about the pathetic console plebs being too poor for the PC Master Race</choiceB>
 		<answer>ansA</answer>
@@ -666,7 +726,7 @@
 	
 	<!--arg 28-->
 	<argument>
-		<text>On the gaming website MGN, there was an article about a robot piloting JRPG game from Japan getting censored upon its localization to North America. Logically this makes sense because the main heroine is under 18 and has multiple risqué costumes that are getting removed. You don't really know why, but this irks you! Probably because these costumes turn you on. One commented that this censorship is a good thing because it's creepy to sexualize digitally young women. How can anybody be against sexy costumes!? You decide to put this pleb in his place by informing him why his beliefs are wrong:</text>
+		<text>There was an article about a robot piloting JRPG game from Japan getting censored upon its localization to North America on the gaming website MGN. Logically this makes sense because the main heroine is under 18 and has multiple risqué costumes getting removed. You don't know why, but this irks you! Probably because these costumes turn you on. One commented that this censorship is a good thing because it's creepy to sexualize digitally young women. How can anybody be against sexy costumes!? You decide to put this pleb in his place by informing him why his beliefs are wrong:</text>
 		<choiceA>Mention that the risqué costumes are a selling point of the game. If they remove them, it's less money for the company</choiceA>
         <choiceB>Mention that this removes content from the game, meaning US gamers get less content than Japanese gamers</choiceB>
 		<answer>ansB</answer>
@@ -832,7 +892,7 @@
 	
 	<!--arg 15-->
 	<argument>
-		<text>You were binge watching anime AMVs on the video-sharing website LouTube. After a while, an AMV for your favorite anime started to play, but to your horror it was an AMV for a ship that you detest. The video paired your waifu with a supporting character rather than the main character. You support MC x waifu because you project yourself on to the main character. You pause the video and state your opinion; "This ship is garbage." The creator of the video replied to your comment with "You are garbage. Don't make fun of my video you creep." This really shoots your scooter! Nobody calls you a creep in public domain. You scheme your retort:</text>
+		<text>Binge watching anime AMVs on the video-sharing website LouTube, you found an AMV for your favorite anime. But to your horror it was an AMV for a ship you detest - your waifu with a supporting character instead of the main character. You support MC x waifu because you project yourself on to the main character. You pause the video and state your opinion; "This ship is garbage". The creator of the video replied to your comment with "You are garbage. I do what I want you scumbag". This really shoots your scooter! Nobody calls you a creep in public domain. You scheme your retort:</text>
 		<choiceA>"This ship is garbage, this AMV is garbage, and so are you! Please delete this video so we can move on with our lives."</choiceA>
         <choiceB>Mention that your waifu has more screen time alone with the main character than the supporting character</choiceB>
 		<answer>ansB</answer>
@@ -862,7 +922,7 @@
 	
 	<!--arg 23-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching a social-experiment video where a muscle-bound pranker goes around asking women for sexual intercourse. Surprisingly, the pranker gets a few numbers from this. This rustles your jimmies because you tried this just last week and you got slapped, the cops called on you, and got zero numbers. You decide to voice your own opinion: "If they got a soft-hearted beta male to do this, the outcome would be different!" To your surprise, this comment was hit with many dislikes! One commented "Poor baby! Who hurt you?" You are not a baby! A baby does not have a high IQ like you:</text>
+		<text>You were watching a social-experiment video on the video-sharing website LouTube where a muscle-bound pranker asks random women for sexual intercourse. Surprisingly, the pranker gets a few numbers from this. This rustles your jimmies because you tried this last week and you got slapped, the cops called on you, and got no numbers. You decide to voice your own opinion; "If a soft-hearted beta male did this, the outcome would be different!" Surprisingly, your comment was hit with dislikes and mean comments; "Poor baby! Who hurt you?" You are not a baby! A baby does not have a high IQ like you:</text>
 		<choiceA>Mention your superior intellect and call the commenter a moron who knows nothing about psychology and philosophy!</choiceA>
         <choiceB>Use psychological science! For the coup de grace, link to a legitimate article you found on the internet</choiceB>
 		<answer>ansB</answer>
@@ -892,7 +952,7 @@
 	
 	<!--arg 29-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching video created by a popular female cosplayer. Reading through the comments, one caught your eye saying "So beautiful!" This comment doesn't really bother you, but you really wanted the attention of m'lady. So you had a plan of defending her honor so she could see it and inevitably fall in love! You replied to the commenter, "Beautiful as in physically attractive? How typical of lesser men such as yourself. When I think of beauty, I think of a women's passion and their dreams." You wait for m'lady to respond, but the only responses were from bullies calling you a try-hard. Defend your honor from these louts:</text>
+		<text>You were on the video-sharing website LouTube watching video created by a popular female cosplayer. Reading through the comments, one caught your eye saying "So beautiful!" Using this comment, you had a plan of defending her honor so she could see it and inevitably fall in love with you; "Beautiful as in physically attractive? How typical of lesser men such as yourself. When I think of beauty, I think of a women's passion and their dreams." You wait for m'lady to respond, but the only responses were from bullies calling you a try-hard. Defend your honor from these louts:</text>
 		<choiceA>"I'm just stating how I feel. I miss the days when beauty was the whole package"</choiceA>
         <choiceB>Make an underscore line and underneath it, type in "Everybody above this line is a loser!"</choiceB>
 		<answer>ansA</answer>
@@ -907,7 +967,7 @@
 	
 	<!--arg 36-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching viral video where people prank gold diggers. Most of the comments were poking fun at the women getting pranked, but something within this video really boiled your brownies! This video solidifies why you're not in the dating scene; money means everything! You left a comment on the video, "This is why 2D girls > 3D girls. 2D girls are loyal and don't care about how much you make!" This raised some questions from some commenters "...so you're admitting to whacking it to pixels then?" Beep yeah you do! Why should you take shame in that fact? You decide to explain to this pleb the infinite pros of pixelated women:</text>
+		<text>You were on the video-sharing website LouTube watching a viral video where people prank gold diggers. Most of the comments poked fun at the women getting pranked, but something about this video really boiled your brownies! This video solidifies why you don't date; money is everything! You commented; "This is why 2D girls > 3D girls. 2D girls are loyal and don't care about how much you make!" This raised some questions; "...so you're admitting to whacking it to pixels then?" Beep yeah you do! Why should you take shame in it? You decide to explain to this pleb the infinite pros of pixelated women:</text>
 		<choiceA>Mention when one watches "3D" porn, the video is rendered as a 2D image so they enjoy pixels too!</choiceA>
         <choiceB>Mention that it is a fetish. People like feet, other people like getting stepped on. You like pixels</choiceB>
 		<answer>ansB</answer>
@@ -1042,7 +1102,7 @@
 
 	<!--arg 69-->
 	<argument>
-		<text>You were on the video-sharing website LouTube watching a review for a science fiction romance movie. While the professional reviewers thought highly of the movie, you wanted your opinion to be heard. "I'd give it a 2/10. It's way too happy for my liking. It may be a good movie for people with morals and a respect for humanity, but I do not have either". However, your post is on the verge of being flagged for spam; "Oh look, somebody trying way too hard to be edgy". How dare they discount your credibility! They don't have the right to make fun of you for your opinion on a movie:</text>
+		<text>Watching a review for a science fiction romance movie on the video-sharing website LouTube, you noticed that the professional reviewers sang nothing but praise. You had different opinions however; "I'd give it a 2/10. It's too happy for my liking. It may be a good movie for people with morals and a respect for humanity, but I don't have either". However, your post is on the verge of being flagged for spam; "Oh look, somebody trying way too hard to be edgy". How dare they discount your credibility! They don't have the right to make fun of you for your opinion:</text>
 		<choiceA>Post a link to another video review for the same movie where the reviewer has the same views you do</choiceA>
         <choiceB>Get edgy. "You laugh at me because I am not normal. I laugh at you because you're all the same."</choiceB>
 		<answer>ansA</answer>
@@ -1054,9 +1114,24 @@
         <headerColor>hdrLouTube</headerColor>
         <logo>logoLoutube</logo>
 	</argument>
+	
+	<!--arg 74-->
+	<argument>
+		<text>Watching a video titled "Top Ten Fantasy Series" on the video-sharing website LouTube, you noticed that it was a well-spoken and thought out compilation of fantasy books written throughout history. However, feeling the need to spread your belief on the internet, you decide to leave an enriching comment; "Solid top ten list. However the list creator forgot the Bible as number one!" This opened the flood gates for the flames headed your way! "Nobody asked for your opinion you troll." Being hurt after being called a troll, you decide that you have to stop these flames OR DIE TRYING:</text>
+		<choiceA>Compare the violence between other fantasy novels and the Bible</choiceA>
+        <choiceB>Mention how the end of the video asked viewers to leave their personal opinions</choiceB>
+		<answer>ansB</answer>
+		<responseCorrect>Nobody replied. I'm guessing you stunned the religious plebs with your advanced intellect! ARGUMENT WIN</responseCorrect>
+		<responseWrong>"You are trying way too hard, it's pathetic." Ouch, I mean trying hard can be good, right? ARGUMENT LOSE</responseWrong>
+		<hint>Stretching is a bad thing</hint>
+		<accomplish>15</accomplish>
+        <backgroundColor>bkgLouTube</backgroundColor>
+        <headerColor>hdrLouTube</headerColor>
+        <logo>logoLoutube</logo>
+	</argument>
 </doc>
 
 <!--
-	MyFace - Share post about Ponies in High School and tagged friends in it. One doesn't like Ponies and your friendship is on thin ice.
+	MyFace - Somebody calls you a basement dweller after you posted a picture of your room - tell them you live in the attic
 	Creddit - https://i.imgur.com/GReAr8W.jpg
 -->

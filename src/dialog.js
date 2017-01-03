@@ -27,6 +27,17 @@ $(document).ready(function () {
         show: 'fadeIn',
         hide: 'fadeOut'
     });
+
+    $("#quest").dialog({
+        autoOpen: false,
+        modal: true,
+        width: 850,
+        height: 'auto',
+        resizable: false,
+        closeOnEscape: false,
+        show: 'fadeIn',
+        hide: 'fadeOut'
+    });
     $(".ui-dialog-titlebar").hide();
 });
 

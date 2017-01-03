@@ -1,6 +1,4 @@
-html {
-  font-size: 75%;
-}
+html { font-size: 75%; }
 
 hr {
   margin: .6em 0;
@@ -22,9 +20,7 @@ body {
 }
 
 img { max-width: 100%; }
-
 a img { border: none; }
-
 img { border: 0; }
 
 hr {
@@ -73,7 +69,7 @@ img {
 
 #wrapper {
 	box-shadow: 10px 10px 15px #000000; 
-    background-color: #2c3e50; 
+    background-color: #2c3e50;
     width: 80%; 
     height: 100%; 
     padding: 8px;
@@ -83,8 +79,7 @@ img {
     visibility: hidden;
 }
 
-*:focus {
-  outline: none; }
+*:focus { outline: none; }
 
 
 .fixedSizedTab { 
@@ -189,23 +184,176 @@ img {
 
 .isle div {
 	float: left;
-    margin:  0 2em 0 2em;
+    margin: 0 2em 0 2em;
 }
 
-#location {
-	width: 100%; height: 100%; border: 4px solid black;
-}
-
-#content {
-	float: left; width: 80%; height: 85%; padding: 8px;
-}
+#location { width: 100%; height: 100%; border: 4px solid black; }
+#content { float: left; width: 80%; height: 85%; padding: 8px; }
 
 #sprite {
-	position: absolute; left: 50%; top: 20%; z-index: 5;
+	position: absolute; left: 50%; top: 20%; z-index: 5; transform: scale(0.99);
 }
 
-#sprite img {
-	width: 60%; height: 55%;
+.sprite { height: 428px; /*  */}
+
+#sprite-bar {
+    width: 218px;
+    background: url('/images/sprites.png') 0px 0px no-repeat;
+}
+
+#sprite-bedroom {
+    width: 338px;
+    background: url('/images/sprites.png') -218px 0px no-repeat;
+}
+
+#sprite-convention {
+    width: 220px;
+    background: url('/images/sprites.png') -556px 0px no-repeat;
+}
+
+#sprite2-bar, #sprite2-bedroom {
+    width: 272px;
+    background: url('/images/sprites.png') 0px -428px no-repeat;
+}
+
+#sprite2-convention {
+    width: 272px;
+    background: url('/images/sprites.png') -272px -428px no-repeat;
+}
+
+#sprite3-bar, #sprite3-bedroom {
+    width: 202px;
+    background: url('/images/sprites.png') -544px -428px no-repeat;
+}
+
+#sprite3-convention {
+    width: 252px;
+    background: url('/images/sprites.png') -746px -428px no-repeat;
+}
+
+#sprite4-bar, #sprite4-bedroom {
+    width: 200px;
+    background: url('/images/sprites.png') -998px -428px no-repeat;
+}
+
+#sprite4-convention {
+    width: 200px;
+    background: url('/images/sprites.png') -1198px -428px no-repeat;
+}
+
+#sprite5-bar, #sprite5-bedroom {
+    width: 240px;
+    background: url('/images/sprites.png') -1398px -428px no-repeat;
+}
+
+#sprite5-convention {
+    width: 240px;
+    background: url('/images/sprites.png') -1638px -428px no-repeat;
+}
+
+#sprite6-bar, #sprite6-bedroom {
+    width: 240px;
+    background: url('/images/sprites.png') -1281px 0px no-repeat;
+}
+
+#sprite6-convention {
+    width: 240px;
+    background: url('/images/sprites.png') -1521px 0px no-repeat;
+}
+
+#sprite7-bar, #sprite7-bedroom, #sprite7-convention {
+    width: 273px;
+    background: url('/images/sprites.png') -1761px 0px no-repeat;
+}
+
+#sprite8-bar, #sprite8-bedroom, #sprite8-convention {
+    width: 150px;
+    background: url('/images/sprites.png') -1496px -428px no-repeat;
+}
+
+#sprite9-bar {
+    width: 218px;
+    background: url('/images/sprites.png') -2034px 0px no-repeat;
+}
+
+#sprite9-bedroom {
+    width: 338px;
+    background: url('/images/sprites.png') -2252px 0px no-repeat;
+}
+
+#sprite9-convention {
+    width: 220px;
+    background: url('/images/sprites.png') -2590px 0px no-repeat;
+}
+
+#sprite10-bar {
+    width: 218px;
+    background: url('/images/sprites.png') -2810px 0px no-repeat;
+}
+
+#sprite10-bedroom {
+    width: 338px;
+    background: url('/images/sprites.png') -3028px 0px no-repeat;
+}
+
+#sprite10-convention {
+    width: 220px;
+    background: url('/images/sprites.png') -3366px 0px no-repeat;
+}
+
+#sprite11-bar {
+    width: 218px;
+    background: url('/images/sprites.png') -2028px -428px no-repeat;
+}
+
+#sprite11-bedroom {
+    width: 338px;
+    background: url('/images/sprites.png') -2246px -428px no-repeat;
+}
+
+#sprite11-convention {
+    width: 220px;
+    background: url('/images/sprites.png') -2584px -428px no-repeat;
+}
+
+#sprite12-bar, #sprite12-bedroom, #sprite12-convention {
+    width: 370px;
+    background: url('/images/sprites.png') -911px 0px no-repeat;
+}
+
+#sprite13-bar {
+    width: 218px;
+    background: url('/images/sprites.png') -2804px -428px no-repeat;
+}
+
+#sprite13-bedroom {
+    width: 338px;
+    background: url('/images/sprites.png') -3022px -428px no-repeat;
+}
+
+#sprite13-convention {
+    width: 220px;
+    background: url('/images/sprites.png') -3360px -428px no-repeat;
+}
+
+#sprite14-bar {
+    width: 218px;
+    background: url('/images/sprites.png') -3586px 0px no-repeat;
+}
+
+#sprite14-bedroom {
+    width: 338px;
+    background: url('/images/sprites.png') -3580px -428px no-repeat;
+}
+
+#sprite14-convention {
+    width: 220px;
+    background: url('/images/sprites.png') -3804px 0px no-repeat;
+}
+
+#sprite15-bar, #sprite15-bedroom, #sprite15-convention {
+    width: 135px;
+    background: url('/images/sprites.png') -1496px 0px no-repeat;
 }
 
 #hud {
@@ -251,6 +399,17 @@ img {
     background-color: white !important; 
     padding: 8px;
 }
+
+#quest { background-color: #2c3e50; font-family: visitor; text-align: center;}
+#questEvent, #questResponse { font-size: 1.75em; }
+#choiceA, #choiceB { font-size: 1.5em; } 
+
+.qWrapper {
+    padding: 8px;
+    background-color: #ecf0f1 !important;
+}
+
+/*transform: scale(20);*/
 
 #ansA, #ansB{
     font-size: 1.15em;
@@ -396,17 +555,9 @@ img {
     margin: 8px auto 8px auto;
 }
 
-#argEvent {
-    font-size: 1.25em;
-}
-
-.argHdr {
-    text-decoration: underline; text-align: center;
-}
-
-.needs {
-    margin: 0.75em 0 0.75em 0;
-}
+#argEvent { font-size: 1.25em; }
+.argHdr { text-decoration: underline; text-align: center; }
+.needs { margin: 0.75em 0 0.75em 0; }
 
 /*--------------------------*/
 /*          Dialogs         */
@@ -417,7 +568,14 @@ img {
 
 #gameEnd button {
     display: inline-block;
+    position: relative;
     margin-top: 8px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
 }
 
 #optionsTableHeader {
@@ -427,8 +585,8 @@ img {
 .optionsTable { font-family: visitor; font-size: 2em; color: black; width: 100%; }
 .optionsTable td { padding: 4px 0px 4px 0px; }
 
-#overAll span {
-    font-family: visitor; font-size: 2.5em; color: #ecf0f1;
+.overallTitle {
+    font-family: visitor; font-size: 2em; color: #ecf0f1; display: inline-block;
 }
 
 .mainDialog {
@@ -453,19 +611,19 @@ img {
     max-height: 480px;
 }
 
-.gameEvent {
-    background-color: #262626;
-}
-
-.travelDia {
-    background-color: #FFFFFF;
-}
+.gameEvent { background-color: #262626; }
+.travelDia { background-color: #FFFFFF; }
 
 #startScreen div, #blockScreen div {
     position: absolute; 
     bottom: 0px; 
     display: block;
     margin: 0px 50% 0px 50%;
+}
+
+#exitQuest {
+    margin: 8px;
+    display: inline-block;
 }
 
 #startScreen button {
@@ -491,7 +649,7 @@ img {
 }
 
 #blockScreen img {
-    height:  60%;
+    height: 60%;
     width: auto;
     top: 45%;
 	left: 50%;

@@ -19,19 +19,19 @@ function mainCharacter() {
         MB: {
             //Checks for player death
             if (this.statEnergy <= 0) {
-	            endGame(nodeGameEndSleep);
+	            endGame(createEndScreen("sleep", "endGameBtn"));
                 break MB;
 	        } /* END IF */
 	        if (this.statHunger <= 0) {
-	            endGame(nodeGameEndHungry);
+	            endGame(createEndScreen("hungry", "endGameBtn"));
                 break MB;
 	        } /* END IF */
 	        if (this.statExcitement <= 0) {
-	            endGame(nodeGameEndBored);
+	            endGame(createEndScreen("bored", "endGameBtn"));
                 break MB;
 	        } /* END IF */
 	        if (this.statAccomplishment <= 0) {
-	            endGame(nodeGameEndAccomplishment);
+	            endGame(createEndScreen("accomplish", "endGameBtn"));
                 break MB;
 	        } /* END IF */
 
@@ -51,43 +51,43 @@ function mainCharacter() {
 
             //Fedora God ending
 	        if ((this.statEuphoria >= 9000) && (!this.endFG)) {
-	            endGame(nodeGameEndFG);
+                endGame(createEndScreen("fedoraGod", "egFG"));
 	            this.endFG = true;
 	        } /* END IF */
 
             //Normal Guy ending
 	        if ((this.timesSocialized >= 100) && (!this.endNorm)) {
-	            endGame(nodeGameEndNormal);
+                endGame(createEndScreen("normal", "egNorm"));
 	            this.endNorm = true;
 	        } /* END IF */
 	    
             //Iron Pill ending
             if ((this.timesDieted >= 25) && (this.timesExersized >= 25) && (!this.endIron)) {
-                endGame(nodeGameEndIron);
+                endGame(createEndScreen("iron", "egIron"));
                 this.endIron = true;
             } /* END IF */
 
             //E-Fame ending
             if ((this.picsTaken === 100) && (!this.endEFame)){
-                endGame(nodeGameEndEFame);
+                endGame(createEndScreen("efame", "egEFame"));
                 this.endEFame = true;
             } /* END IF */
 
             //employed ending
 	        if ((this.secretEndingItem1) && (this.secretEndingItem2) && (this.secretEndingItem3) && (!this.endEmployed)) {
-	            endGame(nodeGameEndEmployed);
+                endGame(createEndScreen("employed", "egEmployed"));
 	            this.endEmployed = true;
 	        } /* END IF */
 
             //waifu ending
             if ((this.secretEvent) && (!this.endWaifu)) {
-	            endGame(nodeGameEndWaifu);
+                endGame(createEndScreen("waifu", "egWaifu"));
 	            this.endWaifu = true;
 	        } /* END IF */
 
             //golden ending
             if ((this.endFG) && (this.endEFame) && (this.endEmployed) && (this.endIron) && (this.endWaifu) && (this.endNorm) && (!this.endGolden)) {
-	            endGame(nodeGameEndGolden);
+                endGame(createEndScreen("golden", "egGolden"));
 	            this.endGolden = true;
 	        } /* END IF */
         } /* END MB */
@@ -108,7 +108,7 @@ function mainCharacter() {
     } /* END OF checkSocial */
 
     this.event = function () {
-        var random = (Math.floor(Math.random() * level1.length)),
+        var random = 35,
             event;
         switch (this.statSocial) {
             case "Creepy":
@@ -128,9 +128,9 @@ function mainCharacter() {
                 break;
         } /* END SWITCH */
         conventionMap[event.effect].effect();
-        var node = nodeEv1 + event.title + nodeEv2 + event.text + "<br/><br/>" + conventionMap[event.effect].text + nodeEv3;
+        var node = nodeEv1 + event.title + nodeEv2 + event.text + "<br><br>" + conventionMap[event.effect].text + nodeEv3;
         genericDia(node);
-    }  /*END OF event */
+    }   /*END OF event */
 
     this.speak = function () {
         var roll = randomizer(100),
@@ -153,7 +153,7 @@ function mainCharacter() {
         this.statEnergy -= 3;
         this.statHunger -= 3;
         this.render();
-        genericDia(speakNode);
+        if (this.timesSocialized !== 100) { genericDia(speakNode); }
     } /* END OF speak */
 
     this.booth = function () {
@@ -216,6 +216,19 @@ function mainCharacter() {
                 this.travel("bedroom");
                 genericDia(nodeConvOver);
             } /* END IF */
+        } /* END IF */
+        if (randomizer(8) === 8) {
+            var quest = questObject[currentQuestNum],
+                firstStep = quest.steps[0],
+                text = 'You woke up with an unread text from your mother...<br><br>' + quest.text + '<br><br>' + firstStep.stepText;
+            $("#questEvent").html("");
+            $("#quest1").show();
+            $("#questBottom").hide();
+
+            $("#questEvent").append(text);
+            $("#c1").text(firstStep.choice1Text);
+            $("#c2").text(firstStep.choice2Text);
+            $("#quest").dialog("open");
         } /* END IF */
     } /* END OF sleep */
 
@@ -353,13 +366,13 @@ function mainCharacter() {
     this.changeNBSprite = function () {
         var place;
         if (this.atHome) {
-            place = "-bedroom.png"
+            place = "-bedroom"
         } else if (this.atBar) {
-            place = "-bar.png"
+            place = "-bar"
         } else {
-            place = "-convention.png"
+            place = "-convention"
         }
-        $("#sprite img").attr("src", "images/nb/" + this.sprite + place);
+        $("#sprite .sprite").attr("id", this.sprite + place);
     }
 
     this.changeBG = function () {
@@ -398,7 +411,7 @@ function mainCharacter() {
                 break;
         } /* END SWITCH */
         $("#location").attr("src", bg);
-        $("#sprite img").attr("src", "images/nb/" + this.sprite + "-" + loc + ".png");
+        $("#sprite .sprite").attr("id", this.sprite + "-" + loc);
         $("#footer").html(footer);
     } /* END OF travel */
 
@@ -464,6 +477,7 @@ function mainCharacter() {
         //this.gamesBought = 0;
         //resets screen to bedroom
         this.travel("bedroom");
+        this.render();
     } /* END OF newGame */
 
     this.saveGame = function(){
@@ -584,6 +598,7 @@ function mainCharacter() {
             //this.weight = json.weight;
             //this.niceGuyPoints = json.niceGuyPoints;
             //this.gamesBought = json.gamesBought;
+            //add options
 
             //resets screen to bedroom
             this.travel("bedroom");
@@ -626,7 +641,7 @@ function mainCharacter() {
         if (this.statEuphoria >= 3000) optionsNode += '<option value="sprite4">Dick Wolf</option>';
         if (this.statEuphoria >= 4000) optionsNode += '<option value="sprite5">John "Hideyoshi" Smith</option>';
         if (this.statEuphoria >= 5000) optionsNode += '<option value="sprite6">"Puzzles"</option>';
-        //if (this.statEuphoria >= 6000) optionsNode += '<option value="sprite7">Viscount Algernon</option>';
+        if (this.statEuphoria >= 6000) optionsNode += '<option value="sprite7">Bret</option>';
         if (this.statEuphoria >= 7000) optionsNode += '<option value="sprite8">An actual white knight</option>';
         //ending unlocks
         if (this.endFG) optionsNode += '<option value="sprite9">Fedora God</option>';
@@ -710,15 +725,16 @@ function init(){
     objectLoader();
 } /* END OF init */
 
+function createEndScreen(image, btnId){
+    return '<div id="gameEnd"><img src="images/es/'+ image +'.png"></img><button id="' + btnId +'" class="continueGameBtn"></button></div>';
+} /* END OF createEndScreen */
+
 function cost(money) {
     var proceed = false;
     if (money > grant.statMoney) {
         grant.statAccomplishment -= 10;
         grant.render();
-        $md.dialog("close");
-        setTimeout(function () {
-            genericDia(nodeNoMoney);
-        }, 400);
+        dialogRefresh(genericDia, nodeNoMoney);
     } else {
         grant.statMoney -= money;
         grant.moneySpent += money;
@@ -750,9 +766,9 @@ function objectLoader(){
     itemArray[9] = new item("item10", 10, function () { grant.statEuphoria += 50; grant.fedsBought++; });
     itemArray[10] = new item("item11", 20, function () { grant.statEuphoria += 100; grant.figsBought++; });
     itemArray[11] = new item("item12", 45, function () { grant.statEuphoria += 250; grant.wepsBought++; });
-    itemArray[12] = new item("item13", 250, function () { if (!grant.secretEndingItem1) { $("#mainDialog").dialog("close"); grant.secretEndingItem1 = true; setTimeout(function () { genericDia(unlockItem1); }, 500); } });
-    itemArray[13] = new item("item14", 500, function () { if (!grant.secretEndingItem2) { $("#mainDialog").dialog("close"); grant.secretEndingItem2 = true; setTimeout(function () { genericDia(unlockItem2); }, 500); } });
-    itemArray[14] = new item("item15", 1000, function () { if (!grant.secretEndingItem3) { $("#mainDialog").dialog("close"); grant.secretEndingItem3 = true; grant.travel("bedroom"); setTimeout(function () { genericDia(unlockItem3); }, 500); } });
+    itemArray[12] = new item("item13", 250, function () { if (!grant.secretEndingItem1) { grant.secretEndingItem1 = true; grant.render(); if(!grant.endEmployed){ dialogRefresh(genericDia, unlockItem1); }}});
+    itemArray[13] = new item("item14", 500, function () { if (!grant.secretEndingItem2) { grant.secretEndingItem2 = true; grant.render(); if(!grant.endEmployed){ dialogRefresh(genericDia, unlockItem2); }}});
+    itemArray[14] = new item("item15", 1000, function () { if (!grant.secretEndingItem3) { grant.secretEndingItem3 = true; grant.travel("bedroom"); grant.render(); if(!grant.endEmployed){ dialogRefresh(genericDia, unlockItem3); }}});
     itemArray[15] = new item("item16", 5, function () { grant.socialSkills++; });
     itemArray[16] = new item("item17", 15, function () { grant.timesDieted++; grant.statEnergy += 5; grant.statAccomplishment += 5; grant.statEuphoria += 10; });
     itemArray[17] = new item("item18", 20, function () { grant.resetStatus(); });
@@ -805,6 +821,45 @@ function objectLoader(){
         statusMap[mapKey] = statusObj;
     }
 
+    //loads quest effects
+    function quest(name, text, effect) {
+        this.name = name;
+        this.text = text;
+        this.effect = effect;
+    }
+    window.questMap = {};
+    window.questArray = [];
+
+    questArray[0] = new quest("groceryStart", "+50 Money", function () { grant.paid(50); });
+    questArray[1] = new quest("workOut", "+1 Work Out<br>-10 Energy", function () { grant.statEnergy -= 10; grant.timesExersized++; });
+    questArray[2] = new quest("transport", "+10 Excitement<br>Spent $10", function () { grant.statExcitement += 10; cost(10); });
+    questArray[3] = new quest("buyMags", "+3 Excitement<br>+25 Euphoria<br>Spent $10", function () { grant.statExcitement += 3; grant.statEuphoria += 25; cost(10); });
+    questArray[4] = new quest("soaUp", "+20 Accomplishment", function () { grant.statAccomplishment += 20; });
+    questArray[5] = new quest("compliment", "+2 Excitement<br>+3 Social Skill", function () { grant.statExcitement += 2; grant.socialSkills += 3; grant.timesSocialized++; });
+    questArray[6] = new quest("socialUp", "+1 Social Skill", function () { grant.socialSkills++; grant.timesSocialized++; });
+    questArray[7] = new quest("donate", "+20 Accomplishment<br>+25 Euphoria<br>+1 Social Skill<br>Spent $20", function () { grant.statAccomplishment += 20; grant.statEuphoria += 25; grant.socialSkills++; grant.timesSocialized++; cost(20); });
+    questArray[8] = new quest("paranoid", "You are paranoid (-Energy, -Excitement)", function () { grant.changeStatus('Paranoid'); });
+    questArray[9] = new quest("choresStart", "+20 Excitement", function () { grant.statExcitement += 20; });
+    questArray[10] = new quest("swatAway", "+3 Excitement<br>You are feeling confident (+Excitement, ++Accomplishment)<br>-5 Energy", function () { grant.statEnergy -= 5; grant.statExcitement += 3; grant.changeStatus('Confident'); });
+    questArray[11] = new quest("leadOut", "+10 Accomplishment<br>+25 Euphoria", function () { grant.statAccomplishment += 10; grant.statEuphoria += 25; });
+    questArray[12] = new quest("excitementUp", "+10 Excitement", function () { grant.statExcitement += 10; });
+    questArray[13] = new quest("petDog", "+5 Excitement<br>+3 Social Skill", function () { grant.statExcitement += 5; grant.socialSkills += 3; grant.timesSocialized++; });
+    questArray[14] = new quest("ridable", "+5 Excitement<br>+5 Accomplishment", function () { grant.statExcitement += 5; grant.statAccomplishment += 5; });
+    questArray[15] = new quest("libStart", "+20 Money", function () { grant.paid(20); });
+    questArray[16] = new quest("lateFees", "+5 Accomplishment<br>Spent $5", function () { grant.statAccomplishment += 5; cost(5); });
+    questArray[17] = new quest("buySnack", "+10 Hunger<br>Spent $5", function () { grant.statHunger += 10; cost(5); });
+    questArray[18] = new quest("vintageComics", "+10 Excitement<br>+10 Euphoria", function () { grant.statExcitement += 10; grant.statEuphoria += 10; });
+    questArray[19] = new quest("chessWin", "+10 Excitement<br>+10 Accomplishment<br>+1 Social Skill", function () { grant.statExcitement += 10; grant.statAccomplishment += 10; grant.socialSkills++; grant.timesSocialized++; });
+    questArray[20] = new quest("chessLose", "+3 Social Skill", function () { grant.socialSkills += 3; grant.timesSocialized++; });
+    questArray[21] = new quest("quit", null, null);
+
+    var len = questArray.length;
+    while (len--) {
+        var questObj = questArray[len];
+        var mapKey = questArray[len].name;
+        questMap[mapKey] = questObj;
+    } /* END WHILE */
+
     //speak
     window.speakMap = {};
     window.speakArray = [];
@@ -850,7 +905,7 @@ function objectLoader(){
     window.conventionArray = [];
 
     //photo shoot
-    conventionArray[0] = new convention('ps1', '+5 Excitement<br/>+1 Picture Taken', function () { grant.statExcitement += 5; grant.picsTaken++; grant.render(); });
+    conventionArray[0] = new convention('ps1', '+5 Excitement<br>+1 Picture Taken', function () { grant.statExcitement += 5; grant.picsTaken++; grant.render(); });
     conventionArray[1] = new convention('ps2', '+10 Excitement<br>+1 Social Skill<br>+2 Pictures Taken', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.picsTaken += 2; grant.render(); });
     conventionArray[2] = new convention('ps3', '+15 Excitement<br>+3 Social Skill<br>+3 Pictures Taken', function () { grant.statExcitement += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.picsTaken += 3; grant.render(); });
     conventionArray[3] = new convention('ps4', '+20 Excitement<br>+3 Social Skill<br>+4 Pictures Taken', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.picsTaken += 4; grant.render(); });
@@ -1087,12 +1142,26 @@ function objectLoader(){
     conventionArray[168] = new convention('is4', '+60 Excitement', function () { grant.statExcitement += 60; grant.render(); });
     conventionArray[169] = new convention('is5', '+75 Excitement', function () { grant.statExcitement += 75; grant.render(); });
 
+    //vocaloid concert
+    conventionArray[170] = new convention('vc1', '+5 Excitement<br>+5 Euphoria', function () { grant.statExcitement += 5; grant.statEuphoria += 5; grant.render(); });
+    conventionArray[171] = new convention('vc2', '+10 Excitement<br>+1 Social Skill<br>+10 Euphoria', function () { grant.statExcitement += 10; grant.timesSocialized += 1; grant.socialSkills += 1; grant.statEuphoria += 10; grant.render(); });
+    conventionArray[172] = new convention('vc3', '+15 Excitement<br>+3 Social Skill<br>+25 Euphoria', function () { grant.statExcitement += 15; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 25; grant.render(); });
+    conventionArray[173] = new convention('vc4', '+20 Excitement<br>+3 Social Skill<br>+50 Euphoria', function () { grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 50; grant.render(); });
+    conventionArray[174] = new convention('vc5', '+25 Excitement<br>+3 Social Skill<br>+100 Euphoria', function () { grant.statExcitement += 25; grant.timesSocialized += 3; grant.socialSkills += 3; grant.statEuphoria += 100; grant.render(); });
+
+    //bubble tea tasting
+    conventionArray[175] = new convention('btt1', '+5 Energy<br>+5 Hunger<br>+5 Excitement', function () { grant.statEnergy += 5; grant.statHunger += 5; grant.statExcitement += 5; grant.statEuphoria += 5; grant.render(); });
+    conventionArray[176] = new convention('btt2', '+10 Energy<br>+5 Hunger<br>+10 Excitement', function () { grant.statEnergy += 10; grant.statHunger += 10; grant.statExcitement += 10; grant.render(); });
+    conventionArray[177] = new convention('btt3', '+15 Energy<br>+10 Hunger<br>+15 Excitement', function () { grant.statEnergy += 15; grant.statHunger += 10; grant.statExcitement += 15; grant.render(); });
+    conventionArray[178] = new convention('btt4', '+20 Energy<br>+10 Hunger<br>+20 Excitement<br>+1 Social Skill', function () { grant.statEnergy += 20; grant.statHunger += 10; grant.statExcitement += 20; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[179] = new convention('btt5', '+25 Energy<br>+10 Hunger<br>+20 Excitement<br>+3 Social Skill', function () { grant.statEnergy += 25; grant.statHunger += 10; grant.statExcitement += 20; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+
     //speed date
-    conventionArray[170] = new convention('sd1', '+5 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
-    conventionArray[171] = new convention('sd2', '+10 Excitement<br>+5 Accomplishment<br>+2 Social Skill', function () { grant.statExcitement += 10; grant.statAccomplishment += 5; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
-    conventionArray[172] = new convention('sd3', '+15 Excitement<br>+5 Accomplishment<br>+3 Social Skill', function () { grant.statExcitement += 15; grant.statAccomplishment += 5; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
-    conventionArray[173] = new convention('sd4', '+20 Excitement<br>+10 Accomplishment<br>+4 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 10; grant.timesSocialized += 4; grant.socialSkills += 4; grant.render(); });
-    conventionArray[174] = new convention('sd5', 'The two of you spent most of your time together at the convention...', function () { grant.secretEvent = true; grant.statExcitement += 25; grant.statAccomplishment += 10; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
+    conventionArray[180] = new convention('sd1', '+5 Excitement<br>+1 Social Skill', function () { grant.statExcitement += 5; grant.timesSocialized += 1; grant.socialSkills += 1; grant.render(); });
+    conventionArray[181] = new convention('sd2', '+10 Excitement<br>+5 Accomplishment<br>+2 Social Skill', function () { grant.statExcitement += 10; grant.statAccomplishment += 5; grant.timesSocialized += 2; grant.socialSkills += 2; grant.render(); });
+    conventionArray[182] = new convention('sd3', '+15 Excitement<br>+5 Accomplishment<br>+3 Social Skill', function () { grant.statExcitement += 15; grant.statAccomplishment += 5; grant.timesSocialized += 3; grant.socialSkills += 3; grant.render(); });
+    conventionArray[183] = new convention('sd4', '+20 Excitement<br>+10 Accomplishment<br>+4 Social Skill', function () { grant.statExcitement += 20; grant.statAccomplishment += 10; grant.timesSocialized += 4; grant.socialSkills += 4; grant.render(); });
+    conventionArray[184] = new convention('sd5', 'The two of you spent most of your time together at the convention...', function () { grant.secretEvent = true; grant.statExcitement += 25; grant.statAccomplishment += 10; grant.timesSocialized += 5; grant.socialSkills += 5; grant.render(); });
 
     function convention(name, text, effect) {
         this.name = name;
@@ -1123,6 +1192,14 @@ function between(x, min, max) {
   return x >= min && x < max;
 } /* END OF between */
 
+//If dialog box needs to refresh before loading new main dialog
+function dialogRefresh (func, node) {
+    $md.dialog("close");
+    setTimeout(function () {
+        func(node);
+    }, 400);
+}
+
 function decay(){
     var inMenu = $(".ui-dialog").is(":visible");
     if(!inMenu){
@@ -1142,8 +1219,10 @@ $(window).on('load', function () {
     checkBrowser();
     init();
     var currentArgNum = 0;
-    var $md = $("#mainDialog");
-    var $ft = $("#footer");
+    window.currentQuestNum = 0;
+    window.currentStep = 0;
+    window.$md = $("#mainDialog");
+    window.$ft = $("#footer");
     $ft.html(ftrAtHome);
     setTimeout(function () {
         $("#wrapper").css('visibility', 'visible');
@@ -1158,11 +1237,7 @@ $(window).on('load', function () {
             case "mmNewGame":
                 play("pp1");
                 grant.newGame();
-                grant.render();
-                $md.dialog("close");
-                setTimeout(function () {
-                    genericDia(nodeNGScreen1);
-                }, 500);
+                dialogRefresh(genericDia, nodeNGScreen1);
                 break;
             case "credits":
                 play("pp1");
@@ -1220,6 +1295,10 @@ $(window).on('load', function () {
                 play("pp1");
                 genericDia(nodeEGWaifu);
                 break;
+            case "egGolden":
+                play("pp1");
+                genericDia(nodeEGGolden);
+                break;
             case "bar":
                 var money = grant.endNorm ? 0 : 20;
                 if (cost(money)) {
@@ -1249,31 +1328,31 @@ $(window).on('load', function () {
                 break;
             case "vFGE":
                 play("pp1");
-                endGame(unGameEndFG);
+                endGame(createEndScreen("fedoraGod", "ts"));
                 break;
             case "vEFE":
                 play("pp1");
-                endGame(unGameEndEFame);
+                endGame(createEndScreen("efame", "ts"));
                 break;
             case "vEME":
                 play("pp1");
-                endGame(unGameEndEmployed);
+                endGame(createEndScreen("employed", "ts"));
                 break;
             case "vIPE":
                 play("pp1");
-                endGame(unGameEndIron);
+                endGame(createEndScreen("iron", "ts"));
                 break;
             case "vWFE":
                 play("pp1");
-                endGame(unGameEndWaifu);
+                endGame(createEndScreen("waifu", "ts"));
                 break;
             case "vNME":
                 play("pp1");
-                endGame(unGameEndNormal);
+                endGame(createEndScreen("normal", "ts"));
                 break;
             case "vGOE":
                 play("pp1");
-                endGame(unGameEndGolden);
+                endGame(createEndScreen("golden", "ts"));
                 break;
             case "ts":
                 play("pp1");
@@ -1331,35 +1410,29 @@ $(window).on('load', function () {
                 grant.statEnergy -= 5;
                 grant.statHunger -= 2;
                 grant.timesGamed++;
-                if (randomizer(10) === 10) {
+                if ((randomizer(10) === 10) && (grant.statEnergy >= 0)) {
                     var money = randomizer(15);
                     var nodeGameEvent = vaporCards1 + money + vaporCards2;
-                    $md.dialog("close");
-                    setTimeout(function () {
-                        gameEvent(nodeGameEvent);
-                    }, 400);
+                    dialogRefresh(gameEvent, nodeGameEvent);
                     grant.paid(money);
                 } /* END IF */
                 grant.render();
                 break;
             case "play3":
                 play("gm1");
-                if (randomizer(10) === 10) {
-                    var money1 = randomizer(25);
-                    var money2 = randomizer(25);
-                    var money = money1 + money2;
-                    var nodeGameEvent = vaporCards1 + money + vaporCards2;
-                    $md.dialog("close");
-                    setTimeout(function () {
-                        gameEvent(nodeGameEvent);
-                    }, 400);
-                    grant.paid(money);
-                } /* END IF */
                 grant.statExcitement += 4;
                 grant.statAccomplishment += 2;
                 grant.statEnergy -= 15;
                 grant.statHunger -= 7;
                 grant.timesGamed++;
+                if ((randomizer(10) === 10) && (grant.statEnergy >= 0)) {
+                    var money1 = randomizer(25);
+                    var money2 = randomizer(25);
+                    var money = money1 + money2;
+                    var nodeGameEvent = vaporCards1 + money + vaporCards2;
+                    dialogRefresh(gameEvent, nodeGameEvent);
+                    grant.paid(money);
+                } /* END IF */
                 grant.render();
                 break;
             case "addToCart":
@@ -1367,10 +1440,7 @@ $(window).on('load', function () {
                 break;
             case "resetSaveFile":
                 play("pp1");
-                $md.dialog("close");
-                setTimeout(function () {
-                    exitDia(resetSF);
-                }, 400);
+                dialogRefresh(exitDia, resetSF);
                 break;
             case "resetSF":
                 play("pp1");
@@ -1382,17 +1452,11 @@ $(window).on('load', function () {
                 break;
             case "toOptions":
                 play("pp1");
-                $md.dialog("close");
-                setTimeout(function () {
-                    travelDia(grant.openOptions());
-                }, 400);
+                dialogRefresh(travelDia, grant.openOptions());
                 break;
             case "toVapor":
                 play("pp1");
-                $md.dialog("close");
-                setTimeout(function () {
-                    gameEvent(vapor);
-                }, 400);
+                dialogRefresh(gameEvent, vapor);
                 break;
         } /* END SWITCH */
     }); /* END ON CLICK MAIN DIALOG */
@@ -1400,14 +1464,16 @@ $(window).on('load', function () {
     $ft.on("click", function (e) {
         switch (e.target.id) {
             case "sleep":
+                currentQuestNum = (Math.floor(Math.random() * questObject.length));
+                currentStep = 0;
                 grant.sleep();
                 break;
             case "shop":
                 play("pp1");
                 var shop = '<div class="shopList" id="shopList"><button id="emd" class="exitShop"></button><div class="isle"><div id="logoMzon"></div></div><div class="isle">Nutritional Sustenance<hr><div><button id="item1" title="Nippon-ese sticks dipped in chocolate. ITADAKIMATSU!"></button><p>Price: $2</p></div><div><button id="item2" title="Try out the triangular corn chip diet"></button><p>Price: $5</p></div><div><button id="item3" title="Try not to eat it too soon out of the microwave"></button><p>Price: $8</p></div></div><div class="isle">Things that Keep You Awake<hr><div><button id="item4" title="Constant consumption can ruin your bones, but not today!"></button><p>Price: $2</p></div><div><button id="item5" title="A popular energy drink in the early 2000s that teenagers would drink to play video games more"></button><p>Price: $6</p></div><div><button id="item6" title="Japanese soda with a ball in the middle. Had to import these bad boys!"></button><p>Price: $15</p></div></div><div class="isle">Useless Things That Boost Your Ego<hr><div><button id="item7" title="Stylish and functional. Now you can eat Morito chips without getting cheese on your gloves"></button><p>Price: $5</p></div><div><button id="item8" title="People just do not understand your love for Ponies in High School."></button><p>Price: $15</p></div><div><button id="item9" title="The book of atheism; a weapon against the teachings of The Bible!"></button><p>Price: $40</p></div></div><div class="isle">Collectible Items<hr><div><button id="item10" title="In HTML, we developers call this little window a tool *tip*"></button><p>Price: $10</p></div><div><button id="item11" title="An 8 inch plastic figurine from your favorite game/anime/show/movie"></button><p>Price: $20</p></div><div><button id="item12" title="THE STRONGEST SWORD; STEEL FOLDED 1000 TIMES. GO HOME FILTHY GAIJIN"></button><p>Price: $45</p></div></div><div class="isle">Misc. Things to Buy<hr><div><button id="item16" title="Makes more bearable to socialize with! Adds 1 social point"></button><p>Price: $5</p></div><div><button id="item17" title="Gotta keep your figure! Makes you feel more energetic and helps you lose weight"></button><p>Price: $15</p></div><div><button id="item18" title="Cures all your problems. Except for a broken heart (Nah, it fixes that too)"></button><p>Price: $20</p></div></div><div class="isle">Useful Expensive Life Investments<hr>';
-                shop += grant.secretEndingItem1 ? '<div><button id="item13" disabled></button><p>Price: $250</p></div>' : '<div><button id="item13" title="Make yourself more marketable to future employers"></button><p>Price: $250</p></div>';
-                shop += grant.secretEndingItem2 ? '<div><button id="item14" disabled></button><p>Price: $500</p></div>' : '<div><button id="item14" title="The only thing that stands between you and teaching. Other then lack of presentability, experience, etc..."></button><p>Price: $500</p></div>';
-                shop += grant.secretEndingItem3 ? '<div><button id="item15" disabled></button><p>Price: $1000</p></div>' : '<div><button id="item15" title="Move out of the attic. Grow up. Become man."></button><p>Price: $1000</p></div>';
+                shop += grant.secretEndingItem1 ? '<div><button id="item13" disabled></button><p>Sold Out</p></div>' : '<div><button id="item13" title="Make yourself more marketable to future employers"></button><p>Price: $250</p></div>';
+                shop += grant.secretEndingItem2 ? '<div><button id="item14" disabled></button><p>Sold Out</p></div>' : '<div><button id="item14" title="The only thing that stands between you and teaching. Other then lack of presentability, experience, etc..."></button><p>Price: $500</p></div>';
+                shop += grant.secretEndingItem3 ? '<div><button id="item15" disabled></button><p>Sold Out</p></div>' : '<div><button id="item15" title="Move out of the attic. Grow up. Become man."></button><p>Price: $1000</p></div>';
                 shop += '</div></div>';
                 shopScreen(shop);
                 break;
@@ -1508,9 +1574,7 @@ $(window).on('load', function () {
             usedHint = $("#hintText").is(':visible');
         if ($(this).hasClass("correct")) {
             grant.statExcitement += 3;
-            if (usedHint) {
-                accPts -= 5;
-            } else {
+            if (!usedHint) {
                 accPts = accPts + accPts;
                 if (!hintMode) {
                     accPts += 10;
@@ -1533,6 +1597,63 @@ $(window).on('load', function () {
         $("#argBottom").show();
     }).hover(function () {
         $(this).toggleClass("highlight");
+    });
+
+    $("#choiceA, #choiceB").click(function () {
+        play("pp1");
+        var quest = questObject[currentQuestNum],
+            step = quest.steps[currentStep],
+            choice = $(this).attr('id'),
+            response = choice === 'choiceA' ? step.choice1Resp : step.choice2Resp,
+            effect = choice === 'choiceA' ? step.choice1Effect : step.choice2Effect;
+        MB:
+        {
+            if (effect === 'quit') {
+                break MB;
+            }
+            response += '<br><br>' + questMap[effect].text;
+
+            if (currentStep === 4) {
+                response += '<br><br>' + quest.complete + '<br><br>MOM QUEST COMPLETE!';
+                break MB;
+            }
+
+            if ((currentStep === 0) && (effect != 'quit')) {
+                response += '<br><br>MOM QUEST STARTED!';
+                break MB;
+            }
+        }
+
+        $("#questResponse").html("");
+        $("#exitQuest").removeClass().addClass("continueGameBtn").addClass(effect);
+        $("#questResponse").append(response);
+
+        $("#quest1").hide();
+        $("#questBottom").show();
+    }).hover(function () {
+        $(this).toggleClass("highlight");
+    });
+
+    $("#exitQuest").click(function () {
+        play("pp1");
+        currentStep++;
+        var effect = $(this).attr("class").split(" ", 2)[1],
+            step = questObject[currentQuestNum].steps[currentStep];
+        if (effect === 'quit') {
+            $("#quest").dialog("close");
+        } else {
+            if (currentStep === 5) {
+                $("#quest").dialog("close");
+            } else {
+                questMap[effect].effect();
+                grant.render();
+                $("#questEvent").html("").append(step.stepText);
+                $("#quest1").show();
+                $("#questBottom").hide();
+                $("#c1").text(step.choice1Text);
+                $("#c2").text(step.choice2Text);
+            } /* END IF */
+        } /* END IF */
     });
 
     $md.on("click", "#shopList", function (event) {
@@ -1570,7 +1691,7 @@ $(window).on('load', function () {
         if (weps > 15) weps = 15;
 
         var collectables = figs + hats + weps;
-        var statsHtmlTop = '<div id="overAll"><span>Stats</span><button class="exitShop" id="emd"></button><div id="tabs"><ul class="nav nav-tabs"><li><a href="#tab-1">Overall</a></li><li><a href="#tab-2">Whiteboard</a></li><li><a href="#tab-3">Bookshelf</a></li><li><a href="#tab-4">Display Wall</a></li><li><a href="#tab-5">Weapon Cache</a></li></ul><div id="tab-1" class="fixedSizedTab">';
+        var statsHtmlTop = '<div id="overAll"><div class="overallTitle">Stats</div><button class="exitShop" id="emd"></button><div id="tabs"><ul class="nav nav-tabs"><li><a href="#tab-1">Overall</a></li><li><a href="#tab-2">Whiteboard</a></li><li><a href="#tab-3">Bookshelf</a></li><li><a href="#tab-4">Display Wall</a></li><li><a href="#tab-5">Weapon Cache</a></li></ul><div id="tab-1" class="fixedSizedTab">';
 
         var endFGNode = grant.endFG ? unFG : lnFG,
             endEFNode = grant.endEFame ? unEF : lnEF,

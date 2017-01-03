@@ -185,6 +185,36 @@
 				<success>You limbered up</success>
 				<fail>You pulled something</fail>
 			</event>
+			<event>
+				<choice>Lunge</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Single arm row</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Lateral raise</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
 		</workout>
 		
 		<workout>
@@ -199,12 +229,106 @@
 				<success>You limbered up</success>
 				<fail>You pulled something in your leg</fail>
 			</event>
+			<event>
+				<choice>Low weight high rep lifts</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something in your leg</fail>
+			</event>
+			<event>
+				<choice>Medium weight medium rep lifts</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something in your leg</fail>
+			</event>
+			<event>
+				<choice>High weight low rep lifts</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something in your leg</fail>
+			</event>
+			<event>
+				<choice>Super high weight low rep lifts</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something in your leg</fail>
+			</event>
 		</workout>
 		
 		<workout>
 			<text>You stand by the rock wall...</text>
 			<event>
 				<choice>Climb the beginner course wall</choice>
+				<energy>5</energy>
+				<weight>0.3</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>Were able to climb to the top</success>
+				<fail>Fell off the rock wall and landed onto the padded mattress</fail>
+			</event>
+			<event>
+				<choice>Climb the medium difficulty course wall</choice>
+				<energy>7</energy>
+				<weight>0.5</weight>
+				<accomplish>4</accomplish>
+				<additional>na</additional>
+				<chance>85</chance>
+				<success>Were able to climb to the top</success>
+				<fail>Fell off the rock wall and landed onto the padded mattress</fail>
+			</event>
+			<event>
+				<choice>Climb the difficult course wall</choice>
+				<energy>10</energy>
+				<weight>0.7</weight>
+				<accomplish>10</accomplish>
+				<additional>na</additional>
+				<chance>70</chance>
+				<success>Were able to climb to the top</success>
+				<fail>Fell off the rock wall and landed onto the padded mattress</fail>
+			</event>
+			<event>
+				<choice>Parkour!</choice>
+				<energy>10</energy>
+				<weight>0.7</weight>
+				<accomplish>10</accomplish>
+				<additional>na</additional>
+				<chance>70</chance>
+				<success>Were able to climb to the top</success>
+				<fail>Fell off the rock wall and landed onto the padded mattress</fail>
+			</event>
+			<event>
+				<choice>Climb the extreme course wall</choice>
+				<energy>10</energy>
+				<weight>0.7</weight>
+				<accomplish>10</accomplish>
+				<additional>na</additional>
+				<chance>70</chance>
+				<success>Were able to climb to the top</success>
+				<fail>Fell off the rock wall and landed onto the padded mattress</fail>
+			</event>
+		</workout>
+		
+		<workout>
+			<text>You grab a tennis racquet...</text>
+			<event>
+				<choice>Practice strokes against a wall</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -213,12 +337,38 @@
 				<success>You limbered up</success>
 				<fail>You pulled something</fail>
 			</event>
-		</workout>
-		
-		<workout>
-			<text>You grab a tennis racquet...</text>
 			<event>
-				<choice>Practice strokes against a wall</choice>
+				<choice>Practice strokes against a machine</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Practice strokes against another human</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Play a friendly doubles match against another human</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Play a friendly match against another human</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -242,7 +392,37 @@
 				<fail>You pulled something</fail>
 			</event>
 			<event>
-				<choice>Do a some basic sit-ups</choice>
+				<choice>Do some advanced push-ups</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Do some basic sit-ups</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Do some advanced sit-ups</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Plank for as long as you can</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -256,7 +436,47 @@
 		<workout>
 			<text>You stand behind a barbell on the floor...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Shrugs</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Bent-over Rows</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Bicep curls</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Squats</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Deadlift</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
@@ -268,14 +488,54 @@
 		</workout>
 		
 		<workout>
-			<text>You sit on a rowing machine...</text>
+			<text>You stood on the basketball court...</text>
 			<event>
-				<choice>Stretch</choice>
+				<choice>Practice your free throws</choice>
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
 				<additional>na</additional>
 				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Do laps around the court</choice>
+				<energy>5</energy>
+				<weight>1.0</weight>
+				<accomplish>2</accomplish>
+				<additional>na</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Practice your styled dunks</choice>
+				<energy>5</energy>
+				<weight>0.3</weight>
+				<accomplish>10</accomplish>
+				<additional>confident</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Play a 1 on 1 pick-up game</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>social1</additional>
+				<chance>95</chance>
+				<success>You limbered up</success>
+				<fail>You pulled something</fail>
+			</event>
+			<event>
+				<choice>Play a 3 on 3 pick-up game</choice>
+				<energy>3</energy>
+				<weight>0.1</weight>
+				<accomplish>2</accomplish>
+				<additional>social2</additional>
+				<chance>50</chance>
 				<success>You limbered up</success>
 				<fail>You pulled something</fail>
 			</event>

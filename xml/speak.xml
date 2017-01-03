@@ -351,6 +351,31 @@
 			</text>
 			<effect>energyUp</effect>
 		</event>
+		<event>
+			<text>Sitting on your own at the bar, you ordered a bizarre cocktail that the bartender never heard of before so she gave you a cute pet name related to it :D
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>You walked passed the bouncer and said good evening. The two of you talked for a bit and you were able to make him laugh with some quality jokes you got from the internet.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>Walking passed the pool table rental girl, you noticed she looked incredibly bored. So you decided to talk with her to kill some time. However, she started to get really flirty with you :O
+			</text>
+			<effect>inLove</effect>
+		</event>
+		<event>
+			<text>Noticing one of your favorite bartenders at the bar on her off day, you offered to buy her a drink as a friend. Talking for a while amongst yourselves, the two of you took a selfie together before her coworkers joined in to talk to her.
+			</text>
+			<effect>photoUp</effect>
+		</event>
+		<event>
+			<text>During karaoke night, you were filled with excitement when you heard the intro to your favorite song! You started jamming out and singing along with the singer on stage.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
 	</good>
 	<bad>
 		<event>
@@ -694,7 +719,7 @@
 			<effect>excitementDown</effect>
 		</event>
 		<event>
-			<text>Wanting to meet your future wife, you were peacocking mad hat. Despite how hard you peacocked, nobody gave you the attention you seeked.
+			<text>Wanting to meet your future wife, you were peacocking mad hard. Despite how hard you peacocked, nobody gave you the attention you seeked.
 			</text>
 			<effect>heartbroken</effect>
 		</event>
@@ -702,6 +727,31 @@
 			<text>While playing your portable gaming console at the bar, you made a lot of progress but died to a critical hit. Brushing yourself off, you reloaded your last save but to your horror, you lost two hours of progress.
 			</text>
 			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Someone calls you a bad name for no reason. Unfortunately you didn't have a good comeback and just took it. You proceeded to internalize the insult and your disappointment - possibly for the rest of your life!
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>When you got your bar tab, you noticed that it was way too little. Being such an honest and nice guy, you brought it to the bartender's attention. However, instead of being rewarded, you actually ended up having to pay the correct price!
+			</text>
+			<effect>moneyDown</effect>
+		</event>
+		<event>
+			<text>Feeling the need to alleviate your bladder, you were shocked when you saw that the line was super long. You had to walk across the street just to use the bathroom. By the time you walked back to the bar, you were exhausted.
+			</text>
+			<effect>energyDown</effect>
+		</event>
+		<event>
+			<text>Walking into the bathroom, you opened up a stall. To your horror, somebody has thrown up in the stall earlier in the night. You had to fight the urge to throw up for the rest of the night.
+			</text>
+			<effect>sick</effect>
+		</event>
+		<event>
+			<text>During karaoke night, you heard the intro to your favorite song and was filled to the brim with excitement! However when the person started to sing, they butchered it!
+			</text>
+			<effect>excitementDown</effect>
 		</event>
 	</bad>
 </doc>
