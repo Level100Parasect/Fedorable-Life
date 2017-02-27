@@ -376,6 +376,31 @@
 			</text>
 			<effect>excitementUp</effect>
 		</event>
+		<event>
+			<text>Sitting outside the bar minding your own business, a girl walked passed you and dropped a rose on your table. You then noticed a rejected looking man follow her only to stop and let her go. Not sure what to make of that, at least you got a free rose!
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>It was open mic night at the bar and there was a comedian going through their act. The comedian was surprisingly hilarious and you enjoyed all of the jokes said that night.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>Around the entrance of the bar, there was a table set up where they were giving samples of food and hot sauce that the bar was trying to sell. Feeling the need to feed yourself, you took a few samples.
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>The bartender offered you to try out their new hot sauce for chicken wings. Not one to turn down a challenge, you partook in the extra spicy wings and felt your heart beat faster. The wings were so hot it's almost like you ran a marathon!
+			</text>
+			<effect>energyUp</effect>
+		</event>
+		<event>
+			<text>Minding your own business, a bartender told you about an app the bar is trying to sell. Initially being dissuaded, the bartender sealed the deal by telling you that by downloading the app, you get credits for your next purchase at the bar. Free money, woo!
+			</text>
+			<effect>moneyUp</effect>
+		</event>
 	</good>
 	<bad>
 		<event>
@@ -753,5 +778,36 @@
 			</text>
 			<effect>excitementDown</effect>
 		</event>
+		<event>
+			<text>Sitting by yourself outside the bar, a well-dressed man approached you asking if you had time to discuss their lord and savior. Despite you replying with "No, I do not wish that" the man insisted and talked to you for a long time about his religious views.
+			</text>
+			<effect>energyDown</effect>
+		</event>
+		<event>
+			<text>While watching the TV, a food commercial comes on. The food that this restaurant was advertising looked so orgasmic that you started to feel hungry...
+			</text>
+			<effect>hungerDown</effect>
+		</event>
+		<event>
+			<text>It was open mic night at the bar and there was a comedian going through their act. However the comedian was so bad that he failed to get any sort of laughter. You cringed at every joke that was made that evening.
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>It was open mic night at the bar and there was a comedian going through their act. However the comedian was a roast comedian used you as a prop for their comedy. He said some very mean things to you!
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>You overheard a group of friends talking about how one of their friends just got engaged. You then overheard how old they were... HOW COME PEOPLE YOUNGER THAN YOU ARE ALLOWED TO BE HAPPY!?!?!?!?!?!
+			</text>
+			<effect>heartbroken</effect>
+		</event><!--
+		<event>
+			<text>It was open mic night at the bar and there was a solo trumpet player playing a song. However the musician spend a really long time on the stage boring the audience to tears. You almost passed out!
+			</text>
+			<effect>energyDown</effect>
+		</event>
+		-->
 	</bad>
 </doc>

@@ -36,31 +36,34 @@ $(document).ready(function () {
         dataType: "xml",
         success: function (xml) {
             //on init
-            $(xml).find("argument").each(function (value, key) {
-                text = $(this).find("text").text();
-                choiceA = $(this).find("choiceA").text();
-                choiceB = $(this).find("choiceB").text();
-                answer = $(this).find("answer").text();
-                responseCorrect = $(this).find("responseCorrect").text();
-                responseWrong = $(this).find("responseWrong").text();
-                hint = $(this).find("hint").text();
-                accomplish = $(this).find("accomplish").text();
-                backgroundColor = $(this).find("backgroundColor").text();
-                headerColor = $(this).find("headerColor").text();
-                logo = $(this).find("logo").text();
+            $(xml).find("arguments").each(function (value, key) {
+                backgroundColor = $(this).find("backgroundColor:first").text();
+                headerColor = $(this).find("headerColor:first").text();
+                logo = $(this).find("logo:first").text();
 
-                argumentObject.push({
-                    "text": text,
-                    "choiceA": choiceA,
-                    "choiceB": choiceB,
-                    "answer": answer,
-                    "responseCorrect": responseCorrect,
-                    "responseWrong": responseWrong,
-                    "hint": hint,
-                    "accomplish": accomplish,
-                    "backgroundColor": backgroundColor,
-                    "headerColor": headerColor,
-                    "logo": logo
+                $(xml).find("argument").each(function (value, key) {
+                    text = $(this).find("text").text();
+                    choiceA = $(this).find("choiceA").text();
+                    choiceB = $(this).find("choiceB").text();
+                    answer = $(this).find("answer").text();
+                    responseCorrect = $(this).find("responseCorrect").text();
+                    responseWrong = $(this).find("responseWrong").text();
+                    hint = $(this).find("hint").text();
+                    accomplish = $(this).find("accomplish").text();
+
+                    argumentObject.push({
+                        "text": text,
+                        "choiceA": choiceA,
+                        "choiceB": choiceB,
+                        "answer": answer,
+                        "responseCorrect": responseCorrect,
+                        "responseWrong": responseWrong,
+                        "hint": hint,
+                        "accomplish": parseInt(accomplish),
+                        "backgroundColor": backgroundColor,
+                        "headerColor": headerColor,
+                        "logo": logo
+                    });
                 });
             });
         }

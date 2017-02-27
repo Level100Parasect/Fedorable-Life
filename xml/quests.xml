@@ -213,10 +213,150 @@
 				</choice2>
 			</step>
 		</quest>
+
+		<!--Quest 4 - Gift Giving-->
+		<quest>
+			<text>"Tomorrow is your uncle's birthday and I ordered a gift for him in the mall. Would you be able to go to the store in the mall and pick it up? I left some money on the dining table."</text>
+			<complete>After a fun-filled day of malling around, you texted your mother saying you have accomplished the task! She told you to pocket the money left over.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will make her happy. OR DIE TRYING! You pocket the money and walk to the mall.</response>
+					<effect>mallStart</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy grooming and tending to your ponies to do such a menial task.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Making your way to the gift shop, you asked if they had the order for your mother. The cashier went to the back of the store to search. What do you do to entertain yourself?</text>
+				<choice1>
+					<text>Spin the globe around</text>
+					<response>Spinning the globe, you stopped it with your finger and said that you would rule that country first. You continued to do this for a while...</response>
+					<effect>spinGlobe</effect>
+				</choice1>
+				<choice2>
+					<text>Look at stock photos in picture frames</text>
+					<response>Looking at the stock photos in the picture frame, you started to get introspective about life... thinking about the past, present, and the future...</response>
+					<effect>photoLook</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>When the cashier comes back from the storage room, you pay for the gift then head out. Now that you've accomplished what you set out to do, you decide to spend some more time at the mall. What do you want to do?</text>
+				<choice1>
+					<text>Go to the arcade</text>
+					<response>Deciding to go to the arcade, you played a handful of arcade games even bonding with other arcade patrons in the co-op games.</response>
+					<effect>arcadePlay</effect>
+				</choice1>
+				<choice2>
+					<text>Go to the katana store</text>
+					<response>Deciding to go to the katana store, you look in awe at the immaculate craftsmanship of the mall blades almost being brought to tears.</response>
+					<effect>katanaShop</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After some window shopping you decide to make your way to the food court. Being overwhelmed by all of the food choices, you narrow it down between a coffee shop and a burger place. Which one do you want to go for?</text>
+				<choice1>
+					<text>Coffee shop</text>
+					<response>You grabbed a coffee and grabbed a seat at the coffee shop. You enjoyed the taste of the coffee upon your lips and people watched for a bit. Somebody brought their desktop and their guitar... weird...</response>
+					<effect>coffeeShop</effect>
+				</choice1>
+				<choice2>
+					<text>Burger place</text>
+					<response>You ordered a massive speciality burger and devoured it in less than 2 minutes. That was impressive if not a bit scary!</response>
+					<effect>burgerPlace</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Deciding that your time at the mall has to end, you head outside. However with you elven eyes, you saw a group of teenagers smoking a cigarette in the distance. However you may be able to change their ways...</text>
+				<choice1>
+					<text>Intervene and give them a life lesson</text>
+					<response>Not standing by for this, you walk over to the group and gave an anti-drug PSA. Confused at your presence, they asked you to go away. Feeling like you made a fool of yourself, you saw the silver linings - maybe you convinced just one of them to quit smoking.</response>
+					<effect>dontDoDrugs</effect>
+				</choice1>
+				<choice2>
+					<text>Let them walk down the dark path that they are heading towards</text>
+					<response>Turning the other way, you ignore these troubled youths. Your imagination went wild - what if they started doing harder drugs? You could have saved a life. If only you weren't socially awkward!</response>
+					<effect>doDrugs</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 5 - Mail Package-->
+		<quest>
+			<text>"Hey, I am unable to mail some letters out throughout the day due to work. Would you be able to stop by the post office for me? I left the letters and some pocket money on the table for you."</text>
+			<complete>Making your way back home from the strip mall, you texted your mother saying you have accomplished the task! She told you to pocket the money left over.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will mail the package out SO HARD.</response>
+					<effect>mailStart</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy feasting upon some tendies and potato chips to help her with her task.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Walking to post office with letters in hand, you suddenly realize that you need to prepare the letters. Mailing letters is one of the many things you're not experienced with but you do know stamps are involved...</text>
+				<choice1>
+					<text>Ask the person behind the counter for assistance</text>
+					<response>You gave all of the letters to the person behind the counter. They were able to do all the work for you even recommending the cheapest stamps that you needed. Stress free!</response>
+					<effect>askForHelp</effect>
+				</choice1>
+				<choice2>
+					<text>Pick up some entertaining stamps and do it yourself</text>
+					<response>Your eyes were drawn to these colorful stamps from a beloved cartoon show. They were a bit pricy, but at least your letters looked good! You put two stamps on each letter and threw them in the outgoing box.</response>
+					<effect>buyStamps</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Deciding that while you were out and about, why not enjoy the fresh air? After all, the comic book store that you work at is in the same strip mall. Stopping by, you see that the store got a handful of new items in stock...</text>
+				<choice1>
+					<text>Buy an action figure</text>
+					<response>You spent $25 on a cool looking action figure to decorate your room with.</response>
+					<effect>buyFig</effect>
+				</choice1>
+				<choice2>
+					<text>Buy a handful of new comic books</text>
+					<response>You spent $10 on a handful of newly released comic books.</response>
+					<effect>buyBooks</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After making a purchase, a customer thought you were working asks you for comic book suggestions. What do you do?</text>
+				<choice1>
+					<text>Tell the customer you are not working</text>
+					<response>You awkwardly dismissed the customer's request saying that you were not working. However that gave you some extra time to look at all the cool nerd memorabilia your store has!</response>
+					<effect>excitementUp</effect>
+				</choice1>
+				<choice2>
+					<text>Give the customer a list of suggestions</text>
+					<response>Choosing to help this customer out, you gave a list of modern comics that focused on one character and gave a list of comic book characters to avoid. It turned out you helped this customer out for an hour and it counted as an hour of work!</response>
+					<effect>workDo</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Leaving the comic book store you hear a cheap sounding music jingle nearby. You realize there's an ice cream truck driving by! Should you indulge your desire for sugar?</text>
+				<choice1>
+					<text>Signal for the ice cream truck</text>
+					<response>Signalling for the ice cream truck, you bought a popsicle the shape of your favorite pony from your favorite cartoon "Ponies in High School" with gumballs for eyes. You felt guilty, but she tastes good!</response>
+					<effect>iceCream</effect>
+				</choice1>
+				<choice2>
+					<text>Ignore the ice cream truck</text>
+					<response>Despite wanting a popsicle the shape of your favorite pony from your favorite cartoon "Ponies in High School" with gumballs for eyes, you were able to resist the temptation. Feels good to have control over yourself like that!</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+		</quest>
 	</events>
 </doc>
 <!--
--going to the mall to pick up a gift
--mailing a package to relatives
 -preparing food for your mother's book club
 -->

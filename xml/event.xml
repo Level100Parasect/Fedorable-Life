@@ -220,6 +220,24 @@
 				<effect>btt1</effect>
 			</event>
 			<event>
+				<title>Voice Actor's Meetup</title>
+				<text>One of your favorite voice actors of all time was hosting an event at the convention. You sat in the event and listened to the voice actor doing the voice of your favorite fictional characters.
+				</text>
+				<effect>va1</effect>
+			</event>
+			<event>
+				<title>Koto and Sake Tasting Event</title>
+				<text>For the 21 and over crowd, there was a Japanese alcohol tasting social event. You stood by the table with the drinks enjoying the taste of the koto and sake to yourself.
+				</text>
+				<effect>te1</effect>
+			</event>
+			<event>
+				<title>Cosplay Runway</title>
+				<text>There was a cosplay fashion show event where judges would rate a person's cosplay as they would walk down an isle. Attending the event, you enjoyed viewing some of the more intricate cosplays that people made.
+				</text>
+				<effect>cr1</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
 				</text>
@@ -445,6 +463,24 @@
 				<text>There was a bubble tea tasting event where participants can customize their own bubble tea. The bubble tea you created turned out to be pretty good.
 				</text>
 				<effect>btt2</effect>
+			</event>
+			<event>
+				<title>Voice Actor's Meetup</title>
+				<text>One of your favorite voice actors of all time was hosting an event at the convention. You listened to the voice actor doing the voice of your favorite characters. After the event, you spoke with an attendee as the two of you talked about the voice actor's previous roles.
+				</text>
+				<effect>va2</effect>
+			</event>
+			<event>
+				<title>Koto and Sake Tasting Event</title>
+				<text>For the 21 and over crowd, there was a Japanese alcohol tasting social event. You stood by the table with the drinks talking with those getting themselves a drink.
+				</text>
+				<effect>te2</effect>
+			</event>
+			<event>
+				<title>Cosplay Runway</title>
+				<text>There was a cosplay fashion show event where judges would rate a person's cosplay as they would walk down an isle. Attending the event, you enjoyed seeing the intricate cosplays that others have made. You discussed your favorite cosplays with the person sitting next to you.
+				</text>
+				<effect>cr2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -674,6 +710,24 @@
 				<effect>btt3</effect>
 			</event>
 			<event>
+				<title>Voice Actor's Meetup</title>
+				<text>One of your favorite voice actors of all time was hosting an event at the convention. You were able to ask the voice actor to say their trademark line!
+				</text>
+				<effect>va3</effect>
+			</event>
+			<event>
+				<title>Koto and Sake Tasting Event</title>
+				<text>For the 21 and over crowd, there was a Japanese alcohol tasting social event. You made small talk with the other attendees as you tasted some interesting drinks.
+				</text>
+				<effect>te3</effect>
+			</event>
+			<event>
+				<title>Cosplay Runway</title>
+				<text>There was a cosplay fashion show event where judges would rate a person's cosplay as they would walk down an isle. Attending the event, you enjoyed seeing the intricate cosplays that others have made. You discussed your favorite cosplays with the people around you.
+				</text>
+				<effect>cr3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -899,6 +953,24 @@
 				<text>There was a bubble tea tasting event where participants can customize their own bubble tea. The bubble tea you created turned out to be extremely good. One person noticed your satisfied expression and asked for your recipe.
 				</text>
 				<effect>btt4</effect>
+			</event>
+			<event>
+				<title>Voice Actor's Meetup</title>
+				<text>One of your favorite voice actors of all time was hosting an event at the convention. You were able to ask the voice actor to say their trademark line and caught it on your phone. Maybe you can keep it as a ring tone!
+				</text>
+				<effect>va4</effect>
+			</event>
+			<event>
+				<title>Koto and Sake Tasting Event</title>
+				<text>For the 21 and over crowd, there was a Japanese alcohol tasting social event. You talked with the other attendees, discussing your favorite drinks at the event.
+				</text>
+				<effect>te4</effect>
+			</event>
+			<event>
+				<title>Cosplay Runway</title>
+				<text>There was a cosplay fashion show event where judges would rate a person's cosplay as they would walk down an isle. Attempting to participate as a judge, you were unfortunately turned down. However you were able to be backstage to get a better view of the cosplayers.
+				</text>
+				<effect>cr4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -1128,6 +1200,24 @@
 				<effect>btt5</effect>
 			</event>
 			<event>
+				<title>Voice Actor's Meetup</title>
+				<text>One of your favorite voice actors of all time was hosting an event at the convention. You were able to ask the voice actor to say a very funny line and made the whole room laugh.
+				</text>
+				<effect>va5</effect>
+			</event>
+			<event>
+				<title>Koto and Sake Tasting Event</title>
+				<text>For the 21 and over crowd, there was a Japanese alcohol tasting social event. You played bartender for the event and poured people's drinks for them. You got to socialize with most of the people at the event!
+				</text>
+				<effect>te5</effect>
+			</event>
+			<event>
+				<title>Cosplay Runway</title>
+				<text>There was a cosplay fashion show event where judges would rate a person's cosplay as they would walk down an isle. You were able to participate as a judge and took some quality photos from the judge's booth.
+				</text>
+				<effect>cr5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
@@ -1136,10 +1226,9 @@
 		</level5>
 	</events>
 	<!--
-	koto and sake tasting event
 	military themed formal
 	cosplay runway
-	favorite voice actor
+	celebrity lip-reading
 	-->
 	<booth>
 		<event>
