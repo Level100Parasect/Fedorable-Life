@@ -68,7 +68,7 @@
 		
 		<!--arg 35-->
 		<argument>
-			<text>Feeling more entitled than usual on the social networking site creddit, you made a post; "I am sick of being a nice guy! I helped a girl pass a class in college and she didn't even date me! I'm going to be an alpha male because that's what girls like!" Immediately your post was hit with people bashing your views; "Just because you helped a girl doesn't mean she owes you anything. The fact she didn't like you doesn't have anything to being an alpha male." Such an ignorant thing to say coming out of the lips of an alpha! Being an alpha male means everything:</text>
+			<text>Feeling more entitled than usual on the social networking site creddit, you made a post; "I am sick of being a nice guy! I helped a girl pass a class in college and she didn't even date me! I'm going to be an alpha male because that's what girls like!" Immediately your post was hit with people bashing your views: "Just because you helped a girl doesn't mean she owes you anything. The fact she didn't like you doesn't have anything to being an alpha male." Such an ignorant thing to say coming out of the lips of an alpha! Being an alpha male means everything:</text>
 			<choiceA>"I'll show you... I'll show all of you!" then create a new account with the word Alpha in the name</choiceA>
 			<choiceB>"You guys don't know what you are talking about! Why am I single then?"</choiceB>
 			<answer>ansA</answer>
@@ -128,7 +128,7 @@
 		
 		<!--arg 51-->
 		<argument>
-			<text>Feeling edgy and fed up with being friendzoned on the social networking site creddit, you wrote up a new post "Sorry for being kind and considerate. I forgot that being attractive is all it takes to get into your pants. Sorry for treating you equally I guess." Mere moments after posting, commenters mention that attractiveness is not everything: "There's more to a human being than looks, man. Just because you're a 1/10 doesn't mean you need to stay a 1." These hypocritical comments probably come from 8's. What's a lowly 1/10 left to do in this fair world:</text>
+			<text>Feeling edgy and fed up with being friendzoned on the social networking site creddit, you wrote up a new post "Sorry for being kind and considerate. I forgot that being attractive is all it takes to get into your pants. Sorry for treating you equally I guess." Mere moments after posting, commenters mention that attractiveness is not everything: "There's more to a human being than looks, man. Just because you're a 1/10 doesn't mean you need to stay a 1." These hypocritical comments probably come from 8's. What's a lowly 1/10 left to do in this world:</text>
 			<choiceA>Talk beyond looks - if you have no money, a nice car, and no place you are pretty much undatable</choiceA>
 			<choiceB>Lie and say that you have a disease that makes it hard for you to be attractive and that you are offended</choiceB>
 			<answer>ansB</answer>
@@ -140,7 +140,7 @@
 
 		<!--arg 60-->
 		<argument>
-			<text>While on the social networking site creddit, you felt the need to stretch the limits of your huge brain and created a thread titled "Do People With High IQ See Those With Average IQs as Stupid?" You began the debate with your IQ and a brief introduction. To your surprise, the debate you planned for never came as the commenters mocked your attempt to feel superior: "Why is it always the insecure ones that feel the need to make everything about IQ?" You're not always on about IQ! If this commenter had a higher IQ, he would have known that! Prove yourself to this low IQ'd mouth breather:</text>
+			<text>Feeling the need to stretch your brain muscles, you created a thread titled "Do People With High IQ See Those With Average IQs as Stupid?" on the social networking site creddit. Beginning the debate with your IQ and a brief introduction, you were surprised when the debate you planned for never came! Commenters instead mocked your attempt to feel superior: "Why is it always the insecure ones that feel the need to make everything about IQ?" You're not always on about IQ! If this commenter had a higher IQ, he would have known that! Prove yourself to this low IQ'd mouth breather:</text>
 			<choiceA>Defend yourself! You are not an insecure baby-man!</choiceA>
 			<choiceB>Post the results of an IQ test that you took from the internet</choiceB>
 			<answer>ansB</answer>
@@ -188,7 +188,7 @@
 		
 		<!--arg 79-->
 		<argument>
-			<text>On the social networking site creddit, you found a subreddit for the dating app Cinder. You found a thread titled "Your Most Successful Go-To Openers". Wanting to feel like you're a part of the community, you posted yours; "I would write her a haiku involving her name then beg m'lady to date me!" You received a handful of sarcastic replies, but the most upvoted reply boiled your britches; "That's your best? I bet they auto-unmatch you after that!" How dare this commenter! You wanted to feel like a part of the community, but they WON'T LET YOU IN! YOU NEED TO INVITE YOURSELF INTO THE COMMUNITY:</text>
+			<text>On the social networking site creddit, you found a subreddit for the dating app Cinder. You found a thread titled "Your Most Successful Openers". Wanting to feel like a part of the community, you posted: "I would write her a haiku involving her name then beg m'lady to date me!" You received a handful of sarcastic replies, but the most upvoted reply boiled your britches; "That's your best? I bet they unmatch you after that!" How dare this commenter! You wanted to feel like a part of the community, but they WON'T LET YOU IN! YOU NEED TO INVITE YOURSELF INTO THE COMMUNITY:</text>
 			<choiceA>Lie and say that it's worked 80% of the time</choiceA>
 			<choiceB>Look for the commenter's opener and insult it!</choiceB>
 			<answer>ansA</answer>
@@ -200,13 +200,13 @@
 		
 		<!--arg 80-->
 		<argument>
-			<text>On the social networking site creddit, there was a highly controversial picture of a girl taking a selfie with her dying grandma in the hospital. With great controversy comes great trolls who'd insult her lack of sensitivity and question her intelligence. Knowing what it's like to have your intelligence insulted, you decide to defend her! After a neverending flame war, you sent m'lady a private message; "I just defended you from a bunch of internet trolls for an hour. Can I get a what's up?" However she never replied. Sometimes you just need to remind someone to reply to you:</text>
+			<text>There was a highly controversial picture of a girl taking a selfie with her dying grandma in the hospital on the social networking site creddit. With great controversy comes great trolls who'd insult her lack of sensitivity and intelligence. Knowing what it's like to have your intelligence insulted, you jump to her defense! After a never-ending flame war, you sent m'lady a private message; "I just defended you from internet trolls for an hour. Can I get a what's up?" However she never replied. Sometimes you just need to remind someone to reply to you:</text>
 			<choiceA>Beg for a reply; "C'mon, m'lady! It was a hard fight and I'm still fighting!"</choiceA>
 			<choiceB>Send her the same message. If she asks why you sent her the same thing twice, say it was a glitch</choiceB>
 			<answer>ansB</answer>
 			<responseCorrect>"Hah. Hi." Boom. There's your attention that you wanted. ARGUMENT WIN</responseCorrect>
 			<responseWrong>Your "what's up" never came, and neither did you... ARGUMENT LOST</responseWrong>
-			<hint>I don't think she'd be technologically knowledgable...</hint>
+			<hint>I don't think she'd be technologically knowledgeable...</hint>
 			<accomplish>20</accomplish>
 		</argument>
 	</arguments>
@@ -420,6 +420,20 @@
 			<hint>It's not your house. You have no power there</hint>
 			<accomplish>15</accomplish>
 		</argument>
+		
+		<!--arg 87-->
+		<!--
+		<argument>
+			<text>Feeling sexually frustrated on the social media website MyFace, you posted a status that would wake up the normies: "Having sex is one of the most basic and meaning-less cry for help that the universe ever screamed. Wow, you're born an OBJECTIVELY good looking member of the species and found a willing partner to have intercourse with? Guess what, you probably used a condom, negating the entire purpose of participating in sex. You failed." Feeling like that was a quality post, your friend commented on the status "You're just jealous because you have never had sex.":</text>
+			<choiceA>This practice has been going around for MILLIONS OF YEARS</choiceA>
+			<choiceB>Tell that sheep to kill himself</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>"Okay dear, that's great..." Maybe after all your exposition, she can finally understand why you need to have this anime character as your default picture! ARGUMENT WIN</responseCorrect>
+			<responseWrong>Your mother posted on your picture; "Mother, don't listen to him. He's overreacting and will think more about the mean words he said while he's grounded." ARGUMENT LOST - GROUNDED FOR LIFE!</responseWrong>
+			<hint>It's not your house. You have no power there</hint>
+			<accomplish>15</accomplish>
+		</argument>
+		-->
 	</arguments>
 
 	<!--Arg: OkNarcissus-->
@@ -577,11 +591,37 @@
 			<choiceA>Ask about the pizza date</choiceA>
 			<choiceB>Try to destroy her self esteem as payback for destroying your self esteem</choiceB>
 			<answer>ansA</answer>
-			<responseCorrect>"I'll get back to you on that. So no need to message me." DATE ACHEIVED - ARGUMENT WON</responseCorrect>
+			<responseCorrect>"I'll get back to you on that... so no need to message me." DATE ACHEIVED - ARGUMENT WON</responseCorrect>
 			<responseWrong>"I stopped messaging you because you were a catfish. You look nothing like in your photos. So not only do you lack confidence in what you look like, but you are a terrible human being!" Well I mean like... you're not the worst human being :( ARGUMENT LOST</responseWrong>
 			<hint>C'mon. Just don't be a jerk</hint>
 			<accomplish>20</accomplish>
 		</argument>
+		
+		<!--arg 81-->
+		<argument>
+			<text>Seeking out your future waifu on the dating website OkNarcissus, you were shocked when you got messaged first! That has never happened before! Excited to see what the future Mrs. You has to say, you were shocked when she critiqued your profile - "I get that people have standards, but you are a choosing beggar! Some of the traits you want are impossible!" What's so impossible with wanting a 10/10 Asian girl that is under 5 feet and 120 pounds and into nerd culture and also a virgin and must know the harp? Prove to this crazy lady that it's not impossible:</text>
+			<choiceA>"I'm allowed to seek out whatever qualities I want to seek out!"</choiceA>
+			<choiceB>"You're just jealous that you're not qualified to get a piece of me!"</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>"Well good luck with that. You're going to need it." Oh hey! She gave you some luck in your goals. What a nice lady. ARGUMENT WON</responseCorrect>
+			<responseWrong>"Jealous? Not at all. You look like a goblin." OUCH! LOOK IN THE MIRROR - ARGUMENT LOST</responseWrong>
+			<hint>Well I mean, you are a choosing beggar...</hint>
+			<accomplish>25</accomplish>
+		</argument>
+		
+		<!--arg 86-->
+		<!--
+		<argument>
+			<text>Spamming refresh on the dating website OkNarcissus in the new section, you clicked on a profile of a girl only requesting for friends:</text>
+			<choiceA>"I'm allowed to seek out whatever qualities I want to seek out!"</choiceA>
+			<choiceB>"You're just jealous that you're not qualified to get a piece of me!"</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>"Well good luck with that. You're going to need it." Oh hey! She gave you some luck in your goals. What a nice lady. ARGUMENT WON</responseCorrect>
+			<responseWrong>"Jealous? Not at all. You look like a goblin." OUCH! LOOK IN THE MIRROR - ARGUMENT LOST</responseWrong>
+			<hint>Well I mean, you are a choosing beggar...</hint>
+			<accomplish>25</accomplish>
+		</argument>
+		-->
 	</arguments>
 
 	<!--Arg: MGN-->
@@ -757,6 +797,32 @@
 			<hint>Wouldn't it be a shame to master one character and the developers nerf the character to be useless?</hint>
 			<accomplish>15</accomplish>
 		</argument>
+		
+		<!--arg 85-->
+		<argument>
+			<text>On the gaming website MGN, you were checking the forums for a newly released game being released on PC and console. There was a discussion about what the ideal platform is to play this game and without reading a single pixel, you commented "PC is the way to go, pleb. #PCMASTERRACE4LYFE" As per usual, the commenters don't take to kindly to your kind saying "Nobody is talking about the PC version any more. It's a completely busted port." While that may be the case, you have to stick to your guns and prove that the PC is always number one, baby:</text>
+			<choiceA>Blame consoles - if the devs focused on the making the game for PC only, these bugs wouldn't exist</choiceA>
+			<choiceB>Mention that it's possible to mod the game to fix those game breaking issues</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>"Yeah... porting over from console to PC hardly ever works." You noticed that the discussion deviated to comparing to other console games that had really bad PC ports. ARGUMENT WON</responseCorrect>
+			<responseWrong>"So the modding community would have to do the job for the developers? How long would that take?" Well I mean... somebody has to do it... right? ARGUMENT LOST</responseWrong>
+			<hint>Modding is cool, but shouldn't basic functionality come with the game?</hint>
+			<accomplish>15</accomplish>
+		</argument>
+		
+		<!--arg 90-->
+		<!--
+		<argument>
+			<text>On the gaming website MGN, there was a thread about why there are less girl gamers than there are male gamers. A common theme is that creepy guys are vocal and keep certain games to themselves. Being the smartest person in the room, you answer with "Men can pull the trigger in a war and derive pleasure from it. Can women do that?" "What are you talking about?":</text>
+			<choiceA>"War."</choiceA>
+			<choiceB>"It is the way of humanity: men love to watch people bleed..."</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>"Yeah... porting over from console to PC hardly ever works." You noticed that the discussion deviated to comparing to other console games that had really bad PC ports. ARGUMENT WON</responseCorrect>
+			<responseWrong>"So the modding community would have to do the job for the developers? How long would that take?" Well I mean... somebody has to do it... right? ARGUMENT LOST</responseWrong>
+			<hint>Modding is cool, but shouldn't basic functionality come with the game?</hint>
+			<accomplish>15</accomplish>
+		</argument>
+		-->
 	</arguments>
 
 	<!--Arg: LouTube-->
@@ -984,17 +1050,62 @@
 		<argument>
 			<text>You were watching a video of a celebrity discussing their views on politics on the video-sharing website LouTube. This ticked you off because celebrities exist only to entertain you - not to preach their messed up views on politics. So you decided to preach your own views on their views of politics; "These celebrities only exist for our amusement. Nobody should care about their political views and they shant prattle on." Your comment was received in a mostly negative light mentioning that "Celebrities are people too.":</text>
 			<choiceA>Focus on how celebrities are not people - they are entitled, whiny babies who got lucky</choiceA>
-			<choiceB>Write a long rant to support your view by using the "Dancing monkey in a jar" as a metaphor</choiceB>
+			<choiceB>Write a long rant to support your view by using the "Dancing monkey with a jar" as a metaphor</choiceB>
 			<answer>ansA</answer>
 			<responseCorrect>The other commenters mentioned how this particular celebrity complains about politics all the time. You turned the pitchforks at the celebrity! Saved! ARGUMENT WIN</responseCorrect>
 			<responseWrong>"You are borderline psychotic." I think you went a bit too overboard with the dancing monkey metaphor... ARGUMENT LOSE</responseWrong>
 			<hint>Focusing your argument on celebrities would be a good idea...</hint>
 			<accomplish>25</accomplish>
 		</argument>
+		
+		<!--arg 82-->
+		<argument>
+			<text>For some reason you were watching a fitness video on the video-sharing website LouTube. Feeling the blood gushing out of your nose like in one of those animes, you commented "I'm flustered over here! Certain parts of this video are straight up erotic! I'm going to need to have a hard spank session after this." Your comment was downvoted to oblivion by people calling you a creep! Even m'lady replied to your comment - "Christ, dude! I'm deleting this video because of you." Defend your boner:</text>
+			<choiceA>Science your way out of this: "Arousal is perfectly normal. I see features I'm drawn to, I get aroused. Science."</choiceA>
+			<choiceB>Download the video for future use</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>You were able to successfully download the fitness video before m'lady deleted it. Nobody can stop you from draining the spuds now! MWAHAHAHA! ARGUMENT WIN</responseCorrect>
+			<responseWrong>Just as you hit submit, it brought you to an error page as the video no longer exists... CURSES! NOW NO ONE CAN SEE HOW SMART YOU ARE! ARGUMENT LOSE</responseWrong>
+			<hint>She did say that she way going to delete her video - you must be fast!</hint>
+			<accomplish>15</accomplish>
+		</argument>
+		
+		<!--arg 83-->
+		<argument>
+			<text>Watching a video of an artist create video game prop items for sale on the video-sharing website LouTube, you felt the need to put down this person's work to cover up the fact you have no marketable skills - "While you did work hard on it, the logo's dimensions are all wrong and are the wrong shade of red. No one in their right mind would buy these." However your comment got slammed: "These are actually pretty hard to make. I'd like to see you do better." Oh please! A brainless monkey can do art, you just need the perfect vision:</text>
+			<choiceA>"Disrespect my favorite game? Get SLAMMED by my superior knowledge on the subject!"</choiceA>
+			<choiceB>Say that you wanted to see your favorite game get represented correctly</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>The artist that uploaded the video says that they'll keep your criticism in mind for the next one. ARGUMENT WIN</responseCorrect>
+			<responseWrong>"But the artist was making the logo for the previous game. That game is more popular and would sell more. So you're knowledge on the subject isn't much, I take it." OH MAN! Should have fact checked, buddy. ARGUMENT LOSE</responseWrong>
+			<hint>Do you really even have superior knowledge?</hint>
+			<accomplish>25</accomplish>
+		</argument>
+		
+		<!--arg 84-->
+		<argument>
+			<text>You were watching a video of a popular vlogger on the video-sharing website LouTube. The vlogger covered news and current trends, but they made a reference to a Bible passage in one of the segments. Feeling shocked, you commented "You could've done without the reference to the Bible you sheep." However one of the viewers unfortunate enough to see your comment replied "It was literally 2 seconds of the video." Yeah? Well... this video is now unwatchable because of the reference to the fairy-tale book offending you:</text>
+			<choiceA>Type in a snarky response: "Well that's two seconds too much!"</choiceA>
+			<choiceB>Drop a logic bomb: "12 Disciples, 4 Gospels - quit being ignorant to the facts, sheeple"</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>While nobody replied to your snarky response, you did get one upvote! Somebody out there liked it! :D ARGUMENT WIN</responseCorrect>
+			<responseWrong>Despite dropping a logic bomb on LouTube, your comment was ignored... It looks like you're the only one who knows just how smart you are! ARGUMENT LOSE</responseWrong>
+			<hint>That snarky response is actually a little... humorous</hint>
+			<accomplish>20</accomplish>
+		</argument>
+		
+		<!--arg 88-->
+		<!--
+		<argument>
+			<text>Feeling musical on the video-sharing website LouTube, you were listening to some music. "As an enlightened individual with an IQ of 167, this simple 4/4 time signature doesn't stimulate my mind." "Just stop...":</text>
+			<choiceA>"This borderline pop song is vacuous to my superior brain. Dislike!"</choiceA>
+			<choiceB>"Polyrhythmic synth jazz is the only genre that provides nourishment to a brain like mine."</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>While nobody replied to your snarky response, you did get one upvote! Somebody out there liked it! :D ARGUMENT WIN</responseCorrect>
+			<responseWrong>Despite dropping a logic bomb on LouTube, your comment was ignored... It looks like you're the only one who knows just how smart you are! ARGUMENT LOSE</responseWrong>
+			<hint>That snarky response is actually a little... humorous</hint>
+			<accomplish>20</accomplish>
+		</argument>
+		-->
 	</arguments>
 </doc>
-
-<!--
-	Creddit - https://i.imgur.com/GReAr8W.jpg
-	http://imgur.com/r/justneckbeardthings/wEEJtZl
--->

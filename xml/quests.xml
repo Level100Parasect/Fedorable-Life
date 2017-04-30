@@ -329,7 +329,7 @@
 				</choice2>
 			</step>
 			<step>
-				<text>After making a purchase, a customer thought you were working asks you for comic book suggestions. What do you do?</text>
+				<text>After making a purchase, a customer thought you were working and asks you for some comic book suggestions. What do you do?</text>
 				<choice1>
 					<text>Tell the customer you are not working</text>
 					<response>You awkwardly dismissed the customer's request saying that you were not working. However that gave you some extra time to look at all the cool nerd memorabilia your store has!</response>
@@ -345,7 +345,7 @@
 				<text>Leaving the comic book store you hear a cheap sounding music jingle nearby. You realize there's an ice cream truck driving by! Should you indulge your desire for sugar?</text>
 				<choice1>
 					<text>Signal for the ice cream truck</text>
-					<response>Signalling for the ice cream truck, you bought a popsicle the shape of your favorite pony from your favorite cartoon "Ponies in High School" with gumballs for eyes. You felt guilty, but she tastes good!</response>
+					<response>Signalling for the ice cream truck, you bought a popsicle the shape of your favorite pony from your favorite cartoon "Ponies in High School" with gumballs for eyes. You felt guilty, but she tastes so good!</response>
 					<effect>iceCream</effect>
 				</choice1>
 				<choice2>
@@ -355,8 +355,151 @@
 				</choice2>
 			</step>
 		</quest>
+		
+		<!--Quest 6 - Oil Change-->
+		<quest>
+			<text>"I need to get the oil changed for the car, but I'm stuck at work. Can you please take the car to the mechanic and take care of that for me? I left the keys and some money on the counter."</text>
+			<complete>Making your way back home after a few hours of driving a car, you texted your mother saying you have accomplished the task! She told you to pocket the money left over.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will change her oil. You grab the keys and the money and head to the garage.</response>
+					<effect>oilStart</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy combing your pony figurines to help her out.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>You hardly ever drive due to your lack of money, so you always cherish every time your mom lets you drive. Backing out of the driveway you realize that you can go to the mechanic one of two ways... the scenic route or the more direct route.</text>
+				<choice1>
+					<text>Go the scenic route</text>
+					<response>Diving the scenic route, puts your mind at ease.</response>
+					<effect>relaxed</effect>
+				</choice1>
+				<choice2>
+					<text>Go the direct route</text>
+					<response>Driving for the mechanic, you had to deal with the traffic. Luckily for you, you have a samurai's patience and was able to keep a steady mind like a true warrior.</response>
+					<effect>euphoriaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Dropping the car off at the mechanic's, they took the car to the garage and came back to ring you up. The mechanic suggests that you change your windshield wipers...</text>
+				<choice1>
+					<text>Pay for the windshield wipers replacement</text>
+					<response>Your total for the wipers and the oil change rang up to $30. Helping your mother out with her wipers brought you a sense of accomplishment and niceness.</response>
+					<effect>buyWiper</effect>
+				</choice1>
+				<choice2>
+					<text>Don't change the windshield wipers and keep the money</text>
+					<response>Your total for the oil change came out to be $15. Since you didn't buy the wipers, you saved $15 all to yourself!</response>
+					<effect>buyOil</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now that you finished paying, you need to waiting for the services to be complete. Coming prepared, you brought your designated handheld device. However, you also got a text from your equally euphoric friend...</text>
+				<choice1>
+					<text>Play video games</text>
+					<response>You put away your phone and started playing with the handheld you brought with you.</response>
+					<effect>excitementUp</effect>
+				</choice1>
+				<choice2>
+					<text>Text your friend</text>
+					<response>You texted back and forth with your friend for a bit while the service was being done to the car.</response>
+					<effect>socialUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After getting service done to your mother's car, you decide to make a quick stop at a donut shop. Feeling like consuming one of two things, you can choose to buy a cup of donuts or a cup of coffee.</text>
+				<choice1>
+					<text>Buy some donuts</text>
+					<response>Chowing down on donut balls never felt so good! Once you completed your donut eating task, you went back home.</response>
+					<effect>buyDonuts</effect>
+				</choice1>
+				<choice2>
+					<text>Buy some coffee</text>
+					<response>Drinking some coffee never felt so good! Once you completed your coffee drinking task, you went back home.</response>
+					<effect>buyCoffee</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 7 - Prepare House Guests-->
+		<quest>
+			<text>"Howdy, I'm having house guests over later today for the book club. Could you please prepare some accommodations for our guests in the living room before I get home?"</text>
+			<complete>Looking at the living room, you pat yourself on the back for a job well done! This may just be your finest work yet.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will clean the living room so hard until it becomes the dead room.</response>
+					<effect>houseStart</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy writing your erotic fan fiction series based on an anime from the 1990's.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Starting off, you would like to clean up the living room. After mopping the floors and cleaning the tables, you need to mask the chemical smell with some nice smelling chemicals. You can choose between the two flavors of chemicals - Spring Night Breeze or Beaches and Shores?</text>
+				<choice1>
+					<text>Spring Night Breeze</text>
+					<response>Taking a wiff of the Spring Night Breeze you just sprayed reminded you of your youth and how you'd spend your spring breaks immersed in anime, gaming, and sleeping...</response>
+					<effect>relaxed</effect>
+				</choice1>
+				<choice2>
+					<text>Beaches and Shores</text>
+					<response>Taking a wiff of the Beaches and Shores you just sprayed reminded you of your youth and your summers spent at anime conventions...</response>
+					<effect>euphoriaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Thinking about what needs to be done, you figure that guests need food and drinks. Focusing on food first, your mother baked a pie for the meeing. However, you love your mother's pies! You can swap out the pie with another snack and keep it for yourself...</text>
+				<choice1>
+					<text>Put some cookies out on a plate and keep the pie to yourself</text>
+					<response>You brought out some cookies for snacks then stealthfully snuck the fresh pie into your room for consumption! Being bad never felt so good.</response>
+					<effect>hungerUp</effect>
+				</choice1>
+				<choice2>
+					<text>Put the pie on the coffee table with knives and forks</text>
+					<response>With tears in your eyes, you figure that it's for the best you use the pie for its intended purpose. You set up the pie in the living room and never looked back... until you had to go into the living room again.</response>
+					<effect>givePie</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now to make some actual food! Actually you can't cook to save your life, but you can microwave! You can let loose your inner chef and microwave some chips or just set up a box of taquitos...</text>
+				<choice1>
+					<text>Microwave some nacho chips</text>
+					<response>Feeling like a gourmet cook, you created a bowl of nachos and placed the out in the living room for the guests.</response>
+					<effect>makeNachos</effect>
+				</choice1>
+				<choice2>
+					<text>Microwave some taquitos</text>
+					<response>You microwaved some taquitos and placed them out in the living room for the guests.</response>
+					<effect>makeTaquitos</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now focusing on beverages, you looked in the fridge. Admittedly mother dropped the ball and hasn't gone for groceries so all you have in terms of drinks are water and your euphoric Fountain Dew. You can sacrifice your own Fountain Dew or make the guests drink water...</text>
+				<choice1>
+					<text>Sacrifice the dew</text>
+					<response>With great sadness, you sacrificed the dew. But with great sacrifice comes great retribution...</response>
+					<effect>sacDew</effect>
+				</choice1>
+				<choice2>
+					<text>Keep the dew to yourself</text>
+					<response>Not wanting to part ways with the dew, you brought out some water for the guests.</response>
+					<effect>euphoriaUp</effect>
+				</choice2>
+			</step>
+		</quest>
 	</events>
 </doc>
 <!--
--preparing food for your mother's book club
+-Go get some fast food
+-buy ingredients for dinner
 -->

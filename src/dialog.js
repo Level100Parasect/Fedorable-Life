@@ -38,6 +38,17 @@ $(document).ready(function () {
         show: 'fadeIn',
         hide: 'fadeOut'
     });
+
+    $("#gymDialog").dialog({
+        autoOpen: false,
+        modal: true,
+        width: 640,
+        height: 'auto',
+        resizable: false,
+        closeOnEscape: false,
+        show: 'fadeIn',
+        hide: 'fadeOut'
+    });
     $(".ui-dialog-titlebar").hide();
 });
 

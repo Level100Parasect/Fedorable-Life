@@ -409,6 +409,25 @@ img {
     background-color: #ecf0f1 !important;
 }
 
+#gymDialog { background-color: #2c3e50; font-family: visitor; text-align: center;}
+#gymEvent, #gymResponse { font-size: 1.75em; }
+#gymA, #gymB { font-size: 1.5em; }
+#gym1, #gymBottom { display: inline-block; }
+
+.gWrapper {
+    padding: 8px;
+    background-color: #ecf0f1 !important;
+}
+
+.gWrapper img {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    display: inline-block;
+}
 /*transform: scale(20);*/
 
 #ansA, #ansB{
@@ -623,6 +642,11 @@ img {
 
 #exitQuest {
     margin: 8px;
+    display: inline-block;
+}
+
+#exitGym, #continueGym {
+    left: 50%;
     display: inline-block;
 }
 

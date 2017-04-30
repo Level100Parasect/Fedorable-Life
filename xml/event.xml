@@ -238,6 +238,18 @@
 				<effect>cr1</effect>
 			</event>
 			<event>
+				<title>Anime Lazer Tag</title>
+				<text>There was a room dedicated to a lazer tag competition where the weapons and the setting was based off of a futuristic anime. You watched from the outside as the two teams battled it out in a close match!
+				</text>
+				<effect>alz1</effect>
+			</event>
+			<event>
+				<title>Virtual Reality Demo</title>
+				<text>There was a kiosk with a high quality VR set up where users can roam around a Japanese high school environment. There was a display showing what the person was doing in the VR environment.
+				</text>
+				<effect>vr1</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
 				</text>
@@ -481,6 +493,18 @@
 				<text>There was a cosplay fashion show event where judges would rate a person's cosplay as they would walk down an isle. Attending the event, you enjoyed seeing the intricate cosplays that others have made. You discussed your favorite cosplays with the person sitting next to you.
 				</text>
 				<effect>cr2</effect>
+			</event>
+			<event>
+				<title>Anime Lazer Tag</title>
+				<text>There was a room dedicated to a lazer tag competition where the weapons and the setting was based off of a futuristic anime. You participated in the event, but ended up losing in points with your team.
+				</text>
+				<effect>alz2</effect>
+			</event>
+			<event>
+				<title>Virtual Reality Demo</title>
+				<text>There was a kiosk with a high quality VR set up where users can roam around a Japanese high school environment. There was a display showing what the person was doing in the VR environment where you spoke with another person watching the demo.
+				</text>
+				<effect>vr2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -728,6 +752,18 @@
 				<effect>cr3</effect>
 			</event>
 			<event>
+				<title>Anime Lazer Tag</title>
+				<text>There was a room dedicated to a lazer tag competition where the weapons and the setting was based off of a futuristic anime. You participated in the event and did pretty well in terms of points... but your team ended up losing.
+				</text>
+				<effect>alz3</effect>
+			</event>
+			<event>
+				<title>Virtual Reality Demo</title>
+				<text>There was a kiosk with a high quality VR set up where users can roam around a Japanese high school environment. There was a display showing what the person was doing in the VR environment where you spoke with the person who created the demo.
+				</text>
+				<effect>vr3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -971,6 +1007,18 @@
 				<text>There was a cosplay fashion show event where judges would rate a person's cosplay as they would walk down an isle. Attempting to participate as a judge, you were unfortunately turned down. However you were able to be backstage to get a better view of the cosplayers.
 				</text>
 				<effect>cr4</effect>
+			</event>
+			<event>
+				<title>Anime Lazer Tag</title>
+				<text>There was a room dedicated to a lazer tag competition where the weapons and the setting was based off of a futuristic anime. You participated in the event and ended up winning with your team!
+				</text>
+				<effect>alz4</effect>
+			</event>
+			<event>
+				<title>Virtual Reality Demo</title>
+				<text>There was a kiosk with a high quality VR set up where users can roam around a Japanese high school environment. You ended up being selected to participate in the demo for a few minutes.
+				</text>
+				<effect>vr4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -1218,6 +1266,18 @@
 				<effect>cr5</effect>
 			</event>
 			<event>
+				<title>Anime Lazer Tag</title>
+				<text>There was a room dedicated to a lazer tag competition where the weapons and the setting was based off of a futuristic anime. You participated in the event and dominated the event!
+				</text>
+				<effect>alz5</effect>
+			</event>
+			<event>
+				<title>Virtual Reality Demo</title>
+				<text>There was a kiosk with a high quality VR set up where users can roam around a Japanese high school environment. You ended up being selected to participate in the demo for a long time! You made some friends in the VR world...
+				</text>
+				<effect>vr5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
@@ -1227,7 +1287,6 @@
 	</events>
 	<!--
 	military themed formal
-	cosplay runway
 	celebrity lip-reading
 	-->
 	<booth>

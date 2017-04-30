@@ -17,7 +17,6 @@ $(document).ready(function () {
                         var energy = $(this).find("energy").text();
                         var weight = $(this).find("weight").text();
                         var accomplish = $(this).find("accomplish").text();
-                        var additional = $(this).find("additional").text();
                         var chance = $(this).find("chance").text();
                         var success = $(this).find("success").text();
                         var fail = $(this).find("fail").text();
@@ -27,7 +26,6 @@ $(document).ready(function () {
                             "energy": parseInt(energy),
                             "weight": parseFloat(weight),
                             "accomplish": parseInt(accomplish),
-                            "additional": additional,
                             "chance": parseInt(chance),
                             "success": success,
 							"fail": fail

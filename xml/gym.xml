@@ -8,7 +8,6 @@
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>You walked for 15 minutes</success>
 				<fail>You fell asleep and rolled off the treadmill</fail>
@@ -18,7 +17,6 @@
 				<energy>6</energy>
 				<weight>0.3</weight>
 				<accomplish>3</accomplish>
-				<additional>na</additional>
 				<chance>70</chance>
 				<success>You jogged for 15 minutes</success>
 				<fail>You tripped on your own feet and rolled off the treadmill</fail>
@@ -28,7 +26,6 @@
 				<energy>12</energy>
 				<weight>1.0</weight>
 				<accomplish>5</accomplish>
-				<additional>na</additional>
 				<chance>50</chance>
 				<success>You jogged at a fast pace for 15 minutes</success>
 				<fail>You tripped on your own feet and rolled off the treadmill</fail>
@@ -38,7 +35,6 @@
 				<energy>20</energy>
 				<weight>3.0</weight>
 				<accomplish>10</accomplish>
-				<additional>confident</additional>
 				<chance>25</chance>
 				<success>You successfully completed the suicide run program</success>
 				<fail>You tripped, rolled off the treadmill, and hit the wall behind you</fail>
@@ -48,7 +44,6 @@
 				<energy>10</energy>
 				<weight>0.5</weight>
 				<accomplish>10</accomplish>
-				<additional>euphoriaUp</additional>
 				<chance>65</chance>
 				<success>You successfully completed the endurance program all the way through</success>
 				<fail>You tripped on your own feet and rolled off the treadmill</fail>
@@ -61,7 +56,6 @@
 				<energy>2</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
-				<additional>limberedUp</additional>
 				<chance>95</chance>
 				<success>You limbered up your bod</success>
 				<fail>You pulled something in your leg. Ohhhh...</fail>
@@ -71,7 +65,6 @@
 				<energy>3</energy>
 				<weight>0.2</weight>
 				<accomplish>4</accomplish>
-				<additional>euphoriaUp</additional>
 				<chance>85</chance>
 				<success>You practised your punches and kicks and looked tough doing it!</success>
 				<fail>You accidentally punched a wall and got a boo boo :(</fail>
@@ -81,7 +74,6 @@
 				<energy>10</energy>
 				<weight>1.2</weight>
 				<accomplish>8</accomplish>
-				<additional>na</additional>
 				<chance>65</chance>
 				<success>You burned your buns off with a plethora of jumping exercises</success>
 				<fail>While jumping around, you got dizzy and fell over</fail>
@@ -91,7 +83,6 @@
 				<energy>8</energy>
 				<weight>0.4</weight>
 				<accomplish>5</accomplish>
-				<additional>limberedUp</additional>
 				<chance>65</chance>
 				<success>You limbered up while feeling the burn!</success>
 				<fail>During one of the stretches, you accidentally ripped your pants</fail>
@@ -101,7 +92,6 @@
 				<energy>10</energy>
 				<weight>0.8</weight>
 				<accomplish>8</accomplish>
-				<additional>excitementUp</additional>
 				<chance>65</chance>
 				<success>You worked on your dance moves mastering ever step while having fun!</success>
 				<fail>You started to feel self conscious and can feel the eyes of everyone in the gym</fail>
@@ -114,7 +104,6 @@
 				<energy>6</energy>
 				<weight>0.3</weight>
 				<accomplish>2</accomplish>
-				<additional>excitementUp</additional>
 				<chance>95</chance>
 				<success>You were able to watch anime on your phone while pedalling for 10 miles.</success>
 				<fail>Your sock got caught on the pedal while pedalling and got torn. Those were your favorite pair!</fail>
@@ -124,7 +113,6 @@
 				<energy>9</energy>
 				<weight>0.5</weight>
 				<accomplish>4</accomplish>
-				<additional>excitementUp</additional>
 				<chance>85</chance>
 				<success>You were able to watch anime on your phone while pedalling for 25 miles.</success>
 				<fail>Your sock got caught on the pedal while pedalling and got torn. Those were your favorite pair!</fail>
@@ -134,7 +122,6 @@
 				<energy>13</energy>
 				<weight>0.9</weight>
 				<accomplish>6</accomplish>
-				<additional>excitementUp</additional>
 				<chance>75</chance>
 				<success>You were able to watch anime on your phone while pedalling for 50 miles.</success>
 				<fail>Your sock got caught on the pedal while pedalling and got torn. Those were your favorite pair!</fail>
@@ -144,7 +131,6 @@
 				<energy>20</energy>
 				<weight>2.5</weight>
 				<accomplish>20</accomplish>
-				<additional>na</additional>
 				<chance>40</chance>
 				<success>You were able to pedal for a lengthy amount of time</success>
 				<fail>Your sock got caught on the pedal while pedalling and got torn. Those were your favorite pair!</fail>
@@ -154,7 +140,6 @@
 				<energy>16</energy>
 				<weight>1.1</weight>
 				<accomplish>15</accomplish>
-				<additional>na</additional>
 				<chance>65</chance>
 				<success>You were able to complete the work out program on the bike</success>
 				<fail>Your sock got caught on the pedal while pedalling and got torn. Those were your favorite pair!</fail>
@@ -167,7 +152,6 @@
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>After completing your set, you felt a little muscle on your arm</success>
 				<fail>You dropped the weights and pulled something in your arm</fail>
@@ -177,7 +161,6 @@
 				<energy>6</energy>
 				<weight>0.3</weight>
 				<accomplish>8</accomplish>
-				<additional>na</additional>
 				<chance>70</chance>
 				<success>After completing your set, you felt some muscles on your arm</success>
 				<fail>You dropped the weights and pulled something in your arm</fail>
@@ -187,7 +170,6 @@
 				<energy>6</energy>
 				<weight>0.5</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>70</chance>
 				<success>You completed a full set of lunges</success>
 				<fail>You accidentally ripped your pants mid-lunge</fail>
@@ -197,7 +179,6 @@
 				<energy>9</energy>
 				<weight>0.8</weight>
 				<accomplish>5</accomplish>
-				<additional>na</additional>
 				<chance>80</chance>
 				<success>You completed a full set of rows for both arms</success>
 				<fail>You dropped the weights and pulled something in your arm</fail>
@@ -207,7 +188,6 @@
 				<energy>9</energy>
 				<weight>0.6</weight>
 				<accomplish>8</accomplish>
-				<additional>na</additional>
 				<chance>80</chance>
 				<success>You completed a full set of raises</success>
 				<fail>You dropped the weights and pulled something in your arm</fail>
@@ -220,7 +200,6 @@
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>Completing your bench press routine, you began to feel super strong!</success>
 				<fail>Struggling to hold the bar up, you accidentally choked yourself</fail>
@@ -230,7 +209,6 @@
 				<energy>6</energy>
 				<weight>0.2</weight>
 				<accomplish>7</accomplish>
-				<additional>euphoriaUp</additional>
 				<chance>90</chance>
 				<success>Completing your bench press routine, you began to feel super strong!</success>
 				<fail>Struggling to hold the bar up, you accidentally choked yourself</fail>
@@ -240,7 +218,6 @@
 				<energy>9</energy>
 				<weight>0.4</weight>
 				<accomplish>10</accomplish>
-				<additional>euphoriaUp</additional>
 				<chance>80</chance>
 				<success>Completing your bench press routine, you began to feel super strong!</success>
 				<fail>Struggling to hold the bar up, you accidentally choked yourself</fail>
@@ -250,7 +227,6 @@
 				<energy>12</energy>
 				<weight>0.6</weight>
 				<accomplish>15</accomplish>
-				<additional>euphoriaUp</additional>
 				<chance>70</chance>
 				<success>Completing your bench press routine, you began to feel super strong!</success>
 				<fail>Struggling to hold the bar up, you accidentally choked yourself</fail>
@@ -260,7 +236,6 @@
 				<energy>15</energy>
 				<weight>0.9</weight>
 				<accomplish>25</accomplish>
-				<additional>euphoriaUp</additional>
 				<chance>50</chance>
 				<success>Completing your bench press routine, you began to feel super strong!</success>
 				<fail>Struggling to hold the bar up, you accidentally choked yourself</fail>
@@ -273,7 +248,6 @@
 				<energy>5</energy>
 				<weight>0.3</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>You were able to climb to the top</success>
 				<fail>You lost your grip and fell off the rock wall due to your sweaty palms. Luckily you landed onto the padded mattress below</fail>
@@ -283,7 +257,6 @@
 				<energy>7</energy>
 				<weight>0.5</weight>
 				<accomplish>4</accomplish>
-				<additional>na</additional>
 				<chance>85</chance>
 				<success>You were able to climb to the top</success>
 				<fail>You lost your grip and fell off the rock wall due to your sweaty palms. Luckily you landed onto the padded mattress below</fail>
@@ -293,7 +266,6 @@
 				<energy>10</energy>
 				<weight>0.7</weight>
 				<accomplish>10</accomplish>
-				<additional>na</additional>
 				<chance>70</chance>
 				<success>You were able to climb to the top</success>
 				<fail>You lost your grip and fell off the rock wall due to your sweaty palms. Luckily you landed onto the padded mattress below</fail>
@@ -303,7 +275,6 @@
 				<energy>10</energy>
 				<weight>0.7</weight>
 				<accomplish>10</accomplish>
-				<additional>euphoriaUp</additional>
 				<chance>70</chance>
 				<success>You felt like a ninja in one of your Japanese anime as you jumped through the air like butter</success>
 				<fail>You lost your grip and fell off the rock wall due to your sweaty palms. Luckily you landed onto the padded mattress below</fail>
@@ -313,7 +284,6 @@
 				<energy>10</energy>
 				<weight>0.7</weight>
 				<accomplish>15</accomplish>
-				<additional>na</additional>
 				<chance>70</chance>
 				<success>You were able to climb to the top</success>
 				<fail>You lost your grip and fell off the rock wall due to your sweaty palms. Luckily you landed onto the padded mattress below</fail>
@@ -326,7 +296,6 @@
 				<energy>3</energy>
 				<weight>0.3</weight>
 				<accomplish>1</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>You were able to work on your front and back strokes against a wall</success>
 				<fail>The ball bounced up into your ball...s. Ouch</fail>
@@ -336,7 +305,6 @@
 				<energy>5</energy>
 				<weight>0.8</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>85</chance>
 				<success>You were able to work on your front and back strokes against the machine</success>
 				<fail>The machine lobbed a ball into your ball...s. Ouch</fail>
@@ -346,7 +314,6 @@
 				<energy>8</energy>
 				<weight>1.5</weight>
 				<accomplish>5</accomplish>
-				<additional>social1</additional>
 				<chance>70</chance>
 				<success>You were able to practice your techniques with another person helping each other out</success>
 				<fail>The other person accidentally hit you in the balls with their tennis racquet</fail>
@@ -356,7 +323,6 @@
 				<energy>8</energy>
 				<weight>1.0</weight>
 				<accomplish>5</accomplish>
-				<additional>social2</additional>
 				<chance>70</chance>
 				<success>It was a solid match where both you and your opponent played very well</success>
 				<fail>You played poorly and left your partner to pick up the slack</fail>
@@ -366,7 +332,6 @@
 				<energy>13</energy>
 				<weight>2.5</weight>
 				<accomplish>5</accomplish>
-				<additional>social1</additional>
 				<chance>60</chance>
 				<success>It was a solid match where both you and your opponent played very well</success>
 				<fail>You played poorly and got no points against the opponent</fail>
@@ -379,7 +344,6 @@
 				<energy>4</energy>
 				<weight>0.1</weight>
 				<accomplish>5</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>You completed your push-up routine</success>
 				<fail>You pulled something in your arm</fail>
@@ -389,7 +353,6 @@
 				<energy>10</energy>
 				<weight>0.5</weight>
 				<accomplish>10</accomplish>
-				<additional>na</additional>
 				<chance>75</chance>
 				<success>You completed your push-up routine</success>
 				<fail>You pulled something in your arm</fail>
@@ -399,7 +362,6 @@
 				<energy>2</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>You felt the burn in your abs</success>
 				<fail>You accidentally farted while doing your sit-ups</fail>
@@ -409,7 +371,6 @@
 				<energy>8</energy>
 				<weight>1.0</weight>
 				<accomplish>5</accomplish>
-				<additional>na</additional>
 				<chance>75</chance>
 				<success>You felt the burn in your abs</success>
 				<fail>You accidentally farted while doing your sit-ups</fail>
@@ -419,7 +380,6 @@
 				<energy>12</energy>
 				<weight>1.1</weight>
 				<accomplish>10</accomplish>
-				<additional>na</additional>
 				<chance>65</chance>
 				<success>Planking for a decent amount of time, you felt your core get stronger</success>
 				<fail>You locked up and hurt your back</fail>
@@ -432,7 +392,6 @@
 				<energy>3</energy>
 				<weight>0.1</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>95</chance>
 				<success>You completed the barbell workout</success>
 				<fail>You dropped the bar and pulled something</fail>
@@ -442,7 +401,6 @@
 				<energy>5</energy>
 				<weight>0.2</weight>
 				<accomplish>3</accomplish>
-				<additional>na</additional>
 				<chance>90</chance>
 				<success>You completed the barbell workout</success>
 				<fail>You dropped the bar and pulled something</fail>
@@ -452,7 +410,6 @@
 				<energy>7</energy>
 				<weight>0.4</weight>
 				<accomplish>4</accomplish>
-				<additional>na</additional>
 				<chance>85</chance>
 				<success>You completed the barbell workout</success>
 				<fail>You dropped the bar and pulled something</fail>
@@ -462,7 +419,6 @@
 				<energy>10</energy>
 				<weight>1.0</weight>
 				<accomplish>8</accomplish>
-				<additional>na</additional>
 				<chance>70</chance>
 				<success>You completed the barbell workout</success>
 				<fail>You dropped the bar and pulled something</fail>
@@ -472,7 +428,6 @@
 				<energy>20</energy>
 				<weight>2.0</weight>
 				<accomplish>20</accomplish>
-				<additional>na</additional>
 				<chance>50</chance>
 				<success>You completed the intense barbell workout</success>
 				<fail>You dropped the bar and pulled something</fail>
@@ -485,7 +440,6 @@
 				<energy>5</energy>
 				<weight>0.4</weight>
 				<accomplish>4</accomplish>
-				<additional>na</additional>
 				<chance>85</chance>
 				<success>You got a handful of points, feeling really good about yourself</success>
 				<fail>You threw the ball at the rim and it hit you in the face</fail>
@@ -495,7 +449,6 @@
 				<energy>8</energy>
 				<weight>0.8</weight>
 				<accomplish>2</accomplish>
-				<additional>na</additional>
 				<chance>75</chance>
 				<success>You ran a handful of laps around the court</success>
 				<fail>You tripped on your shoelace while running and faceplanted</fail>
@@ -505,7 +458,6 @@
 				<energy>13</energy>
 				<weight>2.0</weight>
 				<accomplish>10</accomplish>
-				<additional>confident</additional>
 				<chance>55</chance>
 				<success>You were able to pull off some sweet dunks!</success>
 				<fail>Trying to stylishly dunk, you accidentally hit your genitals on the hoop. That's what you get for showboating</fail>
@@ -515,7 +467,6 @@
 				<energy>15</energy>
 				<weight>1.5</weight>
 				<accomplish>2</accomplish>
-				<additional>social1</additional>
 				<chance>65</chance>
 				<success>You played a friendly game with another gym goer</success>
 				<fail>Trying to stylishly dunk, you accidentally hit your genitals on the hoop. That's what you get for showboating</fail>
@@ -525,7 +476,6 @@
 				<energy>10</energy>
 				<weight>0.8</weight>
 				<accomplish>2</accomplish>
-				<additional>social2</additional>
 				<chance>80</chance>
 				<success>You played a friendly game with five other people</success>
 				<fail>Trying to stylishly dunk, you accidentally hit your genitals on the hoop. That's what you get for showboating</fail>

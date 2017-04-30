@@ -401,6 +401,31 @@
 			</text>
 			<effect>moneyUp</effect>
 		</event>
+		<event>
+			<text>Minding your own business at the bar, you overheard a drunk patron sitting next to you complained about how hungry they were. Thinking nothing of it, you offered some of yours. They ended up thanking you for your generosity!
+			</text>
+			<effect>ngpUp</effect>
+		</event>
+		<event>
+			<text>You noticed a someone working on their homework at the bar. Noticing that you had knowledge on some of the subject matter, you approached them and offered assistance. They thanked you for your time!
+			</text>
+			<effect>ngpUp</effect>
+		</event>
+		<event>
+			<text>Sitting by the bar, you noticed a waitress walking through the kitchen doors with a massive tray of food. Being quick, you went over and held the door open for her. They thanked you for your kindness.
+			</text>
+			<effect>ngpUp</effect>
+		</event>
+		<event>
+			<text>Sipping on some fancy cocktail, somebody sitting next to you noticed how delicious your drink looked and commented on it. Thinking nothing of it, you offered them a taste of your drink. They ended up really liking the drink!
+			</text>
+			<effect>ngpUp</effect>
+		</event>
+		<event>
+			<text>Minding your own business at the bar, someone asked if they could take the seat next to you for their group of friends. Offering them the seat next to you, they thanked you for your generosity!
+			</text>
+			<effect>ngpUp</effect>
+		</event>
 	</good>
 	<bad>
 		<event>
@@ -802,12 +827,31 @@
 			<text>You overheard a group of friends talking about how one of their friends just got engaged. You then overheard how old they were... HOW COME PEOPLE YOUNGER THAN YOU ARE ALLOWED TO BE HAPPY!?!?!?!?!?!
 			</text>
 			<effect>heartbroken</effect>
-		</event><!--
+		</event>
 		<event>
 			<text>It was open mic night at the bar and there was a solo trumpet player playing a song. However the musician spend a really long time on the stage boring the audience to tears. You almost passed out!
 			</text>
 			<effect>energyDown</effect>
 		</event>
-		-->
+		<event>
+			<text>Noticing a lovely lady dropped her wallet, you called out to her. However when m'lady turned around, you discovered that she was a he! He thanked you for the save, but you still felt bad about it. He had some gorgeous locks...
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Salivating over the food that was just place in front of you by the waitress, before you could dig in, somebody accidentally sneezed in your general direction. You can no longer eat your food as it has been tainted. FOREVER UNCLEAN!
+			</text>
+			<effect>hungerDown</effect>
+		</event>
+		<event>
+			<text>Sitting at the bar, somebody sneezed  near you. As a knee jerk reaction, you accidentally said "God bless you". After the G-word slipped out of your lips, you began to feel sick.
+			</text>
+			<effect>sick</effect>
+		</event>
+		<event>
+			<text>Sitting at the bar, somebody sneezed  near you. Somebody replied with a "God bless you" which triggered you. You ended up getting into an argument with them over religion to which nobody won.
+			</text>
+			<effect>soaDown</effect>
+		</event>
 	</bad>
 </doc>
