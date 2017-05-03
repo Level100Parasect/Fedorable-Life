@@ -37,11 +37,11 @@ $(document).ready(function () {
         success: function (xml) {
             //on init
             $(xml).find("arguments").each(function (value, key) {
-                backgroundColor = $(this).find("backgroundColor:first").text();
-                headerColor = $(this).find("headerColor:first").text();
-                logo = $(this).find("logo:first").text();
+                backgroundColor = $(this).find("backgroundColor").text();
+                headerColor = $(this).find("headerColor").text();
+                logo = $(this).find("logo").text();
 
-                $(xml).find("argument").each(function (value, key) {
+                $(key).find("argument").each(function (v, k) {
                     text = $(this).find("text").text();
                     choiceA = $(this).find("choiceA").text();
                     choiceB = $(this).find("choiceB").text();
@@ -66,6 +66,7 @@ $(document).ready(function () {
                     });
                 });
             });
+            console.log(argumentObject);
         }
     });
 });

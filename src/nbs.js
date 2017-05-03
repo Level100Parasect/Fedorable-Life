@@ -79,7 +79,7 @@ function mainCharacter() {
 	        } /* END IF */
 
 	        //waifu ending
-	        if ((this.niceGuyPoints >= 50) && (!this.endWaifu)) {
+	        if ((this.niceGuyPoints >= 25) && (!this.endWaifu)) {
 	            endGame(createEndScreen("waifu", "egWaifu"));
 	            this.endWaifu = true;
 	        } /* END IF */
@@ -453,7 +453,7 @@ function mainCharacter() {
 	    this.statAccomplishment = 100;
 	    this.statEuphoria = 0;
 	    this.statStatus = 'Normal';
-	    this.statMoney = 2000;
+	    this.statMoney = 20;
 	    this.statSocial = 'Creepy';
         //mainCharacter decay stat variables
 	    this.decayEnergy = 2;
@@ -500,7 +500,7 @@ function mainCharacter() {
 	    this.convDay = 0;
 	    this.drinksRound = 0;
         this.sprite = "sprite";
-        this.weight = 280.0;
+        this.weight = 250.0;
         this.niceGuyPoints = 0;
         //options
         this.muteMusic = false;
@@ -1622,7 +1622,7 @@ $(window).on('load', function () {
                 grant.argsEntered += 1;
                 $("#argument").find(".correct").removeClass("correct");
                 currentArgNum = readyArgument();
-                if (!grant.hintMode) { $("#hint").hide(); } else { $("#hint").show(); }
+                if (!grant.hintMode) { $("#hint").show(); } else { $("#hint").hide(); }
                 $("#argTop").show();
                 $("#hintText").hide();
                 $("#argBottom").hide();
