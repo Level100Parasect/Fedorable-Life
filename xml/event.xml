@@ -250,6 +250,24 @@
 				<effect>vr1</effect>
 			</event>
 			<event>
+				<title>Anime Retrospective</title>
+				<text>There was an all-day event dedicated to showcasing old anime from the 1970's - 1990's. While watching classic anime, you felt an appreciation for the ancestry of one of your favorite past times.
+				</text>
+				<effect>ar1</effect>
+			</event>
+			<event>
+				<title>Celebrity Cosplayer</title>
+				<text>An internet famous cosplayer was making an appearance at the convention. You were able to get a few good pictures of her in artist alley with hundreds of other photographers.
+				</text>
+				<effect>cc1</effect>
+			</event>
+			<event>
+				<title>Celebrity Lip Reading</title>
+				<text>There was an event where multiple celebrity voice actors were reading excerpts from a horrid book. You laughed as the voice actors spoke out the sex-scenes in their unfitting voices.
+				</text>
+				<effect>clr1</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
 				</text>
@@ -505,6 +523,24 @@
 				<text>There was a kiosk with a high quality VR set up where users can roam around a Japanese high school environment. There was a display showing what the person was doing in the VR environment where you spoke with another person watching the demo.
 				</text>
 				<effect>vr2</effect>
+			</event>
+			<event>
+				<title>Anime Retrospective</title>
+				<text>There was an all-day event dedicated to showcasing old anime from the 1970's - 1990's. While watching classic anime, you discussed past anime with another person.
+				</text>
+				<effect>ar2</effect>
+			</event>
+			<event>
+				<title>Celebrity Cosplayer</title>
+				<text>An internet famous cosplayer was making an appearance at the convention. You were able to get a few good pictures of her in the lobby with dozens of other photographers.
+				</text>
+				<effect>cc2</effect>
+			</event>
+			<event>
+				<title>Celebrity Lip Reading</title>
+				<text>There was an event where multiple celebrity voice actors were reading excerpts from a horrid book. You got to take a far-away video of the voice actors reading through the book for yourself to view in the future.
+				</text>
+				<effect>clr2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -764,6 +800,24 @@
 				<effect>vr3</effect>
 			</event>
 			<event>
+				<title>Anime Retrospective</title>
+				<text>There was an all-day event dedicated to showcasing old anime from the 1970's - 1990's. While watching classic anime, you and another person at the event recommended hidden gems that are also classics to each other.
+				</text>
+				<effect>ar3</effect>
+			</event>
+			<event>
+				<title>Celebrity Cosplayer</title>
+				<text>An internet famous cosplayer was making an appearance at the convention. You were able to get a few great pictures of her on the stairwell with a handful of other photographers.
+				</text>
+				<effect>cc3</effect>
+			</event>
+			<event>
+				<title>Celebrity Lip Reading</title>
+				<text>There was an event where multiple celebrity voice actors were reading excerpts from a horrid book. You got to take a decent video of the voice actors reading through the book, laughing as they read the sex scenes in funny voices.
+				</text>
+				<effect>clr3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -1019,6 +1073,24 @@
 				<text>There was a kiosk with a high quality VR set up where users can roam around a Japanese high school environment. You ended up being selected to participate in the demo for a few minutes.
 				</text>
 				<effect>vr4</effect>
+			</event>
+			<event>
+				<title>Anime Retrospective</title>
+				<text>There was an all-day event dedicated to showcasing old anime from the 1970's - 1990's. While watching classic anime, you mingled with another group as you all discussed the favorite anime of yesteryear. You spent some time with the group after the event.
+				</text>
+				<effect>ar4</effect>
+			</event>
+			<event>
+				<title>Celebrity Cosplayer</title>
+				<text>An internet famous cosplayer was making an appearance at the convention. Speaking with the cosplayer, you were able to take some great one-on-one photos with her.
+				</text>
+				<effect>cc4</effect>
+			</event>
+			<event>
+				<title>Celebrity Lip Reading</title>
+				<text>There was an event where multiple celebrity voice actors were reading excerpts from a horrid book. You got to take a good video of the voice actors reading through the book with funny voices.
+				</text>
+				<effect>clr4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -1278,6 +1350,24 @@
 				<effect>vr5</effect>
 			</event>
 			<event>
+				<title>Anime Retrospective</title>
+				<text>There was an all-day event dedicated to showcasing old anime from the 1970's - 1990's. While watching classic anime, you mingled with another group as you all discussed the favorite anime of yesteryear. You spent some time with the group after the event.
+				</text>
+				<effect>ar5</effect>
+			</event>
+			<event>
+				<title>Celebrity Cosplayer</title>
+				<text>An internet famous cosplayer was making an appearance at the convention. Speaking with the cosplayer, you were able to take some phenomenal one-on-one photos with her. They look professionally done!
+				</text>
+				<effect>cc5</effect>
+			</event>
+			<event>
+				<title>Celebrity Lip Reading</title>
+				<text>There was an event where multiple celebrity voice actors were reading excerpts from a horrid book. You got to take a close-up video of the voice actors reading through the book. The video looks professional! It may even become viral on Loutube...
+				</text>
+				<effect>clr5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
@@ -1285,10 +1375,6 @@
 			</event>
 		</level5>
 	</events>
-	<!--
-	military themed formal
-	celebrity lip-reading
-	-->
 	<booth>
 		<event>
 			<text>You found a booth that made custom pins. You found a few that you wanted to buy...</text>

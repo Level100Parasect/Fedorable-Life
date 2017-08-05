@@ -422,18 +422,16 @@
 		</argument>
 		
 		<!--arg 87-->
-		<!--
 		<argument>
-			<text>Feeling sexually frustrated on the social media website MyFace, you posted a status that would wake up the normies: "Having sex is one of the most basic and meaning-less cry for help that the universe ever screamed. Wow, you're born an OBJECTIVELY good looking member of the species and found a willing partner to have intercourse with? Guess what, you probably used a condom, negating the entire purpose of participating in sex. You failed." Feeling like that was a quality post, your friend commented on the status "You're just jealous because you have never had sex.":</text>
-			<choiceA>This practice has been going around for MILLIONS OF YEARS</choiceA>
-			<choiceB>Tell that sheep to kill himself</choiceB>
+			<text>Feeling sexually frustrated on the social media website MyFace, you posted a multi-paragraphed thought diary; "Sex is the most basic, meaningless cry for help the universe ever screamed. You're born an OBJECTIVELY good looking member of the species and found a partner to have intercourse with? If you used a condom, you negated the entire purpose of the mating ritual!" Feeling like this was quality literature, someone commented; "You're jealous because you never had sex". WHOA! YOU'RE ALL ABOUT THAT SEX LIFE! It's time for you to prove that you know a thing or two about sex:</text>
+			<choiceA>Tell this guy that you've had hundreds of partners and know what you're talking about when it comes to sex stuff</choiceA>
+			<choiceB>Write your thesis - "As a non-attractive guy, what am I left to do to mate? What about me?"</choiceB>
 			<answer>ansB</answer>
-			<responseCorrect>"Okay dear, that's great..." Maybe after all your exposition, she can finally understand why you need to have this anime character as your default picture! ARGUMENT WIN</responseCorrect>
-			<responseWrong>Your mother posted on your picture; "Mother, don't listen to him. He's overreacting and will think more about the mean words he said while he's grounded." ARGUMENT LOST - GROUNDED FOR LIFE!</responseWrong>
-			<hint>It's not your house. You have no power there</hint>
-			<accomplish>15</accomplish>
+			<responseCorrect>After half an hour, this commenter wrote back; "I don't know man, maybe you'll find someone to perform that mating ritual with. Keep trying." ARGUMENT WIN</responseCorrect>
+			<responseWrong>After half an hour, this commenter wrote back; "I looked through your photos and MyFace timeline... I found no signs of human contact." Since when did they add that timeline? ARGUMENT LOST</responseWrong>
+			<hint>If by partner, you mean NPC's in video games, then yes. You've had hundreds! Real life partners however...</hint>
+			<accomplish>20</accomplish>
 		</argument>
-		-->
 	</arguments>
 
 	<!--Arg: OkNarcissus-->
@@ -610,18 +608,16 @@
 		</argument>
 		
 		<!--arg 86-->
-		<!--
 		<argument>
-			<text>Spamming refresh on the dating website OkNarcissus in the new section, you clicked on a profile of a girl only requesting for friends:</text>
-			<choiceA>"I'm allowed to seek out whatever qualities I want to seek out!"</choiceA>
-			<choiceB>"You're just jealous that you're not qualified to get a piece of me!"</choiceB>
+			<text>Spamming refresh on the dating website OkNarcissus in the new section, you clicked on a profile of a girl who's only looking for friends as she already has a boyfriend. OkNarcissus is not the place for friendship! You give this broad a piece of your mind; "Get out of here! OkNarcissus is for dating and sex only!" Expecting this thot would remove herself from the website, she actually messaged back; "Because what I do on this website is dictated by you, right?" Patting yourself on your back, you spat your beverage when you realized that was sarcasm. As an alpha male, you must retaliate:</text>
+			<choiceA>Call her boyfriend a cuck and how she should date a real man like yourself</choiceA>
+			<choiceB>Call her bluff and say that she's not satisfied with her relationship hence why she's on the website</choiceB>
 			<answer>ansA</answer>
-			<responseCorrect>"Well good luck with that. You're going to need it." Oh hey! She gave you some luck in your goals. What a nice lady. ARGUMENT WON</responseCorrect>
-			<responseWrong>"Jealous? Not at all. You look like a goblin." OUCH! LOOK IN THE MIRROR - ARGUMENT LOST</responseWrong>
-			<hint>Well I mean, you are a choosing beggar...</hint>
-			<accomplish>25</accomplish>
+			<responseCorrect>M'lady never replied to you, but damn it feels good to call someone a cuck! ARGUMENT-kinda-WON</responseCorrect>
+			<responseWrong>"You will never find a meaningful connection with anybody in the world acting like this." That hurt! Right in the gibblets. ARGUMENT LOST</responseWrong>
+			<hint>Don't assume something about someone else's relationship, man</hint>
+			<accomplish>15</accomplish>
 		</argument>
-		-->
 	</arguments>
 
 	<!--Arg: MGN-->
@@ -810,19 +806,29 @@
 			<accomplish>15</accomplish>
 		</argument>
 		
-		<!--arg 90-->
-		<!--
+		<!--arg 89-->
 		<argument>
-			<text>On the gaming website MGN, there was a thread about why there are less girl gamers than there are male gamers. A common theme is that creepy guys are vocal and keep certain games to themselves. Being the smartest person in the room, you answer with "Men can pull the trigger in a war and derive pleasure from it. Can women do that?" "What are you talking about?":</text>
-			<choiceA>"War."</choiceA>
-			<choiceB>"It is the way of humanity: men love to watch people bleed..."</choiceB>
-			<answer>ansA</answer>
-			<responseCorrect>"Yeah... porting over from console to PC hardly ever works." You noticed that the discussion deviated to comparing to other console games that had really bad PC ports. ARGUMENT WON</responseCorrect>
-			<responseWrong>"So the modding community would have to do the job for the developers? How long would that take?" Well I mean... somebody has to do it... right? ARGUMENT LOST</responseWrong>
-			<hint>Modding is cool, but shouldn't basic functionality come with the game?</hint>
-			<accomplish>15</accomplish>
+			<text>On the gaming website MGN, there was a poll as to which RPG is superior: the number-based Japanese RPG or the action-oriented Western RPG to which Western RPGs were leading the polls. As much as you enjoy WRPGs and their dating simulator mechanics and sex scenes, you must defend the honor of the glorious nippon! You decide to focus on one commenter that mentioned "JRPGs are archaic and have game design aspects from the nineties. WRPGs have evolved with the times". HOW DARE THIS COMMENTER! EVERYTHING IS BETTER IN JAPAN! Strike down this commenter FOR THE HONOR OF JRPGs:</text>
+			<choiceA>Mention that they are both good for different purposes - JRPGs for story and WRPGs for gameplay</choiceA>
+			<choiceB>Bring up two games; a WRPG made 10 years ago that they keep remaking and one new JRPG that boasts multiple 10/10 scores</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>After you mentioned relevant games in this debate, you see that the poll swings in favor of the Japanese RPG. Looks like that filthy gaijin goes home! ARGUMENT WON</responseCorrect>
+			<responseWrong>"There are WRGs with great storylines. I've yet to see a JRPG have truly great gameplay". You see the gap widen between the Western RPG and the Japanese RPG! Nooooooo... ARGUMENT LOST</responseWrong>
+			<hint>I think having examples of games would be beneficial for your case...</hint>
+			<accomplish>20</accomplish>
 		</argument>
-		-->
+		
+		<!--arg 90-->
+		<argument>
+			<text>On the gaming website MGN, there was a thread where someone asked for advice in a game touted as the hardest modern video game as they kept on dying at the same spot. You did died a lot while playing this game... but these chumps don't know that! "I didn't die at all here. But then again I did do a run through of the game without dying so..." Feeling superior to these unskilled noobs, one commenter made fun of your skills; "I bet you died on the tutorial level" Well, he's not wrong... but you now must prove your skills to random strangers on the internet:</text>
+			<choiceA>Create a theoretical strategy for that portion of the game</choiceA>
+			<choiceB>Record yourself playing the game and upload it on to LouTube cutting out any instance of you dying and paste the link</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>"I'll be sure to try that strategy out." Holy cannoli, this guy is using your strategy! You did see a few hours later that after trying it out, the OP is still stuck, but you consider this an ARGUMENT WON</responseCorrect>
+			<responseWrong>You spent an entire week on the video... But even after all that time spent working on it, you saw on your video that you have zero views. OH WASTE OF TIME! ARGUMENT LOST</responseWrong>
+			<hint>Making a video is a lot of hard work... is it even worth it to win an argument?</hint>
+			<accomplish>25</accomplish>
+		</argument>
 	</arguments>
 
 	<!--Arg: LouTube-->
@@ -1095,17 +1101,15 @@
 		</argument>
 		
 		<!--arg 88-->
-		<!--
 		<argument>
-			<text>Feeling musical on the video-sharing website LouTube, you were listening to some music. "As an enlightened individual with an IQ of 167, this simple 4/4 time signature doesn't stimulate my mind." "Just stop...":</text>
-			<choiceA>"This borderline pop song is vacuous to my superior brain. Dislike!"</choiceA>
+			<text>Perusing the trending music page on the video-sharing website LouTube, you were trying to find new music to listen to; but you struggling to find anything good! On one song, you left some criticism as to why it's bad; "As an enlightened individual with an IQ of 167, this simple 4/4 time signature doesn't stimulate my mind." Feeling intellectually superior, you nodded in agreement at your own wit. However, a person you envisioned with clown make up replied to your comment - "Stop trying so hard". Trying so hard!? You need to prove to this clown that this isn't even your final form:</text>
+			<choiceA>Reply to this scrub's comment hours after they wrote their reply</choiceA>
 			<choiceB>"Polyrhythmic synth jazz is the only genre that provides nourishment to a brain like mine."</choiceB>
 			<answer>ansB</answer>
-			<responseCorrect>While nobody replied to your snarky response, you did get one upvote! Somebody out there liked it! :D ARGUMENT WIN</responseCorrect>
-			<responseWrong>Despite dropping a logic bomb on LouTube, your comment was ignored... It looks like you're the only one who knows just how smart you are! ARGUMENT LOSE</responseWrong>
-			<hint>That snarky response is actually a little... humorous</hint>
-			<accomplish>20</accomplish>
+			<responseCorrect>Nobody replied to your comment, but you know FOR A FACT that it was because your superior taste intimidated everyone away from replying. FOR A FACT! ARGUMENT WIN</responseCorrect>
+			<responseWrong>Nobody replied to your comment after spending so much time trying to serve this scrub... it seems like you tried too hard.  Again. ARGUMENT LOSE</responseWrong>
+			<hint>Describing the genre isn't bad I guess...</hint>
+			<accomplish>15</accomplish>
 		</argument>
-		-->
 	</arguments>
 </doc>

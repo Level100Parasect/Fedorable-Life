@@ -10,7 +10,7 @@
 				<choice1>
 					<text>Accept the quest!</text>
 					<response>You texted back saying that you will satisfy her needs. You pocket the money and head outside.</response>
-					<effect>groceryStart</effect>
+					<effect>moneyUpL</effect>
 				</choice1>
 				<choice2>
 					<text>Tell her you're busy</text>
@@ -81,7 +81,7 @@
 				<choice1>
 					<text>Accept the quest!</text>
 					<response>You texted back saying that you will accomplish everything she requires of you.</response>
-					<effect>choresStart</effect>
+					<effect>excitementUpL</effect>
 				</choice1>
 				<choice2>
 					<text>Tell her you're busy</text>
@@ -152,7 +152,7 @@
 				<choice1>
 					<text>Accept the quest!</text>
 					<response>You texted back saying that you will make the library your new kingdom.</response>
-					<effect>libStart</effect>
+					<effect>excitementUpL</effect>
 				</choice1>
 				<choice2>
 					<text>Tell her you're busy</text>
@@ -223,7 +223,7 @@
 				<choice1>
 					<text>Accept the quest!</text>
 					<response>You texted back saying that you will make her happy. OR DIE TRYING! You pocket the money and walk to the mall.</response>
-					<effect>mallStart</effect>
+					<effect>moneyUpL</effect>
 				</choice1>
 				<choice2>
 					<text>Tell her you're busy</text>
@@ -294,7 +294,7 @@
 				<choice1>
 					<text>Accept the quest!</text>
 					<response>You texted back saying that you will mail the package out SO HARD.</response>
-					<effect>mailStart</effect>
+					<effect>moneyUpM</effect>
 				</choice1>
 				<choice2>
 					<text>Tell her you're busy</text>
@@ -365,7 +365,7 @@
 				<choice1>
 					<text>Accept the quest!</text>
 					<response>You texted back saying that you will change her oil. You grab the keys and the money and head to the garage.</response>
-					<effect>oilStart</effect>
+					<effect>moneyUpL</effect>
 				</choice1>
 				<choice2>
 					<text>Tell her you're busy</text>
@@ -436,7 +436,7 @@
 				<choice1>
 					<text>Accept the quest!</text>
 					<response>You texted back saying that you will clean the living room so hard until it becomes the dead room.</response>
-					<effect>houseStart</effect>
+					<effect>excitementUpL</effect>
 				</choice1>
 				<choice2>
 					<text>Tell her you're busy</text>
@@ -497,9 +497,218 @@
 				</choice2>
 			</step>
 		</quest>
+		
+		<!--Quest 8 - Pick up Food-->
+		<quest>
+			<text>"Hello there, I'll be up at work until late. Can you please get dinner from the Italian restaurant down the street? I left some money on the counter for you to use."</text>
+			<complete>When you got home, you texted your mother saying you left your mother's food on the counter. She thanked you and told you to keep the leftover money.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will pick up the food like you pick up the ladies.</response>
+					<effect>moneyUpM</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy trying to improve your luck with the ladies by playing dating simulators to be able to help her.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>The Italian restaurant is down the street, but it's a few blocks away. Not feeling like walking there, you look for your bike... however walking there would be a good training routine.</text>
+				<choice1>
+					<text>Bike to the restaurant</text>
+					<response>After finding your bike, you got to the Italian restaurant in no time. It was fun going fast!</response>
+					<effect>excitementUp</effect>
+				</choice1>
+				<choice2>
+					<text>Walk to the restaurant</text>
+					<response>Deciding to walk to the restaurant, you were left admittedly winded at the door. But you know what they say: no pain, no gain!</response>
+					<effect>workOut</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After arriving at the restaurant, you placed an order for your mother and some chicken tenders for yourself. You saw on display some packaged cannoli's - your mother's favorite snack.</text>
+				<choice1>
+					<text>Buy your mother a cannoli</text>
+					<response>Deciding to do something nice for the woman who spawned you, you picked up a cannoli for $5.</response>
+					<effect>buyCannoli</effect>
+				</choice1>
+				<choice2>
+					<text>Don't buy her one</text>
+					<response>Feeling frugal, you decide to not purchase the cannoli. It's just empty calories anyway.</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After ordering the food, you need to wait for the food to get prepared. You pull out your phone and are faced with a dilemma: you are in the mood to view memes, but there's this new popular mobile game that came out recently too...</text>
+				<choice1>
+					<text>View those dank memes</text>
+					<response>You decide to look at some memes on the front page of the Creddit app. You are impressed with some of the memes and jokes these guys create!</response>
+					<effect>euphoriaUp</effect>
+				</choice1>
+				<choice2>
+					<text>Play the new mobile game</text>
+					<response>You decide to play the new game. It's really well made, and you can see yourself playing this game  again in the future.</response>
+					<effect>excitementUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After a few minutes of goofing off on your phone, the staff comes out with your food and the bill. In total, the bill was $20 meaning the tip should be around $2? You can also round up to $5 just to make things even.</text>
+				<choice1>
+					<text>Round up to $5</text>
+					<response>Rounding up to a $5, your total for the food order comes up to $25. You took the paper bag of food and headed back home.</response>
+					<effect>payHigh</effect>
+				</choice1>
+				<choice2>
+					<text>Leave it at $2</text>
+					<response>Wanting to keep some money for yourself, the total for the food order comes up to $22. You took the paper bag of food and headed back home.</response>
+					<effect>payLow</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 9 - Walk Neighbor's Dog-->
+		<quest>
+			<text>"Hola mi hijo. I promised to help take care of the neighbor's dog for the day but I got called in to work. Could you please take care of it?"</text>
+			<complete>After your fun-filled day of playing with the pup, you put the dog back in its cage and said your good byes.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying that you will clean the living room so hard until it becomes the dead room.</response>
+					<effect>excitementUpL</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy trying to find true, fetishized, oriental love on OkNarcissus to be able to help her.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Starting off, you took the tiny puppy out of its cage and looked around at what was left near it - there's some toys left near the cage, but it's so soft and fluffy!</text>
+				<choice1>
+					<text>Play with its toys</text>
+					<response>You took a squeaky chicken toy and a rope and watched as the dog went to town on them. To be that tiny and innocent...</response>
+					<effect>excitementUp</effect>
+				</choice1>
+				<choice2>
+					<text>Pet the hell out of it</text>
+					<response>You picked up the puppy and sat it on your lap. Petting the soft energetic puppy relaxed you...</response>
+					<effect>relaxed</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After feeding the puppy, you put on its walking harness and went to the park. There, a cute girl started to talk to you - thinking this was a good way to pick up chicks, do you fake it as your own dog?</text>
+				<choice1>
+					<text>Fake it until you make it</text>
+					<response>Faking this dog as your own, you told her fake stories that you and the dog had together. She seemed to believe the stories, and you had fun getting her to laugh.</response>
+					<effect>dogLie</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her it's the neighbor's dog</text>
+					<response>You told her that you were watching your neighbor's dog for the day, but she thought it was cool. The two of you talked for a while.</response>
+					<effect>tellTruth</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After your talk with the nice girl, you continued your walk around the park. You found a nice bench to sit on and decided to use this time to play with the dog.</text>
+				<choice1>
+					<text>See if you could get it to sit</text>
+					<response>At first, you had trouble getting it to sit... but after some hard work and dedication you were able to get it to follow your command!</response>
+					<effect>soaUp</effect>
+				</choice1>
+				<choice2>
+					<text>Play fetch</text>
+					<response>You had a blast playing fetch, and you got a nice little workout running around with the energetic ball of fur.</response>
+					<effect>playFetch</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Feeling tired after playing with the dog, you see that there was a food truck in the distance. You bought yourself a snack, but the dog looks at you expecting a bite...</text>
+				<choice1>
+					<text>Give it a bite of your food</text>
+					<response>Caving in to the puppy dog eyes, you gave the puppy a bite. Admittedly, you're not entirely sure if it was good for the dog, but you made the puppy happy!</response>
+					<effect>feedDog</effect>
+				</choice1>
+				<choice2>
+					<text>Don't give in to the puppy dog eyes!</text>
+					<response>Not sure if the food was good for the puppy, you resisted those hypnotizing eyes!</response>
+					<effect>dontFeed</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 10 - Laundry Work-->
+		<quest>
+			<text>"Arigato! I didn't have the chance to do the laundry over the weekend. Could you please take care of the laundry while I'm at work? If you don't we'll be running low on clothes."</text>
+			<complete>Looking at the living room, you pat yourself on the back for a job well done! This may just be your finest work yet.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying you'll make sure the Laundry Complete achievement has been unlocked by the time she arrives.</response>
+					<effect>excitementUpL</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy stalking some girl you had a crush on in high school on MyFace.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Thinking about how to start off the laundry, you spent some time sorting the clothes into categories. Your first batch of laundry was full of jeans and towels, but you are unsure of if you should use fabric softener with these types of clothing...</text>
+				<choice1>
+					<text>Throw caution to the wind!</text>
+					<response>Wanting to live dangerously, you decide to throw fabric softener in there. You feel good about being so confident about something!</response>
+					<effect>confident</effect>
+				</choice1>
+				<choice2>
+					<text>Research when to use fabric softener</text>
+					<response>After a few minutes of researching fabric softener, you found out not only do you need to use fabric softener for this batch of laundry, but you now know more about the history of fabric softener. Maybe you can use this information in future conversations...</response>
+					<effect>researchStuff</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Once the first batch of laundry was complete, you open up the dryer to see that there were some clothes left in there from the last time you did laundry. All of the clothes left in were wrinkled.</text>
+				<choice1>
+					<text>Iron them out and place it on your mom's bed</text>
+					<response>While ironing your mother's clothes, you actually hit a moment of zen with quick bursts of adrenaline when you would spray water on for steam. Once done, you folded the clothes up and placed it neatly on your mother's bed.</response>
+					<effect>ironClothes</effect>
+				</choice1>
+				<choice2>
+					<text>Throw it in to a pile on to the couch</text>
+					<response>Not wanting to deal with this old batch of clothing right now, you just throw it in a pile on the couch in the living room so you can work on it later.</response>
+					<effect>leavePile</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>With the dryer cleared and cleaned, you threw the wet clothes in and set it to run for an hour. While waiting for the dryer, you think of ways to entertain yourself...</text>
+				<choice1>
+					<text>Microwave yourself some food</text>
+					<response>After preparing yourself a snack, you caught up on some of your favorite Let's Play videos on LouTube. Those guys can always make you laugh!</response>
+					<effect>eatWatch</effect>
+				</choice1>
+				<choice2>
+					<text>Walk around the block</text>
+					<response>You decided to walk around the block for a few minutes. You really burned your buns!</response>
+					<effect>workOut</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After spending some time to yourself, you notice that the clothes were done drying. You decide to put the dry clothes away, but you're not entirely sure how to organize them...</text>
+				<choice1>
+					<text>Hang the dry clothes on the coat rack</text>
+					<response>You walked back and forth between the laundry room and the closet multiple times for hangers and hanging. Who knew hanging clothes into a closet would be so tiring?</response>
+					<effect>coatRack</effect>
+				</choice1>
+				<choice2>
+					<text>Fold the dry clothes and put the clothes into the dressers</text>
+					<response>Admittedly you weren't good at folding clothes at the beginning... but you got better with every pair of female suit pants you had folded.</response>
+					<effect>clothesDresser</effect>
+				</choice2>
+			</step>
+		</quest>
 	</events>
 </doc>
-<!--
--Go get some fast food
--buy ingredients for dinner
--->

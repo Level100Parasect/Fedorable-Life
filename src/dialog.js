@@ -49,6 +49,17 @@ $(document).ready(function () {
         show: 'fadeIn',
         hide: 'fadeOut'
     });
+
+    $("#tDialog").dialog({
+        autoOpen: false,
+        modal: true,
+        width: 640,
+        height: 'auto',
+        resizable: false,
+        closeOnEscape: false,
+        show: 'fadeIn',
+        hide: 'fadeOut'
+    });
     $(".ui-dialog-titlebar").hide();
 });
 
@@ -64,6 +75,11 @@ function endGame(node) {
 
 function shopScreen(node) {
     $(dlog).dialog({ height: 480, width: 640, dialogClass: 'shopList' }).html(node);
+    dlog.dialog("open");
+};
+
+function tutorialDia(node) {
+    $(dlog).dialog({ height: 400, width: 650, dialogClass: 'startScreen' }).html(node);
     dlog.dialog("open");
 };
 

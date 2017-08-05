@@ -1,0 +1,149 @@
+<doc>
+	<random>
+		<job1>
+			<event>
+				<title>Excellent Customer Service</title>
+				<text>Taking note of a lost-looking customer, you asked if they needed help finding something. You spent some time helping them with what they needed as well as gave comic book suggestions.</text>
+				<effect>ngpUp</effect>
+			</event>
+			<event>
+				<title>Chatty Customer</title>
+				<text>Ringing a customer up for their order, the customer just kept on talking and talking and talking...</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Visit From A Friend</title>
+				<text>While slaving away at work, one of your buddies from high school stopped by to purchase some comics. The two of you talked for a little bit.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Overtime</title>
+				<text>Before leaving for the day, you noticed a mess in the storage room. You decided to spend some extra time cleaning the room up. You got paid more working overtime.</text>
+				<effect>moneyUp</effect>
+			</event>
+			<event>
+				<title>Overtime</title>
+				<text>Before leaving for the day, you noticed the new shipment of comic books came in. You decided to spend some extra time stocking up the shelves in the store. You got paid more working overtime.</text>
+				<effect>moneyUp</effect>
+			</event>
+			<event>
+				<title>Office Pizza Party</title>
+				<text>Somebody brought in pizza for an office pizza party and left it in the storage room. You took a few slices for yourself.</text>
+				<effect>hungerUp</effect>
+			</event>
+			<event>
+				<title>Coworker Birthday Party</title>
+				<text>A coworker was celebrating their birthday, so the entire store took some time off during a quiet time to celebrate.</text>				<effect>excitementUp</effect>
+			</event>
+		</job1>
+		<job2>
+			<event>
+				<title>Office Hours</title>
+				<text>A struggling student came into your office during office hours. Knowing how difficult the topic could be, you decided to help them out to the best of your ability.</text>
+				<effect>ngpUp</effect>
+			</event>
+			<event>
+				<title>Office Hours</title>
+				<text>One of your favorite students stopped by your office during office hours to just talk about fun, nerdy topics.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Office Hours</title>
+				<text>Nobody came in to your office during office hours. Taking this as a good sign, you took a quick nap.</text>
+				<effect>energyUp</effect>
+			</event>
+			<event>
+				<title>Office Hours</title>
+				<text>Nobody came in to your office during office hours. You figured that you did really well explaining the subject matter during the lecture.</text>
+				<effect>soaUp</effect>
+			</event>
+			<event>
+				<title>Exam Time</title>
+				<text>During exam time, you brought a handheld device with you to help alleviate your boredom. After all, you have TA's to prevent the students from cheating!</text>
+				<effect>excitementUp</effect>
+			</event>
+			<event>
+				<title>Difficult Question</title>
+				<text>During a lecture, one of your students asked a difficult question... however you were able to answer their question with confidence!</text>				
+				<effect>soaUp</effect>
+			</event>
+			<event>
+				<title>Culture Day</title>
+				<text>On campus, you noticed that there was some sort of culture event going on. You grabbed some free food at the event.</text>				<effect>hungerUp</effect>
+			</event>
+		</job2>
+		<eat>
+			<event>
+				<title>Free Food</title>
+				<text>After you ordered food, you were informed that your food was paid for by a secret admirer!</text>
+				<effect>noPay</effect>
+			</event>
+			<event>
+				<title>Extra Food</title>
+				<text>When your chicken tenders came out from the kitchen, you counted two extra tenders! Sweet!</text>
+				<effect>hungerUp</effect>
+			</event>
+			<event>
+				<title>Socializing</title>
+				<text>Minding your own business, somebody asked if they could join you. As it turns out, there was nowhere else to sit.</text>
+				<effect>socialUp</effect>
+			</event>
+		</eat>
+		<drink>
+			<event>
+				<title>Free Drink</title>
+				<text>After you ordered your drink, the friendly bartender decided to cover your bill this time!</text>
+				<effect>noPay</effect>
+			</event>
+			<event>
+				<title>Drink Special</title>
+				<text>After you ordered your drink, the bartender informed you of a 2-for-1 drink special! You made sure you hopped on that sweet deal!</text>
+				<effect>excitementUp</effect>
+			</event>
+			<event>
+				<title>Socializing</title>
+				<text>Minding your own business, somebody asked if they could join you. As it turns out, there was nowhere else to sit.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Chatty Bartender</title>
+				<text>While drinking by the bar, the bartender started to talk to you - asking about your day, who you are, what you do... It was a nice conversation.</text>
+				<effect>socialUp</effect>
+			</event>
+		</drink>
+		<booth>
+			<event>
+				<title>Socializing</title>
+				<text>You got into a conversation about anime with someone at looking through the booth.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Internet Celebrity</title>
+				<text>While browsing the booth, you accidentally brushed shoulders with a popular LouTube personality. You can die happy now...</text>
+				<effect>euphoriaUp</effect>
+			</event>
+			<event>
+				<title>Cosplay</title>
+				<text>You saw somebody cosplay one of your favorite fictional characters in the distance.</text>
+				<effect>excitementUp</effect>
+			</event>
+		</booth>
+		<photo>
+			<event>
+				<title>Socializing</title>
+				<text>You got into a conversation with the people you were taking a photo of.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Internet Celebrity</title>
+				<text>You took a photo of one of your favorite famous cosplayers... You can die happy now...</text>
+				<effect>euphoriaUp</effect>
+			</event>
+			<event>
+				<title>Cosplay</title>
+				<text>You took a picture of somebody cosplaying one of your favorite fictional characters.</text>
+				<effect>excitementUp</effect>
+			</event>
+		</photo>
+	</random>
+</doc>

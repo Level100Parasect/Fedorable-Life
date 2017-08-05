@@ -1,9 +1,3 @@
-//level1
-//level2
-//level3
-//level4
-//level5
-
 $(window).on('load', function () {
     //tests items involved with speaking
     function testSpeak() {

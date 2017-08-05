@@ -426,6 +426,31 @@
 			</text>
 			<effect>ngpUp</effect>
 		</event>
+		<event>
+			<text>Making your way around the bar, you noticed money sticking out of the jukebox. Somebody must have left it accidentally... so you sneakily grab the bill and walk off before anyone could notice.
+			</text>
+			<effect>moneyUp</effect>
+		</event>
+		<event>
+			<text>Standing around outside with your e-cigarette in hand, a random person asked you for a light. You explained that you don't smoke, but the stranger turned the misunderstanding into a pleasant conversation.
+			</text>
+			<effect>content</effect>
+		</event>
+		<event>
+			<text>Standing around outside with your e-cigarette, somebody walking by got a wiff of your vape and asked for a taste. Why not? He enjoyed the taste and the two of you talked for a little while.
+			</text>
+			<effect>excitementUp</effect>
+		</event>
+		<event>
+			<text>Sitting by yourself outside, your hat mysteriously vanished. You looked back and saw a girl jokingly wearing fedora. You said that it looks better on her and the two of you talked for a while.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>Minding your own business at the bar, you witnessed an incredibly attractive girl walk by and it increased your heart rate. Mamma mia!
+			</text>
+			<effect>energyUp</effect>
+		</event>
 	</good>
 	<bad>
 		<event>
@@ -852,6 +877,31 @@
 			<text>Sitting at the bar, somebody sneezed  near you. Somebody replied with a "God bless you" which triggered you. You ended up getting into an argument with them over religion to which nobody won.
 			</text>
 			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Trying to look cool walking around the bar, you forgot to pay attention to your surroundings and accidentally walked into a wall.
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>You held the door open for m'lady and tipped your fedora, but she didn't even say thank you. If you were muscular and attractive, she probably would have thanked you... THAT BROAD!
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Minding your own business at the bar, you took note of the song playing in the background. It's a standard 4/4 pop song that's been playing on your mom's radio all the time. It burns your ears!
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>Sitting at the bar people watching, you witnessed a muscular chad walk in. Feeling superior intellectually, you smirked to yourself. However, the chad was able to walk up to a girl and talk to her no problem... What does chad have that you don't?!
+			</text>
+			<effect>emasculated</effect>
+		</event>
+		<event>
+			<text>Looking through your phone at the bar, you opened up the internet browser and hentai started blasting through the speakers. It was loud, high pitched, and squishy sounding. You feel everyone is silently judging you.
+			</text>
+			<effect>deadInside</effect>
 		</event>
 	</bad>
 </doc>
