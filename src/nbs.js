@@ -16,25 +16,23 @@ function mainCharacter() {
 	} /* END OF render */
 
 	this.checkStatus = function () {
-	    MB: {
-	        //Checks for player death
-	        if (this.statEnergy <= 0) {
-	            endGame(createEndScreen("sleep", "endGameBtn"));
-	            break MB;
-	        } /* END IF */
-	        if (this.statHunger <= 0) {
-	            endGame(createEndScreen("hungry", "endGameBtn"));
-	            break MB;
-	        } /* END IF */
-	        if (this.statExcitement <= 0) {
-	            endGame(createEndScreen("bored", "endGameBtn"));
-	            break MB;
-	        } /* END IF */
-	        if (this.statAccomplishment <= 0) {
-	            endGame(createEndScreen("accomplish", "endGameBtn"));
-	            break MB;
-	        } /* END IF */
-	    } /* END MB */
+        //Checks for player death
+        if (this.statEnergy <= 0) {
+            endGame(createEndScreen("sleep", "endGameBtn"));
+            return;
+        } /* END IF */
+        if (this.statHunger <= 0) {
+            endGame(createEndScreen("hungry", "endGameBtn"));
+            return;
+        } /* END IF */
+        if (this.statExcitement <= 0) {
+            endGame(createEndScreen("bored", "endGameBtn"));
+            return;
+        } /* END IF */
+        if (this.statAccomplishment <= 0) {
+            endGame(createEndScreen("accomplish", "endGameBtn"));
+            return;
+        } /* END IF */
 
         //Caps player's stats to 100
         if (this.statEnergy > 100) this.statEnergy = 100;
@@ -67,7 +65,6 @@ function mainCharacter() {
 
 	    //golden ending
 	    if ((this.endFG) && (this.endEFame) && (this.endEmployed) && (this.endIron) && (this.endWaifu) && (this.endNorm) && (!this.endGolden)) {
-	        //endGame(createEndScreen("golden", "egGolden"));
             var dialogNode = new dialog(endGame, createEndScreen("golden", "emd"));
             dialogArray.push(dialogNode);
             var dialogNode = new dialog(genericDia, nodeEGGolden);
@@ -81,7 +78,6 @@ function mainCharacter() {
 	    if (item === 1) {
 	        this.secretEndingItem1 = true;
             if(!hasEnding) {
-                //dialogRefresh(genericDia, unlockItem1);
                 var dialogNode = new dialog(genericDia, unlockItem1);
                 dialogArray.push(dialogNode);
             }
@@ -89,7 +85,6 @@ function mainCharacter() {
         if (item === 2) {
             this.secretEndingItem2 = true;
             if(!hasEnding) {
-                //dialogRefresh(genericDia, unlockItem2);
                 var dialogNode = new dialog(genericDia, unlockItem2);
                 dialogArray.push(dialogNode);
             }
@@ -98,7 +93,6 @@ function mainCharacter() {
             this.secretEndingItem3 = true;
             grant.travel("bedroom");
             if(!hasEnding) {
-                //dialogRefresh(genericDia, unlockItem3);
                 var dialogNode = new dialog(genericDia, unlockItem3);
                 dialogArray.push(dialogNode);
             }
@@ -106,7 +100,6 @@ function mainCharacter() {
 
         //employed ending
         if ((this.secretEndingItem1) && (this.secretEndingItem2) && (this.secretEndingItem3) && (!hasEnding)) {
-            //endGame(createEndScreen("employed", "egEmployed"));
             var dialogNode = new dialog(endGame, createEndScreen("employed", "emd"));
             dialogArray.push(dialogNode);
             var dialogNode = new dialog(genericDia, nodeEGEmploy);
@@ -120,7 +113,6 @@ function mainCharacter() {
 
       //Fedora God ending
       if ((this.statEuphoria >= 9000) && (!this.endFG)) {
-        //endGame(createEndScreen("fedoraGod", "egFG"));
         var dialogNode = new dialog(endGame, createEndScreen("fedoraGod", "emd"));
         dialogArray.push(dialogNode);
         var dialogNode = new dialog(genericDia, nodeEGFG);
@@ -134,12 +126,10 @@ function mainCharacter() {
 
       //waifu ending
       if ((this.niceGuyPoints >= 25) && (!this.endWaifu)) {
-        //endGame(createEndScreen("waifu", "egWaifu"));
         var dialogNode = new dialog(endGame, createEndScreen("waifu", "emd"));
         dialogArray.push(dialogNode);
         var dialogNode = new dialog(genericDia, nodeEGWaifu);
         dialogArray.push(dialogNode);
-        this.changeEnding("fg");
         this.changeEnding("waifu");
       } /* END IF */
     } /* END OF changeNGP */
@@ -153,7 +143,6 @@ function mainCharacter() {
 
       //Iron Pill ending
       if ((this.weight <= 140) && (!this.endIron)) {
-        //endGame(createEndScreen("iron", "egIron"));
         var dialogNode = new dialog(endGame, createEndScreen("iron", "emd"));
         dialogArray.push(dialogNode);
         var dialogNode = new dialog(genericDia, nodeEGIron);
@@ -166,7 +155,6 @@ function mainCharacter() {
     this.changeSocial = function (sp, ts) {
         this.socialSkills += sp;
         if (ts) this.timesSocialized++;
-
         if (this.statSocial === 'Normal') return;
 
         if (between(this.timesSocialized, 0, 25)) {
@@ -179,7 +167,6 @@ function mainCharacter() {
             this.statSocial = 'Exists';
         } else if ((this.timesSocialized >= 150) && (!this.endNorm)){
             this.statSocial = 'Normal';
-            //endGame(createEndScreen("normal", "egNorm"));
             var dialogNode = new dialog(endGame, createEndScreen("normal", "emd"));
             dialogArray.push(dialogNode);
             var dialogNode = new dialog(genericDia, nodeEGNorm);
@@ -209,8 +196,8 @@ function mainCharacter() {
                 break;
         } /* END SWITCH */
         conventionMap[event.effect].effect();
-        var node = nodeEv1 + event.title + nodeEv2 + event.text + "<br><br>" + conventionMap[event.effect].text + nodeEv3;
-        //genericDia(node);
+        var text = event.text + "<br><br>" + conventionMap[event.effect].text;
+        var node = generic.replace("{TITLE}", event.title).replace("{TEXT}", text).replace("{IMG}", "event").replace("{BTN}", "emd");
         var dialogNode = new dialog(genericDia, node);
         dialogArray.push(dialogNode);
         this.render();
@@ -219,9 +206,10 @@ function mainCharacter() {
     this.speak = function () {
         var roll = randomizer(100),
             success = 0,
-            speakNode = "",
             speakEvent = (Math.floor(Math.random() * speakObjectGood.length)),
-            ss, ts, ngp, dr;
+            arr = [],
+            title = "Social Interaction Gone ",
+            img, ss, ts, ngp, dr;
 
         if (this.drinksRound === 0) dr = 1; else dr = this.drinksRound;
         if (this.niceGuyPoints === 0) ngp = 1; else ngp = this.niceGuyPoints;
@@ -230,32 +218,31 @@ function mainCharacter() {
 
         success = (ss / ts) * ngp * dr;
         if (success >= roll) {
-            var effect = speakObjectGood[speakEvent].effect,
-                event = eventMap[effect];
-            event.effect();
-            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Okay</p><div><p id='gdText'>" + speakObjectGood[speakEvent].text + "<br><br>" + event.text + "</p><div class='gdi speakg'></div></div><button class='continueGameBtn' id='emd'></button></div>";
+            arr = speakObjectGood;
+            title += "Okay";
+            img = "speakg";
             this.changeSocial(2, true);
         } else {
-            var effect = speakObjectBad[speakEvent].effect,
-                event = eventMap[effect];
-            event.effect();
-            speakNode = "<div id='genericDialog'><p id='GDTitle'>Social Interaction Gone Terrible</p><div><p id='gdText'>" + speakObjectBad[speakEvent].text + "<br><br>" + event.text + "</p><div class='gdi speakb'></div></div><button class='continueGameBtn' id='emd'></button></div>";
+            arr = speakObjectBad;
+            title += "Terrible";
+            img = "speakb";
             this.changeSocial(1, true);
         } /* END IF */
         this.statEnergy -= 3;
         this.statHunger -= 3;
-        //genericDia(speakNode);
-        //loutag
+        var effect = arr[speakEvent].effect,
+            event = eventMap[effect],
+            text = arr[speakEvent].text + "<br><br>" + event.text,
+            speakNode = generic.replace("{TITLE}", title).replace("{TEXT}", text).replace("{IMG}", img).replace("{BTN}", "emd");
+        event.effect();
         var dialogNode = new dialog(genericDia, speakNode);
         dialogArray.push(dialogNode);
         this.render();
     } /* END OF speak */
 
     this.booth = function () {
-        var nodeBooth = "<div id='genericDialog'><p id='GDTitle'>Booth Purchase</p><div><p id='gdText'>",
-            random = (Math.floor(Math.random() * boothEvents.length)),
+        var random = (Math.floor(Math.random() * boothEvents.length)),
             text = boothEvents[random].text + "<br><br>",
-            nodeEnd = "</p><div class='gdi booth'></div></div><button class='continueGameBtn' id='emd'></button></div>",
             itemCost = 0,
             pts = 0;
 
@@ -290,14 +277,14 @@ function mainCharacter() {
         if (cost(itemCost)) {
             play("cr1");
             this.changeEuphoria(pts);
-            nodeBooth = nodeBooth + text + " Spent $" + itemCost + " and got " + pts + " Euphoria!" + nodeEnd;
+            this.randomEvent("booth");
+            text += " Spent $" + itemCost + " and got " + pts + " Euphoria!";
+            nodeBooth = generic.replace("{TITLE}", "Booth Purchase").replace("{TEXT}", text).replace("{IMG}", "booth").replace("{BTN}", "emd");
             var dialogNode = new dialog(genericDia, nodeBooth);
             dialogArray.push(dialogNode);
-            //genericDia(nodeBooth);
-            this.randomEvent("booth");
             this.render();
         } else play("pp1");
-    }   /* END OF booth */
+    }    /* END OF booth */
 
     this.sleep = function () {
         play("sn1");
@@ -313,20 +300,22 @@ function mainCharacter() {
                 genericDia(nodeConvOver);
             } /* END IF */
         } /* END IF */
-        if (randomizer(6) === 6) {
-            var quest = questObject[currentQuestNum],
-                firstStep = quest.steps[0],
-                text = 'You woke up with an unread text from your mother...<br><br>' + quest.text + '<br><br>' + firstStep.stepText;
-            $("#questEvent").html("");
-            $("#quest1").show();
-            $("#questBottom").hide();
+        if (this.atHome) { 
+            if (randomizer(6) === 6) {
+                var quest = questObject[currentQuestNum],
+                    firstStep = quest.steps[0],
+                    text = 'You woke up with an unread text from your mother...<br><br>' + quest.text + '<br><br>' + firstStep.stepText;
+                $("#questEvent").html("");
+                $("#quest1").show();
+                $("#questBottom").hide();
 
-            $("#questEvent").append(text);
-            $("#c1").text(firstStep.choice1Text);
-            $("#c2").text(firstStep.choice2Text);
-            $("#quest").dialog("open");
+                $("#questEvent").append(text);
+                $("#c1").text(firstStep.choice1Text);
+                $("#c2").text(firstStep.choice2Text);
+                $("#quest").dialog("open");
+            } /* END IF */
         } /* END IF */
-    } /* END OF sleep */
+    }   /* END OF sleep */
 
     this.drink = function (money) {
         this.randomEvent("drink");
@@ -336,14 +325,13 @@ function mainCharacter() {
             this.drinksRound++;
         }; /* END IF */
 
-        if (this.drinksRound === 5) {
-            this.changeStatus('Drunk');
-        } /* END IF */
+        if (this.drinksRound === 5) this.changeStatus('Drunk');
 
         if (this.drinksRound === 10) {
             this.travel("bedroom");
             this.changeStatus('Hungover');
             this.statAccomplishment -= 15;
+            this.drinksRound = 0;
             var dialogNode = new dialog(genericDia, nodeKickedBar);
             dialogArray.push(dialogNode);
         } /* END IF */
@@ -369,27 +357,22 @@ function mainCharacter() {
                 this.wage = 35;
                 var dialogNode = new dialog(genericDia, nodePro5);
                 dialogArray.push(dialogNode);
-                //genericDia(nodePro5);
             } else if ((this.timesWorked >= 45) && (this.wage === 21)) {
                 this.wage = 27;
                 var dialogNode = new dialog(genericDia, nodePro4);
                 dialogArray.push(dialogNode);
-                //genericDia(nodePro4);
             } else if ((this.timesWorked >= 30) && (this.wage === 15)) {
                 this.wage = 21;
                 var dialogNode = new dialog(genericDia, nodePro3);
                 dialogArray.push(dialogNode);
-                //genericDia(nodePro3);
             } else if ((this.timesWorked >= 20) && (this.wage === 11)) {
                 this.wage = 15;
                 var dialogNode = new dialog(genericDia, nodePro2);
                 dialogArray.push(dialogNode);
-                //genericDia(nodePro2);
             } else if ((this.timesWorked >= 10) && (this.wage === 7)) {
                 this.wage = 11;
                 var dialogNode = new dialog(genericDia, nodePro1);
                 dialogArray.push(dialogNode);
-                //genericDia(nodePro1);
             } /* END IF */
         } /* END IF */
         this.paid(this.wage);
@@ -424,27 +407,22 @@ function mainCharacter() {
             this.hWage = 25;
             var dialogNode = new dialog(genericDia, nodePho5);
             dialogArray.push(dialogNode);
-            //genericDia(nodePho5);
         } else if ((this.picsTaken >= 45) && (this.hWage === 10)) {
             this.hWage = 15;
             var dialogNode = new dialog(genericDia, nodePho4);
             dialogArray.push(dialogNode);
-            //genericDia(nodePho4);
         } else if ((this.picsTaken >= 30) && (this.hWage === 7)) {
             this.hWage = 10;
             var dialogNode = new dialog(genericDia, nodePho3);
             dialogArray.push(dialogNode);
-            //genericDia(nodePho3);
         } else if ((this.picsTaken >= 20) && (this.hWage === 5)) {
             this.hWage = 7;
             var dialogNode = new dialog(genericDia, nodePho2);
             dialogArray.push(dialogNode);
-            //genericDia(nodePho2);
         } else if ((this.picsTaken >= 10) && (this.hWage === 0)) {
             this.hWage = 5;
             var dialogNode = new dialog(genericDia, nodePho1);
             dialogArray.push(dialogNode);
-            //genericDia(nodePho1);
         } /* END IF */
         this.randomEvent("photo");
         this.render();
@@ -487,7 +465,6 @@ function mainCharacter() {
                 grant.statHunger -= 2;
                 grant.timesGamed++;
                 break;
-                this.render();
         } /* END IF */
     } /* END OF game */
 
@@ -521,6 +498,7 @@ function mainCharacter() {
             case "bar":
                 bg = "images/bg/BackgroundBar.png";
                 footer = ftrAtBar;
+                this.drinksRound = 0;
                 this.barHopped++;
                 this.atBar = true;
                 this.atHome = false;
@@ -763,59 +741,42 @@ function mainCharacter() {
     } /* END OF changeStatus */
 
     this.randomEvent = function (place) {
-        var chance = this.niceGuyPoints * 3;
+        var chance = this.niceGuyPoints * 5;
         if (chance > 90) chance = 90;
         var roll = 100 - chance;
-        //loutag
-        //if (randomizer(roll) === 1) {
-        if (1 === 1) {
-            var rand;
-            var title;
-            var text;
-            var effect;
+        if (randomizer(roll) === 1) {
+        //if (1 === 1) {
+            var arr;
             switch (place) {
                 case "job1":
-                    rand = randomizer(job1.length - 1);
-                    title = job1[rand].title;
-                    text = job1[rand].text;
-                    effect = job1[rand].effect;
+                    arr = job1;
                     break;
                 case "job2":
-                    rand = randomizer(job2.length - 1);
-                    title = job2[rand].title;
-                    text = job2[rand].text;
-                    effect = job2[rand].effect;
+                    arr = job2;
                     break;
                 case "eat":
-                    rand = randomizer(eat.length - 1);
-                    title = eat[rand].title;
-                    text = eat[rand].text;
-                    effect = eat[rand].effect;
+                    arr = eat;
                     break;
                 case "drink":
-                    rand = randomizer(drink.length - 1);
-                    title = drink[rand].title;
-                    text = drink[rand].text;
-                    effect = drink[rand].effect;
+                    arr = drink;
                     break;
                 case "booth":
-                    rand = randomizer(booth.length - 1);
-                    title = booth[rand].title;
-                    text = booth[rand].text;
-                    effect = booth[rand].effect;
+                    arr = booth;
                     break;
                 case "photo":
-                    rand = randomizer(photo.length - 1);
-                    title = photo[rand].title;
-                    text = photo[rand].text;
-                    effect = photo[rand].effect;
+                    arr = photo;
                     break;
             } /* END SWITCH */
+            var rand = arr[randomizer(arr.length - 1)];
+            var title = rand.title;
+            var text = rand.text;
+            var effect = rand.effect;
+            eventMap[effect].effect();
             var nodeEvent = randomEvnt.replace("{TITLE}", title).replace("{TEXT}", text).replace("{EFFECT}", eventMap[effect].text);
             var dialogNode = new dialog(genericDia, nodeEvent);
             dialogArray.push(dialogNode);
         } /* END IF */
-    } /* END OF randomEvent */
+    }   /* END OF randomEvent */
 
     this.openOptions = function () {
         var optionsNode = '<div id="travelDia"><table class="optionsTable"><tr><td id="optionsTableHeader">Options</td></tr>';
@@ -841,6 +802,7 @@ function mainCharacter() {
         if (this.endWaifu) optionsNode += '<option value="sprite13">Waifu Ending</option>';
         if (this.endNorm) optionsNode += '<option value="sprite14">Normal Ending</option>';
         if (this.endGolden) optionsNode += '<option value="sprite15">Golden Ending</option>';
+        optionsNode += '<option value="sprite16">Anniversary</option>';
         optionsNode += '</select></td></tr>';
         //secret item 1 unlock
         if (this.secretEndingItem1) optionsNode += grant.hintMode ? '<tr><td>Toggle No-Hint Mode</td><td><button id="toggleHint" class="hintOn"></button></td></tr>' : '<tr><td>Toggle No-Hint Mode</td><td><button id="toggleHint" class="hintOff"></button></td></tr>';
@@ -870,9 +832,7 @@ function statusEffect(){
     statusMap[status].effect();
     statusMap[status].changeHtml();
     
-    if(sTimer === 1) {
-        grant.resetStatus();
-    } /* END IF */
+    if(sTimer === 1) grant.resetStatus();
     sTimer--;
 } /* END OF statusEffect */
 
@@ -955,7 +915,7 @@ function objectLoader(){
     itemArray[13] = new item("item14", 500, function () { if (!grant.secretEndingItem2) { grant.changeSecretItem(2); }});
     itemArray[14] = new item("item15", 1000, function () { if (!grant.secretEndingItem3) { grant.changeSecretItem(3); }});
     itemArray[15] = new item("item16", 5, function () { grant.changeSocial(1,false); });
-    itemArray[16] = new item("item17", 15, function () { grant.changeWeight(0.1); grant.statEnergy += 5; grant.statAccomplishment += 5; });
+    itemArray[16] = new item("item17", 15, function () { grant.changeWeight(0.4); grant.statEnergy += 5; grant.statAccomplishment += 5; });
     itemArray[17] = new item("item18", 20, function () { grant.resetStatus(); });
 
     var len = itemArray.length;
@@ -1044,7 +1004,7 @@ function objectLoader(){
     eventArray[26] = new event('ngpUp', "+1 Nice Guy Point", function () { grant.changeNGP(1); });
     eventArray[27] = new event('energyDown', "-10 Energy", function () { grant.statEnergy -= 10; });
 	eventArray[28] = new event("socialUp", "+1 Social Skill", function () { grant.changeSocial(1,true); });
-    eventArray[29] = new event("workOut", "Lost 0.5lb<br>-10 Energy", function () { grant.statEnergy -= 10; grant.changeWeight(0.5); });
+    eventArray[29] = new event("workOut", "Lost 1.0lb<br>-10 Energy", function () { grant.statEnergy -= 10; grant.changeWeight(1.0); });
     eventArray[30] = new event("euphoriaUp", "+25 Euphoria", function () { grant.changeEuphoria(25); });
 	eventArray[31] = new event("transport", "+10 Excitement<br>Spent $10", function () { grant.statExcitement += 10; cost(10); });
     eventArray[32] = new event("buyMags", "+3 Excitement<br>+25 Euphoria<br>Spent $10", function () { grant.statExcitement += 3; grant.changeEuphoria(25); cost(10); });
@@ -1087,14 +1047,14 @@ function objectLoader(){
     eventArray[69] = new event("payLow", "Spent $22", function () { cost(22); });
     eventArray[70] = new event("dogLie", "+10 Excitement<br>+1 Social Skill", function () { grant.statExcitement += 10; grant.changeSocial(1,true); });
     eventArray[71] = new event("tellTruth", "+2 Social Skill<br>+1 Nice Guy Point", function () { grant.changeSocial(2,true); grant.changeNGP(1); });
-    eventArray[72] = new event("playFetch", "+5 Excitement<br>Lost 0.2lb", function () { grant.statExcitement += 5; grant.changeWeight(0.2); });
+    eventArray[72] = new event("playFetch", "+5 Excitement<br>Lost 0.4lb", function () { grant.statExcitement += 5; grant.changeWeight(0.4); });
     eventArray[73] = new event("feedDog", "+5 Excitement<br>-10 Accomplishment", function () { grant.statExcitement += 5; grant.statAccomplishment -= 10; });
     eventArray[74] = new event("dontFeed", "+5 Hunger<br>+5 Accomplishment", function () { grant.statHunger += 5; grant.statAccomplishment += 5; });
     eventArray[75] = new event("researchStuff", "+5 Accomplishment<br>+1 Social Skill", function () { grant.statAccomplishment += 5; grant.changeSocial(1,false); });
     eventArray[76] = new event("ironClothes", "+5 Accomplishment<br>+1 Nice Guy Point<br>-10 Energy", function () { grant.statAccomplishment += 5; grant.changeNGP(1); grant.statEnergy -= 10});
     eventArray[77] = new event("leavePile", "+15 Energy", function () { grant.statEnergy += 15; });
     eventArray[78] = new event("eatWatch", "+4 Hunger<br>+7 Excitement", function () { grant.statHunger += 4; grant.statExcitement += 7; });
-    eventArray[79] = new event("coatRack", "+3 Accomplishment<br>Lost 0.2lb<br>-5 Energy", function () { grant.changeWeight(0.2); grant.statAccomplishment += 3; grant.statEnergy -= 5; });
+    eventArray[79] = new event("coatRack", "+3 Accomplishment<br>Lost 0.3lb<br>-5 Energy", function () { grant.changeWeight(0.3); grant.statAccomplishment += 3; grant.statEnergy -= 5; });
     eventArray[80] = new event("clothesDresser", "+15 Accomplishment", function () { grant.statAccomplishment += 15; });
 	
 	var len = eventArray.length;
@@ -1332,11 +1292,11 @@ function objectLoader(){
     conventionArray[159] = new convention('lps5', '+25 Accomplishment<br>+250 Euphoria', function () { grant.statAccomplishment += 25; grant.changeEuphoria(250); });
 
     //parapara dance lessons
-    conventionArray[160] = new convention('pdl1', '+5 Energy<br>+5 Euphoria<br>Lost 0.2lb', function () { grant.statEnergy += 5; grant.changeEuphoria(5); grant.changeWeight(0.2); });
-    conventionArray[161] = new convention('pdl2', '+10 Energy<br>+10 Euphoria<br>+1 Social Skill<br>Lost 0.3lb', function () { grant.statEnergy += 10; grant.changeSocial(1,true); grant.changeEuphoria(10); grant.changeWeight(0.3); });
-    conventionArray[162] = new convention('pdl3', '+10 Energy<br>+25 Euphoria<br>+2 Social Skill<br>Lost 0.5lb', function () { grant.statEnergy += 10; grant.changeSocial(2,true); grant.changeEuphoria(25); grant.changeWeight(0.5); });
-    conventionArray[163] = new convention('pdl4', '+15 Energy<br>+25 Euphoria<br>+2 Social Skill<br>Lost 0.7lb', function () { grant.statEnergy += 15; grant.changeSocial(2,true); grant.changeEuphoria(25); grant.changeWeight(0.7); });
-    conventionArray[164] = new convention('pdl5', '+15 Energy<br>+25 Euphoria<br>+3 Social Skill<br>Lost 1.0lb', function () { grant.statEnergy += 15; grant.changeSocial(3,true); grant.changeEuphoria(25); grant.changeWeight(1.0); });
+    conventionArray[160] = new convention('pdl1', '+5 Energy<br>+5 Euphoria<br>Lost 0.4lb', function () { grant.statEnergy += 5; grant.changeEuphoria(5); grant.changeWeight(0.4); });
+    conventionArray[161] = new convention('pdl2', '+10 Energy<br>+10 Euphoria<br>+1 Social Skill<br>Lost 0.6lb', function () { grant.statEnergy += 10; grant.changeSocial(1,true); grant.changeEuphoria(10); grant.changeWeight(0.6); });
+    conventionArray[162] = new convention('pdl3', '+10 Energy<br>+25 Euphoria<br>+2 Social Skill<br>Lost 1.0lb', function () { grant.statEnergy += 10; grant.changeSocial(2,true); grant.changeEuphoria(25); grant.changeWeight(1.0); });
+    conventionArray[163] = new convention('pdl4', '+15 Energy<br>+25 Euphoria<br>+2 Social Skill<br>Lost 1.5lb', function () { grant.statEnergy += 15; grant.changeSocial(2,true); grant.changeEuphoria(25); grant.changeWeight(1.5); });
+    conventionArray[164] = new convention('pdl5', '+15 Energy<br>+25 Euphoria<br>+3 Social Skill<br>Lost 2.0lb', function () { grant.statEnergy += 15; grant.changeSocial(3,true); grant.changeEuphoria(25); grant.changeWeight(2.0); });
 
     //improv show
     conventionArray[165] = new convention('is1', '+10 Excitement', function () { grant.statExcitement += 10; });
@@ -1382,10 +1342,10 @@ function objectLoader(){
 
     //anime lazer tag
     conventionArray[195] = new convention('alz1', '+10 Excitement', function () { grant.statExcitement += 10; });
-    conventionArray[196] = new convention('alz2', '+20 Excitement<br>+1 Social Skill<br>Lost 0.1lb', function () { grant.statExcitement += 20; grant.changeSocial(1,true); grant.changeWeight(0.1); });
-    conventionArray[197] = new convention('alz3', '+30 Excitement<br>+1 Social Skill<br>Lost 0.3lb', function () { grant.statExcitement += 30; grant.changeSocial(1,true); grant.changeWeight(0.3); });
-    conventionArray[198] = new convention('alz4', '+40 Excitement<br>+2 Social Skill<br>Lost 0.5lb', function () { grant.statExcitement += 40; grant.changeSocial(2,true); grant.changeWeight(0.5); });
-    conventionArray[199] = new convention('alz5', '+50 Excitement<br>+3 Social Skill<br><br>Lost 0.5lb', function () { grant.statExcitement += 50; grant.changeSocial(3,true); grant.changeWeight(0.5); });
+    conventionArray[196] = new convention('alz2', '+20 Excitement<br>+1 Social Skill<br>Lost 0.5lb', function () { grant.statExcitement += 20; grant.changeSocial(1,true); grant.changeWeight(0.5); });
+    conventionArray[197] = new convention('alz3', '+30 Excitement<br>+1 Social Skill<br>Lost 1.0lb', function () { grant.statExcitement += 30; grant.changeSocial(1,true); grant.changeWeight(1.0); });
+    conventionArray[198] = new convention('alz4', '+40 Excitement<br>+2 Social Skill<br>Lost 1.5lb', function () { grant.statExcitement += 40; grant.changeSocial(2,true); grant.changeWeight(1.5); });
+    conventionArray[199] = new convention('alz5', '+50 Excitement<br>+3 Social Skill<br><br>Lost 1.5lb', function () { grant.statExcitement += 50; grant.changeSocial(3,true); grant.changeWeight(1.5); });
 
     //virtual reality
     conventionArray[200] = new convention('vr1', '+5 Excitement<br>+10 Euphoria', function () { grant.statExcitement += 5; grant.changeEuphoria(10); });
@@ -1490,6 +1450,27 @@ function changeDialog () {
     play("pp1");
 }
 
+function reverseDialog () {
+    var arrLen = dialogArray.length - 1;
+    if (dialogIterate !== 0) {
+        dialogIterate--;
+        dialogArray[dialogIterate].display();
+    } else {
+        dialogIterate = arrLen;
+        dialogArray[arrLen].display();
+    }
+    play("pp1");
+}
+
+function openTutorial(){
+    $md.dialog("close");
+    for(var i = 1; i < 15; i++){
+        var tutorialDialog = tutorial.replace("{PICTURE}", i).replace("{PAGE}", i);
+        var dialogNode = new dialog(tutorialDia, tutorialDialog);
+        dialogArray.push(dialogNode);
+    }
+}
+
 function decay(){
     var inMenu = $(".ui-dialog").is(":visible");
     if(!inMenu){
@@ -1523,14 +1504,22 @@ $(window).on('load', function () {
     $md.on("click", function (e) {
         switch (e.target.id) {
             case "emd":
-                //play("pp1");
                 changeDialog();
-                //$md.dialog("close");
+                break;
+            case "rmd":
+                reverseDialog();
+                break;
+            case "hmd":
+                $md.dialog("close");
+                dialogIterate = 0;
+                dialogArray = [];
+                play("pp1");
                 break;
             case "mmNewGame":
                 play("pp1");
                 grant.newGame();
-                dialogRefresh(tutorialDia, tutorial1);
+                openTutorial();
+                setTimeout(function () { grant.render() }, 400);
                 break;
             case "credits":
                 play("pp1");
@@ -1546,6 +1535,9 @@ $(window).on('load', function () {
                 break;
             case "endGameBtn":
                 play("pp1");
+                $("#gymDialog").dialog("close");
+                $("#quest").dialog("close");
+                $("#argument").dialog("close");
                 startScreen();
                 break;
             case "gym":
@@ -1565,7 +1557,7 @@ $(window).on('load', function () {
                     grant.travel("bar");
                     grant.render();
                     $md.dialog("close");
-                } /* END IF */
+                } else play("pp1");
                 break;
             case "convention":
                 var money = grant.endWaifu ? 0 : 60;
@@ -1574,7 +1566,7 @@ $(window).on('load', function () {
                     grant.travel("convention");
                     grant.render();
                     $md.dialog("close");
-                } /* END IF */
+                } else play("pp1");
                 break;
             case "goHome":
                 play("pp1");
@@ -1718,117 +1710,6 @@ $(window).on('load', function () {
                 play("pp1");
                 dialogRefresh(gameEvent, vapor);
                 break;
-            case "tbb1":
-                play("pp1");
-                break;
-            case "tcb1":
-                play("pp1");
-                $md.html(tutorial2);
-                break;
-            case "tbb2":
-                play("pp1");
-                $md.html(tutorial1);
-                break;
-            case "tcb2":
-                play("pp1");
-                $md.html(tutorial3);
-                break;
-            case "tbb3":
-                play("pp1");
-                $md.html(tutorial2);
-                break;
-            case "tcb3":
-                play("pp1");
-                $md.html(tutorial4);
-                break;
-            case "tbb4":
-                play("pp1");
-                $md.html(tutorial3);
-                break;
-            case "tcb4":
-                play("pp1");
-                $md.html(tutorial5);
-                break;
-            case "tbb5":
-                play("pp1");
-                $md.html(tutorial4);
-                break;
-            case "tcb5":
-                play("pp1");
-                $md.html(tutorial6);
-                break;
-            case "tbb6":
-                play("pp1");
-                $md.html(tutorial5);
-                break;
-            case "tcb6":
-                play("pp1");
-                $md.html(tutorial7);
-                break;
-            case "tbb7":
-                play("pp1");
-                $md.html(tutorial6);
-                break;
-            case "tcb7":
-                play("pp1");
-                $md.html(tutorial8);
-                break;
-            case "tbb8":
-                play("pp1");
-                $md.html(tutorial7);
-                break;
-            case "tcb8":
-                play("pp1");
-                $md.html(tutorial9);
-                break;
-            case "tbb9":
-                play("pp1");
-                $md.html(tutorial8);
-                break;
-            case "tcb9":
-                play("pp1");
-                $md.html(tutorial10);
-                break;
-            case "tbb10":
-                play("pp1");
-                $md.html(tutorial9);
-                break;
-            case "tcb10":
-                play("pp1");
-                $md.html(tutorial11);
-                break;
-            case "tbb11":
-                play("pp1");
-                $md.html(tutorial10);
-                break;
-            case "tcb11":
-                play("pp1");
-                $md.html(tutorial12);
-                break;
-            case "tbb12":
-                play("pp1");
-                $md.html(tutorial11);
-                break;
-            case "tcb12":
-                play("pp1");
-                $md.html(tutorial13);
-                break;
-            case "tbb13":
-                play("pp1");
-                $md.html(tutorial12);
-                break;
-            case "tcb13":
-                play("pp1");
-                $md.html(tutorial14);
-                break;
-            case "tbb14":
-                play("pp1");
-                $md.html(tutorial13);
-                break;
-            case "tcb14":
-                play("pp1");
-                //$md.html(tutorial14);
-                break;
         } /* END SWITCH */
     }); /* END ON CLICK MAIN DIALOG */
 
@@ -1841,11 +1722,10 @@ $(window).on('load', function () {
                 break;
             case "shop":
                 play("pp1");
-                var shop = '<div class="shopList" id="shopList"><button id="emd" class="exitShop"></button><div class="isle"><div id="logoMzon"></div></div><div class="isle">Nutritional Sustenance<hr><div><button id="item1" title="Nippon-ese sticks dipped in chocolate. ITADAKIMATSU!"></button><p>Price: $2</p></div><div><button id="item2" title="Try out the triangular corn chip diet"></button><p>Price: $5</p></div><div><button id="item3" title="Try not to eat it too soon out of the microwave"></button><p>Price: $8</p></div></div><div class="isle">Things that Keep You Awake<hr><div><button id="item4" title="Constant consumption can ruin your bones, but not today!"></button><p>Price: $2</p></div><div><button id="item5" title="A popular energy drink in the early 2000s that teenagers would drink to play video games more"></button><p>Price: $6</p></div><div><button id="item6" title="Japanese soda with a ball in the middle. Had to import these bad boys!"></button><p>Price: $15</p></div></div><div class="isle">Useless Things That Boost Your Ego<hr><div><button id="item7" title="Stylish and functional. Now you can eat Morito chips without getting cheese on your gloves"></button><p>Price: $5</p></div><div><button id="item8" title="People just do not understand your love for Ponies in High School."></button><p>Price: $15</p></div><div><button id="item9" title="The book of atheism; a weapon against the teachings of The Bible!"></button><p>Price: $40</p></div></div><div class="isle">Collectible Items<hr><div><button id="item10" title="In HTML, we developers call this little window a tool *tip*"></button><p>Price: $10</p></div><div><button id="item11" title="An 8 inch plastic figurine from your favorite game/anime/show/movie"></button><p>Price: $20</p></div><div><button id="item12" title="THE STRONGEST SWORD; STEEL FOLDED 1000 TIMES. GO HOME FILTHY GAIJIN"></button><p>Price: $45</p></div></div><div class="isle">Misc. Things to Buy<hr><div><button id="item16" title="Makes more bearable to socialize with! Adds 1 social point"></button><p>Price: $5</p></div><div><button id="item17" title="Gotta keep your figure! Makes you feel more energetic and helps you lose weight"></button><p>Price: $15</p></div><div><button id="item18" title="Cures all your problems. Except for a broken heart (Nah, it fixes that too)"></button><p>Price: $20</p></div></div><div class="isle">Useful Expensive Life Investments<hr>';
-                shop += grant.secretEndingItem1 ? '<div><button id="item13" disabled></button><p>Sold Out</p></div>' : '<div><button id="item13" title="Make yourself more marketable to future employers"></button><p>Price: $250</p></div>';
-                shop += grant.secretEndingItem2 ? '<div><button id="item14" disabled></button><p>Sold Out</p></div>' : '<div><button id="item14" title="The only thing that stands between you and teaching. Other then lack of presentability, experience, etc..."></button><p>Price: $500</p></div>';
-                shop += grant.secretEndingItem3 ? '<div><button id="item15" disabled></button><p>Sold Out</p></div>' : '<div><button id="item15" title="Move out of the attic. Grow up. Become man."></button><p>Price: $1000</p></div>';
-                shop += '</div></div>';
+                var item1Node = grant.secretEndingItem1 ? '<button id="item13" disabled></button><p>Sold Out</p>' : '<button id="item13" title="Make yourself more marketable to future employers"></button><p>Price: $250</p>';
+                var item2Node = grant.secretEndingItem2 ? '<button id="item14" disabled></button><p>Sold Out</p>' : '<button id="item14" title="The only thing that stands between you and teaching. Other then lack of presentability, experience, etc..."></button><p>Price: $500</p>';
+                var item3Node = grant.secretEndingItem3 ? '<button id="item15" disabled></button><p>Sold Out</p>' : '<button id="item15" title="Move out of the attic. Grow up. Become man."></button><p>Price: $1000</p>';
+                var shop = shopNode.replace("{ITEM1NODE}", item1Node).replace("{ITEM2NODE}", item2Node).replace("{ITEM3NODE}", item3Node);
                 shopScreen(shop);
                 break;
             case "work":
@@ -1883,9 +1763,9 @@ $(window).on('load', function () {
                 grant.booth();
                 break;
             case "event":
-                if (grant.statEnergy > 25) {
+                if (grant.statEnergy > 15) {
                     play("sp1");
-                    grant.statEnergy -= 25;
+                    grant.statEnergy -= 15;
                     grant.event();
                 } else {
                     play("pp1");
@@ -1896,7 +1776,7 @@ $(window).on('load', function () {
                 grant.takePics(1);
                 break;
             case "food":
-                if (cost(10)) { play("ef1"); grant.statHunger += 7; grant.randomEvent("eat"); grant.render(); }
+                if (cost(10)) { play("ef1"); grant.statEnergy -= 2; grant.statHunger += 7; grant.statAccomplishment -= 3; grant.randomEvent("eat"); grant.render(); }
                 break;
             case "drink":
                 play("dk1");
@@ -2113,9 +1993,7 @@ $(window).on('load', function () {
             argHtml = "";
 
         if (totalFives != 0) {
-            for (i = 0; i < totalFives; i++) {
-                argHtml += t5;
-            } /* END FOR */
+            for (i = 0; i < totalFives; i++) argHtml += t5;
         } /* END IF */
         if (remainder == 1) argHtml += t1;
         else if (remainder == 2) argHtml += t2;
@@ -2127,7 +2005,6 @@ $(window).on('load', function () {
             tab4 = '<div id="tab-4" class="fixedSizedTab"><img src="/images/rack/hr' + hats + '.png"/></div>',
             tab5 = '<div id="tab-5" class="fixedSizedTab"><img src="/images/cache/wc' + weps + '.png"/></div></div></div>',
             statsHtml = statsHtmlTop + tab1 + tab2 + tab3 + tab4 + tab5;
-
         statsDia(statsHtml);
     } /* END IF */
 });

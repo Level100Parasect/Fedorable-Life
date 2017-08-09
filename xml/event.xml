@@ -1375,6 +1375,10 @@
 			</event>
 		</level5>
 	</events>
+	<!--
+	Free Comic Book Day!
+	Dating Advice
+	-->
 	<booth>
 		<event>
 			<text>You found a booth that made custom pins. You found a few that you wanted to buy...</text>

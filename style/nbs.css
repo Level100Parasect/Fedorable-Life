@@ -356,6 +356,11 @@ img {
     background: url('/images/sprites.png') -1496px 0px no-repeat;
 }
 
+#sprite16-bar, #sprite16-bedroom, #sprite16-convention {
+    width: 178px;
+    background: url('/images/sprites.png') -3918px -428px no-repeat;
+}
+
 #hud {
 	font-family: visitor;
 	font-size: 2.25em;
