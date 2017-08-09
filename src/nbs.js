@@ -525,7 +525,7 @@ function mainCharacter() {
 	    this.statAccomplishment = 100;
 	    this.statEuphoria = 0;
 	    this.statStatus = 'Normal';
-	    this.statMoney = 20000;
+	    this.statMoney = 20;
 	    this.statSocial = 'Creepy';
         //mainCharacter decay stat variables
 	    this.decayEnergy = 2;
@@ -573,7 +573,7 @@ function mainCharacter() {
 	    this.drinksRound = 0;
         this.sprite = "sprite";
         this.weight = 250.0;
-        this.niceGuyPoints = 24;
+        this.niceGuyPoints = 0;
         //options
         this.muteMusic = false;
         this.muteSounds = false;
