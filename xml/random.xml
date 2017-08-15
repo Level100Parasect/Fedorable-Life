@@ -74,11 +74,6 @@
 		</job2>
 		<eat>
 			<event>
-				<title>Free Food</title>
-				<text>After you ordered food, you were informed that your food was paid for by a secret admirer!</text>
-				<effect>noPay</effect>
-			</event>
-			<event>
 				<title>Extra Food</title>
 				<text>When your chicken tenders came out from the kitchen, you counted two extra tenders! Sweet!</text>
 				<effect>hungerUp</effect>
@@ -90,11 +85,6 @@
 			</event>
 		</eat>
 		<drink>
-			<event>
-				<title>Free Drink</title>
-				<text>After you ordered your drink, the friendly bartender decided to cover your bill this time!</text>
-				<effect>noPay</effect>
-			</event>
 			<event>
 				<title>Drink Special</title>
 				<text>After you ordered your drink, the bartender informed you of a 2-for-1 drink special! You made sure you hopped on that sweet deal!</text>
