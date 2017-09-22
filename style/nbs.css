@@ -547,7 +547,7 @@ img {
    margin: 0px 0.2em 0px 0.2em;
 }
 
-#pn, #blockScreen p {
+#pn {
    font-family: visitor;
    font-size: 2em; 
    color: white;
@@ -555,11 +555,6 @@ img {
    top: 32px;
    right: 16px;
    width: auto;
-}
-
-#blockScreen p{
-   text-align: center;
-   display: block;
 }
 
 #rndmEvnt p{
@@ -682,7 +677,7 @@ img {
 .gameEvent { background-color: #262626; }
 .travelDia { background-color: #FFFFFF; }
 
-#startScreen div, #blockScreen div {
+#startScreen div {
     position: absolute; 
     bottom: 0px; 
     display: block;
@@ -721,20 +716,6 @@ img {
     position: absolute;
 }
 
-#blockScreen img {
-    height: 60%;
-    width: auto;
-    top: 45%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-    display: block;
-    position: absolute;
-}
-
 #genericDialog div {
     background-color: #ecf0f1; padding: 8px; display: inline-block;
 }
@@ -743,21 +724,20 @@ img {
     font-family: visitor; font-size: 24px; color: black; float: left; width: 75%; text-align: justify;
 }
 
-#genericDialog button {
-    float: right; margin: 8px 0 8px 0;
+#genericDialog button, .optBack {
+    left: 50% !important;
+    position: relative;
+    margin: 8px 0 8px 0;
+    -webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
 }
 
-.travelDia{
-    background-color: white;
-}
-
-.jukeboxDia{
-    background-color: black;
-}
-
-.jukeboxDia p {
-    color: white;
-}
+.travelDia{ background-color: white; }
+.jukeboxDia{ background-color: black; }
+.jukeboxDia p { color: white; }
 
 #GDTitle{
      font-family: visitor;
@@ -1838,8 +1818,8 @@ ul li a {
     height: 128px;
     width: 128px;
 }
-.nee { background: url('/images/btns-spr.png') -516px -516px no-repeat; }
-.gm { background: url('/images/btns-spr.png') -644px -516px no-repeat; }
+.re { background: url('/images/btns-spr.png') -516px -516px no-repeat; }
+.prom { background: url('/images/btns-spr.png') -644px -516px no-repeat; }
 .conov { background: url('/images/btns-spr.png') -772px -516px no-repeat; }
 .phot { background: url('/images/btns-spr.png') -900px -516px no-repeat; }
 .booth { background: url('/images/btns-spr.png') -516px -644px no-repeat; }
@@ -1848,24 +1828,4 @@ ul li a {
 .ko { background: url('/images/btns-spr.png') -900px -644px no-repeat; }
 .speakb { background: url('/images/btns-spr.png') -516px -772px no-repeat; }
 .speakg { background: url('/images/btns-spr.png') -644px -772px no-repeat; }
-.pl { background: url('/images/btns-spr.png') -772px -772px no-repeat; }
-.lm { background: url('/images/btns-spr.png') -900px -772px no-repeat; }
-.prom { background: url('/images/btns-spr.png') -900px -900px no-repeat; }
-.re { background: url('/images/btns-spr.png') -772px -900px no-repeat; }
-
-.tt-top { position: relative;  display: inline; }
-.tt-top span { position: absolute;  width: 140px;  color: #FFFFFF;  background: #000000;  height: 30px;  line-height: 30px;  text-align: center;  visibility: hidden;  border-radius: 0px; }
-.tt-top span:after { content: ''; position: absolute; top: 100%; left: 50%; margin-left: -8px; width: 0; height: 0; border-top: 8px solid #000000; border-right: 8px solid transparent; border-left: 8px solid transparent; }
-a:hover.tt-top span { visibility: visible; opacity: 0.8; bottom: 30px; left: 50%; margin-left: -76px; z-index: 999; }
-.tt-bottom { position: relative; display: inline; } 
-.tt-bottom span { position: absolute; width: 140px; color: #FFFFFF; background: #000000; height: 30px; line-height: 30px; text-align: center; visibility: hidden; border-radius: 0px; }
-.tt-bottom span:after { content: ''; position: absolute; bottom: 100%; left: 50%; margin-left: -8px; width: 0; height: 0; border-bottom: 8px solid #000000; border-right: 8px solid transparent; border-left: 8px solid transparent; }
-a:hover.tt-bottom span { visibility: visible; opacity: 0.8; top: 30px; left: 50%; margin-left: -76px; z-index: 999; } 
-.tt-left { position: relative; display: inline; }
-.tt-left span { position: absolute; width: 140px; color: #FFFFFF; background: #000000; height: 30px; line-height: 30px; text-align: center; visibility: hidden; border-radius: 0px; }
-.tt-left span:after { content: ''; position: absolute; top: 50%; left: 100%; margin-top: -8px; width: 0; height: 0; border-left: 8px solid #000000; border-top: 8px solid transparent; border-bottom: 8px solid transparent; }
-a:hover.tt-left span { visibility: visible; opacity: 0.8; right: 100%; top: 50%; margin-top: -15px; margin-right: 15px; z-index: 999; }
-.tt-right { position: relative;  display: inline; }
-.tt-right span { position: absolute; width: 140px; color: #FFFFFF; background: #000000; height: 30px; line-height: 30px; text-align: center; visibility: hidden; border-radius: 0px; }
-.tt-right span:after { content: ''; position: absolute; top: 50%; right: 100%; margin-top: -8px; width: 0; height: 0;  border-right: 8px solid #000000;  border-top: 8px solid transparent;  border-bottom: 8px solid transparent; }
-a:hover.tt-right span { visibility: visible; opacity: 0.8; left: 100%; top: 50%; margin-top: -15px; margin-left: 15px; z-index: 999; }
+.lm { background: url('/images/btns-spr.png') -772px -772px no-repeat; }

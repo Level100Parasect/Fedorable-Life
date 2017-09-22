@@ -451,6 +451,31 @@
 			</text>
 			<effect>energyUp</effect>
 		</event>
+		<event>
+			<text>You noticed there was nobody sitting on the leather couch in the lounge. Checking to see if there was anybody already sitting there, you hopped on!
+			</text>
+			<effect>energyUp</effect>
+		</event>
+		<event>
+			<text>Sitting at the bar, the bartender told you about a new food ordering app. She also mentioned that if you use her code with your first purchase, you get the first order for free!
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>Swiping through the dating app Cinder, you matched with someone! The two of you exchanged a few messages back and forth.
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>Sitting by yourself at the bar, the girl sitting next to you said she couldn't eat another bite and asked if you wanted the rest of her cake. Hell yeah! Free sweet things are the best things!
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>Talking to the bartender, they brought up that they received a shipment of seasonal beer. The bartender then offered you a small sample which turned out to be very sweet!
+			</text>
+			<effect>energyUp</effect>
+		</event>
 	</good>
 	<bad>
 		<event>
@@ -569,12 +594,12 @@
 			<effect>emasculated</effect>
 		</event>
 		<event>
-			<text>Your sinuses started to act up so you ran to the bathroom to throw up. However, you somehow missed the toilet and got it inside the toilet paper dispenser. Not knowing what to do, you ran away from the whole ordeal and tried to play it cool.
+			<text>Your sinuses started to act up so you ran to the bathroom to throw up. However, you somehow missed the toilet and puked inside the toilet paper dispenser. Not knowing what to do, you ran away and tried to play it cool.
 			</text>
 			<effect>paranoid</effect>
 		</event>
 		<event>
-			<text>You were minding your own business at the bar until a lovely lady sat down next to you. She asked how you were doing, but you were too shy to say words so you just grunted like a caveman. Weirded out, she took her drink and left.
+			<text>Minding your own business at the bar, a lovely lady sat down next to you. She asked how you were doing, but you were too shy to say words so you grunted like a caveman. Weirded out, she took her drink and left.
 			</text>
 			<effect>heartbroken</effect>
 		</event>
@@ -899,9 +924,34 @@
 			<effect>emasculated</effect>
 		</event>
 		<event>
-			<text>Looking through your phone at the bar, you opened up the internet browser and hentai started blasting through the speakers. It was loud, high pitched, and squishy sounding. You feel everyone is silently judging you.
+			<text>Looking through your phone at the bar, you opened up the internet browser and hentai started blasting through the speakers. It was loud, high pitched, and squishy sounding. You felt everyone silently judging you.
 			</text>
 			<effect>deadInside</effect>
+		</event>
+		<event>
+			<text>You noticed from across the bar a woman with bigger than average mammary glands - you couldn't stop yourself from looking! But your eyes collided! She now thinks you're a creep :|
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Wanting to look busy, you unlocked your phone to a picture of a half naked anime girl. As erotic as that is to you, you instantly covered your phone with your other hand in shame.
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Swiping through the dating app Cinder, you got a matched! You worked on the world's greatest opening line and hit send - but you were greeted with a generic response. She turned out to be a bot.
+			</text>
+			<effect>excitementDown</effect>
+		</event>
+		<event>
+			<text>Feeling hungry, you wanted to get the attention of the bartender for food. Even though you called out to her, she walked passed you without acknowledgement.
+			</text>
+			<effect>hungerDown</effect>
+		</event>
+		<event>
+			<text>After coming back from the bathroom, you noticed that your chair was not where you placed it... now you're stuck standing.
+			</text>
+			<effect>energyDown</effect>
 		</event>
 	</bad>
 </doc>

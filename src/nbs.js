@@ -67,42 +67,43 @@ function mainCharacter() {
 	    if ((this.endFG) && (this.endEFame) && (this.endEmployed) && (this.endIron) && (this.endWaifu) && (this.endNorm) && (!this.endGolden)) {
             var dialogNode = new dialog(endGame, createEndScreen("golden", "emd"));
             dialogArray.push(dialogNode);
-            var dialogNode = new dialog(genericDia, nodeEGGolden);
+            //var dialogNode = new dialog(genericDia, nodeEGGolden);
+            var dialogNode = new dialog(genericDia, createGenericDialog('Golden Ending Unlocked', "You have unlocked the golden ending of Fedorable Life. Unfortunately there is no added gameplay perk for obtaining this ending, but isn't growing up a reward enough?<br><br>You have unlocked the Golden Ending skin. Who knew grown up you was so fuzzy looking?", 'gcomp', 'emd'));
             dialogArray.push(dialogNode);
 	        this.endGolden = true;
 	    } /* END IF */
-	}
+	} /* END OF changeEnding */
 
 	this.changeSecretItem = function (item) {
         var hasEnding = this.endEmployed;
 	    if (item === 1) {
 	        this.secretEndingItem1 = true;
             if(!hasEnding) {
-                var dialogNode = new dialog(genericDia, unlockItem1);
+                var dialogNode = new dialog(genericDia, createGenericDialog('No-Hint Mode Unlocked', 'You have unlocked no-hint mode with the purchase of GRE prep materials. You can toggle between modes in the options to get rid of hints all together. While in no-hint mode, you will acquire 10 more accomplishment points when you win an internet argument.', 'gcomp', 'emd'));
                 dialogArray.push(dialogNode);
-            }
+            } /* END IF */
 	    } /* END IF */
         if (item === 2) {
             this.secretEndingItem2 = true;
             if(!hasEnding) {
-                var dialogNode = new dialog(genericDia, unlockItem2);
+                var dialogNode = new dialog(genericDia, createGenericDialog('More Music Unlocked', "You have unlocked new selectable music with the recent acquisition of a teaching certification. The new music will appear at the bar's jukebox. Hope you enjoy the new tunes!", 'gcomp', 'emd'));
                 dialogArray.push(dialogNode);
-            }
+            } /* END IF */
         } /* END IF */
         if (item === 3) {
             this.secretEndingItem3 = true;
-            grant.travel("bedroom");
+            grant.travel("bedroom", false);
             if(!hasEnding) {
-                var dialogNode = new dialog(genericDia, unlockItem3);
+                var dialogNode = new dialog(genericDia, createGenericDialog('Apartment Background Unlocked', 'You have unlocked a new apartment background with the signing of a lease. If you miss your old room up in the attic, you can always toggle backgrounds in the options menu.', 'gcomp', 'emd'));
                 dialogArray.push(dialogNode);
-            }
+            } /* END IF */
         } /* END IF */
 
         //employed ending
         if ((this.secretEndingItem1) && (this.secretEndingItem2) && (this.secretEndingItem3) && (!hasEnding)) {
             var dialogNode = new dialog(endGame, createEndScreen("employed", "emd"));
             dialogArray.push(dialogNode);
-            var dialogNode = new dialog(genericDia, nodeEGEmploy);
+            var dialogNode = new dialog(genericDia, createGenericDialog('Adult-ing Ending Unlocked', "You have unlocked the adult-ing ending of Fedorable Life. As an added bonus for achieving your adult life, there's less stat penalty whenever you work, and you make $50 each time you work. Welcome to the real world!<br><br>You have unlocked the Adult-ing Ending skin. Enjoy your lab coat!", 'gcomp', 'emd'));
             dialogArray.push(dialogNode);
             this.changeEnding("employed");
         } /* END IF */
@@ -115,7 +116,8 @@ function mainCharacter() {
       if ((this.statEuphoria >= 9000) && (!this.endFG)) {
         var dialogNode = new dialog(endGame, createEndScreen("fedoraGod", "emd"));
         dialogArray.push(dialogNode);
-        var dialogNode = new dialog(genericDia, nodeEGFG);
+        //var dialogNode = new dialog(genericDia, nodeEGFG);
+        var dialogNode = new dialog(genericDia, createGenericDialog('Fedora God Ending Unlocked', 'You have unlocked the fedora god ending of Fedorable Life. Now that you are the smiter of plebs, every time you game or win an internet argument, you enter a temporary state of Euphoria.', 'gcomp', 'emd'));
         dialogArray.push(dialogNode);
         this.changeEnding("fg");
       } /* END IF */
@@ -128,7 +130,8 @@ function mainCharacter() {
       if ((this.niceGuyPoints >= 25) && (!this.endWaifu)) {
         var dialogNode = new dialog(endGame, createEndScreen("waifu", "emd"));
         dialogArray.push(dialogNode);
-        var dialogNode = new dialog(genericDia, nodeEGWaifu);
+        //var dialogNode = new dialog(genericDia, nodeEGWaifu);
+        var dialogNode = new dialog(genericDia, createGenericDialog('Waifu Unlocked', "You have unlocked the waifu ending of Fedorable Life. As an added perk, you don't need to pay money to go to conventions anymore!", 'gcomp', 'emd'));
         dialogArray.push(dialogNode);
         this.changeEnding("waifu");
       } /* END IF */
@@ -145,7 +148,8 @@ function mainCharacter() {
       if ((this.weight <= 140) && (!this.endIron)) {
         var dialogNode = new dialog(endGame, createEndScreen("iron", "emd"));
         dialogArray.push(dialogNode);
-        var dialogNode = new dialog(genericDia, nodeEGIron);
+        //var dialogNode = new dialog(genericDia, nodeEGIron);
+        var dialogNode = new dialog(genericDia, createGenericDialog('Iron Pill Ending Unlocked', "You have unlocked the iron pill ending of Fedorable Life. As an added perk, your stats decay at a much slower rate. You may have the personality of a wheel, but at least you're physically healthy!<br><br>You have unlocked the Iron Pill Ending skin. Do you bring those weights with you everywhere you go?", 'gcomp', 'emd'));
         dialogArray.push(dialogNode);
         grant.decTime = 6000;
         this.changeEnding("iron");
@@ -169,7 +173,8 @@ function mainCharacter() {
             this.statSocial = 'Normal';
             var dialogNode = new dialog(endGame, createEndScreen("normal", "emd"));
             dialogArray.push(dialogNode);
-            var dialogNode = new dialog(genericDia, nodeEGNorm);
+            //var dialogNode = new dialog(genericDia, nodeEGNorm);
+            var dialogNode = new dialog(genericDia, createGenericDialog('Normal Unlocked', 'You have unlocked the normal ending of Fedorable Life. Aside from having an active social life now, now you can get into the bar without having to pay a cover charge as well as never having a failed social interaction!', 'gcomp', 'emd'));
             dialogArray.push(dialogNode);
             this.changeEnding("norm");
         } /* END IF */
@@ -178,6 +183,8 @@ function mainCharacter() {
     this.event = function () {
         var random = (Math.floor(Math.random() * level1.length)),
             event;
+        play("sp1");
+        grant.statEnergy -= 15;
         switch (this.statSocial) {
             case "Creepy":
                 event = level1[random];
@@ -292,15 +299,16 @@ function mainCharacter() {
         this.statHunger -= 15;
         this.statExcitement -= 15;
         this.statAccomplishment -= 15;
-        this.render();
         if (this.atConv) {
             this.convDay++;
             if (this.convDay === 3) {
-                this.travel("bedroom");
-                genericDia(nodeConvOver);
+                var dialogNode = new dialog(genericDia, createGenericDialog('Convention End', 'The convention has concluded so you have to go back to the real world. Sad times were had, but part of being an adult is moving on :(<br><br>You have gone home', 'conov', 'emd'));
+                dialogArray.push(dialogNode);
+                this.travel("bedroom", true);
             } /* END IF */
         } /* END IF */
-        if (this.atHome) { 
+        this.render();
+        if (this.atHome) {
             if (randomizer(6) === 6) {
                 var quest = questObject[currentQuestNum],
                     firstStep = quest.steps[0],
@@ -320,6 +328,7 @@ function mainCharacter() {
     this.drink = function (money) {
         this.randomEvent("drink");
         if (cost(money)) {
+            this.statEnergy -= 3;
             this.statAccomplishment += 5;
             this.statExcitement += 7;
             this.drinksRound++;
@@ -328,11 +337,12 @@ function mainCharacter() {
         if (this.drinksRound === 5) this.changeStatus('Drunk');
 
         if (this.drinksRound === 10) {
-            this.travel("bedroom");
+            this.travel("bedroom", false);
             this.changeStatus('Hungover');
             this.statAccomplishment -= 15;
             this.drinksRound = 0;
-            var dialogNode = new dialog(genericDia, nodeKickedBar);
+            var text = 'You blacked out at the bar so your mom had to pick you up. She said that you were shouting Japanese while swinging your katana around at the other bar patrons. Why did you even bring that thing with you?<br><br>You lost 15 sense of accomplishment';
+            var dialogNode = new dialog(genericDia, createGenericDialog('Kicked Out', text,'ko','emd'));
             dialogArray.push(dialogNode);
         } /* END IF */
         this.render();
@@ -353,32 +363,44 @@ function mainCharacter() {
             this.statHunger -= 5;
             this.statExcitement -= 7;
             this.statAccomplishment -= 10;
+            var promotion = false;
+            var title = "Promotion ",
+                text;
             if ((this.timesWorked >= 60) && (this.wage === 27)) {
                 this.wage = 35;
-                var dialogNode = new dialog(genericDia, nodePro5);
-                dialogArray.push(dialogNode);
+                promotion = true;
+                title += 5;
+                text = "Your boss died. You are the regional manager now.<br><br>You pay yourself $35 every time you work";
             } else if ((this.timesWorked >= 45) && (this.wage === 21)) {
                 this.wage = 27;
-                var dialogNode = new dialog(genericDia, nodePro4);
-                dialogArray.push(dialogNode);
+                promotion = true;
+                title += 4;
+                text = "Your boss noticed that you pretty much run the store when he's not around. He decided to promote you to an assistant manager.<br><br>Now you get paid $27 every time you work";
             } else if ((this.timesWorked >= 30) && (this.wage === 15)) {
                 this.wage = 21;
-                var dialogNode = new dialog(genericDia, nodePro3);
-                dialogArray.push(dialogNode);
+                promotion = true;
+                title += 3;
+                text = "Your boss noticed that you have actually been going above and beyond your usual work duties. He decided to promote you to a store supervisor.<br><br>Now you get paid $21 every time you work";
             } else if ((this.timesWorked >= 20) && (this.wage === 11)) {
                 this.wage = 15;
-                var dialogNode = new dialog(genericDia, nodePro2);
-                dialogArray.push(dialogNode);
+                promotion = true;
+                title += 2;
+                text = "Your boss noticed that you have actually been doing good things at work. He decided to promote you to a comics advisor.<br><br>Now you get paid $15 every time you work";
             } else if ((this.timesWorked >= 10) && (this.wage === 7)) {
                 this.wage = 11;
-                var dialogNode = new dialog(genericDia, nodePro1);
+                promotion = true;
+                title += 1;
+                text = "Your boss noticed that you have been coming in to the comic book shop more regularly than before. He decided to promote you to a cashier.<br><br>Now you get paid $11 every time you work";
+            } /* END IF */
+            if (promotion) {
+                var dialogNode = new dialog(genericDia, createGenericDialog(title, text, 'prom', 'emd'));
                 dialogArray.push(dialogNode);
             } /* END IF */
+            this.randomEvent("job1");
         } /* END IF */
         this.paid(this.wage);
-        this.randomEvent("job1");
         this.render();
-    }    /* END OF work */
+    } /* END OF work */
 
     this.takePics = function (pics) {
         play("pc1");
@@ -386,9 +408,9 @@ function mainCharacter() {
         this.statHunger -= 3;
         this.statExcitement += 5;
         this.statAccomplishment += 7;
-
         this.picsTaken += pics;
         this.paid(this.hWage);
+        this.randomEvent("photo");
         this.render();
 
         if (this.endEFame) return;
@@ -397,36 +419,48 @@ function mainCharacter() {
             endGame(createEndScreen("efame", "egEFame"));
             var dialogNode = new dialog(endGame, createEndScreen("efame", "emd"));
             dialogArray.push(dialogNode);
-            var dialogNode = new dialog(genericDia, nodeEGEfame);
+            //var dialogNode = new dialog(genericDia, nodeEGEfame);
+            var dialogNode = new dialog(genericDia, createGenericDialog('E-Famous Ending Unlocked', "You have unlocked the E-fame ending of Fedorable Life. As an added perk, you make $30 every time you take a photograph at a convention. That MyFace and LouTube ad-revenue is serious business...<br><br>You have unlocked the E-Fame Ending skin. I hope you're ready to take pictures!", 'gcomp', 'emd'));
             dialogArray.push(dialogNode);
             this.changeEnding("efame");
             this.hWage = 30;
         } /* END IF */
 
+        var promotion = false;
+        var title = "Photography ",
+            text;
         if ((this.picsTaken >= 60) && (this.hWage === 15)) {
             this.hWage = 25;
-            var dialogNode = new dialog(genericDia, nodePho5);
-            dialogArray.push(dialogNode);
+            promotion = true;
+            title += 5;
+            text = "You are now a niche internet celebrity with a reasonably high amount of followers on social media outlets. With such followers comes great money.<br><br>Now you get paid $25 for every photo you take";
         } else if ((this.picsTaken >= 45) && (this.hWage === 10)) {
             this.hWage = 15;
-            var dialogNode = new dialog(genericDia, nodePho4);
-            dialogArray.push(dialogNode);
+            promotion = true;
+            title += 4;
+            text = "You upgraded your photography production; bought a new camera, started a LouTube channel, started creating podcasts.<br><br>Now you get paid $15 for every photo you take";
         } else if ((this.picsTaken >= 30) && (this.hWage === 7)) {
             this.hWage = 10;
-            var dialogNode = new dialog(genericDia, nodePho3);
-            dialogArray.push(dialogNode);
+            promotion = true;
+            title += 3;
+            text = "Your MyFace page is gaining momentum; you are gaining some internet fame and people start to recognize you at these conventions.<br><br>Now you get paid $10 for every photo you take";
         } else if ((this.picsTaken >= 20) && (this.hWage === 5)) {
             this.hWage = 7;
-            var dialogNode = new dialog(genericDia, nodePho2);
-            dialogArray.push(dialogNode);
+            promotion = true;
+            title += 2;
+            text = "You created a separate MyFace page for your photography. You have a few hundred likes on your page<br><br>Now you get paid $7 for every photo you take";
         } else if ((this.picsTaken >= 10) && (this.hWage === 0)) {
             this.hWage = 5;
-            var dialogNode = new dialog(genericDia, nodePho1);
+            promotion = true;
+            title += 1;
+            text = "You uploaded the photos you've taken onto MyFace and got a handful of likes! People started to contact you, offering to pay you a small amount of money to take pictures of their cosplays<br><br>Now you get paid $5 for every photograph you take";
+        } /* END IF */
+        if (promotion) {
+            var dialogNode = new dialog(genericDia, createGenericDialog(title, text, 'phot', 'emd'));
             dialogArray.push(dialogNode);
         } /* END IF */
-        this.randomEvent("photo");
         this.render();
-    }   /* END OF takePics */
+    } /* END OF takePics */
 
     this.paid = function(money) {
         this.statMoney += money;
@@ -441,24 +475,15 @@ function mainCharacter() {
                 gameEvent(vapor);
                 break;
             case "bar":
+                this.randomEvent("game1");
                 this.statEnergy -= 4;
                 this.statHunger -= 2;
-                if (randomizer(20) === 20) {
-                    genericDia(nodePoolEvnt);
-                    this.statAccomplishment += 10;
-                    this.statExcitement += 10;
-                    this.paid(50);
-                } else {
-                    this.statAccomplishment += 5;
-                    this.statExcitement += 5;
-                } /* END IF */
+                this.statExcitement += 5;
+                this.statAccomplishment += 3;
                 break;
             case "conv":
                 play("gm1");
-                if (randomizer(40) === 40) {
-                    genericDia(nodeGameConv);
-                    this.paid(150);
-                } /* END IF */
+                this.randomEvent("game2");
                 grant.statExcitement += 10;
                 grant.statAccomplishment += 2;
                 grant.statEnergy -= 5;
@@ -484,9 +509,8 @@ function mainCharacter() {
     } /* END OF changeBG */
 
     //Resets all variables for travel
-    this.travel = function (loc) {
-        var footer = '',
-            bg = '';
+    this.travel = function (loc, re) {
+        var footer, bg;
         switch (loc) {
             case "bedroom":
                 bg = this.changeBG();
@@ -515,7 +539,11 @@ function mainCharacter() {
         $("#location").attr("src", bg);
         $("#sprite .sprite").attr("id", this.sprite + "-" + loc);
         $("#footer").html(footer);
-    } /* END OF travel */
+        if (re) {
+            grant.randomEvent("travel");
+            return true;
+        } else return false;
+    }  /* END OF travel */
 
     this.newGame = function(){
         //mainCharacter primary stat variables
@@ -581,7 +609,7 @@ function mainCharacter() {
         this.brMode = true;
         this.background = "bedroom";
         //resets screen to bedroom
-        this.travel(this.background);
+        this.travel(this.background, false);
         this.render();
     } /* END OF newGame */
 
@@ -650,7 +678,7 @@ function mainCharacter() {
         //Retrieves the save file
         var retrievedObject = $.cookie("testSF");
         if ((retrievedObject === undefined) || (retrievedObject === null)) {
-            alert("No saved data detected.");
+            $("#alertDialog").dialog("open");
         } else {
             var json = JSON.parse(retrievedObject);
             this.statEnergy = json.energy;
@@ -715,7 +743,7 @@ function mainCharacter() {
             } /* END IF */
 
             //resets screen to background
-            this.travel(this.background);
+            this.travel(this.background, false);
             //if player loads with non-normal status
             statusMap[this.statStatus].changeHtml();
             this.render();
@@ -744,8 +772,8 @@ function mainCharacter() {
         var chance = this.niceGuyPoints * 5;
         if (chance > 90) chance = 90;
         var roll = 100 - chance;
-        if (randomizer(roll) === 1) {
-        //if (1 === 1) {
+        //if (randomizer(roll) === 1) {
+        if (1 === 1) {
             var arr;
             switch (place) {
                 case "job1":
@@ -766,8 +794,17 @@ function mainCharacter() {
                 case "photo":
                     arr = photo;
                     break;
+                case "travel":
+                    arr = travel;
+                    break;
+                case "game1":
+                    arr = game1;
+                    break;
+                case "game2":
+                    arr = game2;
+                    break;
             } /* END SWITCH */
-            var rand = arr[randomizer(arr.length - 1)];
+            var rand = arr[randomizer(arr.length) - 1];
             var title = rand.title;
             var text = rand.text;
             var effect = rand.effect;
@@ -776,7 +813,7 @@ function mainCharacter() {
             var dialogNode = new dialog(genericDia, nodeEvent);
             dialogArray.push(dialogNode);
         } /* END IF */
-    }   /* END OF randomEvent */
+    } /* END OF randomEvent */
 
     this.openOptions = function () {
         var optionsNode = '<div id="travelDia"><table class="optionsTable"><tr><td id="optionsTableHeader">Options</td></tr>';
@@ -808,13 +845,18 @@ function mainCharacter() {
         if (this.secretEndingItem1) optionsNode += grant.hintMode ? '<tr><td>Toggle No-Hint Mode</td><td><button id="toggleHint" class="hintOn"></button></td></tr>' : '<tr><td>Toggle No-Hint Mode</td><td><button id="toggleHint" class="hintOff"></button></td></tr>';
         //secret item 3 unlock
         if (this.secretEndingItem3) optionsNode += grant.brMode ? '<tr><td>Toggle Apartment</td><td><button id="toggleApartment" class="aptOn"></button></td></tr>' : '<tr><td>Toggle Apartment</td><td><button id="toggleApartment" class="aptOff"></button></td></tr>';
-        optionsNode += '<tr><td colspan="2"><p id="resetSaveFile">Reset Save File</p></td></tr></table><br><button class="backGameBtn" id="emd"></button></div>';
+        optionsNode += '<tr><td colspan="2"><p id="resetSaveFile">Reset Save File</p></td></tr></table><br><button class="backGameBtn optBack" id="emd"></button></div>';
         return optionsNode;
     } /* END IF */
 } /* END OF mainCharacter */
 function progress(percent, element) { 
 	var progressBarWidth = percent * element.width() / 100;
 	element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "% ");
+} /* END OF progress */
+
+function setGlobalVars() {
+    console.log("Loading");
+    window.travelNode = '<div id="travelDia"><button class="exitShop" id="emd"></button><div class="isle"><div class="logoEventster"></div></div><div class="isle"><div><button id="gym" title="Burn off your buns; do some squats"></button><p>Price: $10</p></div><div><button id="bar" title="Good luck out there in the wild"></button><p>Price: $20</p></div><div><button id="convention" title="Meet with like-minded individuals"></button><p>Price: $60</p></div></div></div>';
 } /* END OF progress */
 
 function checkStatus(){
@@ -839,6 +881,7 @@ function statusEffect(){
 function init(){
     var backgroundAudio = document.getElementById("music");
     backgroundAudio.volume = 0.6;
+    setGlobalVars();
     window.dialogArray = [];
     window.dialogIterate = 0;
     window.grant = new mainCharacter();
@@ -848,6 +891,13 @@ function init(){
     objectLoader();
 } /* END OF init */
 
+function createGenericDialog(title, text, image, btnId){
+    var generic = "<div id='genericDialog'><p id='GDTitle'>{TITLE}</p><div><p id='gdText'>{TEXT}</p><div class='gdi {IMG}'></div></div><button class='continueGameBtn' id='{BTN}'></button></div>";
+    var node = generic.replace("{TITLE}", title).replace("{TEXT}", text).replace("{IMG}", image).replace("{BTN}", btnId);
+
+    return node;
+} /* END OF createGenericDialog */
+
 function createEndScreen(image, btnId){
     return '<div id="gameEnd"><img src="images/es/'+ image +'.png"></img><button id="' + btnId +'" class="continueGameBtn"></button></div>';
 } /* END OF createEndScreen */
@@ -856,7 +906,8 @@ function cost(money) {
     var proceed = false;
     if (money > grant.statMoney) {
         grant.statAccomplishment -= 10;
-        dialogRefresh(genericDia, nodeNoMoney);
+        var dialogNode = new dialog(genericDia, createGenericDialog("Additional Money Required", "After trying to make a purchase, you realized that you did not have enough funds to complete the transaction. Reminded of your lack of money and your overall lack of presence in the American economy, you started to feel bad.<br><br>You lost 10 sense of accomplishment", 'lm', 'emd'));
+        dialogArray.push(dialogNode);
         grant.render();
     } else {
         grant.statMoney -= money;
@@ -1043,8 +1094,8 @@ function objectLoader(){
     eventArray[65] = new event("makeTaquitos", "+5 Excitement<br>+5 Accomplishment", function () { grant.statExcitement += 5; grant.statAccomplishment += 5; });
     eventArray[66] = new event("sacDew", "+10 Accomplishment<br>+1 Nice Guy Point", function () { grant.statAccomplishment += 10; grant.changeNGP(1); });
     eventArray[67] = new event("buyCannoli", "+1 Nice Guy Point<br>Spent $5", function () { grant.changeNGP(1); cost(5); });
-	eventArray[68] = new event("payHigh", "+1 Nice Guy Point<br>Spent $25", function () { grant.changeNGP(1); cost(25); });
-    eventArray[69] = new event("payLow", "Spent $22", function () { cost(22); });
+	eventArray[68] = new event("payHigh", "+1 Nice Guy Point<br>Spent $20", function () { grant.changeNGP(1); cost(20); });
+    eventArray[69] = new event("payLow", "Spent $15", function () { cost(15); });
     eventArray[70] = new event("dogLie", "+10 Excitement<br>+1 Social Skill", function () { grant.statExcitement += 10; grant.changeSocial(1,true); });
     eventArray[71] = new event("tellTruth", "+2 Social Skill<br>+1 Nice Guy Point", function () { grant.changeSocial(2,true); grant.changeNGP(1); });
     eventArray[72] = new event("playFetch", "+5 Excitement<br>Lost 0.4lb", function () { grant.statExcitement += 5; grant.changeWeight(0.4); });
@@ -1054,8 +1105,32 @@ function objectLoader(){
     eventArray[76] = new event("ironClothes", "+5 Accomplishment<br>+1 Nice Guy Point<br>-10 Energy", function () { grant.statAccomplishment += 5; grant.changeNGP(1); grant.statEnergy -= 10});
     eventArray[77] = new event("leavePile", "+15 Energy", function () { grant.statEnergy += 15; });
     eventArray[78] = new event("eatWatch", "+4 Hunger<br>+7 Excitement", function () { grant.statHunger += 4; grant.statExcitement += 7; });
-    eventArray[79] = new event("coatRack", "+3 Accomplishment<br>Lost 0.3lb<br>-5 Energy", function () { grant.changeWeight(0.3); grant.statAccomplishment += 3; grant.statEnergy -= 5; });
+    eventArray[79] = new event("coatRack", "+3 Accomplishment<br>Lost 0.5lb<br>-5 Energy", function () { grant.changeWeight(0.5); grant.statAccomplishment += 3; grant.statEnergy -= 5; });
     eventArray[80] = new event("clothesDresser", "+15 Accomplishment", function () { grant.statAccomplishment += 15; });
+    eventArray[81] = new event("plasticBag", "+15 Excitement<br>-5 Energy<br>-5 Accomplishment", function () { grant.statEnergy -= 5; grant.statExcitement += 15; grant.statAccomplishment -= 5; });
+    eventArray[82] = new event("paperBag", "+10 Accomplishment<br>-5 Excitement", function () { grant.statExcitement -= 5; grant.statAccomplishment += 10; });
+    eventArray[83] = new event("searchClean", "Lost 0.3lb<br>-3 Energy", function () { grant.changeWeight(0.5); grant.statEnergy -= 5; });
+    eventArray[84] = new event("scootAround", "+7 Excitement<br>Lost 0.3lb<br>-5 Energy", function () { grant.statExcitement += 7; grant.changeWeight(0.3); grant.statEnergy -= 5; });
+    eventArray[85] = new event("confidentBoost", "+5 Accomplishment<br>You are feeling confident (+Excitement, ++Accomplishment)", function () { grant.statAccomplishment += 5; grant.changeStatus('Confident'); });
+    eventArray[86] = new event("lieBrony", "-10 Accomplishment<br>+3 Social Skill", function () { grant.statAccomplishment -= 10; grant.changeSocial(3,true); });
+    eventArray[87] = new event("takeDrink", "+7 Energy<br>You are now tweaked (+Energy)", function () { grant.statEnergy += 7; grant.changeStatus('Tweaked'); });
+    eventArray[88] = new event("chadTalk", "+2 Social Skill<br>-5 Excitement<br>-5 Accomplishment", function () { grant.statExcitement -= 5; grant.statAccomplishment -= 5; grant.changeSocial(2,true); });
+    eventArray[89] = new event("upTenders", "+20 Hunger<br>Spent $5", function () { grant.statHunger += 20; cost(5); });
+    eventArray[90] = new event("rejectTenders", "+7 Accomplishment<br>-7 Hunger", function () { grant.statHunger -= 7; grant.statAccomplishment += 7; });
+    eventArray[91] = new event("moreLaundry", "+7 Accomplishment<br>-7 Energy", function () { grant.statEnergy -= 7; grant.statAccomplishment += 7; });
+    eventArray[92] = new event("datingApp", "+5 Excitement<br>+5 Accomplishment<br>+1 Social Skill", function () { grant.statExcitement += 5; grant.statAccomplishment += 5; grant.changeSocial(1,true); });
+    eventArray[93] = new event("openWorld", "+15 Excitement<br>+10 Accomplishment", function () { grant.statExcitement += 15; grant.statAccomplishment += 10; });
+    eventArray[94] = new event("callISP", "+5 Accomplishment<br>You feel motivated (++Energy, +Accomplishment)", function () { grant.statAccomplishment += 5; grant.changeStatus('Motivated'); });
+    eventArray[95] = new event("offerSoda", "+5 Energy<br>+1 Social Skill", function () { grant.statEnergy += 5; grant.changeSocial(1,true); });
+    eventArray[96] = new event("offerWater", "-8 Accomplishment", function () { grant.statAccomplishment -= 8; });
+    eventArray[97] = new event("tipRepairman", "+1 Nice Guy Point<br>Spent $20", function () { grant.changeNGP(1); cost(20); });
+    eventArray[98] = new event("dontTip", "-5 Excitement<br>-10 Accomplishment", function () { grant.statExcitement -= 5; grant.statAccomplishment -= 10; });
+    eventArray[99] = new event("moveLog", "+10 Accomplishment<br>Lost 1.5lb<br>-10 Energy", function () { grant.statAccomplishment += 10; grant.changeWeight(1.5); grant.statEnergy -= 10; });
+    eventArray[100] = new event("fillBucket", "+5 Excitement<br>+5 Accomplishment<br>Lost 0.5lb", function () { grant.statExcitement += 5; grant.statAccomplishment += 5; grant.changeWeight(0.5); });
+    eventArray[101] = new event("secondSpray", "+15 Excitement<br>Lost 0.5lb<br>-5 Energy", function () { grant.statEnergy -= 5; grant.statExcitement += 15; grant.changeWeight(0.5); });
+	eventArray[102] = new event("socialUpL", "+5 Social Skill", function () { grant.changeSocial(5,true); });
+	eventArray[103] = new event("winner", "+150 Money<br>+3 Social Skill", function () { grant.paid(150); grant.changeSocial(3,true); });
+	eventArray[104] = new event("semiFinal", "+50 Money<br>+2 Social Skill", function () { grant.paid(50); grant.changeSocial(2,true); });
 	
 	var len = eventArray.length;
     while (len--) {
@@ -1375,12 +1450,26 @@ function objectLoader(){
     conventionArray[218] = new convention('clr4', '+20 Excitement<br>+15 Accomplishment<br>+50 Euphoria', function () { grant.statExcitement += 20; grant.statAccomplishment += 15; grant.changeEuphoria(50); });
     conventionArray[219] = new convention('clr5', '+25 Excitement<br>+20 Accomplishment<br>+100 Euphoria', function () { grant.statExcitement += 25; grant.statAccomplishment += 20; grant.changeEuphoria(100); });
 
+    //free comic day
+    conventionArray[220] = new convention('fcd1', '+10 Euphoria', function () { grant.changeEuphoria(10); });
+    conventionArray[221] = new convention('fcd2', '+25 Euphoria<br>+1 Social Skill', function () { grant.changeEuphoria(25); grant.changeSocial(1,true); });
+    conventionArray[222] = new convention('fcd3', '+50 Euphoria<br>+2 Social Skill', function () { grant.changeEuphoria(50); grant.changeSocial(2,true); });
+    conventionArray[223] = new convention('fcd4', '+100 Euphoria<br>+3 Social Skill', function () { grant.changeEuphoria(100); grant.changeSocial(3,true); });
+    conventionArray[224] = new convention('fcd5', '+250 Euphoria<br>+3 Social Skill', function () { grant.changeEuphoria(250); grant.changeSocial(3,true); });
+
+    //dating advice
+    conventionArray[225] = new convention('dta1', '+1 Nice Guy Point', function () { grant.changeNGP(1); });
+    conventionArray[226] = new convention('dta2', '+10 Excitement<br>+1 Nice Guy Point', function () { grant.statExcitement += 10; grant.changeNGP(1); });
+    conventionArray[227] = new convention('dta3', '+15 Excitement<br>+25 Euphoria<br>+2 Nice Guy Points', function () { grant.statExcitement += 15; grant.changeEuphoria(25); grant.changeNGP(2); });
+    conventionArray[228] = new convention('dta4', '+15 Excitement<br>+25 Euphoria<br>+2 Nice Guy Points', function () { grant.statExcitement += 15; grant.changeEuphoria(25); grant.changeNGP(2); });
+    conventionArray[229] = new convention('dta5', '+15 Excitement<br>+50 Euphoria<br>+3 Nice Guy Points', function () { grant.statExcitement += 15; grant.changeEuphoria(50); grant.changeNGP(3); });
+
     //speed date
-    conventionArray[220] = new convention('sd1', '+1 Social Skill<br>+1 Nice Guy Point', function () { grant.changeSocial(1,true); grant.changeNGP(1); });
-    conventionArray[221] = new convention('sd2', '+5 Accomplishment<br>+2 Social Skill<br>+1 Nice Guy Point', function () { grant.statAccomplishment += 5; grant.changeSocial(2,true); });
-    conventionArray[222] = new convention('sd3', '+5 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+1 Nice Guy Point', function () { grant.statExcitement += 5; grant.statAccomplishment += 5; grant.changeSocial(3,true); grant.changeNGP(1); });
-    conventionArray[223] = new convention('sd4', '+10 Excitement<br>+10 Accomplishment<br>+4 Social Skill<br>+1 Nice Guy Point', function () { grant.statExcitement += 10; grant.statAccomplishment += 10; grant.changeSocial(4,true); grant.changeNGP(1); });
-    conventionArray[224] = new convention('sd5', '+15 Excitement<br>+10 Accomplishment<br>+5 Social Skill<br>+1 Nice Guy Point', function () { grant.statExcitement += 15; grant.statAccomplishment += 10; grant.changeSocial(5,true); grant.changeNGP(1); });
+    conventionArray[230] = new convention('sd1', '+1 Social Skill<br>+1 Nice Guy Point', function () { grant.changeSocial(1,true); grant.changeNGP(1); });
+    conventionArray[231] = new convention('sd2', '+5 Accomplishment<br>+2 Social Skill<br>+1 Nice Guy Point', function () { grant.statAccomplishment += 5; grant.changeSocial(2,true); });
+    conventionArray[232] = new convention('sd3', '+5 Excitement<br>+5 Accomplishment<br>+3 Social Skill<br>+1 Nice Guy Point', function () { grant.statExcitement += 5; grant.statAccomplishment += 5; grant.changeSocial(3,true); grant.changeNGP(1); });
+    conventionArray[233] = new convention('sd4', '+10 Excitement<br>+10 Accomplishment<br>+4 Social Skill<br>+1 Nice Guy Point', function () { grant.statExcitement += 10; grant.statAccomplishment += 10; grant.changeSocial(4,true); grant.changeNGP(1); });
+    conventionArray[234] = new convention('sd5', '+15 Excitement<br>+10 Accomplishment<br>+5 Social Skill<br>+1 Nice Guy Point', function () { grant.statExcitement += 15; grant.statAccomplishment += 10; grant.changeSocial(5,true); grant.changeNGP(1); });
 
     function convention(name, text, effect) {
         this.name = name;
@@ -1431,7 +1520,7 @@ function dialogRefresh (func, node) {
 function dialog(func, node){
     this.node = node;
     this.display = function () { func(node); }
-}
+} /* END OF dialog */
 
 function changeDialog () {
     var arrLen = dialogArray.length - 1;
@@ -1445,10 +1534,10 @@ function changeDialog () {
         } else {
              dialogIterate++;
              dialogArray[dialogIterate].display();
-        }
-    }
+        } /* END IF */
+    } /* END IF */
     play("pp1");
-}
+} /* END OF changeDialog */
 
 function reverseDialog () {
     var arrLen = dialogArray.length - 1;
@@ -1458,9 +1547,9 @@ function reverseDialog () {
     } else {
         dialogIterate = arrLen;
         dialogArray[arrLen].display();
-    }
+    } /* END IF */
     play("pp1");
-}
+} /* END OF reverseDialog */
 
 function openTutorial(){
     $md.dialog("close");
@@ -1468,8 +1557,8 @@ function openTutorial(){
         var tutorialDialog = tutorial.replace("{PICTURE}", i).replace("{PAGE}", i);
         var dialogNode = new dialog(tutorialDia, tutorialDialog);
         dialogArray.push(dialogNode);
-    }
-}
+    } /* END FOR */
+} /* END OF openTutorial */
 
 function decay(){
     var inMenu = $(".ui-dialog").is(":visible");
@@ -1548,29 +1637,29 @@ $(window).on('load', function () {
                     $("#gymDialog").dialog("open");
                     grant.render();
                     grant.timesExersized++;
-                } /* END IF */
+                } else play("pp1");
                 break;
             case "bar":
                 var money = grant.endNorm ? 0 : 20;
                 if (cost(money)) {
                     play("vv1");
-                    grant.travel("bar");
+                    var re = grant.travel("bar", true);
                     grant.render();
-                    $md.dialog("close");
+                    if (!re) $md.dialog("close");
                 } else play("pp1");
                 break;
             case "convention":
                 var money = grant.endWaifu ? 0 : 60;
                 if (cost(money)) {
                     play("vv1");
-                    grant.travel("convention");
+                    var re = grant.travel("convention", true);
                     grant.render();
-                    $md.dialog("close");
+                    if (!re) $md.dialog("close");
                 } else play("pp1");
                 break;
             case "goHome":
                 play("pp1");
-                grant.travel("bedroom");
+                var re = grant.travel("bedroom", false);
                 $md.dialog("close");
                 break;
             case "quit":
@@ -1733,7 +1822,7 @@ $(window).on('load', function () {
                 break;
             case "travel":
                 play("pp1");
-                travelDia(travel);
+                travelDia(travelNode);
                 break;
             case "options":
                 play("pp1");
@@ -1763,14 +1852,7 @@ $(window).on('load', function () {
                 grant.booth();
                 break;
             case "event":
-                if (grant.statEnergy > 15) {
-                    play("sp1");
-                    grant.statEnergy -= 15;
-                    grant.event();
-                } else {
-                    play("pp1");
-                    genericDia(nodeStopEvent);
-                } /* END IF */
+                grant.event();
                 break;
             case "photo":
                 grant.takePics(1);
@@ -1815,6 +1897,11 @@ $(window).on('load', function () {
         $("#hintText").text(argumentObject[currentArgNum].hint).show();
     });
 
+    $("#closeAlert").click(function () {
+        play("pp1");
+        $("#alertDialog").dialog("close");
+    });
+
     $("#ansA, #ansB").click(function () {
         play("kb1");
         var isCorrect = false,
@@ -1855,7 +1942,7 @@ $(window).on('load', function () {
             if (effect === 'quit') break MB;
             response += '<br><br>' + eventMap[effect].text;
 
-            if (currentStep === 4) {
+            if (currentStep === 5) {
                 response += '<br><br>' + quest.complete + '<br><br>MOM QUEST COMPLETE! You have gained a Nice Guy Point';
                 grant.changeNGP(1);
                 break MB;
@@ -1925,7 +2012,7 @@ $(window).on('load', function () {
         if (effect === 'quit') {
             $("#quest").dialog("close");
         } else {
-            if (currentStep === 5) {
+            if (currentStep === 6) {
                 $("#quest").dialog("close");
             } else {
                 eventMap[effect].effect();

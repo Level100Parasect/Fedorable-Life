@@ -58,7 +58,20 @@
 				</choice2>
 			</step>
 			<step>
-				<text>On your way out, you notice someone asking for money outside of the store...</text>
+				<text>You noticed that the bagger was putting the groceries in plastic bags. Normally this would be fine, but having ONE BIG PAPER BAG would be much more convenient for you.</text>
+				<choice1>
+					<text>Stay silent and deal with the plastic bags later</text>
+					<response>Not wanting to inconvenience the bagger you stayed silent. Now you have to deal with a lot of plastic bags on the way home!</response>
+					<effect>plasticBag</effect>
+				</choice1>
+				<choice2>
+					<text>Ask the bagger to re-bag the items</text>
+					<response>You stopped the bagger mid-bag and asked them for a plastic bag. While you did feel embarrassed, at least you made it easier for yourself!</response>
+					<effect>paperBag</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>WIth your groceries bagged and acquired, on your way out you noticed someone asking for money outside of the store...</text>
 				<choice1>
 					<text>Ignore the pan handler</text>
 					<response>You looked at your phone trying to seem busy as you walked past the pan handler. You feel the judging stares of everyone around you, but at least you didn't spend your money.</response>
@@ -116,7 +129,20 @@
 				</choice2>
 			</step>
 			<step>
-				<text>After finishing up with the dishes, you noticed that the garbage was overflowing. You brought the garbage outside and ran into the neighbor walking their dog.</text>
+				<text>While you were in the kitchen, you noticed that the stove and counter tops could use some cleaning, but you couldn't find the cleaning supplies.</text>
+				<choice1>
+					<text>Check under the sink</text>
+					<response>Looking under the sink, you found out that it was not there. You spent a long time searching for the cleaning supplies, only to find them in the laundry room.</response>
+					<effect>searchClean</effect>
+				</choice1>
+				<choice2>
+					<text>Check in the laundry room</text>
+					<response>Making your way to the laundry room, you found some cloth and some cleaning chemicals. It was the first place you looked! Go you!</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After finishing up in the kitchen, you noticed that the garbage was overflowing. You brought the garbage outside and ran into the neighbor walking their dog.</text>
 				<choice1>
 					<text>Play with their dog</text>
 					<response>You knelt down and pet the dog. You then look up at the owner and start talking them questions about the dog. After a few minutes of talking, they continued on with their walk.</response>
@@ -161,7 +187,20 @@
 				</choice2>
 			</step>
 			<step>
-				<text>Walking to the library with the books in hand, you bring them to the front desk. The librarian seems to be new and asks how long ago you borrowed these books.</text>
+				<text>The library is within walking distance, but you see your folded up scooter in the corner of your room. It has been a while since you used that bad boy...</text>
+				<choice1>
+					<text>Scoot scoot!</text>
+					<response>Unfolding your scooter, you rode that baby all around doing stunts and having a great time!</response>
+					<effect>scootAround</effect>
+				</choice1>
+				<choice2>
+					<text>Walk in the heat</text>
+					<response>Walking around in the heat proved to be a good training session! You felt like you really burned your buns.</response>
+					<effect>workOut</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Making it to the library with the books in hand, you bring them to the front desk. The librarian seems to be new and asks how long ago you borrowed these books.</text>
 				<choice1>
 					<text>Guess the check out date</text>
 					<response>Guessing the check out date, the librarian told you that there were late fees totalling up to $5.</response>
@@ -258,6 +297,19 @@
 				</choice2>
 			</step>
 			<step>
+				<text>Having more time to kill, you stopped by a popular clothing store specializing in gothic clothing and trendy knick knacks. Looking at Ponies in High School T-shirts, an employee starts talking to you about the show.</text>
+				<choice1>
+					<text>Tell her that you're a huge Brony</text>
+					<response>She laughed and told you that she's a fan too. The two of you talked about the show some more before she had to help someone else.</response>
+					<effect>confidentBoost</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her that you're shopping for your... neice</text>
+					<response>The employee gave you some shopping advice for Ponies in High School. Honestly, it's not bad advice, but you know everything about the show already. She then had to leave to hep another customer.</response>
+					<effect>lieBrony</effect>
+				</choice2>
+			</step>
+			<step>
 				<text>After some window shopping you decide to make your way to the food court. Being overwhelmed by all of the food choices, you narrow it down between a coffee shop and a burger place. Which one do you want to go for?</text>
 				<choice1>
 					<text>Coffee shop</text>
@@ -342,6 +394,19 @@
 				</choice2>
 			</step>
 			<step>
+				<text>After dealing with the customer, you decided to hang out in the employee's only room. Checking in the fridge, you see that there's an unopened energy drink...</text>
+				<choice1>
+					<text>Leave the energy drink as is</text>
+					<response>Thinking that it was another person's drink, you would've felt bad if you took it for yourself. So you closed the fridge and never looked back.</response>
+					<effect>ngpUp</effect>
+				</choice1>
+				<choice2>
+					<text>Take it! Why not?</text>
+					<response>You grabbed the can and downed it in one big gulp. You'd feel terrible if you weren't having caffeine twitches!</response>
+					<effect>takeDrink</effect>
+				</choice2>
+			</step>
+			<step>
 				<text>Leaving the comic book store you hear a cheap sounding music jingle nearby. You realize there's an ice cream truck driving by! Should you indulge your desire for sugar?</text>
 				<choice1>
 					<text>Signal for the ice cream truck</text>
@@ -416,13 +481,26 @@
 				<text>After getting service done to your mother's car, you decide to make a quick stop at a donut shop. Feeling like consuming one of two things, you can choose to buy a cup of donuts or a cup of coffee.</text>
 				<choice1>
 					<text>Buy some donuts</text>
-					<response>Chowing down on donut balls never felt so good! Once you completed your donut eating task, you went back home.</response>
+					<response>Chowing down on donut balls never felt so good! Once you completed your donut eating task, you stepped outside.</response>
 					<effect>buyDonuts</effect>
 				</choice1>
 				<choice2>
 					<text>Buy some coffee</text>
-					<response>Drinking some coffee never felt so good! Once you completed your coffee drinking task, you went back home.</response>
+					<response>Drinking some coffee never felt so good! Once you completed your coffee drinking task, you stepped outside.</response>
 					<effect>buyCoffee</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After you left the donut shop, you saw somebody you used to go to high school with. He was a chad on the football team, but you can see he's gained some weight.</text>
+				<choice1>
+					<text>Talk to him</text>
+					<response>Thinking you had one up on him, you talked with him for a bit. The chad was getting married! Freaking chad got one over on you again!</response>
+					<effect>chadTalk</effect>
+				</choice1>
+				<choice2>
+					<text>Ignore him</text>
+					<response>Freaking chads... at least you got one up on him! He's fat now!</response>
+					<effect>soaUp</effect>
 				</choice2>
 			</step>
 		</quest>
@@ -458,7 +536,20 @@
 				</choice2>
 			</step>
 			<step>
-				<text>Thinking about what needs to be done, you figure that guests need food and drinks. Focusing on food first, your mother baked a pie for the meeing. However, you love your mother's pies! You can swap out the pie with another snack and keep it for yourself...</text>
+				<text>After getting the place cleaned up, you noticed that there was a massive pile of unread mail on the dining table... how do you handle this pile?</text>
+				<choice1>
+					<text>Sort through the mail</text>
+					<response>While sorting through the mail, you found a video game that you preordered a while ago. You forgot about ordering this!</response>
+					<effect>euphoriaUp</effect>
+				</choice1>
+				<choice2>
+					<text>Throw it on your mom's bed</text>
+					<response>There's no time to deal with mail! You grabbed the mountain of mail, piled them up, then placed it on your mom's bed neatly.</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Thinking about what else needs to be done, you figure that guests need food and drinks. Focusing on food first, your mother baked a pie for the meeing. However, you love your mother's pies! You can swap out the pie with another snack and keep it for yourself...</text>
 				<choice1>
 					<text>Put some cookies out on a plate and keep the pie to yourself</text>
 					<response>You brought out some cookies for snacks then stealthfully snuck the fresh pie into your room for consumption! Being bad never felt so good.</response>
@@ -542,6 +633,19 @@
 				</choice2>
 			</step>
 			<step>
+				<text>The waiter came back and asked if you'd like to upgrade your order to super chicken tenders.</text>
+				<choice1>
+					<text>Upgrade those tenders to become super tenders!</text>
+					<response>Not wanting to miss an opportunity to try new tenders, you placed the order! You can't wait to have it in and or around your mouth!</response>
+					<effect>upTenders</effect>
+				</choice1>
+				<choice2>
+					<text>Reject the super tenders</text>
+					<response>Not wanting to risk money on something you may or may not like, you replied with no. But now, you may never know what makes those tenders super...</response>
+					<effect>rejectTenders</effect>
+				</choice2>
+			</step>
+			<step>
 				<text>After ordering the food, you need to wait for the food to get prepared. You pull out your phone and are faced with a dilemma: you are in the mood to view memes, but there's this new popular mobile game that came out recently too...</text>
 				<choice1>
 					<text>View those dank memes</text>
@@ -555,15 +659,15 @@
 				</choice2>
 			</step>
 			<step>
-				<text>After a few minutes of goofing off on your phone, the staff comes out with your food and the bill. In total, the bill was $20 meaning the tip should be around $2? You can also round up to $5 just to make things even.</text>
+				<text>After a few minutes of goofing off on your phone, the staff comes out with your food and the bill. In total, the bill was $12 meaning the tip should be around $3. You can also round up to a total of $20 just for convenience.</text>
 				<choice1>
-					<text>Round up to $5</text>
-					<response>Rounding up to a $5, your total for the food order comes up to $25. You took the paper bag of food and headed back home.</response>
+					<text>Tip the waiter $8</text>
+					<response>Rounding up to a $5, your total for the food order comes up to $20. You took the paper bag of food and headed back home.</response>
 					<effect>payHigh</effect>
 				</choice1>
 				<choice2>
-					<text>Leave it at $2</text>
-					<response>Wanting to keep some money for yourself, the total for the food order comes up to $22. You took the paper bag of food and headed back home.</response>
+					<text>Tip the waiter $3</text>
+					<response>Wanting to keep some money for yourself, the total for the food order comes up to $15. You took the paper bag of food and headed back home.</response>
 					<effect>payLow</effect>
 				</choice2>
 			</step>
@@ -597,6 +701,19 @@
 					<text>Pet the hell out of it</text>
 					<response>You picked up the puppy and sat it on your lap. Petting the soft energetic puppy relaxed you...</response>
 					<effect>relaxed</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>You noticed its bowl was empty, so you poured some food into it. However, when you stopped to put the food away, the dog started whimpering for more food.</text>
+				<choice1>
+					<text>Give it more food</text>
+					<response>Giving into the dog's pleas, you poured some more food. You just couldn't say no, and it looks so happy!</response>
+					<effect>excitementUp</effect>
+				</choice1>
+				<choice2>
+					<text>Put the bag of food away</text>
+					<response>Saying no to the dog was one of the hardest things you had to do... but at least you have the power to say no to it.</response>
+					<effect>soaUp</effect>
 				</choice2>
 			</step>
 			<step>
@@ -643,7 +760,7 @@
 		<!--Quest 10 - Laundry Work-->
 		<quest>
 			<text>"Arigato! I didn't have the chance to do the laundry over the weekend. Could you please take care of the laundry while I'm at work? If you don't we'll be running low on clothes."</text>
-			<complete>Looking at the living room, you pat yourself on the back for a job well done! This may just be your finest work yet.</complete>
+			<complete>After your clothes were taken care of, you texted your mother that you have completed the quest!</complete>
 			<step>
 				<text>What should you text your mother?</text>
 				<choice1>
@@ -697,7 +814,7 @@
 				</choice2>
 			</step>
 			<step>
-				<text>After spending some time to yourself, you notice that the clothes were done drying. You decide to put the dry clothes away, but you're not entirely sure how to organize them...</text>
+				<text>After spending some time to yourself, you notice that the first batch of clothes were done drying. You decide to put the dry clothes away, but you're not entirely sure how to organize them...</text>
 				<choice1>
 					<text>Hang the dry clothes on the coat rack</text>
 					<response>You walked back and forth between the laundry room and the closet multiple times for hangers and hanging. Who knew hanging clothes into a closet would be so tiring?</response>
@@ -709,6 +826,193 @@
 					<effect>clothesDresser</effect>
 				</choice2>
 			</step>
+			<step>
+				<text>After putting your mom's clothes away, the second batch of clothes were finished drying. Thinking you had some extra time, you could do the laundry for all the towels in the kitchen.</text>
+				<choice1>
+					<text>Save those towels for a rainy day</text>
+					<response>Not feeling like taking more time with this task, you were able to rest up.</response>
+					<effect>energyUp</effect>
+				</choice1>
+				<choice2>
+					<text>Do some extra laundry</text>
+					<response>Since you had some extra time, you got the towels cleaned up. I'm sure your mom would appreciate the effort.</response>
+					<effect>moreLaundry</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 11 - Internet Repairman-->
+		<quest>
+			<text>"Ciao figlio! The TV is playing static, so I called the company to send someone to fix it today. Can you make sure they're able to get into the house? I left some money on the coffee table for a tip."</text>
+			<complete>Now that the repairman left, you turned the channel on to your mother's favorite channel and sent her a text saying the TV has been fixed.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying you'll make sure the TV will be able to play her normie television shows.</response>
+					<effect>moneyUpM</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're too busy writing Vapor reviews to games that you've play 30 minutes of to help her out.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>The repairman was supposed to come to the house some time in the afternoon with a 4 hour window. Since you had some time to wait, you you get to entertain yourself!</text>
+				<choice1>
+					<text>Goof off on the dating app Cinder</text>
+					<response>After swiping left and right on the dating app Cinder (But mostly left because you have high standards for some reason) for what seems like hours, you got a match! You sent her a message with your best untested opener.</response>
+					<effect>datingApp</effect>
+				</choice1>
+				<choice2>
+					<text>Play some video games</text>
+					<response>You decided to play a long-winded open world game. You ended up getting through a decent amount of the game after hours of play!</response>
+					<effect>openWorld</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>You noticed that the repairman still wasn't there! This worried you as there was only 30 minutes left in the window of repair.</text>
+				<choice1>
+					<text>Call the internet company with your concerns</text>
+					<response>You called the internet company to ask on the status update. They said he just finished his last job and is on his way to your house. You felt like a businessman with how you handled that situation...</response>
+					<effect>callISP</effect>
+				</choice1>
+				<choice2>
+					<text>Keep waiting! This happens from time to time</text>
+					<response>Feeling confident that the repairman will come, you just keep waiting by the window...</response>
+					<effect>confident</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Finally, the doorbell rang! You opened the door and let the repairman into your house. He told you that he was caught up in the last job. Thinking he was tired, you offer him a drink.</text>
+				<choice1>
+					<text>Offer a bottle of soda</text>
+					<response>You offer the repairman a nice refreshing bottle of soda to which he graciously accepts! You feel more refreshed after watching him drink the bottle!</response>
+					<effect>offerSoda</effect>
+				</choice1>
+				<choice2>
+					<text>Offer a glass of water</text>
+					<response>You offer the repairman a glass of water to which he graciously... declines. I guess he was looking for something more refreshing.</response>
+					<effect>offerWater</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>The repairman gets straight to work! He mentions that it shouldn't be too long, they just need to replace and program the cable box. But still, the two of you are in the same room together...</text>
+				<choice1>
+					<text>Talk to him about his day</text>
+					<response>You made some small talk about his day which switched to a conversation about the places he's been to throughout the day. Being a cable repairman must be tough!</response>
+					<effect>socialUp</effect>
+				</choice1>
+				<choice2>
+					<text>Look at memes on your phone</text>
+					<response>Since you are not the best with other people, you save both of you the embarrassment and look at funny memes on your phone. That frog always gets you...</response>
+					<effect>euphoriaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Remembering that your mother gave you some money to tip the repairman. Or you could keep the tip to yourself...</text>
+				<choice1>
+					<text>Tip the repairman $20</text>
+					<response>You tipped the repairman $20. The repairman thanked you and did all of his tests and signatures then went on to the rest of his day. You felt like a good kid for the hearty tip!</response>
+					<effect>tipRepairman</effect>
+				</choice1>
+				<choice2>
+					<text>Keep the money all to yourself</text>
+					<response>You decided to keep the money. The repairman did all of his tests and signatures then went on to the rest of his day. You felt bad, but you're $30 richer!</response>
+					<effect>dontTip</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 12 - Tend Garden-->
+		<quest>
+			<text>"Bonjour! I had to leave early today and couldn't water the garden before I left. Could you please take care of that while I'm at work? I left a note with instructions on the fridge."</text>
+			<complete>Your mother's plants and vegetables look green and vibrant! It seems like you did a good job today.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying you got this under control - you've played enough gardening simulators.</response>
+					<effect>excitementUpL</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're busy spending the day watching 4-year old LouTube videos that you still find hilarious.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>making your way to the fridge for the instructions, why not look at what's inside? You see a bunch of gross vegetables, but you also see some cold leftover pizza and an energy drink...</text>
+				<choice1>
+					<text>Grab the energy drink can</text>
+					<response>You grab an energy drink and down that bad boy in one massive gulp!</response>
+					<effect>takeDrink</effect>
+				</choice1>
+				<choice2>
+					<text>Grab the leftover pizza</text>
+					<response>You grab the leftover pizza and eat it in one massive bite... without microwaving it... huh...</response>
+					<effect>hungerUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Grabbing the gardening instructions, you head outside. You mother has 3 sections: flowers, fruits, and vegetables. You start off with the flowers. The instructions say spray the flowers 3 times, but you don't know where you're supposed to spray...</text>
+				<choice1>
+					<text>Spray the leaves and stem</text>
+					<response>After spraying the leaves and stem, you back up and notice how much greener the plants are.</response>
+					<effect>content</effect>
+				</choice1>
+				<choice2>
+					<text>Spray the soil</text>
+					<response>After spraying the soil, you're not entirely sure if you're doing this correctly, but at least you're having fun!</response>
+					<effect>excitementUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Once all of your mother's plants were watered, you read the instructions again and was told to use the hose for the rest. Going to the hose, it was actually stuck under a log. You can try to move it, or get water another way...</text>
+				<choice1>
+					<text>Move the log yourself</text>
+					<response>You grip the log from the bottom and heaved the log off of the hose. Damn, it feels good to be buff!</response>
+					<effect>moveLog</effect>
+				</choice1>
+				<choice2>
+					<text>Fill a bucket with water</text>
+					<response>Not wanting to deal with a heavy log, you grab a bucket and fill it with water. It was still pretty tiring, but you are satisfied with your solution.</response>
+					<effect>fillBucket</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Once you got around to tomatoes, you were stopped in your tracks. Are tomatoes vegetables or fruit? Since this will probably keep you up at night, you guessed before you pulled out your phone for the answer.</text>
+				<choice1>
+					<text>It has to be a fruit</text>
+					<response>After searching far and wide on the internet... tomatoes are actually a fruit! You are a smart man!</response>
+					<effect>soaUp</effect>
+				</choice1>
+				<choice2>
+					<text>It has to be a vegetable</text>
+					<response>After searching far and wide on the internet... tomatoes are not a vegetable. You bring great dishonor to your family...</response>
+					<effect>soaDown</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Thinking you were done with all the watering, you look at the garden from a distance. Maybe you can give them all another spray to make it look greener...</text>
+				<choice1>
+					<text>Leave everything as is</text>
+					<response>Not wanting to put in the effort, you sat down on the couch to catch your breath.</response>
+					<effect>energyUp</effect>
+				</choice1>
+				<choice2>
+					<text>Give the garden an extra spray</text>
+					<response>You decided to give gardening another go and provided a few extra sprays. The garden looks extra green and lively now!</response>
+					<effect>secondSpray</effect>
+				</choice2>
+			</step>
 		</quest>
 	</events>
 </doc>
+
+<!--
+Dismantle and throw old furniture
+Fix mom's slow computer
+Pick up pills from Pharmacy
+-->

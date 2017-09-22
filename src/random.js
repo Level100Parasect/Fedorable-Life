@@ -4,9 +4,11 @@ window.eat = [];
 window.drink = [];
 window.booth = [];
 window.photo = [];
-
+window.travel = [];
+window.game1 = [];
+window.game2 = [];
+//on init
 $(document).ready(function () {
-    //on init
     $.ajax({
         type: "GET",
         url: "/xml/random.xml",
@@ -84,6 +86,45 @@ $(document).ready(function () {
                     var effect = $(this).find("effect").text();
 
                     photo.push({
+                        "title": title,
+                        "text": text,
+                        "effect": effect
+                    });
+                });
+            });
+            $(xml).find("travel").find("event").each(function (value, key) {
+                $(this).each(function (value, key) {
+                    var title = $(this).find("title").text();
+                    var text = $(this).find("text").text();
+                    var effect = $(this).find("effect").text();
+
+                    travel.push({
+                        "title": title,
+                        "text": text,
+                        "effect": effect
+                    });
+                });
+            });
+            $(xml).find("game1").find("event").each(function (value, key) {
+                $(this).each(function (value, key) {
+                    var title = $(this).find("title").text();
+                    var text = $(this).find("text").text();
+                    var effect = $(this).find("effect").text();
+
+                    game1.push({
+                        "title": title,
+                        "text": text,
+                        "effect": effect
+                    });
+                });
+            });
+            $(xml).find("game2").find("event").each(function (value, key) {
+                $(this).each(function (value, key) {
+                    var title = $(this).find("title").text();
+                    var text = $(this).find("text").text();
+                    var effect = $(this).find("effect").text();
+
+                    game2.push({
                         "title": title,
                         "text": text,
                         "effect": effect

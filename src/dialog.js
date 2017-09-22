@@ -60,6 +60,19 @@ $(document).ready(function () {
         show: 'fadeIn',
         hide: 'fadeOut'
     });
+
+    $("#alertDialog").dialog({
+        autoOpen: false,
+        modal: true,
+        width: 640,
+        height: 'auto',
+        resizable: false,
+        closeOnEscape: false,
+        show: 'fadeIn',
+        hide: 'fadeOut',
+        dialogClass: 'leaveDia'
+    });
+
     $(".ui-dialog-titlebar").hide();
 });
 

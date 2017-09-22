@@ -44,7 +44,7 @@
 		
 		<!--arg 17-->
 		<argument>
-			<text>Browsing through the social networking site creddit, you stumbled upon the thread "European vs. Japanese Swords". You scoff at the morons who believe European swords stand a chance against the glorious Nippon blade, however it's actually a fairly even argument. One post was a 4 paragraph essay explaining why European swords are stronger; the European design craft a more sturdy blade due to science and physics! Someone on the internet brought great dishonor to your favorite weapon of warfare - educate this pleb on the art of Nippon sword fighting:</text>
+			<text>Browsing through the social networking site creddit, you stumbled upon the thread "European vs. Japanese Swords". You scoff at the morons who believe European swords stand a chance against the glorious Nippon blade, however it's actually a fairly even argument. One posted a 4 paragraph essay explaining why European swords are stronger; the European design craft a more sturdy blade due to science and physics! Someone on the internet brought great dishonor to your favorite weapon of warfare. After all, you studied the blade:</text>
 			<choiceA>"I am an expert with the katana and let me learn you a little bit of something about the lightning fast Iai style..."</choiceA>
 			<choiceB>"Nippon steel is the strongest steel. The blacksmiths fold it 1000 times. Do you even know what tempering is, filthy Gaijin?"</choiceB>
 			<answer>ansA</answer>
@@ -209,6 +209,18 @@
 			<hint>I don't think she'd be technologically knowledgeable...</hint>
 			<accomplish>20</accomplish>
 		</argument>
+		
+		<!--arg 95-->
+		<argument>
+			<text>Browsing the front page of the social networking site creddit, there was a trending photo of a user's grand proposal to his wife. It was a cute gesture, but I mean... it's just a proposal. Totally not being jealous of their love, you posted "I hate to break it to you, but love is just a chemical reaction that compels animals to breed. It hits hard then fades away, leaving you stranded in a failing marriage.":</text>
+			<choiceA>Tell this guy to follow his passions instead - to focus on science</choiceA>
+			<choiceB>Tell this guy to back out while he still has the chance</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>While your post was largely ignored, the amount of upvotes you have on it is one... from yourself... ARGUMENT WIN</responseCorrect>
+			<responseWrong>"Did you just pull out a quote from a TV show?" Oh no! You were caught with no original thoughts in your brain. ARGUMENT LOST</responseWrong>
+			<hint>Focus on science? That sounds like it's been ripped out of somewhere...</hint>
+			<accomplish>20</accomplish>
+		</argument>
 	</arguments>
 
 	<!--Arg: MyFace-->
@@ -291,7 +303,7 @@
 		
 		<!--arg 21-->
 		<argument>
-			<text>Scrolling through your news feed on the social media site MyFace, a pretty girl posted a sad status. You didn't actually pay attention to the contents of the post, you just saw that there was a sad girl and as a white knight, you took it upon yourself to make this girl happy. You decide to bless her eyes with a sonnet of words: "M'lady, your smile is the most beautiful part of you. Please stop frowning." However the harlot didn't reply to your reply in a timely fashion. Meanwhile, she is replying to the replies after yours. Is she ignoring you? You demand to be acknowledged for your thoughtful words!:</text>
+			<text>Scrolling through your news feed on the social media site MyFace, a pretty girl posted a sad status. You didn't actually read the contents of the post; you just saw that there was a sad girl and as a white knight, you took it upon yourself to make this girl happy. You blessed her eyes with a sonnet of words: "M'lady, your smile is the most beautiful part of you. Please stop frowning." However the harlot didn't reply to your reply in a timely fashion. Meanwhile, she is replying to the replies after yours. Is she ignoring you? You demand to be acknowledged for your thoughtful words!:</text>
 			<choiceA>"Please let me in!"</choiceA>
 			<choiceB>"You are perfect the way you are"</choiceB>
 			<answer>ansB</answer>
@@ -430,6 +442,30 @@
 			<responseCorrect>After half an hour, this commenter wrote back; "I don't know man, maybe you'll find someone to perform that mating ritual with. Keep trying." ARGUMENT WIN</responseCorrect>
 			<responseWrong>After half an hour, this commenter wrote back; "I looked through your photos and MyFace timeline... I found no signs of human contact." Since when did they add that timeline? ARGUMENT LOST</responseWrong>
 			<hint>If by partner, you mean NPC's in video games, then yes. You've had hundreds! Real life partners however...</hint>
+			<accomplish>20</accomplish>
+		</argument>
+		
+		<!--arg 92-->
+		<argument>
+			<text>Noticing a trend on the social media website MyFace - people that were popular in high school are posting memes from your favorite adult sci-fi cartoon show. That's not fair! You want to have something all to yourself for years of suffering as a not-popular kid in high school. "You need to have a high IQ to fully get the nuances in their jokes - I don't understand how these normies are posting memes from this show." Someone replied with "You don't need to understand everything about something to find enjoyment out of it." BLASPHEMY! You NEED to keep this show all to yourself:</text>
+			<choiceA>Say that all the jokes about theoretical physics will go over a typical viewer's head</choiceA>
+			<choiceB>Break apart the main character's existential catchphrase</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>After writing a paragraph linking the main character's catchphrase "Wubba lubba dub dub" to Russian folklore, nobody ended up commenting. However, you did get a lot of laughing reactions, so maybe some people learned a thing or two. ARGUMENT WIN</responseCorrect>
+			<responseWrong>After you commented your hypothesis on theoretical physics, an old classmate from high school asked "Didn't you fail physics in high school? I remember you had to retake the class in the summer." Ooof! ARGUMENT LOST - FRAUD DETECTED</responseWrong>
+			<hint>Do you even know theoretical physics?</hint>
+			<accomplish>25</accomplish>
+		</argument>
+		
+		<!--arg 93-->
+		<argument>
+			<text>Habitually scrolling through your timeline on the social media website MyFace, a picture of a cute cat appears! Wanting to feel smart and quirky, you posted "This cat is quite hirsute!" Somebody took the bait and asked; "Hirsute?" Your plan to feel intellectually superior worked! You translated hirsute to this normie and gave a long winded multi-paragraphed explanation of its origins. You spent three hours researching this word to help you in writing up this essay. However, he never replied. Three hours of your life wasted! Unless you can craft up some way to get a response...:</text>
+			<choiceA>Tell him that you chose to use this word in place of the standard drivel that normies would use</choiceA>
+			<choiceB>Tell this clown that he can now use this word in his every day life</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>This commenter replied! I mean it was literally just a one word "k" but still... that's something? ARGUMENT ATTEMPTED</responseCorrect>
+			<responseWrong>You waited for hours, but he never replied. You waited... TIME WASTED - ARGUMENT LOST</responseWrong>
+			<hint>He can technically use this word now if he wants...</hint>
 			<accomplish>20</accomplish>
 		</argument>
 	</arguments>
@@ -617,6 +653,18 @@
 			<responseWrong>"You will never find a meaningful connection with anybody in the world acting like this." That hurt! Right in the gibblets. ARGUMENT LOST</responseWrong>
 			<hint>Don't assume something about someone else's relationship, man</hint>
 			<accomplish>15</accomplish>
+		</argument>
+		
+		<!--arg 94-->
+		<argument>
+			<text>Looking through the dating website OkNarcissus trying not to die inside, you were in a conversation with a girl talking about a date you had a while ago: "I tried impressing her by playing mind games with the waitress to show off my brilliance and she called me stuck up. Guess some women can't handle my brilliance..." Thinking m'lady was going to be understanding, she instead replied with "Have you considered not being a manipulative jerk?" Well that's rude! Make this girl understand that you are not manipulative by changing her mind one way or another:</text>
+			<choiceA>Feign ignorance - "Me? Manipulative? Well I'd never..."</choiceA>
+			<choiceB>Tell her she must have a low IQ if she can't understand your issues</choiceB>
+			<answer>ansB</answer>
+			<responseCorrect>After waiting for a few hours, you see that m'lady's dating profile doesn't exist any more. Thinking that she must have been harassed by awful guys on this site, she may have quit. ARGUMENT WIN</responseCorrect>
+			<responseWrong>"You literally are trying to be manipulative now. How does that even happen?" ARGUMENT LOST</responseWrong>
+			<hint>Feigning ignorance is pretty manipulative...</hint>
+			<accomplish>20</accomplish>
 		</argument>
 	</arguments>
 
@@ -1066,7 +1114,7 @@
 		
 		<!--arg 82-->
 		<argument>
-			<text>For some reason you were watching a fitness video on the video-sharing website LouTube. Feeling the blood gushing out of your nose like in one of those animes, you commented "I'm flustered over here! Certain parts of this video are straight up erotic! I'm going to need to have a hard spank session after this." Your comment was downvoted to oblivion by people calling you a creep! Even m'lady replied to your comment - "Christ, dude! I'm deleting this video because of you." Defend your boner:</text>
+			<text>For some reason you were watching a fitness video on the video-sharing website LouTube. Feeling the blood gushing out of your nose like in one of those animes, you commented "I'm flustered over here! Certain parts of this video are straight up erotic! I'm going to need to have a hard spank session after this." Your comment was downvoted to oblivion and people are calling you a creep! Even m'lady replied to your comment - "Christ, dude! I'm deleting this video because of you." Defend your boner:</text>
 			<choiceA>Science your way out of this: "Arousal is perfectly normal. I see features I'm drawn to, I get aroused. Science."</choiceA>
 			<choiceB>Download the video for future use</choiceB>
 			<answer>ansB</answer>
@@ -1110,6 +1158,18 @@
 			<responseWrong>Nobody replied to your comment after spending so much time trying to serve this scrub... it seems like you tried too hard.  Again. ARGUMENT LOSE</responseWrong>
 			<hint>Describing the genre isn't bad I guess...</hint>
 			<accomplish>15</accomplish>
+		</argument>
+		
+		<!--arg 91-->
+		<argument>
+			<text>Spending the entire day on the video-sharing website LouTube, you watched a review of one of your favorite FPS games of all time. However, minutes into the video it's clear the reviewer thinks the game is less than perfect. "It's no wonder you hate the game; you're using the worst weapon type and the worst class in your b-roll. So much for professional integrity." However, this LouTuber has a rabid fanbase - "The b-roll shows early game footage - he was probably playing around with the game." You must defend the honor of your favorite FPS game with all you got:</text>
+			<choiceA>Pull up a timestamp from the video that showcases the reviewer in the late game using the same weapon type</choiceA>
+			<choiceB>Call this entire video review fake news</choiceB>
+			<answer>ansA</answer>
+			<responseCorrect>"Maybe the reviewer just picked a random class and weapon type for the video." replied the pitiful commenter. "Why would you play through the game like that just for video footage?" CHECK AND MATE! ARGUMENT WIN</responseCorrect>
+			<responseWrong>The rabid fanbase swarmed your comment thread and downvoted it to oblivion. Now your favorite FPS game has a bad review on it that will never be washed away... ARGUMENT LOSE</responseWrong>
+			<hint>You know what wins internet arguments? Hard facts. With numbers.</hint>
+			<accomplish>20</accomplish>
 		</argument>
 	</arguments>
 </doc>

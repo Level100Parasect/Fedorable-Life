@@ -83,6 +83,21 @@
 				<text>Minding your own business, somebody asked if they could join you. As it turns out, there was nowhere else to sit.</text>
 				<effect>socialUp</effect>
 			</event>
+			<event>
+				<title>Free Energy Drink</title>
+				<text>While eating your food, you were given a free energy drink in error of the waitress. You did let the waitress know, but she wasn't allowed to take it back. Why not, right?</text>
+				<effect>energyUp</effect>
+			</event>
+			<event>
+				<title>Chatty Bartender</title>
+				<text>While eating your food, the bartender started to talk to you - asking about your day, who you are, what you do... It was a nice conversation.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Hidden Onion Ring</title>
+				<text>Digging through your basket of fries, you found a single onion ring. Accidental onion rings are the best onion rings!</text>
+				<effect>hungerUp</effect>
+			</event>
 		</eat>
 		<drink>
 			<event>
@@ -98,6 +113,16 @@
 			<event>
 				<title>Chatty Bartender</title>
 				<text>While drinking by the bar, the bartender started to talk to you - asking about your day, who you are, what you do... It was a nice conversation.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Extra Cherries</title>
+				<text>When your drink was finished being made, you counted a total of three extra cherries!</text>
+				<effect>hungerUp</effect>
+			</event>
+			<event>
+				<title>Text Message</title>
+				<text>While sipping on your drink, you received a text from your friend! It feels good that somebody was thinking about you.</text>
 				<effect>socialUp</effect>
 			</event>
 		</drink>
@@ -117,6 +142,16 @@
 				<text>You saw somebody cosplay one of your favorite fictional characters in the distance.</text>
 				<effect>excitementUp</effect>
 			</event>
+			<event>
+				<title>Cosplay Selfie</title>
+				<text>While looking through the booth, you noticed someone cosplaying as one of your favorite anime characters. You requested a selfie with them.</text>
+				<effect>photoUp</effect>
+			</event>
+			<event>
+				<title>Free Merchandise</title>
+				<text>While looking through the booth, the person running the booth gave you a free pin. That's something you can put on your fedora!</text>
+				<effect>euphoriaUp</effect>
+			</event>
 		</booth>
 		<photo>
 			<event>
@@ -134,6 +169,67 @@
 				<text>You took a picture of somebody cosplaying one of your favorite fictional characters.</text>
 				<effect>excitementUp</effect>
 			</event>
+			<event>
+				<title>Pretty Girl</title>
+				<text>Noticing an attractive woman in a cosplay, you were able to convince her for a photo without acting like a fool!</text>
+				<effect>soaUp</effect>
+			</event>
+			<event>
+				<title>Free Merchandise</title>
+				<text>After taking the photo, one of the cosplayers approached you and gave you a business card to like their MyFace page.</text>
+				<effect>euphoriaUp</effect>
+			</event>
 		</photo>
+		<travel>
+			<event>
+				<title>Random Text</title>
+				<text>While in transit, you received a text from a friend. The two of you messaged each other back and forth until you reached your destination.</text>
+				<effect>socialUp</effect>
+			</event>
+			<event>
+				<title>Handheld Gaming</title>
+				<text>While in transit, you pulled out your handheld gaming device and did some level grinding while travelling.</text>
+				<effect>excitementUp</effect>
+			</event>
+			<event>
+				<title>Snacks</title>
+				<text>Your mom brought a bag of chips for you to munch on while in transit. They were cool ranch flavored - your favorite!</text>
+				<effect>hungerUp</effect>
+			</event>
+			<event>
+				<title>Radio Music</title>
+				<text>Sitting in the back seat of your mom's car, a catchy song started playing on the radio. You couldn't stop thinking about it!</text>
+				<effect>euphoriaUp</effect>
+			</event>
+			<event>
+				<title>Coffee Run</title>
+				<text>Your mother asked if you wanted to stop for coffee. You allowed her to make the stop... if she got you some coffee too.</text>
+				<effect>energyUp</effect>
+			</event>
+		</travel>
+		<game1>
+			<event>
+				<title>Winning Bet</title>
+				<text>While playing pool, a group of friends asked if they could join you. To make things interesting, they placed a bet; whoever wins takes home some extra money. After a close match, you came out on top and made some extra money!</text>
+				<effect>moneyUpL</effect>
+			</event>
+			<event>
+				<title>Joined Pool</title>
+				<text>While playing pool, a group of friends asked if they could join you as there were no other available tables to play on. You made friends with them as you all played pool together.</text>
+				<effect>socialUpL</effect>
+			</event>
+		</game1>
+		<game2>
+			<event>
+				<title>First Place</title>
+				<text>You enrolled in a video game tournament hosted at the convention. Due to your superior skill in gaming, you easily reigned victorious and won $150 as a result. Good work!</text>
+				<effect>winner</effect>
+			</event>
+			<event>
+				<title>Semi Finals</title>
+				<text>You enrolled in a video game tournament hosted at the convention. You fought your hardest, but you lost in the semi finals. You did win $50 as a result though. Good work!</text>
+				<effect>semiFinals</effect>
+			</event>
+		</game2>
 	</random>
 </doc>

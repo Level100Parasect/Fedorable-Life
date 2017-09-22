@@ -268,6 +268,18 @@
 				<effect>clr1</effect>
 			</event>
 			<event>
+				<title>Free Comic Book Day</title>
+				<text>Walking through artist alley, you noticed a comic book kiosk giving away a select few comics. Without saying a word, you grabbed one comic book.
+				</text>
+				<effect>fcd1</effect>
+			</event>
+			<event>
+				<title>Dating Advice</title>
+				<text>There was a an event where a popular Loutuber was giving advice about dating. You sat in the audience and learned a thing or two!
+				</text>
+				<effect>dta1</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. You didn't get any dates, but you had fun socializing with the opposite gender.
 				</text>
@@ -541,6 +553,18 @@
 				<text>There was an event where multiple celebrity voice actors were reading excerpts from a horrid book. You got to take a far-away video of the voice actors reading through the book for yourself to view in the future.
 				</text>
 				<effect>clr2</effect>
+			</event>
+			<event>
+				<title>Free Comic Book Day</title>
+				<text>Walking through artist alley, you noticed a comic book kiosk giving away a select few comics. You talked to the person working at the kiosk as you grabbed one comic book.
+				</text>
+				<effect>fcd2</effect>
+			</event>
+			<event>
+				<title>Dating Advice</title>
+				<text>There was a an event where a popular Loutuber was giving advice about dating. Sitting in the audience, you participated whenever the speaker would prompt the audience for an answer.
+				</text>
+				<effect>dta2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -818,6 +842,18 @@
 				<effect>clr3</effect>
 			</event>
 			<event>
+				<title>Free Comic Book Day</title>
+				<text>Walking through artist alley, you noticed a comic book kiosk giving away a select few comics. You talked to the person working at the kiosk as you grabbed a few comic books.
+				</text>
+				<effect>fcd3</effect>
+			</event>
+			<event>
+				<title>Dating Advice</title>
+				<text>There was a an event where a popular Loutuber was giving advice about dating. The speaker asked for volunteers for a demonstration. You raised your hand, but you were not selected.
+				</text>
+				<effect>dta3</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. After the event was over you hung out with a few of the girls you met and added a few of them on MyFace.
 				</text>
@@ -1091,6 +1127,18 @@
 				<text>There was an event where multiple celebrity voice actors were reading excerpts from a horrid book. You got to take a good video of the voice actors reading through the book with funny voices.
 				</text>
 				<effect>clr4</effect>
+			</event>
+			<event>
+				<title>Free Comic Book Day</title>
+				<text>Walking through artist alley, you noticed a comic book kiosk giving away a select few comics. You talked to the person working at the kiosk for a bit to the point that they gave you a premium comic book for free.
+				</text>
+				<effect>fcd4</effect>
+			</event>
+			<event>
+				<title>Dating Advice</title>
+				<text>There was a an event where a popular Loutuber was giving advice about dating. Sitting in the audience, you were surprised when the speaker approached you with the microphone asking for your opinion. You're gonna be on LouTube!
+				</text>
+				<effect>dta4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -1368,6 +1416,18 @@
 				<effect>clr5</effect>
 			</event>
 			<event>
+				<title>Free Comic Book Day</title>
+				<text>Walking through artist alley, you noticed a comic book kiosk giving away a select few comics. You talked to the person working at the kiosk for a while until they told you about their hidden stash. They gave you a bunch of signed premium comic book for free.
+				</text>
+				<effect>fcd5</effect>
+			</event>
+			<event>
+				<title>Dating Advice</title>
+				<text>There was a an event where a popular Loutuber was giving advice about dating. The speaker asked for volunteers for a demonstration. You raised your hand, and got to be his guinea pig to help prove his point on attracting members of the opposite sex. You're gonna be on LouTube!
+				</text>
+				<effect>dta5</effect>
+			</event>
+			<event>
 				<title>Speed Dating</title>
 				<text>There was a speed dating event at the convention where you went on quick two-minute dates with a handful of women. There was one girl you met that you really clicked with...
 				</text>
@@ -1375,10 +1435,6 @@
 			</event>
 		</level5>
 	</events>
-	<!--
-	Free Comic Book Day!
-	Dating Advice
-	-->
 	<booth>
 		<event>
 			<text>You found a booth that made custom pins. You found a few that you wanted to buy...</text>
