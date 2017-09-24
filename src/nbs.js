@@ -67,7 +67,6 @@ function mainCharacter() {
 	    if ((this.endFG) && (this.endEFame) && (this.endEmployed) && (this.endIron) && (this.endWaifu) && (this.endNorm) && (!this.endGolden)) {
             var dialogNode = new dialog(endGame, createEndScreen("golden", "emd"));
             dialogArray.push(dialogNode);
-            //var dialogNode = new dialog(genericDia, nodeEGGolden);
             var dialogNode = new dialog(genericDia, createGenericDialog('Golden Ending Unlocked', "You have unlocked the golden ending of Fedorable Life. Unfortunately there is no added gameplay perk for obtaining this ending, but isn't growing up a reward enough?<br><br>You have unlocked the Golden Ending skin. Who knew grown up you was so fuzzy looking?", 'gcomp', 'emd'));
             dialogArray.push(dialogNode);
 	        this.endGolden = true;
@@ -116,7 +115,6 @@ function mainCharacter() {
       if ((this.statEuphoria >= 9000) && (!this.endFG)) {
         var dialogNode = new dialog(endGame, createEndScreen("fedoraGod", "emd"));
         dialogArray.push(dialogNode);
-        //var dialogNode = new dialog(genericDia, nodeEGFG);
         var dialogNode = new dialog(genericDia, createGenericDialog('Fedora God Ending Unlocked', 'You have unlocked the fedora god ending of Fedorable Life. Now that you are the smiter of plebs, every time you game or win an internet argument, you enter a temporary state of Euphoria.', 'gcomp', 'emd'));
         dialogArray.push(dialogNode);
         this.changeEnding("fg");
@@ -130,7 +128,6 @@ function mainCharacter() {
       if ((this.niceGuyPoints >= 25) && (!this.endWaifu)) {
         var dialogNode = new dialog(endGame, createEndScreen("waifu", "emd"));
         dialogArray.push(dialogNode);
-        //var dialogNode = new dialog(genericDia, nodeEGWaifu);
         var dialogNode = new dialog(genericDia, createGenericDialog('Waifu Unlocked', "You have unlocked the waifu ending of Fedorable Life. As an added perk, you don't need to pay money to go to conventions anymore!", 'gcomp', 'emd'));
         dialogArray.push(dialogNode);
         this.changeEnding("waifu");
@@ -148,7 +145,6 @@ function mainCharacter() {
       if ((this.weight <= 140) && (!this.endIron)) {
         var dialogNode = new dialog(endGame, createEndScreen("iron", "emd"));
         dialogArray.push(dialogNode);
-        //var dialogNode = new dialog(genericDia, nodeEGIron);
         var dialogNode = new dialog(genericDia, createGenericDialog('Iron Pill Ending Unlocked', "You have unlocked the iron pill ending of Fedorable Life. As an added perk, your stats decay at a much slower rate. You may have the personality of a wheel, but at least you're physically healthy!<br><br>You have unlocked the Iron Pill Ending skin. Do you bring those weights with you everywhere you go?", 'gcomp', 'emd'));
         dialogArray.push(dialogNode);
         grant.decTime = 6000;
@@ -173,7 +169,6 @@ function mainCharacter() {
             this.statSocial = 'Normal';
             var dialogNode = new dialog(endGame, createEndScreen("normal", "emd"));
             dialogArray.push(dialogNode);
-            //var dialogNode = new dialog(genericDia, nodeEGNorm);
             var dialogNode = new dialog(genericDia, createGenericDialog('Normal Unlocked', 'You have unlocked the normal ending of Fedorable Life. Aside from having an active social life now, now you can get into the bar without having to pay a cover charge as well as never having a failed social interaction!', 'gcomp', 'emd'));
             dialogArray.push(dialogNode);
             this.changeEnding("norm");
@@ -419,7 +414,6 @@ function mainCharacter() {
             endGame(createEndScreen("efame", "egEFame"));
             var dialogNode = new dialog(endGame, createEndScreen("efame", "emd"));
             dialogArray.push(dialogNode);
-            //var dialogNode = new dialog(genericDia, nodeEGEfame);
             var dialogNode = new dialog(genericDia, createGenericDialog('E-Famous Ending Unlocked', "You have unlocked the E-fame ending of Fedorable Life. As an added perk, you make $30 every time you take a photograph at a convention. That MyFace and LouTube ad-revenue is serious business...<br><br>You have unlocked the E-Fame Ending skin. I hope you're ready to take pictures!", 'gcomp', 'emd'));
             dialogArray.push(dialogNode);
             this.changeEnding("efame");
@@ -772,8 +766,8 @@ function mainCharacter() {
         var chance = this.niceGuyPoints * 5;
         if (chance > 90) chance = 90;
         var roll = 100 - chance;
-        //if (randomizer(roll) === 1) {
-        if (1 === 1) {
+        if (randomizer(roll) === 1) {
+        //if (1 === 1) {
             var arr;
             switch (place) {
                 case "job1":
@@ -1552,6 +1546,7 @@ function reverseDialog () {
 } /* END OF reverseDialog */
 
 function openTutorial(){
+    var tutorial = '<div id="tDialog"><div><p class="tHdr">Tutorial</p><button id="hmd" class="exitShop"></button></div><div class="tWrapper"><img src="images/tutorial/tut{PICTURE}.png"/><button id="rmd" class="tBackBtn backGameBtn"></button><p id="tPages">{PAGE}/14</p><button id="emd" class="tContBtn continueGameBtn"></button></div></div>';
     $md.dialog("close");
     for(var i = 1; i < 15; i++){
         var tutorialDialog = tutorial.replace("{PICTURE}", i).replace("{PAGE}", i);
