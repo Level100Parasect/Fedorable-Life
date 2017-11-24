@@ -1,17 +1,11 @@
 window.nodeCreditScreen = '<div id="creditScreen"><img id="cLogo" src="/images/Logo.png"/><div><p>Game created by:</p><br><img id="cDevLogo" src="/images/fabulous-asian-games.png"/><br><p>Art/Programming/Design/Writing/Music: Fabulous Asian Guy</p><br><p>Music Downloaded from Newgrounds: reminisce by 4cat</p><p>Raising Spirits by mozzasticks</p><p>Artimec by DJmadalrian</p><p>Fancy Cakes by Snabisch</p><p>First Date by LazyMuffin</p><br><p>Sound Effects: Downloaded from freesound.org</p><br><p>Thank you to all my friends and all the strangers on the internet who told me to make this game.</p><br><br><button class="backGameBtn" id="credCont"></button><br><br></div></div>';
-window.nodeStartScreen = '<div id="startScreen"><p><a id="pn" href="https://fedorablelife.wordpress.com/" target="_blank">Version 0.5</a><a id="fbButton" href="https://www.facebook.com/FedorableLife/" target="_blank"></a><a id="twButton" href="https://twitter.com/NickBeardman" target="_blank"></a><a id="gpButton" href="https://plus.google.com/u/0/b/117720636938381447783/117720636938381447783/posts/p/pub" target="_blank"></a></p><img src="/images/Logo.png"/><div><button class="newGameBtn" id="mmNewGame"></button><button class="continueGameBtn" id="mmCont"></button><button class="creditsBtn" id="credits"></button></div></div>';
+window.nodeStartScreen = '<div id="startScreen"><p><a id="pn" href="https://fedorablelife.wordpress.com/" target="_blank">Version 0.6</a><a id="fbButton" href="https://www.facebook.com/FedorableLife/" target="_blank"></a><a id="twButton" href="https://twitter.com/NickBeardman" target="_blank"></a><a id="gpButton" href="https://plus.google.com/u/0/b/117720636938381447783/117720636938381447783/posts/p/pub" target="_blank"></a></p><img src="/images/Logo.png"/><div><button class="newGameBtn" id="mmNewGame"></button><button class="continueGameBtn" id="mmCont"></button><button class="creditsBtn" id="credits"></button></div></div>';
 
 //random event dialog
 window.randomEvnt = "<div id='genericDialog'><p id='GDTitle'>{TITLE}</p><div><p id='gdText'>{TEXT}<br><br>{EFFECT}</p><div class='gdi re'></div></div><button class='continueGameBtn' id='emd'></button></div>";
 
 //generic dialog
 window.generic = "<div id='genericDialog'><p id='GDTitle'>{TITLE}</p><div><p id='gdText'>{TEXT}</p><div class='gdi {IMG}'></div></div><button class='continueGameBtn' id='{BTN}'></button></div>";
-
-window.t1 = "<img src='images/misc/t1.png'/>";
-window.t2 = "<img src='images/misc/t2.png'/>";
-window.t3 = "<img src='images/misc/t3.png'/>";
-window.t4 = "<img src='images/misc/t4.png'/>";
-window.t5 = "<img src='images/misc/t5.png'/>";
 
 window.goHome = '<div><p>Are you sure you want to go home? You will need to spend money again to come back here.</p><button class="proceedGameBtn" id="goHome"></button><button class="cancelGameBtn" id="emd"></button></div>';
 
@@ -30,18 +24,6 @@ window.ftrAtHome = '<button id="sleep" title="Rest your tired hams"></button><bu
 window.ftrAtBar = '<button id="drink" title="Shots! But please avoid getting too drunk. You might do something silly"></button><button id="speak" title="Try to be a social human being. May the odds ever be in your favor."></button><button id="pool" title="Work on your billiards skills"></button><button id="food" title="Overpriced food ($10 for a plain old burger!?!?!?)"></button><button id="jukebox" title="Change the music at the jukebox, baby!"></button><button id="stats" title="RPG-like, you will grow"></button><button id="options" title="We provide options here in Fedorable Life"></button><button id="home" title="Retreat to the safety of your home"></button>';
 
 window.ftrAtConv = '<button id="booth" title="A walk through artist alley. Fair warning, you may lose some money here"></button><button id="event" title="Partake in a convention event."></button><button id="photo" title="Take some photos of the excellent cosplayers around you!"></button><button id="game" title="Play against randos in the gaming area"></button><button id="food" title="Overpriced food ($10 for a plain old burger!?!?!?), but a man has got to eat"></button><button id="sleep" title="Go back to the hotel and rest your tired legs. You can only stay here for 3 days."></button><button id="stats" title="RPG-like, you will grow"></button><button id="options" title="We provide options here in Fedorable Life"></button><button id="home" title="Leave the convention early and retreat to being a burrito at home"></button>';
-
-window.nodeEGIron = "<div id='genericDialog'><p id='GDTitle'>Iron Pill Ending Unlocked</p><div><p id='gdText'>You have unlocked the iron pill ending of Fedorable Life. As an added perk, your stats decay at a much slower rate. You may have the personality of a wheel, but at least you're physically healthy!<br><br>You have unlocked the Iron Pill Ending skin. Do you bring those weights with you everywhere you go?</p><div class='gdi gcomp'></div></div><button class='continueGameBtn' id='emd'></button></div>";
-
-window.nodeEGEfame = "<div id='genericDialog'><p id='GDTitle'>E-Famous Ending Unlocked</p><div><p id='gdText'>You have unlocked the E-fame ending of Fedorable Life. As an added perk, you make $30 every time you take a photograph at a convention. That MyFace and LouTube ad-revenue is serious business...<br><br>You have unlocked the E-Fame Ending skin. I hope you're ready to take pictures!</p><div class='gdi gcomp'></div></div><button class='continueGameBtn' id='emd'></button></div>";
-
-window.nodeEGGolden = "<div id='genericDialog'><p id='GDTitle'>Golden Ending Unlocked</p><div><p id='gdText'>You have unlocked the golden ending of Fedorable Life. Unfortunately there is no added gameplay perk for obtaining this ending, but isn't growing up a reward enough?<br><br>You have unlocked the Golden Ending skin. Who knew grown up you was so fuzzy looking?</p><div class='gdi gcomp'></div></div><button class='continueGameBtn' id='emd'></button></div>";
-
-window.nodeEGFG = "<div id='genericDialog'><p id='GDTitle'>Fedora God Ending Unlocked</p><div><p id='gdText'>You have unlocked the fedora god ending of Fedorable Life. Now that you are the smiter of plebs, every time you game or win an internet argument, you enter a temporary state of Euphoria.</p><div class='gdi gcomp'></div></div><button class='continueGameBtn' id='emd'></button></div>";
-
-window.nodeEGWaifu = "<div id='genericDialog'><p id='GDTitle'>Waifu Unlocked</p><div><p id='gdText'>You have unlocked the waifu ending of Fedorable Life. As an added perk, you don't need to pay money to go to conventions anymore!</p><div class='gdi gcomp'></div></div><button class='continueGameBtn' id='emd'></button></div>";
-
-window.nodeEGNorm = "<div id='genericDialog'><p id='GDTitle'>Normal Unlocked</p><div><p id='gdText'>You have unlocked the normal ending of Fedorable Life. Aside from having an active social life now, you can now get into the bar without having to pay a cover charge as well as never having a failed social interaction at the bar!</p><div class='gdi gcomp'></div></div><button class='continueGameBtn' id='emd'></button></div>";
 
 //locked ending nodes
 window.lnFG = '<td class="qTd hl" colspan="2" title="Acquire the highest amount of Euphoria by adding material items to your collection!">??? Ending:<button class="lStar"></button></td>';

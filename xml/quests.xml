@@ -1008,11 +1008,257 @@
 				</choice2>
 			</step>
 		</quest>
+
+		<!--Quest 13 - Dismantle and Throw Away Furniture-->
+		<quest>
+			<text>"Good morning! Or evening. Not sure when you wake up. We need to dismantle some old furniture for recycling tomorrow; would you be able to dismantle the old couch, coffee table, and desk for tomorrow?"</text>
+			<complete>Your mother's plants and vegetables look green and vibrant! It seems like you did a good job today.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>Thinking that this would be a good training experience, you texted your mother back saying that you can handle this.</response>
+					<effect>excitementUpL</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're busy trying to unlock the sex scene in one of your pervy visual novel games.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Thinking about the pieces of furniture you need to disassemble in the garage, you decide to start with the coffee table: it's made of plywood and you could probably put your katana to use...</text>
+				<choice1>
+					<text>Slice through with your katana!!!</text>
+					<response>Standing plywood stands NO CHANCE against glorious Nippon steel - folded 1000 times. It took a lot out of you, but after some effort you finally cut the coffee table into pieces that you could recycle.</response>
+					<effect>swordPractice</effect>
+				</choice1>
+				<choice2>
+					<text>Use screwdrivers like a normal human being</text>
+					<response>Using screwdrivers like a normal human being, you were able to disassemble the coffee table. It was quite a work out!</response>
+					<effect>workOut</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After taking apart the coffee table, you head towards the second easiest object: the wooden desk. You think that the desk drawers need to be taken care of first.</text>
+				<choice1>
+					<text>Take apart the drawers</text>
+					<response>You grabbed the screwdriver and started taking them apart. You didn't know how they were assembled, but you figured out how to disassemble them without the instructions!</response>
+					<effect>soaUp</effect>
+				</choice1>
+				<choice2>
+					<text>Pull them out and leave the drawers as is</text>
+					<response>You pulled out the drawers and stacked them on top of one another... well that was easy...</response>
+					<effect>energyUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>With the drawers taken out of the way, you need to dismantle the rest of it. As you start to grab the screwdriver, you saw a sledgehammer in the distance...</text>
+				<choice1>
+					<text>Break the desk apart with a sledgehammer</text>
+					<response>Thinking it would be a good idea to level up your two-handed skill, you grabbed the hammer and broke the desk apart. It was exhausting, but you had a fun time using the hammer.</response>
+					<effect>hammerTime</effect>
+				</choice1>
+				<choice2>
+					<text>Use screwdrivers like a normal human being... again</text>
+					<response>Using screwdrivers like a normal human being, you were able to disassemble the desk. It was quite a work out!</response>
+					<effect>workOut</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now that the desk is disassembled, you see that the couch will be a huge endeavor as it has a lot of moving bits and is metal. You do remember that you have a drill in the house somewhere to make it easier, but you don't know how to use it...</text>
+				<choice1>
+					<text>Muscle it out with the screwdriver</text>
+					<response>It was a battle of attrition, but after some time you were able to get the couch disassembled. It was a good fight!</response>
+					<effect>workOut</effect>
+				</choice1>
+				<choice2>
+					<text>Figure out how to use the electric drill</text>
+					<response>After playing around with the electric drill, you figured out how to make it spin clockwise and counter-clockwise. Since you were persistent, you were able to get the couch disassembled quickly!</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now that you have everything all disassembled, you need to bring it outside for recycling tomorrow. How would you like to handle all these furniture pieces?</text>
+				<choice1>
+					<text>Put it in a box and bring it out all together</text>
+					<response>Wanting to feel like a very strong man, you put all of the disassembled pieces into a container and brought them all out together. It was exhausting and you may have hurt yourself... but at least it's all done!</response>
+					<effect>strongMan</effect>
+				</choice1>
+				<choice2>
+					<text>Bring out the recycling one at a time</text>
+					<response>Not wanting to risk hurting yourself, you took your time moving the disassembled pieces out to the curb one by one. It was still pretty tiring.</response>
+					<effect>workOut</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 14 - I.T Mom's Slow Computer-->
+		<quest>
+			<text>"Greetings and salutations, boy! My computer has been acting up lately. There are a lot of naughty pop ups and it constantly resets. Could you fix my computer while I'm at work?"</text>
+			<complete>The computer seems fast now! You may have to do this again in a month, but at least it'll make your mom happy. So you texted your mom  that the foe has been vanquished!</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You texted back saying you will make her computer run faster than your favorite pony from Ponies in High School who is known for being super fast.</response>
+					<effect>excitementUpL</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're busy sharpening your katana collection just in case someone breaks in. You want to be able to cut bullets in half!</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Thinking that the best thing to do to fix such a virus-infested computer is to just reformat it, you start to save all of you mom's important files.</text>
+				<choice1>
+					<text>Struggle with storing the files on the cloud</text>
+					<response>After some time, you were able to figure out how to make backups of your files on the cloud. Since you were able to figure this out, you started to feel proud of yourself!</response>
+					<effect>useCloud</effect>
+				</choice1>
+				<choice2>
+					<text>Put all of the files on a portable drive</text>
+					<response>You plopped all the files on your personal portable drive. While waiting, you pulled out your portable gaming device until it finished.</response>
+					<effect>content</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now that all of your mother's files were taken care of, you begin to reformat the computer which will take time. What do you do to keep yourself busy?</text>
+				<choice1>
+					<text>Swipe through the dating app Cinder</text>
+					<response>After swiping right many times, you were able to match with someone! Score! But m'lady will have to wait as you are a dutiful man with a quest at hand!</response>
+					<effect>socialUp</effect>
+				</choice1>
+				<choice2>
+					<text>Play a few rounds of an online competitive video game</text>
+					<response>You played a few rounds of an online competitive video game... and won some of the rounds! You unlocked some nice skins for your favorite characters.</response>
+					<effect>excitementUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Feeling tired of entertaining yourself, you saw that you were stuck here as the progress bar was only 50% complete. So to continue waiting, you decide to eat something.</text>
+				<choice1>
+					<text>Microwave some food</text>
+					<response>You microwaved yourself a lean TV dinner. You feel healthy and full!</response>
+					<effect>healthyFood</effect>
+				</choice1>
+				<choice2>
+					<text>Eat some candy</text>
+					<response>Not wanting a big meal, you start to munch on some candy. The sugar contained within the candy was enough to energize your body.</response>
+					<effect>energyUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Now that the computer's completely reformatted, you just need to install all of your mother's programs. You installed some web browsers, anti-virus software, etc... While her programs were installing, you open up the video-sharing website LouTube.</text>
+				<choice1>
+					<text>Watch a Let's Play</text>
+					<response>You opened up a Let's Play where the LouTube personality was playing your favorite game of all time!</response>
+					<effect>excitementUp</effect>
+				</choice1>
+				<choice2>
+					<text>Watch a Vlog</text>
+					<response>You opened up a video-blog where the LouTube personality was talking about their religious views that parallels your own. It feels good to be right!</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Stopping the Loutube video, you saw that the software installation has been completed! You realize that your mother might ask for help in the future to log in to all of her personal profiles such as email. Should you take care of it now or later?</text>
+				<choice1>
+					<text>Leave it to future you</text>
+					<response>Not feeling like doing extra work, you left the task to future you.</response>
+					<effect>energyUp</effect>
+				</choice1>
+				<choice2>
+					<text>Do the work now so you don't need to do it later</text>
+					<response>Deciding to prevent future you from doing extra work, you took care of logging in to every personal profile you had saved for your mom. It's good helping your mom and your future self out!</response>
+					<effect>logIn</effect>
+				</choice2>
+			</step>
+		</quest>
+		
+		<!--Quest 15 - Pharmacy Trip-->
+		<quest>
+			<text>"Hey-ho boy-o! I need a refill of my pills; could you please pick them up me while I'm at work? I left some money for you on the dining table. You can keep the money leftover as payment."</text>
+			<complete>You texted your mother that it was a successful mission and left her pills on the table.</complete>
+			<step>
+				<text>What should you text your mother?</text>
+				<choice1>
+					<text>Accept the quest!</text>
+					<response>You grabbed the money left for you and texted your mother back saying you'll be acquire the needed pills.</response>
+					<effect>moneyUpM</effect>
+				</choice1>
+				<choice2>
+					<text>Tell her you're busy</text>
+					<response>You texted back saying that you're busy fluffing your lewd anime body pillows for use tonight.</response>
+					<effect>quit</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>After gathering the money, you realize that the pharmacy is close by - well within walking distance. However you have your bike that's been gathering dust...</text>
+				<choice1>
+					<text>Go for a nice walk</text>
+					<response>Thinking that this would be a good time to train your body, you walked to the pharmacy. It was a nice work out!</response>
+					<effect>workOut</effect>
+				</choice1>
+				<choice2>
+					<text>Go for a joyride on the bike</text>
+					<response>Why let the bike that was given to you as a gift in third grade to waste? You bring the bike outside and go on a ride! You had fun making your way to the pharmacy with your bike.</response>
+					<effect>excitementUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Once you get to the counter and ask for your mother's prescription, you are told it will be a half an hour wait. How do you want to spend your time?</text>
+				<choice1>
+					<text>Stand outside and vape</text>
+					<response>Vaping outside, you felt like you were in your own bubble - your mind far away from all of your struggles and anxieties.</response>
+					<effect>content</effect>
+				</choice1>
+				<choice2>
+					<text>Swipe on the dating app Cinder</text>
+					<response>After swiping right many times, you finally matched with someone! You messaged her and she suprisingly messaged back quickly. Yay!</response>
+					<effect>socialUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>The pharmacist signalled for you and said that your pills were complete. After paying for the pills, which in total cost $25, you found yourself walking around the pharmacy.</text>
+				<choice1>
+					<text>Stop by the health section of the pharmacy</text>
+					<response>They were giving away some samples for health and beauty products. While nobody was looking, you grabbed a few and snuck them into your pocket.</response>
+					<effect>payAndHealth</effect>
+				</choice1>
+				<choice2>
+					<text>Stop by the seasonal section of the pharmacy</text>
+					<response>Being entertained by all of the seasonal items they have on display, you took some photos of the weirder items you found there.</response>
+					<effect>payAndSeason</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>Continuing walking around the pharmacy, you saw some appealing candy bars under the counter... </text>
+				<choice1>
+					<text>Indulge yourself with chocolate!</text>
+					<response>Since you had some extra money, you bought the candy bar. It was everything you imagined it would be.</response>
+					<effect>buySnack</effect>
+				</choice1>
+				<choice2>
+					<text>Don't give into the trap!</text>
+					<response>Practising restraint, you felt proud of yourself for not buying in to the promise of pointless calories.</response>
+					<effect>soaUp</effect>
+				</choice2>
+			</step>
+			<step>
+				<text>You exited the pharmacy and stood around before heading back home. You saw an older woman trip and fall.</text>
+				<choice1>
+					<text>Help the older lady up</text>
+					<response>Not wanting to seem like an ass, you ran over and helped the lady up. You asked if she was okay, which she was. She thanked you for your help and went on her way.</response>
+					<effect>helpLady</effect>
+				</choice1>
+				<choice2>
+					<text>Pretend you didn't see her</text>
+					<response>You looked away and headed home. On one end, you avoided social conflict, but damn do you feel like a jerk.</response>
+					<effect>ignoreLady</effect>
+				</choice2>
+			</step>
+		</quest>
 	</events>
 </doc>
-
-<!--
-Dismantle and throw old furniture
-Fix mom's slow computer
-Pick up pills from Pharmacy
--->

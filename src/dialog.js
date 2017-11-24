@@ -14,6 +14,7 @@ $(document).ready(function () {
     });
     $(dlog).closest("div.ui-dialog").removeClass('ui-widget-content');
     $(dlog).parent().css("border", "2px solid #ecf0f1");
+    window.nodeStartScreen = '<div id="startScreen"><p><a id="pn" href="https://fedorablelife.wordpress.com/" target="_blank">Version 0.6</a><a id="fbButton" href="https://www.facebook.com/FedorableLife/" target="_blank"></a><a id="twButton" href="https://twitter.com/NickBeardman" target="_blank"></a><a id="gpButton" href="https://plus.google.com/u/0/b/117720636938381447783/117720636938381447783/posts/p/pub" target="_blank"></a></p><img src="/images/Logo.png"/><div><button class="newGameBtn" id="mmNewGame"></button><button class="continueGameBtn" id="mmCont"></button><button class="creditsBtn" id="credits"></button></div></div>';
     startScreen();
 
     h -= 31;

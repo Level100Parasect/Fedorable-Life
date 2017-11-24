@@ -275,9 +275,27 @@
 			</event>
 			<event>
 				<title>Dating Advice</title>
-				<text>There was a an event where a popular Loutuber was giving advice about dating. You sat in the audience and learned a thing or two!
+				<text>There was an event where a popular Loutuber was giving advice about dating. You sat in the audience and learned a thing or two!
 				</text>
 				<effect>dta1</effect>
+			</event>
+			<event>
+				<title>Mechanical Bull Ride</title>
+				<text>An energy drink company was hosting a mechanical bull ride in artist alley where participants could see how long they could last against the bull. You witnessed a very attractive girl try it out.
+				</text>
+				<effect>mr1</effect>
+			</event>
+			<event>
+				<title>The Grandfather of Anime</title>
+				<text>One of the original artists of classic anime movies was making an appearance at the convention. You satin the back of a massive auditorium as he spoke about his creations. It feels good to be in the same room as the grandfather of anime!
+				</text>
+				<effect>gfa1</effect>
+			</event>
+			<event>
+				<title>Interactive Display</title>
+				<text>Looking above, there was a large TV displaying other rooms in the convention. You got to see a bunch of cool areas you haven't checked out yet!
+				</text>
+				<effect>id1</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -562,9 +580,27 @@
 			</event>
 			<event>
 				<title>Dating Advice</title>
-				<text>There was a an event where a popular Loutuber was giving advice about dating. Sitting in the audience, you participated whenever the speaker would prompt the audience for an answer.
+				<text>There was an event where a popular Loutuber was giving advice about dating. Sitting in the audience, you participated whenever the speaker would prompt the audience for an answer.
 				</text>
 				<effect>dta2</effect>
+			</event>
+			<event>
+				<title>Mechanical Bull Ride</title>
+				<text>An energy drink company was hosting a mechanical bull ride in artist alley where participants could see how long they could last against the bull. Watching others try the bull out, you were able to get a free energy drink sample.
+				</text>
+				<effect>mr2</effect>
+			</event>
+			<event>
+				<title>The Grandfather of Anime</title>
+				<text>One of the original artists of classic anime movies was making an appearance at the convention. You satin the center of a massive auditorium as he spoke about his creations.
+				</text>
+				<effect>gfa2</effect>
+			</event>
+			<event>
+				<title>Interactive Display</title>
+				<text>Looking above, there was a large TV displaying other rooms in the convention. Noticing somebody on the display looking into the camera, so you waved to them. They waved back!
+				</text>
+				<effect>id2</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -849,9 +885,27 @@
 			</event>
 			<event>
 				<title>Dating Advice</title>
-				<text>There was a an event where a popular Loutuber was giving advice about dating. The speaker asked for volunteers for a demonstration. You raised your hand, but you were not selected.
+				<text>There was an event where a popular Loutuber was giving advice about dating. The speaker asked for volunteers for a demonstration. You raised your hand, but you were not selected.
 				</text>
 				<effect>dta3</effect>
+			</event>
+			<event>
+				<title>Mechanical Bull Ride</title>
+				<text>An energy drink company was hosting a mechanical bull ride in artist alley where participants could see how long they could last against the bull. You decided to try it out... and almost instantly fell off. But hey, you tried!
+				</text>
+				<effect>mr3</effect>
+			</event>
+			<event>
+				<title>The Grandfather of Anime</title>
+				<text>One of the original artists of classic anime movies was making an appearance at the convention. You sat close to the front of a massive auditorium as he spoke about his creations.
+				</text>
+				<effect>gfa3</effect>
+			</event>
+			<event>
+				<title>Interactive Display</title>
+				<text>Looking above, there was a large TV displaying other rooms in the convention. Noticing somebody on the display looking into the camera, so you stood in front of the camera and had a wordless conversation with them.
+				</text>
+				<effect>id3</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -1136,9 +1190,27 @@
 			</event>
 			<event>
 				<title>Dating Advice</title>
-				<text>There was a an event where a popular Loutuber was giving advice about dating. Sitting in the audience, you were surprised when the speaker approached you with the microphone asking for your opinion. You're gonna be on LouTube!
+				<text>There was an event where a popular Loutuber was giving advice about dating. Sitting in the audience, you were surprised when the speaker approached you with the microphone asking for your opinion. You're gonna be on LouTube!
 				</text>
 				<effect>dta4</effect>
+			</event>
+			<event>
+				<title>Mechanical Bull Ride</title>
+				<text>An energy drink company was hosting a mechanical bull ride in artist alley where participants could see how long they could last against the bull. You decided to try it out... and did well enough! You talked with other people on how to improve for next time!
+				</text>
+				<effect>mr4</effect>
+			</event>
+			<event>
+				<title>The Grandfather of Anime</title>
+				<text>One of the original artists of classic anime movies was making an appearance at the convention. You sat close to the front of a massive auditorium as he spoke about his creations. At the end of the event, you got some signed swag from the grandfather of anime!
+				</text>
+				<effect>gfa4</effect>
+			</event>
+			<event>
+				<title>Interactive Display</title>
+				<text>Looking above, there was a large TV displaying other rooms in the convention. Noticing somebody on the display looking into the camera, so you stood in front of the camera and had a wordless conversation with them. A few other people joined in on the fun.
+				</text>
+				<effect>id4</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>
@@ -1423,9 +1495,27 @@
 			</event>
 			<event>
 				<title>Dating Advice</title>
-				<text>There was a an event where a popular Loutuber was giving advice about dating. The speaker asked for volunteers for a demonstration. You raised your hand, and got to be his guinea pig to help prove his point on attracting members of the opposite sex. You're gonna be on LouTube!
+				<text>There was an event where a popular Loutuber was giving advice about dating. The speaker asked for volunteers for a demonstration. You raised your hand, and got to be his guinea pig to help prove his point on attracting members of the opposite sex. You're gonna be on LouTube!
 				</text>
 				<effect>dta5</effect>
+			</event>
+			<event>
+				<title>Mechanical Bull Ride</title>
+				<text>An energy drink company was hosting a mechanical bull ride in artist alley where participants could see how long they could last against the bull. You decided to try it out... and lasted a long time! People are impressed and congratulated you!
+				</text>
+				<effect>mr5</effect>
+			</event>
+			<event>
+				<title>The Grandfather of Anime</title>
+				<text>One of the original artists of classic anime movies was making an appearance at the convention. You sat close to the front of a massive auditorium as he spoke about his creations. There was Q&amp;A at the end and you got to tell the grandfather of anime how much he meant to you.
+				</text>
+				<effect>gfa5r</effect>
+			</event>
+			<event>
+				<title>Interactive Display</title>
+				<text>Looking above, there was a large TV displaying other rooms in the convention. Noticing somebody on the display looking into the camera, you stood in front of the camera and made contact with them. Others joined in as you all had fun goofing off one the camera.
+				</text>
+				<effect>id5</effect>
 			</event>
 			<event>
 				<title>Speed Dating</title>

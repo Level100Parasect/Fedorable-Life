@@ -476,6 +476,31 @@
 			</text>
 			<effect>energyUp</effect>
 		</event>
+		<event>
+			<text>Speaking with a random bar patron, throughout the conversation they show you a "Try not to laugh" LouTube video. All the laughs you let out got you energetic!
+			</text>
+			<effect>energyUp</effect>
+		</event>
+		<event>
+			<text>Keeping to yourself at the bar, you were approached by a a drunk older lady who complimented your hat. You tipped your hat to her!
+			</text>
+			<effect>confident</effect>
+		</event>
+		<event>
+			<text>Keeping to yourself at the bar, you were surprised when a drink was given to you by a secret admirer. The bartender never told you who it was from, but at least somebody out there likes you!
+			</text>
+			<effect>soaUp</effect>
+		</event>
+		<event>
+			<text>Upon walking through the bar, the door girl offers you a free candy bar that she found in her purse! Ain't saying no to free things!
+			</text>
+			<effect>hungerUp</effect>
+		</event>
+		<event>
+			<text>You overheard somebody questioning what the bar's WiFi password was. Being a frequent at the bar, you chimed in to assist them! It's nice being helpful.
+			</text>
+			<effect>soaUp</effect>
+		</event>
 	</good>
 	<bad>
 		<event>
@@ -711,7 +736,7 @@
 		<event>
 			<text>After sneezing, somebody said "God bless you" as a response. Wanting to spark a nice intellectual debate, you replied with a "I'm atheist." The person just sighed and left. So much for your intellectual debate...
 			</text>
-			<effect>excitementDown</effect>
+			<effect>soaDown</effect>
 		</event>
 		<event>
 			<text>You saw a large group at a table with a hookah set in the center. You made your way over and demanded that they provide a puff or two like a real alpha male. However, they were extremely put off by your attitude and told you to go away.
@@ -719,7 +744,7 @@
 			<effect>emasculated</effect>
 		</event>
 		<event>
-			<text>Seeing a group of girls, wanting to demonstrate your higher value as a potential mating partner, you start talking about how the bouncer is a push-over and how you can beat him in a fight. However you noticed him walking by. Thinking he was going to kick your butt, you hid in the bathroom.
+			<text>Seeing a group of girls, wanting to demonstrate your higher value as a potential mating partner, you bragged about how you can beat the bouncer in a fight... right as he walked by. You hid in the bathroom thinking he was going to kick your butt.
 			</text>
 			<effect>embarrassed</effect>
 		</event>
@@ -952,6 +977,31 @@
 			<text>After coming back from the bathroom, you noticed that your chair was not where you placed it... now you're stuck standing.
 			</text>
 			<effect>energyDown</effect>
+		</event>
+		<event>
+			<text>You see a muscle-bound "chad" preying on poor m'lady. Coming to save the day, you chime in with a "I don't think m'lady wants to talk to you". But m'lady replies with "He's acutually my boyfriend..." OOOF! You fool!
+			</text>
+			<effect>embarrassed</effect>
+		</event>
+		<event>
+			<text>Minding your own business at the bar, you see an attractive m'lady... but she was holding hands with a homely dweeb! You're more attractive than him, why do you have to be alone?
+			</text>
+			<effect>deadInside</effect>
+		</event>
+		<event>
+			<text>Minding your own business at the bar, the bartender puts down a beer near you. Thinking it was for you, you started reach out for it until you were stopped by someone else as it was actually for them. That was weird...
+			</text>
+			<effect>soaDown</effect>
+		</event>
+		<event>
+			<text>Wanting to work on your ability to pull women, you tried to work on your posture to seem more alpha. However you heard a massive crack... ouch...
+			</text>
+			<effect>energyDown</effect>
+		</event>
+		<event>
+			<text>Walking through the bar, your shoulder brushed up against a prop to the point that it fell and broke. You ended up having to pay for the damages...
+			</text>
+			<effect>moneyDown</effect>
 		</event>
 	</bad>
 </doc>
